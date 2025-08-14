@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Status da Máquina</title>
+</head>
+<body>
+    <h1>Informações da Máquina</h1>
+    <ul>
+        <li>Temperatura: {{ dados.temperatura }} °C</li>
+        <li>Vibração: {{ dados.vibracao }}</li>
+        <li>Corrente: {{ dados.corrente }} A</li>
+        <li>Pressão: {{ dados.pressao }} bar</li>
+    </ul>
+
+    <!--Código do site em si-->
+    <a href = "/dados_clps" target = "_blank">
+        <img src = "{{ url_for('static', filename = 'clp_imagem.png') }}" alt = "Erro">
+    </a>
+</body>
+</html>
