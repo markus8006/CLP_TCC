@@ -5,17 +5,14 @@
     <title>Status da Máquina</title>
 </head>
 <body>
-    <h1>Informações da Máquina</h1>
-    <ul>
-        <li>Temperatura: {{ dados.temperatura }} °C</li>
-        <li>Vibração: {{ dados.vibracao }}</li>
-        <li>Corrente: {{ dados.corrente }} A</li>
-        <li>Pressão: {{ dados.pressao }} bar</li>
-    </ul>
-
-    <!--Código do site em si-->
-    <a href = "/dados_clps" target = "_blank">
-        <img src = "{{ url_for('static', filename = 'clp_imagem.png') }}" alt = "Erro">
-    </a>
+    <h1>CLPs Detectados</h1>
+    <div style = "display : flex; gap: 20px">
+        {% for clp in clps %}
+            <a href = "/clp/{{ clp.ip}}" title = "portas: {{ clp.portas}}">
+                <img src = "{{ url_for('static', filename = 'clp_imagem.png') }}" alt = "Erro">
+                <p>{{ clp.ip }}</p>
+            </a>
+        {% endfor %}
+    </div>
 </body>
 </html>
