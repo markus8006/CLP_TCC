@@ -1,0 +1,346 @@
+Nome do arquivo: CLP.py
+Conte�do:
+from pymodbus.client import ModbusTcpClient
+import ftplib
+
+
+class __CLP:
+    "CLPs genericos"
+    def __init__(self, IP, UNIDADE, PORTA):
+        self.IP = IP
+        self.UNIDADE = UNIDADE
+        self.PORTA = PORTA
+        self.conctado = False
+        self.client =  ModbusTcpClient(host=self.IP, port=self.PORTA)
+
+    def conecatar(self):
+        if self.client.connect():
+            print(f"CLP conectado IP: {self.IP}")
+            self.conctado = True
+        else:
+            print(f"Falha na conexão\nIP: {self.IP}\nPorta: {self.PORTA}")
+
+
+    def deconectar(self):
+        self.client.close()
+        print(f"CLP desconectado IP {self.IP}")
+        self.conctado = False
+
+
+
+class CLPGen(__CLP):
+    def __init__(self, IP : str, UNIDADE : int, PORTA : int) -> None:
+        super().__init__(IP, UNIDADE, PORTA)
+
+    
+    def baixar_codigo(self, admin : str, senha : str) -> bool:
+        ftp = ftplib.FTP(self.IP, admin, senha)
+        with open('programa.hex', 'rb') as f:
+            ftp.storbinary(f'STOR /programa{self.IP}.hex', f)
+
+
+class CLPSiemens(__CLP):
+    def __init__(self, IP : str, UNIDADE : int, PORTA : int) -> None:
+        super().__init__(IP, UNIDADE, PORTA)
+
+    def baixar_codigo(self):
+        pass
+
+
+
+        
+
+if __name__ == "__main__":
+    clp = CLPGen("192.168.0.1", 1, "501")
+    clp.conecatar()
+
+========================================
+
+Nome do arquivo: coletor.py
+Conte�do:
+import socket
+from scapy.all import sniff, IP
+import log
+
+HOST = "127.0.0.1"
+PORT = 5000
+
+ips_coletados = set()
+ips_enviados = open("ips_enviados.txt", "a")
+
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket.bind((HOST, PORT))
+server_socket.listen(1)
+
+log.log_and_print(f"Aguardando conexão na porta {PORT}...")
+conn, addr = server_socket.accept()
+log.log_and_print(f"Consumidor conectado: {addr}")
+
+def analisar_pacote(pacote):
+    if IP in pacote:
+        ip_src = pacote[IP].src
+        if ip_src not in ips_coletados:
+            ips_enviados.write(ip_src + "\n")
+            ips_enviados.flush()
+            ips_coletados.add(ip_src)
+            try:
+                conn.sendall((ip_src + "\n").encode())
+                log.log_and_print(f"Enviado: {ip_src}")
+            except:
+                log.log_and_print("Consumidor desconectado")
+                conn.close()
+                exit()
+
+log.log_and_print("Coletando IPs (sem repetição)...")
+sniff(prn=analisar_pacote, store=False)
+
+========================================
+
+Nome do arquivo: consumidor.py
+Conte�do:
+import socket
+import portas
+from concurrent.futures import ThreadPoolExecutor
+import log
+
+HOST = "127.0.0.1"
+PORT = 5000
+
+ips_coletados = open("ips_coletados.txt", "a")
+
+def escanear(ip):
+    log.log_and_print(f"Iniciando escaneamento para {ip}")
+    portas.escanear_portas(ip)
+    log.log_and_print(f"Escaneamento finalizado para {ip}")
+
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect((HOST, PORT))
+log.log_and_print("Conectado ao coletor!")
+
+max_threads = 10
+
+with ThreadPoolExecutor(max_workers=max_threads) as executor:
+    try:
+        while True:
+            data = client_socket.recv(1024)
+            if not data:
+                break
+            ips = data.decode().strip().split("\n")
+            for ip in ips:
+                if ip:
+                    log.log_and_print(f"Recebido: {ip}")
+                    ips_coletados.write(ip + "\n")
+                    ips_coletados.flush()
+                    executor.submit(escanear, ip)
+    except KeyboardInterrupt:
+        log.log_and_print("\nEncerrando...")
+    finally:
+        client_socket.close()
+
+========================================
+
+Nome do arquivo: kernel.py
+Conte�do:
+
+def set_processos(p):
+    """Recebe os processos que estão sendo executados."""
+    global processos
+    processos = p
+    print(f"{len(processos)} processos registrados.")
+
+def cancelar_processos():
+    """Cancelar ou finalizar os processos em execução."""
+    for processo in processos:
+        try:
+            # Tentar terminar o processo de maneira amigável
+            processo.terminate()
+            print(f"Processo {processo.pid} terminado com sucesso.")
+        except Exception as e:
+            print(f"Erro ao tentar terminar o processos {processo.pid}: {e}")
+            # Se o terminate falhar, podemos tentar kill()
+            processo.kill()
+            print(f"Processo {processo.pid} forçado a ser terminado.")
+
+
+while True:
+    entrada = input(">> ")
+    if entrada.lower() == "quit":
+        cancelar_processos()
+
+========================================
+
+Nome do arquivo: log.py
+Conte�do:
+import logging 
+
+logging.basicConfig(
+    filename="app.log",
+    level=logging.DEBUG,
+    format= "%(asctime)s - %(levelname)s - %(message)s", 
+)
+
+
+
+
+
+def log(mensagem : str, level=logging.INFO) -> None:
+    """Função que salva informações do program em um arquivo de log
+       mensagem (str) : mensagem que será escrita
+       level : Nivel de intensidade da mensgem, usando a biblioteca logging 
+    """
+
+
+    if level == logging.DEBUG:
+        logging.debug(mensagem)
+    elif level == logging.INFO:
+        logging.info(mensagem)
+    elif level == logging.WARNING:
+        logging.warning(mensagem)
+    elif level == logging.ERROR:
+        logging.error(mensagem)
+    elif level == logging.CRITICAL:
+        logging.critical(mensagem)
+
+
+
+def log_and_print(mesagem, level=logging.INFO):
+    """Função que salva informações do program em um arquivo de log e escreva elas no terminal
+       mensagem (str) : mensagem que será escrita
+       level : Nivel de intensidade da mensgem, usando a biblioteca logging 
+    """
+    print(mesagem)
+    log(mesagem, level=level)
+
+
+if __name__ == "__main__":
+    log_and_print("Esta é uma mensagem de debug.", logging.DEBUG)
+    log_and_print("Esta é uma mensagem de informação.", logging.INFO)
+    log_and_print("Esta é uma mensagem de aviso.", logging.WARNING)
+    log_and_print("Esta é uma mensagem de erro.", logging.ERROR)
+    log_and_print("Esta é uma mensagem crítica.", logging.CRITICAL)
+
+========================================
+
+Nome do arquivo: main.py
+Conte�do:
+from rodar import iniciar_programa
+
+
+iniciar_programa()
+
+========================================
+
+Nome do arquivo: portas.py
+Conte�do:
+import subprocess
+import re
+import json
+import log
+
+import logging
+
+dados = {}
+
+def escanear_portas(ip : str, intervalo : int = 1000):
+    """Roda um nmap -p '1-{intervalo}' para escanear portas abertas no ip
+    ip (str) : ip que sera escaneado no formato x.x.x.x
+    intervalo (int) : a quantidade de portas que vai escanear"""
+    if ip not in dados:
+        dados[ip] = {}
+    log.log_and_print(f"Escaneando {ip} de 1 a {intervalo}...")
+    try:
+        resultado = subprocess.check_output(
+            ['nmap', '-p', f'1-{intervalo}', ip],
+            universal_newlines=True
+        )
+
+        # Procura por linhas com "open"
+        portas_abertas = re.findall(r'(\d+)/tcp\s+open', resultado)
+
+        if portas_abertas:
+            log.log_and_print(f"Portas abertas encontradas em {ip}: {', '.join(portas_abertas)}")
+            
+
+           
+            dados[ip] = [int(p) for p in portas_abertas]
+            with open("dados.json", "w") as f:
+                log.log_and_print(f"{ip}: Salvo no json")
+                json.dump(dados, f, indent=4)  # indent=4 deixa o JSON legível (formatado)
+        else:
+            log.log_and_print(f"Nenhuma porta aberta encontrada em {ip}.")
+    except subprocess.CalledProcessError as e:
+        log.log_and_print("Erro ao executar o Nmap: " + str(e), level=logging.ERROR)
+
+
+if __name__ == "__main__":
+    escanear_portas("192.168.0.1")
+
+========================================
+
+Nome do arquivo: rodar.py
+Conte�do:
+import subprocess
+import time
+import kernel
+
+processos = []
+
+
+def iniciar_programa(delay: int = 4):
+    """Inicia o coletor, o emissor e o kernel precisa de um delay para ligar o servidor
+       delay (int) : tempo de delay
+    """
+    # Usando 'start cmd /k' para abrir um novo terminal
+    
+    processos.append(subprocess.Popen(["start", "cmd", "/k", "python", "coletor.py"], shell=True))
+    time.sleep(delay)
+    processos.append(subprocess.Popen(["start", "cmd", "/k", "python", "consumidor.py"], shell=True))
+    processos.append(subprocess.Popen(["start", "cmd", "/k", "python", "kernel.py"], shell=True))
+    kernel.set_processos(processos)
+
+
+
+
+
+
+if __name__ == "__main__":
+    iniciar_programa()
+
+========================================
+
+Nome do arquivo: teste.py
+Conte�do:
+import os
+
+# Caminho da pasta onde os arquivos .py estão localizados
+diretorio = "C:\\Users\\senai\\Desktop\\projeto"
+
+# Arquivo de saída
+arquivo_saida = "nomes_e_conteudo_arquivos.txt"
+
+# Abrir o arquivo de saída para escrever os nomes e conteúdos
+with open(arquivo_saida, "w") as f:
+    # Percorrer todos os arquivos no diretório
+    for nome_arquivo in os.listdir(diretorio):
+        # Verificar se o arquivo termina com '.py'
+        if nome_arquivo.endswith(".py"):
+            # Caminho completo do arquivo
+            caminho_arquivo = os.path.join(diretorio, nome_arquivo)
+            
+            # Escrever o nome do arquivo no arquivo de saída
+            f.write(f"Nome do arquivo: {nome_arquivo}\n")
+            
+            # Abrir o arquivo .py e ler seu conteúdo
+            with open(caminho_arquivo, "r") as arquivo:
+                conteudo = arquivo.read()
+                # Escrever o conteúdo no arquivo de saída
+                f.write(f"Conteúdo:\n{conteudo}\n")
+                
+            # Adicionar uma linha em branco entre os arquivos
+            f.write("\n" + "="*40 + "\n\n")
+
+print(f"Lista de arquivos .py e seus conteúdos salva em {arquivo_saida}")
+
+
+========================================
+
