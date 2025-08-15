@@ -7,7 +7,7 @@ import logging
 
 dados = {}
 
-def escanear_portas(ip : str, intervalo : int = 1000):
+def escanear_portas(ip : str, intervalo : int = 1000) -> None:
     """Roda um nmap -p '1-{intervalo}' para escanear portas abertas no ip
     ip (str) : ip que sera escaneado no formato x.x.x.x
     intervalo (int) : a quantidade de portas que vai escanear"""
