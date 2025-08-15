@@ -8,7 +8,8 @@
     <h1>CLPs Detectados</h1>
     <div style = "display : flex; gap: 20px">
         {% for clp in clps %}
-            <a href = "/clp/{{ clp.ip}}" title = "portas: {{ clp.portas}}">
+            <a href = "/clp/{{ clp.ip}}"
+                title = "portas: {{ clp.portas}}">
                 <img src = "{{ url_for('static', filename = 'clp_imagem.png') }}" alt = "Erro">
                 <p>{{ clp.ip }}</p>
             </a>
