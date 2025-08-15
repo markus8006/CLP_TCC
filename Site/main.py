@@ -2,13 +2,18 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
+def carregar_clps():
+    with open("dados.json", "r", encoding = "utf-8") as f:
+        return json.load(f)
+    clps = []
+    for ip, portas in dados.items():
+        clps.append({"ip": ip, "portas": portas})
+    return clps
+    
 @app.route('/')
 def index():
-    clps_detectados = [
-        {"ip": "192.168.0.10", "portas": [502, 80]},
-        {"ip": "192.168.0.11", "portas": [502]},
-    ]
-    return render_template('index.html', clps = clps_detectados)
+    clps = carregar_clps()
+    return render_template('index.html', clps = clps)
 
 @app.route('/dados_clps')
 def dados_clps():
