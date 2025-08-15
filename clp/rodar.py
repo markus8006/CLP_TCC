@@ -3,13 +3,14 @@ import time
 import json
 
 processos = []
+dist = "clp\\IPS\\"
 
 def iniciar_programa(delay: int = 4):
     """Inicia o coletor, o emissor e o kernel, cada um em seu CMD."""
     
     # Inicia o coletor
     p1 = subprocess.Popen(
-        'start "Coletor" cmd /k python coletor.py',
+        f'start "Coletor" cmd /k python {dist}coletor.py',
         shell=True
     )
     processos.append(p1)
@@ -18,14 +19,14 @@ def iniciar_programa(delay: int = 4):
     
     # Inicia o consumidor
     p2 = subprocess.Popen(
-        'start "Consumidor" cmd /k python consumidor.py',
+        f'start "Consumidor" cmd /k python {dist}consumidor.py',
         shell=True
     )
     processos.append(p2)
     
     # Inicia o kernel
     p3 = subprocess.Popen(
-        'start "Kernel" cmd /k python kernel.py',
+        f'start "Kernel" cmd /k python {dist}kernel.py',
         shell=True
     )
     processos.append(p3)

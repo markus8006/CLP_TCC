@@ -1,7 +1,7 @@
 import socket
 import portas
 from concurrent.futures import ThreadPoolExecutor
-import log
+from ..biblis import log
 
 HOST = "127.0.0.1"
 PORT = 5000

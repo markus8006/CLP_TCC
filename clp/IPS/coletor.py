@@ -1,6 +1,6 @@
 import socket
 from scapy.all import sniff, IP
-import log
+from ..biblis import log
 
 HOST = "127.0.0.1"
 PORT = 5000
