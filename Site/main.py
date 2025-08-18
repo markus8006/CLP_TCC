@@ -1,5 +1,5 @@
 import json
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request, redirect, url_for
 from collections import deque
 
 
@@ -15,10 +15,22 @@ def carregar_clps():
         clps.append({"ip": ip, "portas": portas})
     return clps
 
+clps_por_pagina = 21
+
 @app.route('/')
 def index():
     clps = carregar_clps()
-    return render_template('index.html', clps = clps)
+
+    page = request.args.get('page', 1, type=int)
+
+    inicio = (page - 1) * clps_por_pagina
+    fim = inicio + clps_por_pagina
+    clps_pagina = clps[inicio:fim]
+
+    total_paginas = (len(clps) + clps_por_pagina - 1) // clps_por_pagina
+
+    
+    return render_template('index.html', clps=clps_pagina, page=page, total_paginas=total_paginas, valor=clps_por_pagina)
 
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
@@ -31,6 +43,15 @@ def detalhes_clps(ip):
     portas_abertas = [porta for porta in clp["portas"]]
     
     return render_template("detalhes.html", ip=clp["ip"], portas_abertas=portas_abertas)
+
+
+@app.route("/alterar", methods=["POST"])
+def alterar_clps_pagina():
+    global clps_por_pagina
+    novo_valor  = request.form.get("novo_valor", type=int)
+    if novo_valor and novo_valor > 0:
+        clps_por_pagina = novo_valor
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     # Para abrir no navegador local

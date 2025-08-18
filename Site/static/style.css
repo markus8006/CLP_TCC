@@ -10,6 +10,10 @@ a {
   color : whitesmoke;  
 }
 
+p {
+    color : whitesmoke;  
+}
+
 .container_clps {
     display: flex;
     flex-wrap: wrap;       /* permite quebrar linha quando passar de 3 */
@@ -42,4 +46,9 @@ a {
     color: green;
     font-weight: bold;
     margin-right: 2px;
+}
+
+.paginacao {
+    color: whitesmoke;
+    text-align: center;
 }
