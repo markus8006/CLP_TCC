@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <a>IP: {{ ip }}</a>
+
+    <div>
+        {% if portas_abertas %}
+            {% for porta in portas_abertas %}
+                {% if porta is not none %}
+                    <a class="portas_abertas">{{ porta }}</a>{% if not loop.last %}, {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <span class="porta_fechada">Não há portas abertas</span>
+        {% endif %}
+    </div>
+
+</body>
+</html>

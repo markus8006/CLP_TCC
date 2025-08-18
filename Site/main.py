@@ -1,10 +1,12 @@
 import json
 from flask import Flask, render_template, jsonify
+from collections import deque
+
 
 app = Flask(__name__)
 
 def carregar_clps():
-    with open("../logs/dados.json", "r", encoding = "utf-8") as f:
+    with open("../clp/logs/dados.json", "r", encoding = "utf-8") as f:
         dados = json.load(f)
 
     #alterar json colocando "ip" e "portas"
@@ -24,7 +26,11 @@ def detalhes_clps(ip):
     clp = next((c for c in clps if c["ip"] == ip), None)
     if clp is None:
         return "CLP não encontrado", 404
-    return render_template("detalhes.html", clp = clp)
+
+    
+    portas_abertas = [porta for porta in clp["portas"]]
+    
+    return render_template("detalhes.html", ip=clp["ip"], portas_abertas=portas_abertas)
 
 if __name__ == '__main__':
     # Para abrir no navegador local

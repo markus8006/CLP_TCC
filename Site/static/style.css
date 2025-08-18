@@ -1,0 +1,45 @@
+
+body {
+    background: linear-gradient(to bottom, #15131b, #060f3d);
+}
+
+h1 {
+    color : whitesmoke;
+}
+a {
+  color : whitesmoke;  
+}
+
+.container_clps {
+    display: flex;
+    flex-wrap: wrap;       /* permite quebrar linha quando passar de 3 */
+    gap: 20px;             /* espaço entre os CLPs */
+}
+
+.divs_clp {
+    flex: 1 0 30%;         /* ocupa 30% da largura da linha (3 por linha) */
+    box-sizing: border-box;
+    text-align: center;
+    transform: scale(0.75);
+    
+}
+
+.divs_clp img {
+    transition: transform 0.5s ease;
+}
+
+.divs_clp img:hover{
+    transform: scale(1.1);
+}
+
+
+.porta_fechada {
+    color: red;
+    font-weight: bold;
+}
+
+.portas_abertas {
+    color: green;
+    font-weight: bold;
+    margin-right: 2px;
+}

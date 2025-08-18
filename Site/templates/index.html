@@ -2,18 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Status da Máquina</title>
 </head>
 <body>
     <h1>CLPs Detectados</h1>
-    <div style = "display : flex; gap: 20px">
+    <div class="container_clps">
         {% for clp in clps %}
-            <a href = "/clp/{{ clp.ip}}"
-                title = "portas: {{ clp.portas}}">
-                <img src = "{{ url_for('static', filename = 'clp_imagem.png') }}" alt = "Erro">
+        <div class="divs_clp">
+            <a href="/clp/{{ clp.ip }}" title="portas: {{ clp.portas }}">
+                <img src="{{ url_for('static', filename='clp_imagem.png') }}" alt="Erro">
                 <p>{{ clp.ip }}</p>
             </a>
+        </div>
         {% endfor %}
     </div>
 </body>
-</html> 
+
+</html>
