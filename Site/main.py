@@ -1,12 +1,17 @@
 import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
-from collections import deque
 
 
 app = Flask(__name__)
 
-def carregar_clps():
-    with open("../clp/logs/dados.json", "r", encoding = "utf-8") as f:
+
+
+def carregar_clps(rota : str = "../clp/logs/dados.json") -> list:
+    """
+    Coleta IPs e Portas abertas do Json\n
+    rota (str) : rota dos dados.json
+    """
+    with open(rota, "r", encoding = "utf-8") as f:
         dados = json.load(f)
 
     #alterar json colocando "ip" e "portas"
@@ -21,6 +26,7 @@ clps_por_pagina = 21
 def index():
     clps = carregar_clps()
 
+    #Numeração de páginas
     page = request.args.get('page', 1, type=int)
 
     inicio = (page - 1) * clps_por_pagina
@@ -34,6 +40,8 @@ def index():
 
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
+
+    #Identificação de portas abertas
     clps = carregar_clps()
     clp = next((c for c in clps if c["ip"] == ip), None)
     if clp is None:
@@ -47,6 +55,8 @@ def detalhes_clps(ip):
 
 @app.route("/alterar", methods=["POST"])
 def alterar_clps_pagina():
+
+    #Alterar quantidade de CLPs p/ página
     global clps_por_pagina
     novo_valor  = request.form.get("novo_valor", type=int)
     if novo_valor and novo_valor > 0:
