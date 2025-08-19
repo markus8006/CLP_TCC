@@ -68,7 +68,11 @@ def alterar_clps_pagina():
     return redirect(url_for('index'))
 
 
-def iniciar_web():
+
+
+
+def iniciar_web() -> None:
+    """Inicia o servidor web"""
     app.run(host='127.0.0.1', port=5000, debug=True, use_reloader = True)
 
 
