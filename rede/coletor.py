@@ -17,15 +17,15 @@ def coletor():
             if ip_src not in ips_ja_enviados:
                 fila.put(ip_src)
                 ips_ja_enviados.add(ip_src)
-                log.log_and_print(f"Encontrado: {ip_src}")
+                log.log(f"Encontrado: {ip_src}")
     sniff(prn=analisar_pacote, store=False)
 
 def consumidor():
     """Inicia o consumidor"""
     def escanear(ip):
-        log.log_and_print(f"Iniciando escaneamento: {ip}")
+        log.log(f"Iniciando escaneamento: {ip}")
         portas.escanear_portas(ip)
-        log.log_and_print(f"Escaneamento finalizado: {ip}")
+        log.log(f"Escaneamento finalizado: {ip}")
 
     max_threads = 10
     with ThreadPoolExecutor(max_workers=max_threads) as executor:

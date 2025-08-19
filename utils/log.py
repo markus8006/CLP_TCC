@@ -1,7 +1,11 @@
+import os
 import logging 
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+caminho = os.path.join(BASE_DIR, "logs/app.log")
+
 logging.basicConfig(
-    filename="app.log",
+    filename=caminho,
     level=logging.DEBUG,
     format= "%(asctime)s - %(levelname)s - %(message)s", 
 )
