@@ -1,3 +1,4 @@
+import os
 import subprocess
 import re
 import json
@@ -6,6 +7,11 @@ from utils import log
 import logging
 
 dados = {}
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+caminho = os.path.join(BASE_DIR, "logs/dados.json")
+
 
 def escanear_portas(ip : str, intervalo : int = 1000) -> None:
     """Roda um nmap -p '1-{intervalo}' para escanear portas abertas no ip
@@ -29,7 +35,7 @@ def escanear_portas(ip : str, intervalo : int = 1000) -> None:
 
            
             dados[ip] = [int(p) for p in portas_abertas]
-            with open("dados.json", "w") as f:
+            with open(caminho, "w") as f:
                 log.log_and_print(f"{ip}: Salvo no json")
                 json.dump(dados, f, indent=4)  # indent=4 deixa o JSON legível (formatado)
         else:

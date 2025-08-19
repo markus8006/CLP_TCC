@@ -9,6 +9,7 @@ import time
 fila = Queue()
 
 def coletor():
+    """Inicia o coletor"""
     ips_ja_enviados = set()
     def analisar_pacote(pacote):
         if IP in pacote:
@@ -20,6 +21,7 @@ def coletor():
     sniff(prn=analisar_pacote, store=False)
 
 def consumidor():
+    """Inicia o consumidor"""
     def escanear(ip):
         log.log_and_print(f"Iniciando escaneamento: {ip}")
         portas.escanear_portas(ip)

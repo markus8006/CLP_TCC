@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def carregar_clps(rota : str = "logs/dados.json") -> list:
+def carregar_clps(rota : str = "logs\\dados.json") -> list:
     """
     Coleta IPs e Portas abertas do Json\n
     rota (str) : rota dos dados.json
