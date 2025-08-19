@@ -1,3 +1,4 @@
+import os
 import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from threading import Thread
@@ -6,13 +7,15 @@ from threading import Thread
 app = Flask(__name__)
 
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def carregar_clps(rota : str = "logs/dados.json") -> list:
     """
     Coleta IPs e Portas abertas do Json\n
     rota (str) : rota dos dados.json
     """
-    with open(rota, "r", encoding = "utf-8") as f:
+    caminho = os.path.join(BASE_DIR, rota)
+    with open(caminho, "r", encoding = "utf-8") as f:
         dados = json.load(f)
 
     #alterar json colocando "ip" e "portas"
