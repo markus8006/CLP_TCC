@@ -4,7 +4,7 @@ import ftplib
 
 class __CLP:
     "CLPs genericos"
-    def __init__(self, IP, UNIDADE, PORTA):
+    def __init__(self, IP : str, UNIDADE : int, PORTA : int) -> None:
         self.IP = IP
         self.UNIDADE = UNIDADE
         self.PORTA = PORTA
