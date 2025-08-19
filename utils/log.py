@@ -49,3 +49,23 @@ if __name__ == "__main__":
     log_and_print("Esta é uma mensagem de aviso.", logging.WARNING)
     log_and_print("Esta é uma mensagem de erro.", logging.ERROR)
     log_and_print("Esta é uma mensagem crítica.", logging.CRITICAL)
+
+
+
+def carregar_logs(caminho=caminho):
+    """Lê o arquivo .log e retorna uma lista de dicionários."""
+    logs = []
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            for linha in f:
+                linha = linha.strip()
+                if linha:
+                    # Supondo formato "hora - mensagem"
+                    partes = linha.split(" - ", 1)
+                    if len(partes) == 2:
+                        logs.append({"hora": partes[0], "mensagem": partes[1]})
+                    else:
+                        logs.append({"hora": "", "mensagem": linha})
+        return logs
+    except FileNotFoundError:
+        return []

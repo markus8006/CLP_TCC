@@ -2,6 +2,7 @@ import os
 import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from threading import Thread
+from utils import log 
 
 
 app = Flask(__name__)
@@ -69,6 +70,13 @@ def alterar_clps_pagina():
 
 
 
+
+
+
+@app.route("/logs")
+def logs_geral():
+    logs = log.carregar_logs()
+    return render_template("logs.html", logs=logs)
 
 
 def iniciar_web() -> None:

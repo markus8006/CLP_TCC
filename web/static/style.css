@@ -1,6 +1,10 @@
 
 body {
-    background: linear-gradient(to bottom, #15131b, #060f3d);
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.95), rgba(29, 2, 51, 0.95));
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -12,6 +16,14 @@ a {
 
 p {
     color : whitesmoke;  
+}
+
+td {
+    color : whitesmoke;
+}
+
+th {
+    color : whitesmoke;
 }
 
 .container_clps {
@@ -51,4 +63,61 @@ p {
 .paginacao {
     color: whitesmoke;
     text-align: center;
+}
+
+
+#menuBtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: #6e0096;
+  z-index: 2;
+  background: none;
+  border: none;
+}
+
+#menuBtn:hover {
+    color : white;
+    transition: 0.3;
+    scale : 1.1;
+
+}
+/* A sidebar */
+.sidenav {
+  height: 100%;
+  width: 0; /* Começa escondida */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s; /* Animação ao abrir/fechar */
+  padding-top: 60px;
+}
+
+/* Links dentro do menu */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.main {
+  transition: 0.3s;
+  height: 100%;
+  margin-left: 60px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.portas {
+    height: 100vh;
 }

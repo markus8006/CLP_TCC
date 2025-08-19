@@ -5,38 +5,75 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Status da Máquina</title>
 </head>
+
+
+
+
+
+
 <body>
-    <h1>CLPs Detectados</h1>
-
-    <p>Valor atual: {{ valor }}</p>
-    
-    <form method="POST" action="/alterar">
-    <input type="number" name="novo_valor" placeholder="CLPS por pagina", min="1">
-    <button type="submit">Alterar</button>
-</form>
-    <div class="container_clps">
-        {% for clp in clps %}
-        <div class="divs_clp">
-            <a href="/clp/{{ clp.ip }}" title="portas: {{ clp.portas }}">
-                <img src="{{ url_for('static', filename='clp_imagem.png') }}" alt="Erro">
-                <p>{{ clp.ip }}</p>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="paginacao">
-    {% if page > 1 %}
-    <a href="/?page={{ page-1 }}">Anterior</a>
-    {% endif %}
 
 
-    
-    <span> ---- Página {{ page }} de {{ total_paginas }} ---- </span>
+<!-- Botão que abre/fecha o menu -->
+<button id="menuBtn" onclick="moveSideBar()">&#9776;</button>
 
-    {% if page < total_paginas %}
-    <a class="paginas_clps"href="/?page={{ page+1 }}">Próxima</a>
-    {% endif %}
+
+<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+    <a href="/logs">Logs</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
 </div>
+
+
+
+
+
+
+    <div id="main" class="main">        
+        
+        <h1>CLPs Detectados</h1>
+
+        <p>Valor atual: {{ valor }}</p>
+    
+        <form method="POST" action="/alterar">
+            <input type="number" name="novo_valor" placeholder="CLPS por pagina", min="1">
+            <button type="submit">Alterar</button>
+        </form>
+
+        <div class="container_clps">
+            {% for clp in clps %}
+                <div class="divs_clp">
+                    <a href="/clp/{{ clp.ip }}" title="portas: {{ clp.portas }}">
+                    <img src="{{ url_for('static', filename='clp_imagem.png') }}" alt="Erro">
+                    <p>{{ clp.ip }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="paginacao">
+        {% if page > 1 %}
+            <a href="/?page={{ page-1 }}">Anterior</a>
+        {% endif %}
+
+
+    
+        <span> ---- Página {{ page }} de {{ total_paginas }} ---- </span>
+
+        {% if page < total_paginas %}
+            <a class="paginas_clps"href="/?page={{ page+1 }}">Próxima</a>
+        {% endif %}
+    </div>
+
+</div>
+
+
+
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
 </body>
 
 </html>
