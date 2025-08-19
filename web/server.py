@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 
-def carregar_clps(rota : str = "../clp/logs/dados.json") -> list:
+def carregar_clps(rota : str = "logs/dados.json") -> list:
     """
     Coleta IPs e Portas abertas do Json\n
     rota (str) : rota dos dados.json
@@ -65,11 +65,9 @@ def alterar_clps_pagina():
     return redirect(url_for('index'))
 
 
-def iniciar_site():
+def iniciar_web():
     app.run(host='127.0.0.1', port=5000, debug=True, use_reloader = True)
 
-def iniciar_web():
-    Thread(target=iniciar_web, daemon=True).start()
 
 
 
