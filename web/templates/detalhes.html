@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Detalhes do CLP</title>
 </head>
 <body>
     <!-- Sidebar -->
+
+    <button id="menuBtn" onclick="moveSideBar()">☰</button>
     <div id="mySidenav" class="sidenav">
         <a href="/logs">Logs</a>
         <a href="#">Services</a>
@@ -15,23 +18,71 @@
     </div>
 
     <!-- Conteúdo -->
-    <div class="portas">
-        <a>IP: {{ ip }}</a>
+    <div id="main" class="main">
 
-        <div>
-            {% if portas_abertas %}
-                {% for porta in portas_abertas %}
-                    {% if porta is not none %}
-                        <a class="portas_abertas">{{ porta }}</a>{% if not loop.last %}, {% endif %}
-                    {% endif %}
-                {% endfor %}
+
+        <div class="status_clp">
+            {% if Status == "Conectado" %}
+                <span class="status_online">Status: {{ Status }}</span>
+                <button>Desconectar</button>
             {% else %}
-                <span class="porta_fechada">Não há portas abertas</span>
+                <span class="status_offline">Status: {{ Status }}</span>
+                <button>Conectar</button>
             {% endif %}
+        </div>
+
+
+        <div class="informacao_clp">
+            <h2>Informações do CLP</h2>
+            <ul>
+                <li><strong>Modelo:</strong> {{ modelo }}</li>
+                <li><strong>Fabricante:</strong> {{ fabricante }}</li>
+                <li><strong>IP: </strong> {{ ip }} </li>
+                {% if portas_abertas %}
+                <a>Portas abertas: </a>
+                    {% for porta in portas_abertas %}
+                        {% if porta is not none %}
+                            <a class="portas_abertas">{{ porta }}</a>{% if not loop.last %}, {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <span class="porta_fechada">Não há portas abertas</span>
+                {% endif %}
+                </li>
+                <li><strong>Portas abertas: </strong></li>
+                <li><strong>Versão Firmware:</strong> {{ firmware }}</li>
+                <li><strong>Última comunicação:</strong> {{ ultima_comunicacao }}</li>
+                
+            </ul>
+
+
+    <div class="graficos">
+    <h2>Monitoramento</h2>
+    <div class="linha-graficos">
+        <div class="grafico-container">
+            <canvas id="graficoCpu"></canvas>
+        </div>
+        <div class="grafico-container">
+            <canvas id="graficoMemoria"></canvas>
         </div>
     </div>
 
-    <!-- Script deve ficar aqui -->
+    <div class="linha-graficos">
+        <div class="grafico-container">
+            <canvas id="graficoRede"></canvas>
+        </div>
+        <div class="grafico-container">
+            <canvas id="graficoDisco"></canvas>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+    </div>
+
+
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

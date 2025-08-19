@@ -1,10 +1,12 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.95), rgba(29, 2, 51, 0.95));
+    background: linear-gradient(to bottom, rgba(12, 7, 15, 0.95), rgba(29, 2, 51, 0.95));
     background-size: cover;
     background-position: center;
+    background-attachment: fixed
 }
 
 h1 {
@@ -128,14 +130,17 @@ th {
   color: #f1f1f1;
 }
 .main {
+    
   transition: 0.3s;
+  display:block;
   height: 100%;
-  margin-left: 60px; /* Same as the width of the sidebar */
+  margin-left: 60px; 
   padding: 0px 10px;
 }
 
 .portas {
-    height: 100vh;
+    border: 5px;
+    background-color: rgb(20, 1, 44);
 }
 
 .teste {
@@ -144,4 +149,79 @@ th {
     color: #fff;
     border-radius: 20px 20px;
     font-weight: bold;
+}
+
+.status_clp {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.status_online {
+    color: green;
+}
+
+.status_offline {
+    color: red;
+}
+
+
+.informacao_clp {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+.informacao_clp h2 {
+    margin-bottom: 10px;
+    color: #00cfff;
+}
+
+.informacao_clp ul {
+    list-style: none;
+    padding: 0;
+}
+
+.informacao_clp li {
+    margin: 5px 0;
+}
+
+
+.graficos {
+    margin-top: 30px;
+    color: whitesmoke;
+}
+
+.linha-graficos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grafico-container {
+    flex: 1 1 48%;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Linha: ocupar toda largura e altura fixa */
+.grafico-container canvas.line-chart {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Doughnut: manter círculo */
+.grafico-container canvas.doughnut-chart {
+    width: 100% !important;
+    max-width: 300px;
+    height: auto !important;
 }

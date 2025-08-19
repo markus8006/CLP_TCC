@@ -49,13 +49,14 @@ def detalhes_clps(ip):
     #Identificação de portas abertas
     clps = carregar_clps()
     clp = next((c for c in clps if c["ip"] == ip), None)
+    status = "deconectado"
     if clp is None:
         return "CLP não encontrado", 404
 
     
     portas_abertas = [porta for porta in clp["portas"]]
     
-    return render_template("detalhes.html", ip=clp["ip"], portas_abertas=portas_abertas)
+    return render_template("detalhes.html", ip=clp["ip"], portas_abertas=portas_abertas, Status=status)
 
 
 @app.route("/alterar", methods=["POST"])
