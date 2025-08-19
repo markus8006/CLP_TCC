@@ -1,5 +1,6 @@
 import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
+from threading import Thread
 
 
 app = Flask(__name__)
@@ -63,6 +64,14 @@ def alterar_clps_pagina():
         clps_por_pagina = novo_valor
     return redirect(url_for('index'))
 
-if __name__ == '__main__':
-    # Para abrir no navegador local
+
+def iniciar_site():
     app.run(host='127.0.0.1', port=5000, debug=True, use_reloader = True)
+
+def iniciar_web():
+    Thread(target=iniciar_web, daemon=True).start()
+
+
+
+if __name__ == '__main__':
+    iniciar_web()

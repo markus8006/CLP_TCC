@@ -1,1 +1,1 @@
-from . import portas
+from ...rede import portas

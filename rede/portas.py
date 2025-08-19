@@ -1,7 +1,7 @@
 import subprocess
 import re
 import json
-import log
+from utils import log
 
 import logging
 
