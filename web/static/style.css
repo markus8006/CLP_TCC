@@ -137,3 +137,11 @@ th {
 .portas {
     height: 100vh;
 }
+
+.teste {
+    display: inline-block;
+    background-color: rgb(0, 204, 255);
+    color: #fff;
+    border-radius: 20px 20px;
+    font-weight: bold;
+}
