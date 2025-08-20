@@ -21,7 +21,20 @@
 
 <div class="container_clps">
     <h2>Histórico</h2>
-    <!-- Aqui você pode listar os registros de coleta -->
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th>Nível</th>
+            <th>Mensagem</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.hora }}</td>
+            <td>{{ log.nivel }}</td>
+            <td>{{ log.mensagem }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 
 
