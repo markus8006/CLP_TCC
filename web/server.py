@@ -3,11 +3,12 @@ import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from threading import Thread
 from utils import log 
+from configs import settings
 
 
 app = Flask(__name__)
 
-status_coleta = "desativado"
+
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -65,10 +66,9 @@ def detalhes_clps(ip):
 def alterar_clps_pagina():
 
     #Alterar quantidade de CLPs p/ página
-    global clps_por_pagina
     novo_valor  = request.form.get("novo_valor", type=int)
     if novo_valor and novo_valor > 0:
-        clps_por_pagina = novo_valor
+        setattr(settings, "clps_por_pagina", novo_valor)
     return redirect(url_for('index'))
 
 @app.route("/alterarColeta")
