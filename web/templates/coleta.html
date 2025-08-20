@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <title>Coleta de IPs</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
-    <div>
-        <H1>Coleta de IPS</H1>
-        {% if status == "desativado" %}
-            <a>Status: <a>desativado</a>
-            <button>Ativar</button>
-        {% else %}
-            <a>Status: <a>Ativado</a>
-            <button>Desativar</button>
-        {% endif %}
-    </div>
+<div class="container_clps">
+    <h1>Coleta de IPS</h1>
 
-    <div>
-        <h2>Histórico</h2>
-        
-    </div>
+    {% if status == "desativado" %}
+        <span class="status_offline">Status: Desativado</span>
+        <a href="{{ url_for('alterar_coleta_ips') }}" class="teste">Ativar</a>
+    {% else %}
+        <span class="status_online">Status: Ativado</span>
+        <a href="{{ url_for('alterar_coleta_ips') }}" class="teste">Desativar</a>
+    {% endif %}
+</div>
+
+<div class="container_clps">
+    <h2>Histórico</h2>
+    <!-- Aqui você pode listar os registros de coleta -->
+</div>
 
 
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
+</html>

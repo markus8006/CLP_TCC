@@ -12,6 +12,9 @@ function moveSideBar() {
     }
 }
 
+
+
+
 // Gráfico de linha
 const ctxCpu = document.getElementById('graficoCpu').getContext('2d');
 const graficoCpu = new Chart(ctxCpu, {

@@ -7,6 +7,8 @@ from utils import log
 
 app = Flask(__name__)
 
+status_coleta = "desativado"
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -69,11 +71,20 @@ def alterar_clps_pagina():
         clps_por_pagina = novo_valor
     return redirect(url_for('index'))
 
+@app.route("/alterarColeta")
+def alterar_coleta_ips():
+    global status_coleta
+    if status_coleta == "ativado":
+        status_coleta = "desativado"
+    else:
+        status_coleta = "ativado"
+    return redirect(url_for("coleta_de_ips"))
+
 @app.route("/coletaIps")
 def coleta_de_ips():
-    status = "desativado"
+    global status_coleta
 
-    return render_template("coleta.html", status=status)
+    return render_template("coleta.html", status=status_coleta)
 
 
 
