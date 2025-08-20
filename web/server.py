@@ -69,6 +69,11 @@ def alterar_clps_pagina():
         clps_por_pagina = novo_valor
     return redirect(url_for('index'))
 
+@app.route("/coletaIps")
+def coleta_de_ips():
+    status = "desativado"
+
+    return render_template("coleta.html", status=status)
 
 
 

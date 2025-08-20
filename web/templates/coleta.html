@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div>
+        <H1>Coleta de IPS</H1>
+        {% if status == "desativado" %}
+            <a>Status: <a>desativado</a>
+            <button>Ativar</button>
+        {% else %}
+            <a>Status: <a>Ativado</a>
+            <button>Desativar</button>
+        {% endif %}
+    </div>
+
+    <div>
+        <h2>Histórico</h2>
+        
+    </div>
+
+
+</body>
