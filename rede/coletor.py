@@ -1,41 +1,60 @@
-from threading import Thread
-from queue import Queue
+from threading import Thread, Lock
+from queue import Queue, Full, Empty
 from scapy.all import sniff, IP
 from utils import log
 from rede import portas
 from concurrent.futures import ThreadPoolExecutor
 import time
+import logging
 
-fila = Queue()
+# fila com limite opcional
+fila = Queue(maxsize=2000)
+
+# set com proteção para evitar duplicatas (thread-safe)
+_ips_ja_enviados = set()
+_ips_lock = Lock()
 
 def coletor():
-    """Inicia o coletor"""
-    ips_ja_enviados = set()
+    """Inicia o coletor (sniff)"""
     def analisar_pacote(pacote):
         if IP in pacote:
             ip_src = pacote[IP].src
-            if ip_src not in ips_ja_enviados:
-                fila.put(ip_src)
-                ips_ja_enviados.add(ip_src)
-                log.log(f"Encontrado: {ip_src}")
-    sniff(prn=analisar_pacote, store=False)
+            with _ips_lock:
+                if ip_src in _ips_ja_enviados:
+                    return
+                _ips_ja_enviados.add(ip_src)
+            try:
+                fila.put(ip_src, timeout=1)
+                log.log_coleta(f"Encontrado: {ip_src}")
+            except Full:
+                log.log_coleta(f"Fila cheia. Ignorando {ip_src}", level=logging.WARNING)
+
+    sniff(prn=analisar_pacote, store=False)  # chama analisar_pacote para cada pacote
 
 def consumidor():
-    """Inicia o consumidor"""
+    """Inicia o consumidor que escaneia IPs"""
     def escanear(ip):
-        log.log(f"Iniciando escaneamento: {ip}")
-        portas.escanear_portas(ip)
-        log.log(f"Escaneamento finalizado: {ip}")
+        try:
+            log.log_coleta(f"Iniciando escaneamento: {ip}")
+            portas.escanear_portas(ip)
+            log.log_coleta(f"Escaneamento finalizado: {ip}")
+        except Exception as e:
+            log.log_coleta(f"Erro ao escanear {ip}: {e}", level=logging.ERROR)
 
     max_threads = 10
     with ThreadPoolExecutor(max_workers=max_threads) as executor:
         while True:
-            ip = fila.get()
+            try:
+                ip = fila.get(timeout=2)  # timeout para permitir checks/encerramento futuro
+            except Empty:
+                continue
             executor.submit(escanear, ip)
+            fila.task_done()
 
 
 if __name__ == "__main__":
     Thread(target=coletor, daemon=True).start()
     Thread(target=consumidor, daemon=True).start()
-
-
+    # manter o main vivo em testes locais
+    while True:
+        time.sleep(1)

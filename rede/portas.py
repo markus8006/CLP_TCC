@@ -30,16 +30,16 @@ def escanear_portas(ip : str, intervalo : int = 1000) -> None:
         portas_abertas = re.findall(r'(\d+)/tcp\s+open', resultado)
 
         if portas_abertas:
-            log.log(f"Portas abertas encontradas em {ip}: {', '.join(portas_abertas)}")
+            log.log_coleta(f"Portas abertas encontradas em {ip}: {', '.join(portas_abertas)}")
             
 
            
             dados[ip] = [int(p) for p in portas_abertas]
             with open(caminho, "w") as f:
-                log.log(f"{ip}: Salvo no json")
+                log.log_coleta(f"{ip}: Salvo no json")
                 json.dump(dados, f, indent=4)  # indent=4 deixa o JSON legível (formatado)
         else:
-            log.log(f"Nenhuma porta aberta encontrada em {ip}.")
+            log.log_coleta(f"Nenhuma porta aberta encontrada em {ip}.")
     except subprocess.CalledProcessError as e:
         log.log_and_print("Erro ao executar o Nmap: " + str(e), level=logging.ERROR)
 

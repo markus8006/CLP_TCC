@@ -1,71 +1,68 @@
 import os
-import logging 
+import logging
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-caminho = os.path.join(BASE_DIR, "logs/app.log")
+caminho_app = os.path.join(BASE_DIR, "logs/app.log")
+caminho_coleta = os.path.join(BASE_DIR, "logs/coleta.log")
 
+# Logger principal
 logging.basicConfig(
-    filename=caminho,
+    filename=caminho_app,
     level=logging.DEBUG,
-    format= "%(asctime)s - %(levelname)s - %(message)s", 
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    encoding="utf-8"
 )
 
+# Logger exclusivo da coleta
+logger_coleta = logging.getLogger("coleta")
+logger_coleta.setLevel(logging.DEBUG)
+
+# Adiciona um handler separado para o arquivo coleta.log
+handler_coleta = logging.FileHandler(caminho_coleta, encoding="utf-8")
+handler_coleta.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+logger_coleta.addHandler(handler_coleta)
 
 
+def log(mensagem: str, level=logging.INFO) -> None:
+    """Log geral do sistema."""
+    logging.log(level, mensagem)
 
 
-def log(mensagem : str, level=logging.INFO) -> None:
-    """Função que salva informações do program em um arquivo de log
-       mensagem (str) : mensagem que será escrita
-       level : Nivel de intensidade da mensgem, usando a biblioteca logging 
-    """
+def log_and_print(mensagem: str, level=logging.INFO) -> None:
+    """Log geral + print no terminal."""
+    print(mensagem)
+    logging.log(level, mensagem)
 
 
-    if level == logging.DEBUG:
-        logging.debug(mensagem)
-    elif level == logging.INFO:
-        logging.info(mensagem)
-    elif level == logging.WARNING:
-        logging.warning(mensagem)
-    elif level == logging.ERROR:
-        logging.error(mensagem)
-    elif level == logging.CRITICAL:
-        logging.critical(mensagem)
+def log_coleta(mensagem: str, level=logging.INFO) -> None:
+    """Log exclusivo da coleta de IPs."""
+    logger_coleta.log(level, mensagem)
 
 
-
-def log_and_print(mesagem, level=logging.INFO):
-    """Função que salva informações do program em um arquivo de log e escreva elas no terminal
-       mensagem (str) : mensagem que será escrita
-       level : Nivel de intensidade da mensgem, usando a biblioteca logging 
-    """
-    print(mesagem)
-    log(mesagem, level=level)
-
-
-if __name__ == "__main__":
-    log_and_print("Esta é uma mensagem de debug.", logging.DEBUG)
-    log_and_print("Esta é uma mensagem de informação.", logging.INFO)
-    log_and_print("Esta é uma mensagem de aviso.", logging.WARNING)
-    log_and_print("Esta é uma mensagem de erro.", logging.ERROR)
-    log_and_print("Esta é uma mensagem crítica.", logging.CRITICAL)
-
-
-
-def carregar_logs(caminho=caminho):
-    """Lê o arquivo .log e retorna uma lista de dicionários."""
+def carregar_logs(caminho=caminho_app):
+    """Carrega logs de um arquivo específico (padrão: app.log)."""
     logs = []
+    if not os.path.exists(caminho):
+        logs.append({"hora": "", "nivel": "ERRO", "mensagem": "Arquivo de log não encontrado"})
+        return logs
+
     try:
         with open(caminho, "r", encoding="utf-8") as f:
-            for linha in f:
-                linha = linha.strip()
-                if linha:
-                    # Supondo formato "hora - mensagem"
-                    partes = linha.split(" - ", 1)
-                    if len(partes) == 2:
-                        logs.append({"hora": partes[0], "mensagem": partes[1]})
-                    else:
-                        logs.append({"hora": "", "mensagem": linha})
-        return logs
-    except FileNotFoundError:
-        return []
+            linhas = f.readlines()
+    except UnicodeDecodeError:
+        with open(caminho, "r", encoding="cp1252", errors="replace") as f:
+            linhas = f.readlines()
+
+    for linha in linhas:
+        linha = linha.strip()
+        if linha:
+            partes = linha.split(" - ", 2)
+            if len(partes) == 3:
+                logs.append({
+                    "hora": partes[0],
+                    "nivel": partes[1],
+                    "mensagem": partes[2]
+                })
+            else:
+                logs.append({"hora": "", "nivel": "", "mensagem": linha})
+    return logs
