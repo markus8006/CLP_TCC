@@ -3,23 +3,14 @@ import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from threading import Thread
 from utils import log 
-from configs import settings
 
 
 app = Flask(__name__)
 
-
+status_coleta = "desativado"
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-caminho_app = os.path.join(BASE_DIR, "logs\\app.log")
-caminho_coleta = os.path.join(BASE_DIR, "logs\\coleta.log")
-
-print("BASE_DIR:", BASE_DIR)
-print("caminho_coleta:", caminho_coleta)
-print("Arquivo existe?", os.path.exists(caminho_coleta))
-
 
 def carregar_clps(rota : str = "logs\\dados.json") -> list:
     """
@@ -36,6 +27,7 @@ def carregar_clps(rota : str = "logs\\dados.json") -> list:
         clps.append({"ip": ip, "portas": portas})
     return clps
 
+clps_por_pagina = 21
 
 @app.route('/')
 def index():
@@ -44,14 +36,14 @@ def index():
     #Numeração de páginas
     page = request.args.get('page', 1, type=int)
 
-    inicio = (page - 1) * settings.clps_por_pagina
-    fim = inicio + settings.clps_por_pagina
+    inicio = (page - 1) * clps_por_pagina
+    fim = inicio + clps_por_pagina
     clps_pagina = clps[inicio:fim]
 
-    total_paginas = (len(clps) + settings.clps_por_pagina - 1) // settings.clps_por_pagina
+    total_paginas = (len(clps) + clps_por_pagina - 1) // clps_por_pagina
 
     
-    return render_template('index.html', clps=clps_pagina, page=page, total_paginas=total_paginas, valor=settings.clps_por_pagina)
+    return render_template('index.html', clps=clps_pagina, page=page, total_paginas=total_paginas, valor=clps_por_pagina)
 
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
@@ -73,31 +65,34 @@ def detalhes_clps(ip):
 def alterar_clps_pagina():
 
     #Alterar quantidade de CLPs p/ página
+    global clps_por_pagina
     novo_valor  = request.form.get("novo_valor", type=int)
     if novo_valor and novo_valor > 0:
-        setattr(settings, "clps_por_pagina", novo_valor)
+        clps_por_pagina = novo_valor
     return redirect(url_for('index'))
 
 @app.route("/alterarColeta")
 def alterar_coleta_ips():
-    if settings.status_coleta == "ativado":
-        setattr(settings, "status_coleta", "desativado")
+    global status_coleta
+    if status_coleta == "ativado":
+        status_coleta = "desativado"
     else:
-        setattr(settings, "status_coleta", "ativado")
+        status_coleta = "ativado"
     return redirect(url_for("coleta_de_ips"))
 
 @app.route("/coletaIps")
 def coleta_de_ips():
-    logs = log.carregar_logs()
-    return render_template("coleta.html", status=settings.status_coleta, logs=logs )
+    global status_coleta
+
+    return render_template("coleta.html", status=status_coleta)
+
 
 
 
 
 @app.route("/logs")
 def logs_geral():
-    logs = log.carregar_logs(caminho=caminho_coleta)  # garantir que é coleta
-    print(f"Quantidade de logs carregados: {len(logs)}")  # debug
+    logs = log.carregar_logs()
     return render_template("logs.html", logs=logs)
 
 
