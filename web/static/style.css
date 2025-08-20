@@ -254,3 +254,36 @@ strong {
     height: auto !important;
     border-radius: 20%;
 }
+
+
+.input_p_pagina {
+    background-color: rgb(71, 0, 202);
+    color: white;
+    padding: 3px 15px;
+    border-radius: 5px 5px;
+    border-color: rgb(138, 138, 138);
+    transition: 0.3s;
+}
+.input_p_pagina::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.input_p_pagina:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.botao_alterar {
+    background-color: rgb(13, 0, 129) ;
+    color: white;
+    padding: 3px 10px;
+    width: 10px 10px ;
+    border-radius: 5px;
+    border-color: rgb(138, 138, 138);
+    transition: 0.3s;
+}
+
+.botao_alterar:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}

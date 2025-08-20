@@ -38,9 +38,11 @@
         <p>Valor atual: {{ valor }}</p>
     
         <form method="POST" action="/alterar">
-            <input type="number" name="novo_valor" placeholder="CLPS por pagina", min="1">
-            <button type="submit">Alterar</button>
+            <input class = "input_p_pagina" type="number" name="novo_valor" placeholder="CLPS por pagina" min="1">
+            <button class = "botao_alterar" type="submit">Alterar</button>
         </form>
+
+        <input type = "text" name = "{{ carregar_clps}}" placeholder = "Procure o IP de um CLP">
 
         <div class="container_clps">
             {% for clp in clps %}
