@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 strong {
-    color: rgb(119, 0, 167);
+    color: rgb(145, 0, 202);
 }
 
 /* --- Navegação / Sidebar --- */
@@ -110,7 +110,7 @@ strong {
 .divs_clp {
     background-color: #16002b;
     border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(20, 1, 36, 0.9);
+    box-shadow: 0 6px 24px rgba(68, 0, 107, 0.9);
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -205,16 +205,6 @@ strong {
 .informacao_clp li {
     margin: 7px 0;
     font-size: 1.08em;
-}
-
-
-/* --- Botão Teste --- */
-.teste {
-    display: inline-block;
-    background-color: rgb(0, 204, 255);
-    color: #fff;
-    border-radius: 20px 20px;
-    font-weight: bold;
 }
 
 /* --- Gráficos --- */
