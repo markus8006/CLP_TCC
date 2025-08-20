@@ -16,11 +16,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 caminho_app = os.path.join(BASE_DIR, "logs\\app.log")
 caminho_coleta = os.path.join(BASE_DIR, "logs\\coleta.log")
 
-print("BASE_DIR:", BASE_DIR)
-print("caminho_coleta:", caminho_coleta)
-print("Arquivo existe?", os.path.exists(caminho_coleta))
-
-
 def carregar_clps(rota : str = "logs\\dados.json") -> list:
     """
     Coleta IPs e Portas abertas do Json\n
@@ -97,7 +92,6 @@ def coleta_de_ips():
 @app.route("/logs")
 def logs_geral():
     logs = log.carregar_logs(caminho=caminho_coleta)  # garantir que é coleta
-    print(f"Quantidade de logs carregados: {len(logs)}")  # debug
     return render_template("logs.html", logs=logs)
 
 
