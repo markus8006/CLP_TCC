@@ -73,18 +73,15 @@ def alterar_clps_pagina():
 
 @app.route("/alterarColeta")
 def alterar_coleta_ips():
-    global status_coleta
-    if status_coleta == "ativado":
-        status_coleta = "desativado"
+    if settings.status_coleta == "ativado":
+        setattr(settings, "status_coleta", "desativado")
     else:
-        status_coleta = "ativado"
+        setattr(settings, "status_coleta", "ativaso")
     return redirect(url_for("coleta_de_ips"))
 
 @app.route("/coletaIps")
 def coleta_de_ips():
-    global status_coleta
-
-    return render_template("coleta.html", status=status_coleta)
+    return render_template("coleta.html", status=settings.status_coleta)
 
 
 
