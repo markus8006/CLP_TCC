@@ -1,0 +1,20 @@
+@import url('base.css');
+
+.container_clps h1, .container_clps h2 {
+    margin-bottom: 10px;
+}
+.status_online {
+    color: #00ff99;
+}
+.status_offline {
+    color: #ff3b3b;
+}
+.container_clps table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.container_clps th, .container_clps td {
+    border: 1px solid #6e0096;
+    padding: 8px;
+    text-align: center;
+}

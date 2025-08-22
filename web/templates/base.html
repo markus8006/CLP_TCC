@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Minha Aplicação{% endblock %}</title>
+    {% block css %}{% endblock %}
+</head>
+
+
+<body>
+
+    <!-- Sidebar e botão -->
+    <button id="menuBtn" onclick="moveSideBar()">☰</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="#">Home</a>
+        <a href="/coletaIps">Coleta IPs</a>
+        <a href="#">Contact</a>
+        <a href="/logs">Logs</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div id="main" class="main">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% block scripts %} {% endblock %}
+
+</body>
+</html>

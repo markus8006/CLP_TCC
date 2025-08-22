@@ -1,0 +1,12 @@
+@import url('base.css');
+
+.content_logs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.content_logs th, .content_logs td {
+    border: 1px solid #6e0096;
+    padding: 8px;
+    text-align: center;
+}

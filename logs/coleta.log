@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-08-20 16:21:25,403 - INFO - Encontrado: 10.103.177.21
 2025-08-20 16:21:25,404 - INFO - Iniciando escaneamento: 10.103.177.21
 2025-08-20 16:21:25,412 - INFO - Encontrado: 10.190.254.2
@@ -8748,3 +8749,841 @@
 2025-08-22 17:07:17,571 - INFO - Escaneamento finalizado: 166.117.27.6
 2025-08-22 17:07:17,572 - INFO - Escaneamento finalizado: 166.117.27.6
 2025-08-22 17:07:17,573 - INFO - Escaneamento finalizado: 34.120.208.123
+=======
+2025-08-22 16:35:06,772 - INFO - Encontrado: 162.125.1.20
+2025-08-22 16:35:06,789 - INFO - Encontrado: 192.168.18.15
+2025-08-22 16:35:06,799 - INFO - Encontrado: 142.250.78.138
+2025-08-22 16:35:06,837 - INFO - Iniciando escaneamento: 162.125.1.20
+2025-08-22 16:35:06,864 - INFO - Iniciando escaneamento: 192.168.18.15
+2025-08-22 16:35:06,868 - INFO - Iniciando escaneamento: 142.250.78.138
+2025-08-22 16:35:08,074 - INFO - Encontrado: 192.168.18.117
+2025-08-22 16:35:08,083 - INFO - Iniciando escaneamento: 192.168.18.117
+2025-08-22 16:35:08,559 - INFO - Encontrado: 192.168.18.1
+2025-08-22 16:35:08,561 - INFO - Iniciando escaneamento: 192.168.18.1
+2025-08-22 16:35:08,621 - INFO - Encontrado: 187.16.222.90
+2025-08-22 16:35:08,643 - INFO - Iniciando escaneamento: 187.16.222.90
+2025-08-22 16:35:09,572 - INFO - Encontrado: 185.199.109.154
+2025-08-22 16:35:09,578 - INFO - Iniciando escaneamento: 185.199.109.154
+2025-08-22 16:35:11,712 - INFO - Encontrado: 192.168.18.15
+2025-08-22 16:35:11,745 - INFO - Encontrado: 192.168.18.1
+2025-08-22 16:35:11,746 - INFO - Encontrado: 192.168.18.117
+2025-08-22 16:35:11,827 - INFO - Encontrado: 162.125.1.20
+2025-08-22 16:35:11,897 - INFO - Iniciando escaneamento: 192.168.18.15
+2025-08-22 16:35:12,032 - INFO - Iniciando escaneamento: 192.168.18.1
+2025-08-22 16:35:12,152 - INFO - Iniciando escaneamento: 192.168.18.117
+2025-08-22 16:35:12,249 - INFO - Encontrado: 142.250.78.138
+2025-08-22 16:35:12,253 - INFO - Iniciando escaneamento: 162.125.1.20
+2025-08-22 16:35:12,436 - INFO - Encontrado: 20.201.28.151
+2025-08-22 16:35:12,437 - INFO - Iniciando escaneamento: 142.250.78.138
+2025-08-22 16:35:12,561 - INFO - Encontrado: 20.201.28.151
+2025-08-22 16:35:12,595 - INFO - Iniciando escaneamento: 20.201.28.151
+2025-08-22 16:35:12,665 - INFO - Iniciando escaneamento: 20.201.28.151
+2025-08-22 16:35:12,739 - INFO - Encontrado: 185.199.109.154
+2025-08-22 16:35:12,814 - INFO - Iniciando escaneamento: 185.199.109.154
+2025-08-22 16:35:12,947 - INFO - Encontrado: 52.168.117.170
+2025-08-22 16:35:12,960 - INFO - Encontrado: 52.168.117.170
+2025-08-22 16:35:13,102 - INFO - Iniciando escaneamento: 52.168.117.170
+2025-08-22 16:35:13,102 - INFO - Iniciando escaneamento: 52.168.117.170
+2025-08-22 16:35:15,738 - INFO - Encontrado: 187.16.222.90
+2025-08-22 16:35:15,793 - INFO - Iniciando escaneamento: 187.16.222.90
+2025-08-22 16:35:15,800 - INFO - Encontrado: 172.217.30.78
+2025-08-22 16:35:15,823 - INFO - Iniciando escaneamento: 172.217.30.78
+2025-08-22 16:35:15,829 - INFO - Encontrado: 172.217.30.78
+2025-08-22 16:35:15,880 - INFO - Iniciando escaneamento: 172.217.30.78
+2025-08-22 16:35:16,683 - INFO - Encontrado: 20.42.65.91
+2025-08-22 16:35:16,730 - INFO - Encontrado: 20.42.65.91
+2025-08-22 16:35:17,236 - INFO - Portas abertas encontradas em 192.168.18.15: 135, 139, 445
+2025-08-22 16:35:17,242 - INFO - 192.168.18.15: Salvo no json
+2025-08-22 16:35:17,246 - INFO - Escaneamento finalizado: 192.168.18.15
+2025-08-22 16:35:17,246 - INFO - Iniciando escaneamento: 20.42.65.91
+2025-08-22 16:35:19,182 - INFO - Encontrado: 140.82.112.22
+2025-08-22 16:35:19,314 - INFO - Encontrado: 140.82.112.22
+2025-08-22 16:35:21,201 - INFO - Nenhuma porta aberta encontrada em 192.168.18.117.
+2025-08-22 16:35:21,206 - INFO - Escaneamento finalizado: 192.168.18.117
+2025-08-22 16:35:21,222 - INFO - Iniciando escaneamento: 20.42.65.91
+2025-08-22 16:35:22,079 - INFO - Encontrado: 172.217.172.170
+2025-08-22 16:35:22,287 - INFO - Encontrado: 172.217.172.170
+2025-08-22 16:35:22,334 - INFO - Portas abertas encontradas em 192.168.18.1: 53, 80
+2025-08-22 16:35:22,336 - INFO - 192.168.18.1: Salvo no json
+2025-08-22 16:35:22,338 - INFO - Escaneamento finalizado: 192.168.18.1
+2025-08-22 16:35:22,341 - INFO - Iniciando escaneamento: 140.82.112.22
+2025-08-22 16:35:22,775 - INFO - Encontrado: 3.174.83.41
+2025-08-22 16:35:22,985 - INFO - Nenhuma porta aberta encontrada em 192.168.18.117.
+2025-08-22 16:35:22,985 - INFO - Escaneamento finalizado: 192.168.18.117
+2025-08-22 16:35:22,986 - INFO - Iniciando escaneamento: 140.82.112.22
+2025-08-22 16:35:23,041 - INFO - Encontrado: 3.174.83.41
+2025-08-22 16:35:23,126 - INFO - Encontrado: 140.82.114.22
+2025-08-22 16:35:23,490 - INFO - Encontrado: 140.82.114.22
+2025-08-22 16:35:24,859 - INFO - Portas abertas encontradas em 192.168.18.1: 53, 80
+2025-08-22 16:35:24,896 - INFO - 192.168.18.1: Salvo no json
+2025-08-22 16:35:24,903 - INFO - Escaneamento finalizado: 192.168.18.1
+2025-08-22 16:35:24,908 - INFO - Iniciando escaneamento: 172.217.172.170
+2025-08-22 16:35:29,699 - INFO - Portas abertas encontradas em 142.250.78.138: 80, 443
+2025-08-22 16:35:29,713 - INFO - 142.250.78.138: Salvo no json
+2025-08-22 16:35:29,714 - INFO - Escaneamento finalizado: 142.250.78.138
+2025-08-22 16:35:29,714 - INFO - Iniciando escaneamento: 3.174.83.41
+2025-08-22 16:35:29,911 - INFO - Portas abertas encontradas em 185.199.109.154: 80, 443
+2025-08-22 16:35:29,944 - INFO - 185.199.109.154: Salvo no json
+2025-08-22 16:35:29,948 - INFO - Escaneamento finalizado: 185.199.109.154
+2025-08-22 16:35:29,962 - INFO - Iniciando escaneamento: 172.217.172.170
+2025-08-22 16:35:30,559 - INFO - Portas abertas encontradas em 20.201.28.151: 22, 80, 443
+2025-08-22 16:35:30,561 - INFO - 20.201.28.151: Salvo no json
+2025-08-22 16:35:30,564 - INFO - Escaneamento finalizado: 20.201.28.151
+2025-08-22 16:35:30,565 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-22 16:35:31,140 - INFO - Portas abertas encontradas em 172.217.30.78: 80, 443
+2025-08-22 16:35:31,146 - INFO - 172.217.30.78: Salvo no json
+2025-08-22 16:35:31,148 - INFO - Escaneamento finalizado: 172.217.30.78
+2025-08-22 16:35:31,149 - INFO - Iniciando escaneamento: 3.174.83.41
+2025-08-22 16:35:33,905 - INFO - Portas abertas encontradas em 185.199.109.154: 80, 443
+2025-08-22 16:35:33,906 - INFO - 185.199.109.154: Salvo no json
+2025-08-22 16:35:33,907 - INFO - Escaneamento finalizado: 185.199.109.154
+2025-08-22 16:35:35,891 - INFO - Nenhuma porta aberta encontrada em 187.16.222.90.
+2025-08-22 16:35:35,907 - INFO - Escaneamento finalizado: 187.16.222.90
+2025-08-22 16:35:36,157 - INFO - Portas abertas encontradas em 172.217.30.78: 80, 443
+2025-08-22 16:35:36,196 - INFO - 172.217.30.78: Salvo no json
+2025-08-22 16:35:36,213 - INFO - Escaneamento finalizado: 172.217.30.78
+2025-08-22 16:35:37,015 - INFO - Portas abertas encontradas em 52.168.117.170: 443
+2025-08-22 16:35:37,027 - INFO - 52.168.117.170: Salvo no json
+2025-08-22 16:35:37,040 - INFO - Escaneamento finalizado: 52.168.117.170
+2025-08-22 16:35:37,048 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-22 16:35:38,194 - INFO - Portas abertas encontradas em 172.217.172.170: 80, 443
+2025-08-22 16:35:38,195 - INFO - 172.217.172.170: Salvo no json
+2025-08-22 16:35:38,196 - INFO - Escaneamento finalizado: 172.217.172.170
+2025-08-22 16:35:38,732 - INFO - Portas abertas encontradas em 162.125.1.20: 80, 443
+2025-08-22 16:35:38,733 - INFO - 162.125.1.20: Salvo no json
+2025-08-22 16:35:38,734 - INFO - Escaneamento finalizado: 162.125.1.20
+2025-08-22 16:35:39,003 - INFO - Portas abertas encontradas em 52.168.117.170: 443
+2025-08-22 16:35:39,031 - INFO - 52.168.117.170: Salvo no json
+2025-08-22 16:35:39,035 - INFO - Escaneamento finalizado: 52.168.117.170
+2025-08-22 16:35:39,104 - INFO - Portas abertas encontradas em 20.201.28.151: 22, 80, 443
+2025-08-22 16:35:39,118 - INFO - 20.201.28.151: Salvo no json
+2025-08-22 16:35:39,119 - INFO - Escaneamento finalizado: 20.201.28.151
+2025-08-22 16:35:40,015 - INFO - Portas abertas encontradas em 3.174.83.41: 80, 443
+2025-08-22 16:35:40,034 - INFO - Portas abertas encontradas em 172.217.172.170: 80, 443
+2025-08-22 16:35:40,039 - INFO - 172.217.172.170: Salvo no json
+2025-08-22 16:35:40,044 - INFO - Escaneamento finalizado: 3.174.83.41
+2025-08-22 16:35:40,056 - INFO - Escaneamento finalizado: 172.217.172.170
+2025-08-22 16:35:40,450 - INFO - Portas abertas encontradas em 3.174.83.41: 80, 443
+2025-08-22 16:35:40,459 - INFO - 3.174.83.41: Salvo no json
+2025-08-22 16:35:40,473 - INFO - Escaneamento finalizado: 3.174.83.41
+2025-08-22 16:35:44,598 - INFO - Portas abertas encontradas em 20.42.65.91: 443
+2025-08-22 16:35:44,605 - INFO - 20.42.65.91: Salvo no json
+2025-08-22 16:35:44,607 - INFO - Escaneamento finalizado: 20.42.65.91
+2025-08-22 16:35:44,796 - INFO - Portas abertas encontradas em 20.42.65.91: 443
+2025-08-22 16:35:44,798 - INFO - 20.42.65.91: Salvo no json
+2025-08-22 16:35:44,799 - INFO - Escaneamento finalizado: 20.42.65.91
+2025-08-22 16:35:45,227 - INFO - Nenhuma porta aberta encontrada em 187.16.222.90.
+2025-08-22 16:35:45,230 - INFO - Escaneamento finalizado: 187.16.222.90
+2025-08-22 16:35:49,784 - INFO - Encontrado: 191.237.206.80
+2025-08-22 16:35:49,784 - INFO - Iniciando escaneamento: 191.237.206.80
+2025-08-22 16:35:49,841 - INFO - Encontrado: 191.237.206.80
+2025-08-22 16:35:49,841 - INFO - Iniciando escaneamento: 191.237.206.80
+2025-08-22 16:35:50,808 - INFO - Encontrado: 2.20.139.80
+2025-08-22 16:35:50,808 - INFO - Iniciando escaneamento: 2.20.139.80
+2025-08-22 16:35:50,850 - INFO - Encontrado: 2.20.139.80
+2025-08-22 16:35:50,851 - INFO - Iniciando escaneamento: 2.20.139.80
+2025-08-22 16:35:51,119 - INFO - Encontrado: 140.82.113.26
+2025-08-22 16:35:51,119 - INFO - Iniciando escaneamento: 140.82.113.26
+2025-08-22 16:35:51,194 - INFO - Encontrado: 140.82.113.26
+2025-08-22 16:35:51,195 - INFO - Iniciando escaneamento: 140.82.113.26
+2025-08-22 16:35:51,646 - INFO - Encontrado: 192.168.18.209
+2025-08-22 16:35:51,647 - INFO - Iniciando escaneamento: 192.168.18.209
+2025-08-22 16:35:51,651 - INFO - Encontrado: 192.168.18.209
+2025-08-22 16:35:51,654 - INFO - Iniciando escaneamento: 192.168.18.209
+2025-08-22 16:35:53,149 - INFO - Portas abertas encontradas em 140.82.112.22: 80, 443
+2025-08-22 16:35:53,151 - INFO - 140.82.112.22: Salvo no json
+2025-08-22 16:35:53,155 - INFO - Escaneamento finalizado: 140.82.112.22
+2025-08-22 16:35:54,581 - INFO - Portas abertas encontradas em 140.82.114.22: 80, 443
+2025-08-22 16:35:54,582 - INFO - 140.82.114.22: Salvo no json
+2025-08-22 16:35:54,584 - INFO - Escaneamento finalizado: 140.82.114.22
+2025-08-22 16:35:55,841 - INFO - Portas abertas encontradas em 140.82.114.22: 80, 443
+2025-08-22 16:35:55,842 - INFO - 140.82.114.22: Salvo no json
+2025-08-22 16:35:55,846 - INFO - Escaneamento finalizado: 140.82.114.22
+2025-08-22 16:36:00,018 - INFO - Portas abertas encontradas em 191.237.206.80: 80, 443
+2025-08-22 16:36:00,025 - INFO - 191.237.206.80: Salvo no json
+2025-08-22 16:36:00,031 - INFO - Escaneamento finalizado: 191.237.206.80
+2025-08-22 16:36:00,151 - INFO - Portas abertas encontradas em 191.237.206.80: 80, 443
+2025-08-22 16:36:00,200 - INFO - 191.237.206.80: Salvo no json
+2025-08-22 16:36:00,261 - INFO - Escaneamento finalizado: 191.237.206.80
+2025-08-22 16:36:00,370 - INFO - Portas abertas encontradas em 2.20.139.80: 80, 443
+2025-08-22 16:36:00,387 - INFO - 2.20.139.80: Salvo no json
+2025-08-22 16:36:00,388 - INFO - Escaneamento finalizado: 2.20.139.80
+2025-08-22 16:36:03,895 - INFO - Portas abertas encontradas em 2.20.139.80: 80, 443
+2025-08-22 16:36:03,901 - INFO - 2.20.139.80: Salvo no json
+2025-08-22 16:36:03,907 - INFO - Escaneamento finalizado: 2.20.139.80
+2025-08-22 16:36:04,557 - INFO - Portas abertas encontradas em 140.82.112.22: 80, 443
+2025-08-22 16:36:04,563 - INFO - 140.82.112.22: Salvo no json
+2025-08-22 16:36:04,585 - INFO - Escaneamento finalizado: 140.82.112.22
+2025-08-22 16:36:05,978 - INFO - Portas abertas encontradas em 140.82.113.26: 443
+2025-08-22 16:36:05,979 - INFO - 140.82.113.26: Salvo no json
+2025-08-22 16:36:05,980 - INFO - Escaneamento finalizado: 140.82.113.26
+2025-08-22 16:36:08,277 - INFO - Encontrado: 140.82.113.21
+2025-08-22 16:36:08,278 - INFO - Iniciando escaneamento: 140.82.113.21
+2025-08-22 16:36:08,281 - INFO - Encontrado: 140.82.113.21
+2025-08-22 16:36:08,281 - INFO - Iniciando escaneamento: 140.82.113.21
+2025-08-22 16:36:08,824 - INFO - Portas abertas encontradas em 140.82.113.26: 443
+2025-08-22 16:36:08,828 - INFO - 140.82.113.26: Salvo no json
+2025-08-22 16:36:08,829 - INFO - Escaneamento finalizado: 140.82.113.26
+2025-08-22 16:36:17,185 - INFO - Encontrado: 34.141.96.57
+2025-08-22 16:36:17,186 - INFO - Iniciando escaneamento: 34.141.96.57
+2025-08-22 16:36:17,738 - INFO - Nenhuma porta aberta encontrada em 192.168.18.209.
+2025-08-22 16:36:17,738 - INFO - Escaneamento finalizado: 192.168.18.209
+2025-08-22 16:36:17,853 - INFO - Nenhuma porta aberta encontrada em 192.168.18.209.
+2025-08-22 16:36:17,854 - INFO - Escaneamento finalizado: 192.168.18.209
+2025-08-22 16:36:24,646 - INFO - Portas abertas encontradas em 140.82.113.21: 80, 443
+2025-08-22 16:36:24,649 - INFO - 140.82.113.21: Salvo no json
+2025-08-22 16:36:24,651 - INFO - Escaneamento finalizado: 140.82.113.21
+2025-08-22 16:36:24,853 - INFO - Portas abertas encontradas em 140.82.113.21: 80, 443
+2025-08-22 16:36:24,856 - INFO - 140.82.113.21: Salvo no json
+2025-08-22 16:36:24,858 - INFO - Escaneamento finalizado: 140.82.113.21
+2025-08-22 16:36:34,484 - INFO - Portas abertas encontradas em 34.141.96.57: 80, 443
+2025-08-22 16:36:34,486 - INFO - 34.141.96.57: Salvo no json
+2025-08-22 16:36:34,487 - INFO - Escaneamento finalizado: 34.141.96.57
+2025-08-22 16:36:34,627 - INFO - Portas abertas encontradas em 34.141.96.57: 80, 443
+2025-08-22 16:36:34,628 - INFO - 34.141.96.57: Salvo no json
+2025-08-22 16:36:34,629 - INFO - Escaneamento finalizado: 34.141.96.57
+2025-08-22 16:37:18,109 - INFO - Encontrado: 20.75.60.91
+2025-08-22 16:37:18,110 - INFO - Iniciando escaneamento: 20.75.60.91
+2025-08-22 16:37:18,110 - INFO - Encontrado: 20.75.60.91
+2025-08-22 16:37:18,110 - INFO - Iniciando escaneamento: 20.75.60.91
+2025-08-22 16:37:20,796 - INFO - Encontrado: 20.96.153.111
+2025-08-22 16:37:20,797 - INFO - Iniciando escaneamento: 20.96.153.111
+2025-08-22 16:37:20,797 - INFO - Encontrado: 20.96.153.111
+2025-08-22 16:37:20,797 - INFO - Iniciando escaneamento: 20.96.153.111
+2025-08-22 16:37:26,156 - INFO - Encontrado: 20.22.113.133
+2025-08-22 16:37:26,157 - INFO - Iniciando escaneamento: 20.22.113.133
+2025-08-22 16:37:26,157 - INFO - Encontrado: 20.22.113.133
+2025-08-22 16:37:26,157 - INFO - Iniciando escaneamento: 20.22.113.133
+2025-08-22 16:37:26,524 - INFO - Encontrado: 204.79.197.203
+2025-08-22 16:37:26,524 - INFO - Iniciando escaneamento: 204.79.197.203
+2025-08-22 16:37:26,526 - INFO - Encontrado: 204.79.197.203
+2025-08-22 16:37:26,526 - INFO - Iniciando escaneamento: 204.79.197.203
+2025-08-22 16:37:26,850 - INFO - Encontrado: 20.189.173.2
+2025-08-22 16:37:26,850 - INFO - Iniciando escaneamento: 20.189.173.2
+2025-08-22 16:37:26,853 - INFO - Encontrado: 20.189.173.2
+2025-08-22 16:37:26,853 - INFO - Iniciando escaneamento: 20.189.173.2
+2025-08-22 16:37:28,262 - INFO - Encontrado: 20.190.173.131
+2025-08-22 16:37:28,262 - INFO - Iniciando escaneamento: 20.190.173.131
+2025-08-22 16:37:28,265 - INFO - Encontrado: 20.190.173.131
+2025-08-22 16:37:28,265 - INFO - Iniciando escaneamento: 20.190.173.131
+2025-08-22 16:37:29,138 - INFO - Encontrado: 20.115.178.254
+2025-08-22 16:37:29,138 - INFO - Iniciando escaneamento: 20.115.178.254
+2025-08-22 16:37:29,141 - INFO - Encontrado: 20.115.178.254
+2025-08-22 16:37:29,141 - INFO - Iniciando escaneamento: 20.115.178.254
+2025-08-22 16:37:39,733 - INFO - Portas abertas encontradas em 20.75.60.91: 80, 443
+2025-08-22 16:37:39,736 - INFO - 20.75.60.91: Salvo no json
+2025-08-22 16:37:39,742 - INFO - Escaneamento finalizado: 20.75.60.91
+2025-08-22 16:37:40,209 - INFO - Portas abertas encontradas em 204.79.197.203: 80, 443
+2025-08-22 16:37:40,213 - INFO - 204.79.197.203: Salvo no json
+2025-08-22 16:37:40,218 - INFO - Escaneamento finalizado: 204.79.197.203
+2025-08-22 16:37:40,415 - INFO - Portas abertas encontradas em 204.79.197.203: 80, 443
+2025-08-22 16:37:40,421 - INFO - 204.79.197.203: Salvo no json
+2025-08-22 16:37:40,424 - INFO - Escaneamento finalizado: 204.79.197.203
+2025-08-22 16:37:40,428 - INFO - Portas abertas encontradas em 20.190.173.131: 80, 443
+2025-08-22 16:37:40,446 - INFO - 20.190.173.131: Salvo no json
+2025-08-22 16:37:40,454 - INFO - Portas abertas encontradas em 20.190.173.131: 80, 443
+2025-08-22 16:37:40,455 - INFO - Escaneamento finalizado: 20.190.173.131
+2025-08-22 16:37:40,468 - INFO - 20.190.173.131: Salvo no json
+2025-08-22 16:37:40,470 - INFO - Escaneamento finalizado: 20.190.173.131
+2025-08-22 16:37:40,596 - INFO - Portas abertas encontradas em 20.75.60.91: 80, 443
+2025-08-22 16:37:40,616 - INFO - 20.75.60.91: Salvo no json
+2025-08-22 16:37:40,636 - INFO - Escaneamento finalizado: 20.75.60.91
+2025-08-22 16:37:44,429 - INFO - Portas abertas encontradas em 20.96.153.111: 80, 443
+2025-08-22 16:37:44,432 - INFO - 20.96.153.111: Salvo no json
+2025-08-22 16:37:44,444 - INFO - Escaneamento finalizado: 20.96.153.111
+2025-08-22 16:37:45,180 - INFO - Portas abertas encontradas em 20.96.153.111: 80, 443
+2025-08-22 16:37:45,194 - INFO - 20.96.153.111: Salvo no json
+2025-08-22 16:37:45,225 - INFO - Escaneamento finalizado: 20.96.153.111
+2025-08-22 16:37:46,228 - INFO - Portas abertas encontradas em 20.22.113.133: 80, 443
+2025-08-22 16:37:46,235 - INFO - 20.22.113.133: Salvo no json
+2025-08-22 16:37:46,254 - INFO - Escaneamento finalizado: 20.22.113.133
+2025-08-22 16:37:48,667 - INFO - Encontrado: 20.189.173.25
+2025-08-22 16:37:48,667 - INFO - Iniciando escaneamento: 20.189.173.25
+2025-08-22 16:37:48,699 - INFO - Portas abertas encontradas em 20.189.173.2: 443
+2025-08-22 16:37:48,709 - INFO - 20.189.173.2: Salvo no json
+2025-08-22 16:37:48,720 - INFO - Escaneamento finalizado: 20.189.173.2
+2025-08-22 16:37:48,833 - INFO - Encontrado: 20.189.173.25
+2025-08-22 16:37:48,833 - INFO - Iniciando escaneamento: 20.189.173.25
+2025-08-22 16:37:48,981 - INFO - Escaneamento finalizado: 20.189.173.25
+2025-08-22 16:37:48,993 - INFO - Escaneamento finalizado: 20.189.173.2
+2025-08-22 16:37:49,027 - INFO - Escaneamento finalizado: 20.115.178.254
+2025-08-22 16:37:49,027 - INFO - Escaneamento finalizado: 20.189.173.25
+2025-08-22 16:37:49,035 - INFO - Escaneamento finalizado: 20.22.113.133
+2025-08-22 16:37:49,035 - INFO - Escaneamento finalizado: 20.115.178.254
+2025-08-22 16:37:49,436 - INFO - Portas abertas encontradas em 192.168.18.15: 135, 139, 445
+2025-08-22 16:37:49,436 - INFO - Portas abertas encontradas em 142.250.78.138: 80, 443
+2025-08-22 16:37:49,450 - INFO - Portas abertas encontradas em 162.125.1.20: 80, 443
+2025-08-22 16:37:49,460 - INFO - 142.250.78.138: Salvo no json
+2025-08-22 16:37:49,460 - INFO - 192.168.18.15: Salvo no json
+2025-08-22 16:37:49,460 - INFO - 162.125.1.20: Salvo no json
+2025-08-22 16:37:49,467 - INFO - Escaneamento finalizado: 192.168.18.15
+2025-08-22 16:37:49,468 - INFO - Escaneamento finalizado: 142.250.78.138
+2025-08-22 16:37:49,468 - INFO - Escaneamento finalizado: 162.125.1.20
+2025-08-22 16:37:54,946 - INFO - Encontrado: 20.189.173.2
+2025-08-22 16:37:54,947 - INFO - Iniciando escaneamento: 20.189.173.2
+2025-08-22 16:37:55,354 - INFO - Encontrado: 192.168.18.15
+2025-08-22 16:37:55,355 - INFO - Iniciando escaneamento: 192.168.18.15
+2025-08-22 16:37:55,552 - INFO - Encontrado: 20.42.65.85
+2025-08-22 16:37:55,559 - INFO - Iniciando escaneamento: 20.42.65.85
+2025-08-22 16:37:55,679 - INFO - Encontrado: 192.168.18.1
+2025-08-22 16:37:55,714 - INFO - Iniciando escaneamento: 192.168.18.1
+2025-08-22 16:37:55,937 - INFO - Encontrado: 20.22.113.133
+2025-08-22 16:37:55,970 - INFO - Iniciando escaneamento: 20.22.113.133
+2025-08-22 16:37:56,194 - INFO - Encontrado: 192.168.18.117
+2025-08-22 16:37:56,210 - INFO - Iniciando escaneamento: 192.168.18.117
+2025-08-22 16:37:56,777 - INFO - Encontrado: 142.250.78.138
+2025-08-22 16:37:56,780 - INFO - Iniciando escaneamento: 142.250.78.138
+2025-08-22 16:37:57,211 - INFO - Portas abertas encontradas em 192.168.18.15: 135, 139, 445
+2025-08-22 16:37:57,212 - INFO - 192.168.18.15: Salvo no json
+2025-08-22 16:37:57,213 - INFO - Escaneamento finalizado: 192.168.18.15
+2025-08-22 16:37:57,367 - INFO - Encontrado: 187.16.222.90
+2025-08-22 16:37:57,368 - INFO - Iniciando escaneamento: 187.16.222.90
+2025-08-22 16:37:57,687 - INFO - Encontrado: 192.168.18.15
+2025-08-22 16:37:57,689 - INFO - Encontrado: 192.168.18.117
+2025-08-22 16:37:57,692 - INFO - Iniciando escaneamento: 192.168.18.15
+2025-08-22 16:37:57,697 - INFO - Iniciando escaneamento: 192.168.18.117
+2025-08-22 16:37:57,754 - INFO - Encontrado: 20.42.65.85
+2025-08-22 16:37:57,816 - INFO - Iniciando escaneamento: 20.42.65.85
+2025-08-22 16:37:57,881 - INFO - Encontrado: 20.22.113.133
+2025-08-22 16:37:57,960 - INFO - Iniciando escaneamento: 20.22.113.133
+2025-08-22 16:37:58,063 - INFO - Encontrado: 187.16.222.90
+2025-08-22 16:37:58,075 - INFO - Iniciando escaneamento: 187.16.222.90
+2025-08-22 16:37:58,218 - INFO - Encontrado: 192.168.18.1
+2025-08-22 16:37:58,239 - INFO - Iniciando escaneamento: 192.168.18.1
+2025-08-22 16:37:58,381 - INFO - Encontrado: 20.189.173.2
+2025-08-22 16:37:58,428 - INFO - Iniciando escaneamento: 20.189.173.2
+2025-08-22 16:37:58,801 - INFO - Encontrado: 142.250.78.138
+2025-08-22 16:37:58,855 - INFO - Iniciando escaneamento: 142.250.78.138
+2025-08-22 16:38:00,552 - INFO - Portas abertas encontradas em 192.168.18.15: 135, 139, 445
+2025-08-22 16:38:00,578 - INFO - 192.168.18.15: Salvo no json
+2025-08-22 16:38:00,590 - INFO - Escaneamento finalizado: 192.168.18.15
+2025-08-22 16:38:03,156 - INFO - Nenhuma porta aberta encontrada em 192.168.18.117.
+2025-08-22 16:38:03,164 - INFO - Escaneamento finalizado: 192.168.18.117
+2025-08-22 16:38:03,423 - INFO - Nenhuma porta aberta encontrada em 192.168.18.117.
+2025-08-22 16:38:03,423 - INFO - Escaneamento finalizado: 192.168.18.117
+2025-08-22 16:38:04,054 - INFO - Portas abertas encontradas em 192.168.18.1: 53, 80
+2025-08-22 16:38:04,067 - INFO - 192.168.18.1: Salvo no json
+2025-08-22 16:38:04,078 - INFO - Escaneamento finalizado: 192.168.18.1
+2025-08-22 16:38:05,331 - INFO - Portas abertas encontradas em 192.168.18.1: 53, 80
+2025-08-22 16:38:05,332 - INFO - 192.168.18.1: Salvo no json
+2025-08-22 16:38:05,333 - INFO - Escaneamento finalizado: 192.168.18.1
+2025-08-22 16:38:07,487 - INFO - Portas abertas encontradas em 142.250.78.138: 80, 443
+2025-08-22 16:38:07,493 - INFO - 142.250.78.138: Salvo no json
+2025-08-22 16:38:07,494 - INFO - Escaneamento finalizado: 142.250.78.138
+2025-08-22 16:38:08,063 - INFO - Portas abertas encontradas em 142.250.78.138: 80, 443
+2025-08-22 16:38:08,097 - INFO - 142.250.78.138: Salvo no json
+2025-08-22 16:38:08,145 - INFO - Escaneamento finalizado: 142.250.78.138
+2025-08-22 16:38:10,607 - INFO - Nenhuma porta aberta encontrada em 187.16.222.90.
+2025-08-22 16:38:10,614 - INFO - Escaneamento finalizado: 187.16.222.90
+2025-08-22 16:38:12,318 - INFO - Encontrado: 2.20.139.80
+2025-08-22 16:38:12,319 - INFO - Iniciando escaneamento: 2.20.139.80
+2025-08-22 16:38:12,684 - INFO - Encontrado: 2.20.139.80
+2025-08-22 16:38:12,698 - INFO - Iniciando escaneamento: 2.20.139.80
+2025-08-22 16:38:15,468 - INFO - Encontrado: 140.82.112.22
+2025-08-22 16:38:15,469 - INFO - Iniciando escaneamento: 140.82.112.22
+2025-08-22 16:38:15,835 - INFO - Encontrado: 140.82.112.22
+2025-08-22 16:38:15,835 - INFO - Iniciando escaneamento: 140.82.112.22
+2025-08-22 16:38:16,704 - INFO - Portas abertas encontradas em 20.42.65.85: 443
+2025-08-22 16:38:16,724 - INFO - 20.42.65.85: Salvo no json
+2025-08-22 16:38:16,728 - INFO - Escaneamento finalizado: 20.42.65.85
+2025-08-22 16:38:17,275 - INFO - Encontrado: 104.208.16.91
+2025-08-22 16:38:17,275 - INFO - Iniciando escaneamento: 104.208.16.91
+2025-08-22 16:38:17,573 - INFO - Encontrado: 104.208.16.91
+2025-08-22 16:38:17,581 - INFO - Iniciando escaneamento: 104.208.16.91
+2025-08-22 16:38:18,822 - INFO - Portas abertas encontradas em 20.22.113.133: 80, 443
+2025-08-22 16:38:18,833 - INFO - 20.22.113.133: Salvo no json
+2025-08-22 16:38:18,838 - INFO - Escaneamento finalizado: 20.22.113.133
+2025-08-22 16:38:18,903 - INFO - Encontrado: 34.141.96.57
+2025-08-22 16:38:18,903 - INFO - Iniciando escaneamento: 34.141.96.57
+2025-08-22 16:38:19,257 - INFO - Encontrado: 34.141.96.57
+2025-08-22 16:38:19,258 - INFO - Iniciando escaneamento: 34.141.96.57
+2025-08-22 16:38:19,578 - INFO - Portas abertas encontradas em 20.22.113.133: 80, 443
+2025-08-22 16:38:19,589 - INFO - 20.22.113.133: Salvo no json
+2025-08-22 16:38:19,609 - INFO - Escaneamento finalizado: 20.22.113.133
+2025-08-22 16:38:21,200 - INFO - Portas abertas encontradas em 20.42.65.85: 443
+2025-08-22 16:38:21,208 - INFO - 20.42.65.85: Salvo no json
+2025-08-22 16:38:21,209 - INFO - Escaneamento finalizado: 20.42.65.85
+2025-08-22 16:38:23,789 - INFO - Encontrado: 20.42.65.84
+2025-08-22 16:38:23,789 - INFO - Iniciando escaneamento: 20.42.65.84
+2025-08-22 16:38:24,724 - INFO - Encontrado: 20.42.65.84
+2025-08-22 16:38:24,724 - INFO - Iniciando escaneamento: 20.42.65.84
+2025-08-22 16:38:28,593 - INFO - Encontrado: 20.42.65.91
+2025-08-22 16:38:28,593 - INFO - Iniciando escaneamento: 20.42.65.91
+2025-08-22 16:38:28,801 - INFO - Encontrado: 20.42.65.91
+2025-08-22 16:38:28,804 - INFO - Iniciando escaneamento: 20.42.65.91
+2025-08-22 16:38:29,213 - INFO - Portas abertas encontradas em 20.189.173.2: 443
+2025-08-22 16:38:29,223 - INFO - 20.189.173.2: Salvo no json
+2025-08-22 16:38:29,233 - INFO - Escaneamento finalizado: 20.189.173.2
+2025-08-22 16:38:30,420 - INFO - Encontrado: 140.82.113.26
+2025-08-22 16:38:30,421 - INFO - Iniciando escaneamento: 140.82.113.26
+2025-08-22 16:38:30,562 - INFO - Encontrado: 140.82.113.26
+2025-08-22 16:38:30,563 - INFO - Iniciando escaneamento: 140.82.113.26
+2025-08-22 16:38:31,359 - INFO - Nenhuma porta aberta encontrada em 187.16.222.90.
+2025-08-22 16:38:31,361 - INFO - Escaneamento finalizado: 187.16.222.90
+2025-08-22 16:38:31,799 - INFO - Portas abertas encontradas em 2.20.139.80: 80, 443
+2025-08-22 16:38:31,802 - INFO - 2.20.139.80: Salvo no json
+2025-08-22 16:38:31,803 - INFO - Escaneamento finalizado: 2.20.139.80
+2025-08-22 16:38:31,838 - INFO - Portas abertas encontradas em 2.20.139.80: 80, 443
+2025-08-22 16:38:31,854 - INFO - 2.20.139.80: Salvo no json
+2025-08-22 16:38:31,864 - INFO - Escaneamento finalizado: 2.20.139.80
+2025-08-22 16:38:33,418 - INFO - Encontrado: 204.79.197.203
+2025-08-22 16:38:33,421 - INFO - Iniciando escaneamento: 204.79.197.203
+2025-08-22 16:38:33,507 - INFO - Encontrado: 204.79.197.203
+2025-08-22 16:38:33,507 - INFO - Iniciando escaneamento: 204.79.197.203
+2025-08-22 16:38:34,434 - INFO - Portas abertas encontradas em 20.189.173.2: 443
+2025-08-22 16:38:34,436 - INFO - 20.189.173.2: Salvo no json
+2025-08-22 16:38:34,437 - INFO - Escaneamento finalizado: 20.189.173.2
+2025-08-22 16:38:37,017 - INFO - Portas abertas encontradas em 140.82.112.22: 80, 443
+2025-08-22 16:38:37,038 - INFO - 140.82.112.22: Salvo no json
+2025-08-22 16:38:37,053 - INFO - Escaneamento finalizado: 140.82.112.22
+2025-08-22 16:38:38,003 - INFO - Portas abertas encontradas em 104.208.16.91: 443
+2025-08-22 16:38:38,012 - INFO - 104.208.16.91: Salvo no json
+2025-08-22 16:38:38,019 - INFO - Escaneamento finalizado: 104.208.16.91
+2025-08-22 16:38:39,166 - INFO - Portas abertas encontradas em 140.82.112.22: 80, 443
+2025-08-22 16:38:39,173 - INFO - 140.82.112.22: Salvo no json
+2025-08-22 16:38:39,185 - INFO - Escaneamento finalizado: 140.82.112.22
+2025-08-22 16:38:39,991 - INFO - Portas abertas encontradas em 104.208.16.91: 443
+2025-08-22 16:38:39,995 - INFO - 104.208.16.91: Salvo no json
+2025-08-22 16:38:40,000 - INFO - Escaneamento finalizado: 104.208.16.91
+2025-08-22 16:38:40,909 - INFO - Portas abertas encontradas em 204.79.197.203: 80, 443
+2025-08-22 16:38:40,941 - INFO - 204.79.197.203: Salvo no json
+2025-08-22 16:38:40,958 - INFO - Escaneamento finalizado: 204.79.197.203
+2025-08-22 16:38:41,433 - INFO - Portas abertas encontradas em 204.79.197.203: 80, 443
+2025-08-22 16:38:41,449 - INFO - 204.79.197.203: Salvo no json
+2025-08-22 16:38:41,458 - INFO - Escaneamento finalizado: 204.79.197.203
+2025-08-22 16:38:41,842 - INFO - Encontrado: 140.82.114.22
+2025-08-22 16:38:41,843 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-22 16:38:42,073 - INFO - Encontrado: 140.82.114.22
+2025-08-22 16:38:42,074 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-22 16:38:44,661 - INFO - Portas abertas encontradas em 20.42.65.84: 443
+2025-08-22 16:38:44,669 - INFO - Portas abertas encontradas em 140.82.113.26: 443
+2025-08-22 16:38:44,674 - INFO - 20.42.65.84: Salvo no json
+2025-08-22 16:38:44,677 - INFO - Escaneamento finalizado: 20.42.65.84
+2025-08-22 16:38:44,679 - INFO - 140.82.113.26: Salvo no json
+2025-08-22 16:38:44,682 - INFO - Escaneamento finalizado: 140.82.113.26
+2025-08-22 16:38:45,794 - INFO - Portas abertas encontradas em 20.42.65.84: 443
+2025-08-22 16:38:45,797 - INFO - 20.42.65.84: Salvo no json
+2025-08-22 16:38:45,813 - INFO - Escaneamento finalizado: 20.42.65.84
+2025-08-22 16:38:46,323 - INFO - Portas abertas encontradas em 20.42.65.91: 443
+2025-08-22 16:38:46,354 - INFO - 20.42.65.91: Salvo no json
+2025-08-22 16:38:46,360 - INFO - Escaneamento finalizado: 20.42.65.91
+2025-08-22 16:38:46,946 - INFO - Portas abertas encontradas em 140.82.113.26: 443
+2025-08-22 16:38:46,957 - INFO - 140.82.113.26: Salvo no json
+2025-08-22 16:38:46,962 - INFO - Escaneamento finalizado: 140.82.113.26
+2025-08-22 16:38:47,746 - INFO - Portas abertas encontradas em 20.42.65.91: 443
+2025-08-22 16:38:47,808 - INFO - 20.42.65.91: Salvo no json
+2025-08-22 16:38:47,830 - INFO - Escaneamento finalizado: 20.42.65.91
+2025-08-22 16:38:51,252 - INFO - Portas abertas encontradas em 34.141.96.57: 80, 443
+2025-08-22 16:38:51,266 - INFO - 34.141.96.57: Salvo no json
+2025-08-22 16:38:51,275 - INFO - Escaneamento finalizado: 34.141.96.57
+2025-08-22 16:38:51,299 - INFO - Portas abertas encontradas em 34.141.96.57: 80, 443
+2025-08-22 16:38:51,306 - INFO - 34.141.96.57: Salvo no json
+2025-08-22 16:38:51,314 - INFO - Escaneamento finalizado: 34.141.96.57
+2025-08-22 16:38:58,048 - INFO - Portas abertas encontradas em 140.82.114.22: 80, 443
+2025-08-22 16:38:58,049 - INFO - 140.82.114.22: Salvo no json
+2025-08-22 16:38:58,050 - INFO - Escaneamento finalizado: 140.82.114.22
+2025-08-22 16:38:58,140 - INFO - Portas abertas encontradas em 140.82.114.22: 80, 443
+2025-08-22 16:38:58,143 - INFO - 140.82.114.22: Salvo no json
+2025-08-22 16:38:58,145 - INFO - Escaneamento finalizado: 140.82.114.22
+2025-08-22 16:39:16,068 - INFO - Encontrado: 20.115.178.254
+2025-08-22 16:39:16,068 - INFO - Encontrado: 20.115.178.254
+2025-08-22 16:39:16,068 - INFO - Iniciando escaneamento: 20.115.178.254
+2025-08-22 16:39:16,068 - INFO - Iniciando escaneamento: 20.115.178.254
+2025-08-22 16:39:18,216 - INFO - Encontrado: 20.190.173.131
+2025-08-22 16:39:18,216 - INFO - Encontrado: 20.190.173.131
+2025-08-22 16:39:18,216 - INFO - Iniciando escaneamento: 20.190.173.131
+2025-08-22 16:39:24,367 - INFO - Portas abertas encontradas em 20.190.173.131: 80, 443
+2025-08-22 16:39:24,368 - INFO - 20.190.173.131: Salvo no json
+2025-08-22 16:39:24,369 - INFO - Escaneamento finalizado: 20.190.173.131
+2025-08-22 16:39:24,678 - INFO - Portas abertas encontradas em 20.190.173.131: 80, 443
+2025-08-22 16:39:24,685 - INFO - 20.190.173.131: Salvo no json
+2025-08-22 16:39:24,686 - INFO - Escaneamento finalizado: 20.190.173.131
+2025-08-22 16:39:32,199 - INFO - Portas abertas encontradas em 20.115.178.254: 443
+2025-08-22 16:39:32,200 - INFO - 20.115.178.254: Salvo no json
+2025-08-22 16:39:32,201 - INFO - Escaneamento finalizado: 20.115.178.254
+2025-08-22 16:39:32,293 - INFO - Portas abertas encontradas em 20.115.178.254: 443
+2025-08-22 16:39:32,293 - INFO - 20.115.178.254: Salvo no json
+2025-08-22 16:39:32,294 - INFO - Escaneamento finalizado: 20.115.178.254
+2025-08-22 16:39:49,860 - INFO - Encontrado: 13.68.233.9
+2025-08-22 16:39:49,860 - INFO - Iniciando escaneamento: 13.68.233.9
+2025-08-22 16:40:02,253 - INFO - Portas abertas encontradas em 13.68.233.9: 80, 443
+2025-08-22 16:40:02,254 - INFO - 13.68.233.9: Salvo no json
+2025-08-22 16:40:02,255 - INFO - Escaneamento finalizado: 13.68.233.9
+2025-08-22 16:40:02,303 - INFO - Portas abertas encontradas em 13.68.233.9: 80, 443
+2025-08-22 16:40:02,304 - INFO - 13.68.233.9: Salvo no json
+2025-08-22 16:40:02,305 - INFO - Escaneamento finalizado: 13.68.233.9
+2025-08-22 16:40:05,542 - INFO - Encontrado: 13.107.5.93
+2025-08-22 16:40:05,542 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-22 16:40:05,543 - INFO - Encontrado: 13.107.5.93
+2025-08-22 16:40:05,543 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-22 16:40:06,914 - INFO - Encontrado: 20.50.73.9
+2025-08-22 16:40:06,914 - INFO - Iniciando escaneamento: 20.50.73.9
+2025-08-22 16:40:06,932 - INFO - Encontrado: 20.50.73.9
+2025-08-22 16:40:06,932 - INFO - Iniciando escaneamento: 20.50.73.9
+2025-08-22 16:40:15,558 - INFO - Portas abertas encontradas em 13.107.5.93: 80, 443
+2025-08-22 16:40:15,562 - INFO - 13.107.5.93: Salvo no json
+2025-08-22 16:40:15,563 - INFO - Escaneamento finalizado: 13.107.5.93
+2025-08-22 16:40:15,783 - INFO - Portas abertas encontradas em 13.107.5.93: 80, 443
+2025-08-22 16:40:15,784 - INFO - 13.107.5.93: Salvo no json
+2025-08-22 16:40:15,785 - INFO - Escaneamento finalizado: 13.107.5.93
+2025-08-22 16:40:26,555 - INFO - Portas abertas encontradas em 20.50.73.9: 443
+2025-08-22 16:40:26,558 - INFO - 20.50.73.9: Salvo no json
+2025-08-22 16:40:26,560 - INFO - Escaneamento finalizado: 20.50.73.9
+2025-08-22 16:40:28,148 - INFO - Portas abertas encontradas em 20.50.73.9: 443
+2025-08-22 16:40:28,149 - INFO - 20.50.73.9: Salvo no json
+2025-08-22 16:40:28,150 - INFO - Escaneamento finalizado: 20.50.73.9
+2025-08-22 16:40:57,888 - INFO - Encontrado: 2.16.169.140
+2025-08-22 16:40:57,889 - INFO - Iniciando escaneamento: 2.16.169.140
+2025-08-22 16:40:57,889 - INFO - Encontrado: 2.16.169.140
+2025-08-22 16:40:57,889 - INFO - Iniciando escaneamento: 2.16.169.140
+2025-08-22 16:41:03,700 - INFO - Portas abertas encontradas em 2.16.169.140: 80, 443
+2025-08-22 16:41:03,701 - INFO - 2.16.169.140: Salvo no json
+2025-08-22 16:41:03,701 - INFO - Escaneamento finalizado: 2.16.169.140
+2025-08-22 16:41:04,166 - INFO - Portas abertas encontradas em 2.16.169.140: 80, 443
+2025-08-22 16:41:04,168 - INFO - 2.16.169.140: Salvo no json
+2025-08-22 16:41:04,170 - INFO - Escaneamento finalizado: 2.16.169.140
+2025-08-22 16:41:36,509 - INFO - Encontrado: 95.100.156.87
+2025-08-22 16:41:36,509 - INFO - Iniciando escaneamento: 95.100.156.87
+2025-08-22 16:41:36,510 - INFO - Encontrado: 95.100.156.87
+2025-08-22 16:41:36,510 - INFO - Iniciando escaneamento: 95.100.156.87
+2025-08-22 16:41:42,248 - INFO - Portas abertas encontradas em 95.100.156.87: 80, 443
+2025-08-22 16:41:42,249 - INFO - 95.100.156.87: Salvo no json
+2025-08-22 16:41:42,249 - INFO - Escaneamento finalizado: 95.100.156.87
+2025-08-22 16:41:42,751 - INFO - Portas abertas encontradas em 95.100.156.87: 80, 443
+2025-08-22 16:41:42,752 - INFO - 95.100.156.87: Salvo no json
+2025-08-22 16:41:42,753 - INFO - Escaneamento finalizado: 95.100.156.87
+2025-08-22 16:42:14,153 - INFO - Encontrado: 20.189.173.1
+2025-08-22 16:42:14,153 - INFO - Iniciando escaneamento: 20.189.173.1
+2025-08-22 16:42:14,154 - INFO - Iniciando escaneamento: 20.189.173.1
+2025-08-22 16:42:29,115 - INFO - Portas abertas encontradas em 20.189.173.1: 443
+2025-08-22 16:42:29,116 - INFO - 20.189.173.1: Salvo no json
+2025-08-22 16:42:29,117 - INFO - Escaneamento finalizado: 20.189.173.1
+2025-08-22 16:42:29,239 - INFO - Portas abertas encontradas em 20.189.173.1: 443
+2025-08-22 16:42:29,241 - INFO - 20.189.173.1: Salvo no json
+2025-08-22 16:42:29,242 - INFO - Escaneamento finalizado: 20.189.173.1
+2025-08-22 16:42:32,381 - INFO - Encontrado: 52.178.17.2
+2025-08-22 16:42:32,381 - INFO - Encontrado: 52.178.17.2
+2025-08-22 16:42:32,381 - INFO - Iniciando escaneamento: 52.178.17.2
+2025-08-22 16:42:32,381 - INFO - Iniciando escaneamento: 52.178.17.2
+2025-08-22 16:42:48,062 - INFO - Portas abertas encontradas em 52.178.17.2: 443
+2025-08-22 16:42:48,063 - INFO - 52.178.17.2: Salvo no json
+2025-08-22 16:42:48,067 - INFO - Escaneamento finalizado: 52.178.17.2
+2025-08-22 16:42:49,324 - INFO - Portas abertas encontradas em 52.178.17.2: 443
+2025-08-22 16:42:49,325 - INFO - 52.178.17.2: Salvo no json
+2025-08-22 16:42:49,326 - INFO - Escaneamento finalizado: 52.178.17.2
+2025-08-22 16:43:22,097 - INFO - Encontrado: 2.16.169.136
+2025-08-22 16:43:22,097 - INFO - Encontrado: 2.16.169.136
+2025-08-22 16:43:22,097 - INFO - Iniciando escaneamento: 2.16.169.136
+2025-08-22 16:43:22,097 - INFO - Iniciando escaneamento: 2.16.169.136
+2025-08-22 16:43:27,915 - INFO - Portas abertas encontradas em 2.16.169.136: 80, 443
+2025-08-22 16:43:27,917 - INFO - 2.16.169.136: Salvo no json
+2025-08-22 16:43:27,920 - INFO - Escaneamento finalizado: 2.16.169.136
+2025-08-22 16:43:28,252 - INFO - Portas abertas encontradas em 2.16.169.136: 80, 443
+2025-08-22 16:43:28,253 - INFO - 2.16.169.136: Salvo no json
+2025-08-22 16:43:28,254 - INFO - Escaneamento finalizado: 2.16.169.136
+2025-08-22 16:43:35,902 - INFO - Encontrado: 20.190.173.72
+2025-08-22 16:43:35,902 - INFO - Encontrado: 20.190.173.72
+2025-08-22 16:43:35,903 - INFO - Iniciando escaneamento: 20.190.173.72
+2025-08-22 16:43:35,902 - INFO - Iniciando escaneamento: 20.190.173.72
+2025-08-22 16:43:36,362 - INFO - Encontrado: 52.168.117.175
+2025-08-22 16:43:36,362 - INFO - Iniciando escaneamento: 52.168.117.175
+2025-08-22 16:43:36,362 - INFO - Encontrado: 52.168.117.175
+2025-08-22 16:43:36,363 - INFO - Iniciando escaneamento: 52.168.117.175
+2025-08-22 16:43:44,318 - INFO - Portas abertas encontradas em 20.190.173.72: 80, 443
+2025-08-22 16:43:44,324 - INFO - 20.190.173.72: Salvo no json
+2025-08-22 16:43:44,332 - INFO - Escaneamento finalizado: 20.190.173.72
+2025-08-22 16:43:46,342 - INFO - Portas abertas encontradas em 20.190.173.72: 80, 443
+2025-08-22 16:43:46,359 - INFO - 20.190.173.72: Salvo no json
+2025-08-22 16:43:46,361 - INFO - Escaneamento finalizado: 20.190.173.72
+2025-08-22 16:43:52,954 - INFO - Portas abertas encontradas em 52.168.117.175: 443
+2025-08-22 16:43:52,956 - INFO - 52.168.117.175: Salvo no json
+2025-08-22 16:43:52,957 - INFO - Escaneamento finalizado: 52.168.117.175
+2025-08-22 16:43:54,022 - INFO - Portas abertas encontradas em 52.168.117.175: 443
+2025-08-22 16:43:54,023 - INFO - 52.168.117.175: Salvo no json
+2025-08-22 16:43:54,024 - INFO - Escaneamento finalizado: 52.168.117.175
+2025-08-22 16:44:41,722 - INFO - Encontrado: 20.52.64.200
+2025-08-22 16:44:41,723 - INFO - Iniciando escaneamento: 20.52.64.200
+2025-08-22 16:44:41,723 - INFO - Iniciando escaneamento: 20.52.64.200
+2025-08-22 16:44:57,822 - INFO - Portas abertas encontradas em 20.52.64.200: 443
+2025-08-22 16:44:57,826 - INFO - 20.52.64.200: Salvo no json
+2025-08-22 16:44:57,835 - INFO - Escaneamento finalizado: 20.52.64.200
+2025-08-22 16:44:58,825 - INFO - Portas abertas encontradas em 20.52.64.200: 443
+2025-08-22 16:44:58,826 - INFO - 20.52.64.200: Salvo no json
+2025-08-22 16:44:58,828 - INFO - Escaneamento finalizado: 20.52.64.200
+2025-08-22 16:46:31,517 - INFO - Encontrado: 13.89.178.26
+2025-08-22 16:46:31,517 - INFO - Encontrado: 13.89.178.26
+2025-08-22 16:46:31,518 - INFO - Iniciando escaneamento: 13.89.178.26
+2025-08-22 16:46:31,518 - INFO - Iniciando escaneamento: 13.89.178.26
+2025-08-22 16:46:45,743 - INFO - Portas abertas encontradas em 13.89.178.26: 443
+2025-08-22 16:46:45,745 - INFO - 13.89.178.26: Salvo no json
+2025-08-22 16:46:45,747 - INFO - Escaneamento finalizado: 13.89.178.26
+2025-08-22 16:46:45,838 - INFO - Portas abertas encontradas em 13.89.178.26: 443
+2025-08-22 16:46:45,839 - INFO - 13.89.178.26: Salvo no json
+2025-08-22 16:46:45,842 - INFO - Escaneamento finalizado: 13.89.178.26
+2025-08-22 16:47:20,121 - INFO - Encontrado: 20.230.46.154
+2025-08-22 16:47:20,121 - INFO - Iniciando escaneamento: 20.230.46.154
+2025-08-22 16:47:20,121 - INFO - Encontrado: 20.230.46.154
+2025-08-22 16:47:20,122 - INFO - Iniciando escaneamento: 20.230.46.154
+2025-08-22 16:47:32,342 - INFO - Encontrado: 20.189.173.6
+2025-08-22 16:47:32,343 - INFO - Iniciando escaneamento: 20.189.173.6
+2025-08-22 16:47:32,343 - INFO - Encontrado: 20.189.173.6
+2025-08-22 16:47:32,343 - INFO - Iniciando escaneamento: 20.189.173.6
+2025-08-22 16:47:33,778 - INFO - Portas abertas encontradas em 20.230.46.154: 80, 443
+2025-08-22 16:47:33,779 - INFO - 20.230.46.154: Salvo no json
+2025-08-22 16:47:33,781 - INFO - Escaneamento finalizado: 20.230.46.154
+2025-08-22 16:47:33,844 - INFO - Portas abertas encontradas em 20.230.46.154: 80, 443
+2025-08-22 16:47:33,846 - INFO - 20.230.46.154: Salvo no json
+2025-08-22 16:47:33,847 - INFO - Escaneamento finalizado: 20.230.46.154
+2025-08-22 16:47:48,080 - INFO - Portas abertas encontradas em 20.189.173.6: 443
+2025-08-22 16:47:48,082 - INFO - 20.189.173.6: Salvo no json
+2025-08-22 16:47:48,083 - INFO - Escaneamento finalizado: 20.189.173.6
+2025-08-22 16:47:48,504 - INFO - Portas abertas encontradas em 20.189.173.6: 443
+2025-08-22 16:47:48,505 - INFO - 20.189.173.6: Salvo no json
+2025-08-22 16:47:48,506 - INFO - Escaneamento finalizado: 20.189.173.6
+2025-08-22 16:48:14,069 - INFO - Encontrado: 20.189.173.14
+2025-08-22 16:48:14,069 - INFO - Iniciando escaneamento: 20.189.173.14
+2025-08-22 16:48:14,069 - INFO - Iniciando escaneamento: 20.189.173.14
+2025-08-22 16:48:22,136 - INFO - Encontrado: 20.189.172.33
+2025-08-22 16:48:22,136 - INFO - Encontrado: 20.189.172.33
+2025-08-22 16:48:22,137 - INFO - Iniciando escaneamento: 20.189.172.33
+2025-08-22 16:48:22,138 - INFO - Iniciando escaneamento: 20.189.172.33
+2025-08-22 16:48:29,059 - INFO - Portas abertas encontradas em 20.189.173.14: 443
+2025-08-22 16:48:29,060 - INFO - 20.189.173.14: Salvo no json
+2025-08-22 16:48:29,061 - INFO - Escaneamento finalizado: 20.189.173.14
+2025-08-22 16:48:29,128 - INFO - Portas abertas encontradas em 20.189.173.14: 443
+2025-08-22 16:48:29,129 - INFO - 20.189.173.14: Salvo no json
+2025-08-22 16:48:29,130 - INFO - Escaneamento finalizado: 20.189.173.14
+2025-08-22 16:48:36,061 - INFO - Encontrado: 192.168.18.43
+2025-08-22 16:48:36,061 - INFO - Encontrado: 192.168.18.43
+2025-08-22 16:48:36,062 - INFO - Iniciando escaneamento: 192.168.18.43
+2025-08-22 16:48:36,062 - INFO - Iniciando escaneamento: 192.168.18.43
+2025-08-22 16:48:38,871 - INFO - Nenhuma porta aberta encontrada em 192.168.18.43.
+2025-08-22 16:48:38,885 - INFO - Escaneamento finalizado: 192.168.18.43
+2025-08-22 16:48:38,918 - INFO - Nenhuma porta aberta encontrada em 192.168.18.43.
+2025-08-22 16:48:38,919 - INFO - Escaneamento finalizado: 192.168.18.43
+2025-08-22 16:48:40,768 - INFO - Portas abertas encontradas em 20.189.172.33: 443
+2025-08-22 16:48:40,769 - INFO - 20.189.172.33: Salvo no json
+2025-08-22 16:48:40,771 - INFO - Escaneamento finalizado: 20.189.172.33
+2025-08-22 16:48:41,536 - INFO - Portas abertas encontradas em 20.189.172.33: 443
+2025-08-22 16:48:41,537 - INFO - 20.189.172.33: Salvo no json
+2025-08-22 16:48:41,539 - INFO - Escaneamento finalizado: 20.189.172.33
+2025-08-22 16:51:36,606 - INFO - Encontrado: 95.100.156.90
+2025-08-22 16:51:36,606 - INFO - Iniciando escaneamento: 95.100.156.90
+2025-08-22 16:51:42,386 - INFO - Portas abertas encontradas em 95.100.156.90: 80, 443
+2025-08-22 16:51:42,387 - INFO - 95.100.156.90: Salvo no json
+2025-08-22 16:51:42,388 - INFO - Escaneamento finalizado: 95.100.156.90
+2025-08-22 16:51:43,037 - INFO - Portas abertas encontradas em 95.100.156.90: 80, 443
+2025-08-22 16:51:43,038 - INFO - 95.100.156.90: Salvo no json
+2025-08-22 16:51:43,038 - INFO - Escaneamento finalizado: 95.100.156.90
+2025-08-22 16:52:14,461 - INFO - Encontrado: 140.82.113.21
+2025-08-22 16:52:14,462 - INFO - Iniciando escaneamento: 140.82.113.21
+2025-08-22 16:52:14,463 - INFO - Encontrado: 140.82.113.21
+2025-08-22 16:52:14,463 - INFO - Iniciando escaneamento: 140.82.113.21
+2025-08-22 16:52:27,284 - INFO - Portas abertas encontradas em 140.82.113.21: 80, 443
+2025-08-22 16:52:27,286 - INFO - 140.82.113.21: Salvo no json
+2025-08-22 16:52:27,300 - INFO - Escaneamento finalizado: 140.82.113.21
+2025-08-22 16:52:28,644 - INFO - Portas abertas encontradas em 140.82.113.21: 80, 443
+2025-08-22 16:52:28,646 - INFO - 140.82.113.21: Salvo no json
+2025-08-22 16:52:28,647 - INFO - Escaneamento finalizado: 140.82.113.21
+2025-08-22 16:52:31,890 - INFO - Encontrado: 52.182.143.208
+2025-08-22 16:52:31,890 - INFO - Iniciando escaneamento: 52.182.143.208
+2025-08-22 16:52:31,889 - INFO - Encontrado: 52.182.143.208
+2025-08-22 16:52:31,890 - INFO - Iniciando escaneamento: 52.182.143.208
+2025-08-22 16:52:45,948 - INFO - Portas abertas encontradas em 52.182.143.208: 443
+2025-08-22 16:52:45,949 - INFO - 52.182.143.208: Salvo no json
+2025-08-22 16:52:45,950 - INFO - Escaneamento finalizado: 52.182.143.208
+2025-08-22 16:52:46,046 - INFO - Portas abertas encontradas em 52.182.143.208: 443
+2025-08-22 16:52:46,047 - INFO - 52.182.143.208: Salvo no json
+2025-08-22 16:52:46,048 - INFO - Escaneamento finalizado: 52.182.143.208
+2025-08-22 16:52:49,213 - INFO - Encontrado: 23.46.246.229
+2025-08-22 16:52:49,213 - INFO - Encontrado: 23.46.246.229
+2025-08-22 16:52:49,213 - INFO - Iniciando escaneamento: 23.46.246.229
+2025-08-22 16:52:49,213 - INFO - Iniciando escaneamento: 23.46.246.229
+2025-08-22 16:52:54,956 - INFO - Portas abertas encontradas em 23.46.246.229: 80, 443
+2025-08-22 16:52:54,961 - INFO - 23.46.246.229: Salvo no json
+2025-08-22 16:52:54,964 - INFO - Escaneamento finalizado: 23.46.246.229
+2025-08-22 16:52:55,222 - INFO - Portas abertas encontradas em 23.46.246.229: 80, 443
+2025-08-22 16:52:55,225 - INFO - 23.46.246.229: Salvo no json
+2025-08-22 16:52:55,227 - INFO - Escaneamento finalizado: 23.46.246.229
+2025-08-22 16:53:21,061 - INFO - Encontrado: 40.74.98.192
+2025-08-22 16:53:21,061 - INFO - Iniciando escaneamento: 40.74.98.192
+2025-08-22 16:53:21,062 - INFO - Encontrado: 40.74.98.192
+2025-08-22 16:53:21,062 - INFO - Iniciando escaneamento: 40.74.98.192
+2025-08-22 16:53:40,773 - INFO - Encontrado: 191.237.206.80
+2025-08-22 16:53:40,773 - INFO - Encontrado: 191.237.206.80
+2025-08-22 16:53:40,773 - INFO - Iniciando escaneamento: 191.237.206.80
+2025-08-22 16:53:40,774 - INFO - Iniciando escaneamento: 191.237.206.80
+2025-08-22 16:53:40,905 - INFO - Portas abertas encontradas em 40.74.98.192: 443
+2025-08-22 16:53:40,907 - INFO - 40.74.98.192: Salvo no json
+2025-08-22 16:53:40,908 - INFO - Escaneamento finalizado: 40.74.98.192
+2025-08-22 16:53:41,065 - INFO - Portas abertas encontradas em 40.74.98.192: 443
+2025-08-22 16:53:41,074 - INFO - 40.74.98.192: Salvo no json
+2025-08-22 16:53:41,083 - INFO - Escaneamento finalizado: 40.74.98.192
+2025-08-22 16:53:46,734 - INFO - Encontrado: 40.79.173.40
+2025-08-22 16:53:46,734 - INFO - Iniciando escaneamento: 40.79.173.40
+2025-08-22 16:53:46,735 - INFO - Encontrado: 40.79.173.40
+2025-08-22 16:53:46,736 - INFO - Iniciando escaneamento: 40.79.173.40
+2025-08-22 16:53:48,669 - INFO - Portas abertas encontradas em 191.237.206.80: 80, 443
+2025-08-22 16:53:48,672 - INFO - 191.237.206.80: Salvo no json
+2025-08-22 16:53:48,677 - INFO - Escaneamento finalizado: 191.237.206.80
+2025-08-22 16:53:49,995 - INFO - Portas abertas encontradas em 191.237.206.80: 80, 443
+2025-08-22 16:53:49,996 - INFO - 191.237.206.80: Salvo no json
+2025-08-22 16:53:49,997 - INFO - Escaneamento finalizado: 191.237.206.80
+2025-08-22 16:54:07,434 - INFO - Portas abertas encontradas em 40.79.173.40: 443
+2025-08-22 16:54:07,436 - INFO - 40.79.173.40: Salvo no json
+2025-08-22 16:54:07,437 - INFO - Escaneamento finalizado: 40.79.173.40
+2025-08-22 16:54:08,212 - INFO - Portas abertas encontradas em 40.79.173.40: 443
+2025-08-22 16:54:08,213 - INFO - 40.79.173.40: Salvo no json
+2025-08-22 16:54:08,215 - INFO - Escaneamento finalizado: 40.79.173.40
+2025-08-22 16:55:55,890 - INFO - Encontrado: 20.189.173.11
+2025-08-22 16:55:55,890 - INFO - Encontrado: 20.189.173.11
+2025-08-22 16:55:55,890 - INFO - Iniciando escaneamento: 20.189.173.11
+2025-08-22 16:55:55,890 - INFO - Iniciando escaneamento: 20.189.173.11
+2025-08-22 16:56:12,687 - INFO - Portas abertas encontradas em 20.189.173.11: 443
+2025-08-22 16:56:12,688 - INFO - 20.189.173.11: Salvo no json
+2025-08-22 16:56:12,690 - INFO - Escaneamento finalizado: 20.189.173.11
+2025-08-22 16:56:13,996 - INFO - Portas abertas encontradas em 20.189.173.11: 443
+2025-08-22 16:56:13,997 - INFO - 20.189.173.11: Salvo no json
+2025-08-22 16:56:13,998 - INFO - Escaneamento finalizado: 20.189.173.11
+2025-08-22 16:56:41,012 - INFO - Encontrado: 20.201.28.148
+2025-08-22 16:56:41,012 - INFO - Iniciando escaneamento: 20.201.28.148
+2025-08-22 16:56:41,013 - INFO - Encontrado: 20.201.28.148
+2025-08-22 16:56:41,013 - INFO - Iniciando escaneamento: 20.201.28.148
+2025-08-22 16:56:44,048 - INFO - Encontrado: 20.189.173.4
+2025-08-22 16:56:44,048 - INFO - Iniciando escaneamento: 20.189.173.4
+2025-08-22 16:56:44,052 - INFO - Encontrado: 20.189.173.4
+2025-08-22 16:56:44,052 - INFO - Iniciando escaneamento: 20.189.173.4
+2025-08-22 16:56:44,744 - INFO - Encontrado: 20.189.172.32
+2025-08-22 16:56:44,744 - INFO - Iniciando escaneamento: 20.189.172.32
+2025-08-22 16:56:44,746 - INFO - Encontrado: 20.189.172.32
+2025-08-22 16:56:44,747 - INFO - Iniciando escaneamento: 20.189.172.32
+2025-08-22 16:56:50,254 - INFO - Portas abertas encontradas em 20.201.28.148: 80, 443
+2025-08-22 16:56:50,268 - INFO - 20.201.28.148: Salvo no json
+2025-08-22 16:56:50,278 - INFO - Escaneamento finalizado: 20.201.28.148
+2025-08-22 16:56:50,618 - INFO - Portas abertas encontradas em 20.201.28.148: 80, 443
+2025-08-22 16:56:50,619 - INFO - 20.201.28.148: Salvo no json
+2025-08-22 16:56:50,620 - INFO - Escaneamento finalizado: 20.201.28.148
+2025-08-22 16:56:54,990 - INFO - Encontrado: 104.208.16.92
+2025-08-22 16:56:54,990 - INFO - Iniciando escaneamento: 104.208.16.92
+2025-08-22 16:56:54,990 - INFO - Encontrado: 104.208.16.92
+2025-08-22 16:56:54,991 - INFO - Iniciando escaneamento: 104.208.16.92
+2025-08-22 16:56:57,801 - INFO - Encontrado: 95.100.156.165
+2025-08-22 16:56:57,802 - INFO - Iniciando escaneamento: 95.100.156.165
+2025-08-22 16:56:57,802 - INFO - Iniciando escaneamento: 95.100.156.165
+2025-08-22 16:57:03,998 - INFO - Portas abertas encontradas em 20.189.173.4: 443
+2025-08-22 16:57:04,009 - INFO - 20.189.173.4: Salvo no json
+2025-08-22 16:57:04,015 - INFO - Portas abertas encontradas em 20.189.173.4: 443
+2025-08-22 16:57:04,016 - INFO - Escaneamento finalizado: 20.189.173.4
+2025-08-22 16:57:04,017 - INFO - 20.189.173.4: Salvo no json
+2025-08-22 16:57:04,022 - INFO - Escaneamento finalizado: 20.189.173.4
+2025-08-22 16:57:04,192 - INFO - Portas abertas encontradas em 20.189.172.32: 443
+2025-08-22 16:57:04,197 - INFO - 20.189.172.32: Salvo no json
+2025-08-22 16:57:04,208 - INFO - Escaneamento finalizado: 20.189.172.32
+2025-08-22 16:57:04,859 - INFO - Portas abertas encontradas em 95.100.156.165: 80, 443
+2025-08-22 16:57:04,861 - INFO - 95.100.156.165: Salvo no json
+2025-08-22 16:57:04,869 - INFO - Escaneamento finalizado: 95.100.156.165
+2025-08-22 16:57:05,330 - INFO - Portas abertas encontradas em 20.189.172.32: 443
+2025-08-22 16:57:05,345 - INFO - 20.189.172.32: Salvo no json
+2025-08-22 16:57:05,348 - INFO - Portas abertas encontradas em 95.100.156.165: 80, 443
+2025-08-22 16:57:05,349 - INFO - 95.100.156.165: Salvo no json
+2025-08-22 16:57:05,351 - INFO - Escaneamento finalizado: 95.100.156.165
+2025-08-22 16:57:05,361 - INFO - Escaneamento finalizado: 20.189.172.32
+2025-08-22 16:57:10,719 - INFO - Portas abertas encontradas em 104.208.16.92: 443
+2025-08-22 16:57:10,720 - INFO - 104.208.16.92: Salvo no json
+2025-08-22 16:57:10,721 - INFO - Escaneamento finalizado: 104.208.16.92
+2025-08-22 16:57:14,679 - INFO - Portas abertas encontradas em 104.208.16.92: 443
+2025-08-22 16:57:14,681 - INFO - 104.208.16.92: Salvo no json
+2025-08-22 16:57:14,682 - INFO - Escaneamento finalizado: 104.208.16.92
+2025-08-22 16:57:16,361 - INFO - Encontrado: 52.182.143.209
+2025-08-22 16:57:16,361 - INFO - Encontrado: 52.182.143.209
+2025-08-22 16:57:16,361 - INFO - Iniciando escaneamento: 52.182.143.209
+2025-08-22 16:57:16,362 - INFO - Iniciando escaneamento: 52.182.143.209
+2025-08-22 16:57:30,685 - INFO - Portas abertas encontradas em 52.182.143.209: 443
+2025-08-22 16:57:30,687 - INFO - 52.182.143.209: Salvo no json
+2025-08-22 16:57:30,688 - INFO - Escaneamento finalizado: 52.182.143.209
+2025-08-22 16:57:33,030 - INFO - Portas abertas encontradas em 52.182.143.209: 443
+2025-08-22 16:57:33,031 - INFO - 52.182.143.209: Salvo no json
+2025-08-22 16:57:33,032 - INFO - Escaneamento finalizado: 52.182.143.209
+2025-08-22 16:58:17,465 - INFO - Encontrado: 4.249.131.160
+2025-08-22 16:58:17,466 - INFO - Iniciando escaneamento: 4.249.131.160
+2025-08-22 16:58:21,346 - INFO - Encontrado: 52.168.117.171
+2025-08-22 16:58:21,346 - INFO - Iniciando escaneamento: 52.168.117.171
+2025-08-22 16:58:21,346 - INFO - Encontrado: 52.168.117.171
+2025-08-22 16:58:21,347 - INFO - Iniciando escaneamento: 52.168.117.171
+2025-08-22 16:58:30,645 - INFO - Encontrado: 20.189.173.15
+2025-08-22 16:58:30,645 - INFO - Iniciando escaneamento: 20.189.173.15
+2025-08-22 16:58:30,671 - INFO - Encontrado: 20.189.173.15
+2025-08-22 16:58:30,671 - INFO - Iniciando escaneamento: 20.189.173.15
+2025-08-22 16:58:32,290 - INFO - Portas abertas encontradas em 4.249.131.160: 80, 443
+2025-08-22 16:58:32,292 - INFO - 4.249.131.160: Salvo no json
+2025-08-22 16:58:32,297 - INFO - Escaneamento finalizado: 4.249.131.160
+2025-08-22 16:58:32,724 - INFO - Portas abertas encontradas em 4.249.131.160: 80, 443
+2025-08-22 16:58:32,726 - INFO - 4.249.131.160: Salvo no json
+2025-08-22 16:58:32,727 - INFO - Escaneamento finalizado: 4.249.131.160
+2025-08-22 16:58:34,859 - INFO - Portas abertas encontradas em 52.168.117.171: 443
+2025-08-22 16:58:34,860 - INFO - 52.168.117.171: Salvo no json
+2025-08-22 16:58:34,861 - INFO - Escaneamento finalizado: 52.168.117.171
+2025-08-22 16:58:35,072 - INFO - Portas abertas encontradas em 52.168.117.171: 443
+2025-08-22 16:58:35,073 - INFO - 52.168.117.171: Salvo no json
+2025-08-22 16:58:35,074 - INFO - Escaneamento finalizado: 52.168.117.171
+2025-08-22 16:58:45,449 - INFO - Encontrado: 140.82.113.25
+2025-08-22 16:58:45,449 - INFO - Encontrado: 140.82.113.25
+2025-08-22 16:58:45,449 - INFO - Iniciando escaneamento: 140.82.113.25
+2025-08-22 16:58:45,450 - INFO - Iniciando escaneamento: 140.82.113.25
+2025-08-22 16:58:46,781 - INFO - Portas abertas encontradas em 20.189.173.15: 443
+2025-08-22 16:58:46,782 - INFO - 20.189.173.15: Salvo no json
+2025-08-22 16:58:46,784 - INFO - Escaneamento finalizado: 20.189.173.15
+2025-08-22 16:58:47,883 - INFO - Portas abertas encontradas em 20.189.173.15: 443
+2025-08-22 16:58:47,884 - INFO - 20.189.173.15: Salvo no json
+2025-08-22 16:58:47,885 - INFO - Escaneamento finalizado: 20.189.173.15
+2025-08-22 16:58:51,465 - INFO - Encontrado: 13.89.179.8
+2025-08-22 16:58:51,466 - INFO - Iniciando escaneamento: 13.89.179.8
+2025-08-22 16:58:51,466 - INFO - Encontrado: 13.89.179.8
+2025-08-22 16:58:51,466 - INFO - Iniciando escaneamento: 13.89.179.8
+2025-08-22 16:58:55,262 - INFO - Encontrado: 13.89.179.9
+2025-08-22 16:58:55,262 - INFO - Iniciando escaneamento: 13.89.179.9
+2025-08-22 16:58:55,262 - INFO - Iniciando escaneamento: 13.89.179.9
+2025-08-22 16:58:59,409 - INFO - Portas abertas encontradas em 140.82.113.25: 443
+2025-08-22 16:58:59,411 - INFO - 140.82.113.25: Salvo no json
+2025-08-22 16:58:59,412 - INFO - Escaneamento finalizado: 140.82.113.25
+2025-08-22 16:58:59,588 - INFO - Portas abertas encontradas em 140.82.113.25: 443
+2025-08-22 16:58:59,589 - INFO - 140.82.113.25: Salvo no json
+2025-08-22 16:58:59,591 - INFO - Escaneamento finalizado: 140.82.113.25
+2025-08-22 16:59:06,700 - INFO - Portas abertas encontradas em 13.89.179.8: 443
+2025-08-22 16:59:06,701 - INFO - 13.89.179.8: Salvo no json
+2025-08-22 16:59:06,704 - INFO - Escaneamento finalizado: 13.89.179.8
+2025-08-22 16:59:07,295 - INFO - Portas abertas encontradas em 13.89.179.8: 443
+2025-08-22 16:59:07,296 - INFO - 13.89.179.8: Salvo no json
+2025-08-22 16:59:07,298 - INFO - Escaneamento finalizado: 13.89.179.8
+2025-08-22 16:59:09,825 - INFO - Portas abertas encontradas em 13.89.179.9: 443
+2025-08-22 16:59:09,826 - INFO - 13.89.179.9: Salvo no json
+2025-08-22 16:59:09,828 - INFO - Escaneamento finalizado: 13.89.179.9
+2025-08-22 16:59:10,125 - INFO - Portas abertas encontradas em 13.89.179.9: 443
+2025-08-22 16:59:10,126 - INFO - 13.89.179.9: Salvo no json
+2025-08-22 16:59:10,127 - INFO - Escaneamento finalizado: 13.89.179.9
+2025-08-22 16:59:34,622 - INFO - Encontrado: 20.42.73.27
+2025-08-22 16:59:34,622 - INFO - Encontrado: 20.42.73.27
+0.42.73.27
+2025-08-22 16:59:34,622 - INFO - Iniciando escaneamento: 20.42.73.27
+2025-08-22 16:59:47,354 - INFO - Portas abertas encontradas em 20.42.73.27: 443
+2025-08-22 16:59:47,355 - INFO - 20.42.73.27: Salvo no json
+2025-08-22 16:59:47,356 - INFO - Escaneamento finalizado: 20.42.73.27
+2025-08-22 16:59:47,545 - INFO - Portas abertas encontradas em 20.42.73.27: 443
+2025-08-22 16:59:47,546 - INFO - 20.42.73.27: Salvo no json
+2025-08-22 16:59:47,547 - INFO - Escaneamento finalizado: 20.42.73.27
+2025-08-22 16:59:48,239 - INFO - Encontrado: 20.42.73.30
+2025-08-22 16:59:48,239 - INFO - Encontrado: 20.42.73.30
+2025-08-22 16:59:48,239 - INFO - Iniciando escaneamento: 20.42.73.30
+2025-08-22 17:00:02,133 - INFO - Portas abertas encontradas em 20.42.73.30: 443
+2025-08-22 17:00:02,134 - INFO - 20.42.73.30: Salvo no json
+2025-08-22 17:00:02,135 - INFO - Escaneamento finalizado: 20.42.73.30
+2025-08-22 17:00:06,938 - INFO - Portas abertas encontradas em 20.42.73.30: 443
+2025-08-22 17:00:06,939 - INFO - 20.42.73.30: Salvo no json
+2025-08-22 17:00:06,940 - INFO - Escaneamento finalizado: 20.42.73.30
+2025-08-22 17:00:21,494 - INFO - Encontrado: 20.189.173.9
+2025-08-22 17:00:21,494 - INFO - Encontrado: 20.189.173.9
+2025-08-22 17:00:21,494 - INFO - Iniciando escaneamento: 20.189.173.9
+2025-08-22 17:00:21,494 - INFO - Iniciando escaneamento: 20.189.173.9
+2025-08-22 17:00:27,105 - INFO - Escaneamento finalizado: 20.189.173.9
+2025-08-22 17:00:27,105 - INFO - Escaneamento finalizado: 20.189.173.9
+>>>>>>> 53c8f0f562c29df6c7422ec1d6fbd108ebc81641

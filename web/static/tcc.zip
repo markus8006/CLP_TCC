@@ -1,0 +1,362 @@
+/* --- Layout Geral --- */
+body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: whitesmoke;
+
+    /* Fundo degradê escuro */
+    background: radial-gradient(circle at top left, #0a0018 0%, #090016 90%, #1b0030 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* Opcional: sobreposição leve de textura com transparência */
+    /* background-image: url('path/para/textura.png'); */
+    /* background-blend-mode: overlay; */
+}
+th, td, p, a, span {
+    color: whitesmoke;
+}
+
+h1, h2 {
+    color: #cc00ff;
+    text-shadow: 0 2px 8px rgba(8, 0, 20, 0.2);
+    letter-spacing: 1px;
+}
+
+strong {
+    color: rgb(145, 0, 202);
+}
+
+/* --- Navegação / Sidebar --- */
+#menuBtn {
+    font-size: 28px;
+    cursor: pointer;
+    position: fixed;
+    top: 13px;
+    left: 13px;
+    color: #6e0096;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1); /* fundo semi-transparente */
+    border: none;           /* borda do círculo */
+    border-radius: 50%;                   /* deixa totalmente redondo */
+    width: 35px;                          /* largura do círculo */
+    height: 35px;                         /* altura do círculo */
+    display: flex;                        /* centraliza o ícone */
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+#menuBtn:hover {
+    color: white;
+    background: #6e0096;
+    transform: scale(1.1);
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background: linear-gradient(160deg, #111 40%, #6e0096 100%);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.sidenav a {
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #cc00ff;
+    display: block;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    transition: 0.3s;
+    display: block;
+    height: 100%;
+    margin-left: 60px;
+    padding: 0px 18px;
+}
+
+/* --- CLPs / Cards --- */
+/* --- Container CLPs --- */
+.container_clps {
+    text-decoration: none;
+    position: relative;
+    top: -12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* --- Card CLP --- */
+.divs_clp {
+    background-color: #2c0055;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(114, 0, 180, 0.9);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 360px; /* altura mínima uniforme */
+    width: 100%;
+    max-width: 320px;
+    padding: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.divs_clp:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(29, 2, 51, 0.95);
+}
+
+.divs_clp img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+
+.divs_clp img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(174, 0, 255, 0.18);
+}
+
+/* --- Portas --- */
+.portas {
+    background-color: rgba(20,1,44,0.7);
+    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.porta_fechada {
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+.portas_abertas {
+    color: #00ff99;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* --- Paginação --- */
+.paginacao {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* --- Status CLP --- */
+.status_clp {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.status_online {
+    color:  #00ff99;
+}
+
+.status_offline {
+    color: #ff3b3b;
+}
+
+/* --- Informações do CLP --- */
+.informacao_clp {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 18px;
+    color : #fff;
+    box-shadow: 0 2px 12px rgba(20,1,44,0.7);
+}
+
+.informacao_clp h2 {
+    margin-bottom: 10px;
+    color : #a200ff;
+    font-size: 1.3em;
+}
+
+.informacao_clp ul {
+    list-style: none;
+    padding: 0;
+}
+.informacao_clp li {
+    margin: 7px 0;
+    font-size: 1.08em;
+}
+
+/* --- Gráficos --- */
+.graficos {
+    margin-top: 30px;
+    color: whitesmoke;
+}
+
+.linha-graficos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.grafico-container {
+    flex: 1 1 48%;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(20,1,44,0.7);
+    transition: box-shadow 0.2s;
+}
+
+.grafico-container:hover {
+    box-shadow: 0 4px 24px rgba(20,1,44,0.17);
+}
+
+/* Linha: ocupar toda largura e altura fixa */
+.grafico-container canvas.line-chart {
+    width: 100% !important;
+    height: 320px !important;
+    border-radius: 10px;
+    background: rgba(89, 0, 255, 0.04);
+    box-shadow: 0 2px 8px rgba(89,0,255,0.08);
+}
+
+/* Doughnut: manter círculo */
+.grafico-container canvas.doughnut-chart {
+    width: 100% !important;
+    max-width: 320px;
+    height: auto !important;
+    border-radius: 20%;
+}
+
+
+.input_p_pagina {
+    background-color: rgb(33, 0, 99);
+    color: white;
+    padding: 3px 15px;
+    border-radius: 5px;
+    padding-left: 2px;
+    text-align: left;
+    border-color: rgb(209, 209, 209);
+    border-style: ridge;
+    transition: 0.3s;
+}
+.input_p_pagina::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+.input_p_pagina:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.botao_alterar {
+    position: relative;
+    left: 2px;
+    background-color: rgb(13, 0, 129) ;
+    color: white;
+    padding: 3px 10px;
+    width: 10px 10px ;
+    border-radius: 5px;
+    border-color: rgb(209, 209, 209);
+    border-style: ridge;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    transition: 0.3s;
+}
+
+.botao_alterar:hover {
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+
+.numeracao_pag {
+    position: relative;
+    top: -8px;
+    letter-spacing: 1px;
+    color: #cc00ff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.numeracao_pag {
+    filter: brightness(1);
+}
+
+.anterior {
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: -19px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: filter 0.2s ease;
+}
+
+.anterior:hover {
+    filter: brightness(0.8);
+}
+
+.proximo {
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: 19px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: filter 0.2s ease;
+}
+
+.proximo:hover {
+    filter: brightness(0.8);
+}
+
+.html {
+    font-size: 13px;
+}
+
+.valor_atual {
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+    font-size: 18px;
+}
+
+.method {
+    text-decoration: none;
+    position: relative;
+    top: -12px;
+}

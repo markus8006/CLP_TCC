@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html  class = "html" lang="pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Status da Máquina</title>
 </head>
+
+
+
+
+
+
 <body>
+
 
 <!-- Botão que abre/fecha o menu -->
 <button id="menuBtn" onclick="moveSideBar()">&#9776;</button>
+
 
 <!-- Sidebar -->
 <div id="mySidenav" class="sidenav">
@@ -19,12 +27,17 @@
 
 </div>
 
+
+
+
+
+
     <div id="main" class="main">        
         
         <h1>CLPs Detectados</h1>
-        <p class = "valor_atual">Valor atual: {{ valor }}</p>
+        <p>Valor atual: {{ valor }}</p>
     
-        <form class = "method" method="POST" action="/alterar">
+        <form method="POST" action="/alterar">
             <input class = "input_p_pagina" type="number" name="novo_valor" placeholder="CLPS por pagina" min="1">
             <button class = "botao_alterar" type="submit">Alterar</button>
         </form>
@@ -42,17 +55,25 @@
 
         <div class="paginacao">
         {% if page > 1 %}
-            <a class = "anterior" href="/?page={{ page-1 }}">Anterior</a>
+            <a href="/?page={{ page-1 }}">Anterior</a>
         {% endif %}
 
-        <span class = "numeracao_pag"> Página {{ page }} de {{ total_paginas }} </span>
+
+    
+        <span> ---- Página {{ page }} de {{ total_paginas }} ---- </span>
+
         {% if page < total_paginas %}
-            <a class = "proximo" href="/?page={{ page+1 }}">Próxima</a>
+            <a class="paginas_clps"href="/?page={{ page+1 }}">Próxima</a>
         {% endif %}
     </div>
 
 </div>
+
+
+
+
 <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 
 </body>
+
 </html>
