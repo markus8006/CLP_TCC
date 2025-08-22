@@ -98,6 +98,9 @@ strong {
 /* --- CLPs / Cards --- */
 /* --- Container CLPs --- */
 .container_clps {
+    text-decoration: none;
+    position: relative;
+    top: -12px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
@@ -108,9 +111,9 @@ strong {
 
 /* --- Card CLP --- */
 .divs_clp {
-    background-color: #16002b;
+    background-color: #2c0055;
     border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(68, 0, 107, 0.9);
+    box-shadow: 0 6px 24px rgba(114, 0, 180, 0.9);
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -131,7 +134,7 @@ strong {
 .divs_clp img {
     max-width: 100%;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(174, 0, 255, 0.12);
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
     transition: transform 0.5s ease, box-shadow 0.3s;
 }
 
@@ -257,15 +260,18 @@ strong {
 
 
 .input_p_pagina {
-    background-color: rgb(71, 0, 202);
+    background-color: rgb(33, 0, 99);
     color: white;
     padding: 3px 15px;
-    border-radius: 5px 5px;
-    border-color: rgb(138, 138, 138);
+    border-radius: 5px;
+    padding-left: 2px;
+    text-align: left;
+    border-color: rgb(209, 209, 209);
+    border-style: ridge;
     transition: 0.3s;
 }
 .input_p_pagina::placeholder {
-    color: rgb(175, 175, 175);
+    color: rgb(190, 190, 190);
 }
 
 .input_p_pagina:hover {
@@ -274,16 +280,83 @@ strong {
 }
 
 .botao_alterar {
+    position: relative;
+    left: 2px;
     background-color: rgb(13, 0, 129) ;
     color: white;
     padding: 3px 10px;
     width: 10px 10px ;
     border-radius: 5px;
-    border-color: rgb(138, 138, 138);
+    border-color: rgb(209, 209, 209);
+    border-style: ridge;
+    font-weight: bold;
+    letter-spacing: 0.3px;
     transition: 0.3s;
 }
 
 .botao_alterar:hover {
     transform: scale(1.06);
     transition: 0.3s;
+}
+
+.numeracao_pag {
+    position: relative;
+    top: -8px;
+    letter-spacing: 1px;
+    color: #cc00ff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.numeracao_pag {
+    filter: brightness(1);
+}
+
+.anterior {
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: -19px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: filter 0.2s ease;
+}
+
+.anterior:hover {
+    filter: brightness(0.8);
+}
+
+.proximo {
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: 19px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: filter 0.2s ease;
+}
+
+.proximo:hover {
+    filter: brightness(0.8);
+}
+
+.html {
+    font-size: 13px;
+}
+
+.valor_atual {
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+    font-size: 18px;
+}
+
+.method {
+    text-decoration: none;
+    position: relative;
+    top: -12px;
 }
