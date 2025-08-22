@@ -1,0 +1,74 @@
+@import url('base.css');
+
+/* --- Status CLP --- */
+.status_clp {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.status_online {
+    color: #00ff99;
+}
+.status_offline {
+    color: #ff3b3b;
+}
+
+/* --- Informações do CLP --- */
+.informacao_clp {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 2px 12px rgba(20,1,44,0.7);
+}
+.informacao_clp h2 {
+    margin-bottom: 10px;
+    color: #a200ff;
+}
+
+/* --- Gráficos --- */
+.graficos {
+    margin-top: 30px;
+}
+
+.linha-graficos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.grafico-container {
+    flex: 1 1 320px;
+    max-width: auto;
+    min-width: auto;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(20,1,44,0.7);
+    transition: box-shadow 0.2s;
+}
+
+.grafico-container canvas {
+    width: 100% !important;
+    max-width: auto;
+    height: 260px !important;
+}
+
+@media (max-width: 900px) {
+    .linha-graficos {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .grafico-container {
+        max-width: 100%;
+        min-width: 0;
+    }
+}

@@ -1,0 +1,44 @@
+@import url('base.css');
+
+/* --- Container CLPs --- */
+.container_clps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    justify-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* --- Card CLP --- */
+.divs_clp {
+    background-color: #16002b;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(68, 0, 107, 0.9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 360px;
+    max-width: 320px;
+    padding: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.divs_clp:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(29, 2, 51, 0.95);
+}
+.divs_clp img {
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.5s ease, box-shadow 0.3s;
+}
+.divs_clp img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Paginação --- */
+.paginacao {
+    color: whitesmoke;
+    text-align: center;
+}

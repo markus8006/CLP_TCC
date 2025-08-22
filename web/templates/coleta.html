@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Coleta de IPs</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Coleta de IPS{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/coleta.css') }}">
+{% endblock %}
+
+{% block content %}
 
 <div class="container_clps">
     <h1>Coleta de IPS</h1>
@@ -37,8 +38,8 @@
     </table>
 </div>
 
+{% endblock %}
 
-
-<script src="{{ url_for('static', filename='scripts.js') }}"></script>
-</body>
-</html>
+{% block scripts %}
+<script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
+{% endblock %}
