@@ -8,47 +8,57 @@
 
 {% block content %}
 <div class="status_clp">
-    {% if Status == "Conectado" %}
-        <span class="status_online">Status: {{ Status }}</span>
-        <button>Desconectar</button>
+    <span id="statusText" class="{{ 'status_online' if clp.status == 'Online' else 'status_offline' }}">
+        Status: {{ clp.status }}
+    </span>
+
+    {% if clp.status == "Online" %}
+        <button id="btnDisconnect" data-ip="{{ clp.ip }}">Desconectar</button>
     {% else %}
-        <span class="status_offline">Status: {{ Status }}</span>
-        <button>Conectar</button>
+        <button id="btnConnect" data-ip="{{ clp.ip }}">Conectar</button>
     {% endif %}
 </div>
 
 <div class="informacao_clp">
     <h2>Informações do CLP</h2>
     <ul>
-        <li><strong>Modelo:</strong> {{ modelo }}</li>
-        <li><strong>Fabricante:</strong> {{ fabricante }}</li>
-        <li><strong>IP:</strong> {{ ip }}</li>
-        {% if portas_abertas %}
+        <li><strong>Modelo:</strong> {{ clp.get('modelo', 'Desconhecido') }}</li>
+        <li><strong>Fabricante:</strong> {{ clp.get('fabricante', 'Desconhecido') }}</li>
+        <li><strong>IP:</strong> <span id="clpIp">{{ clp.ip }}</span></li>
+        {% if clp.portas %}
             <li><strong>Portas abertas:</strong>
-                {% for porta in portas_abertas %}
-                    {% if porta is not none %}
-                        {{ porta }}{% if not loop.last %}, {% endif %}
-                    {% endif %}
+                <span id="listaPortas">
+                {% for porta in clp.portas %}
+                    <span class="porta_item">{{ porta }}{% if not loop.last %}, {% endif %}</span>
                 {% endfor %}
+                </span>
             </li>
         {% else %}
             <li><span class="porta_fechada">Não há portas abertas</span></li>
         {% endif %}
-        <li><strong>Versão Firmware:</strong> {{ firmware }}</li>
-        <li><strong>Última comunicação:</strong> {{ ultima_comunicacao }}</li>
+        <li><strong>Versão Firmware:</strong> {{ clp.get('firmware', 'N/A') }}</li>
+        <li><strong>Última comunicação:</strong> {{ clp.get('data_registro', 'N/A') }}</li>
     </ul>
 </div>
 
+<div class="acoes">
+    <h3>Ações</h3>
+
+    <!-- Baixar código (abre um prompt para admin/senha) -->
+    <button id="btnBaixar" data-ip="{{ clp.ip }}">Enviar código (FTP)</button>
+
+    <!-- Adicionar porta -->
+    <form id="formAddPort" onsubmit="return false;">
+        <input type="number" id="inputPorta" placeholder="Porta (ex: 502)" required>
+        <button id="btnAddPort" data-ip="{{ clp.ip }}">Adicionar Porta</button>
+    </form>
+</div>
+
+<div id="mensagem" role="status" style="margin-top:12px;color:var(--accent)"></div>
+
+<!-- seus gráficos... -->
 <div class="graficos">
-    <h2>Monitoramento</h2>
-    <div class="linha-graficos">
-        <div class="grafico-container"><canvas id="graficoCpu"></canvas></div>
-        <div class="grafico-container"><canvas id="graficoMemoria"></canvas></div>
-    </div>
-    <div class="linha-graficos">
-        <div class="grafico-container"><canvas id="graficoRede"></canvas></div>
-        <div class="grafico-container"><canvas id="graficoDisco"></canvas></div>
-    </div>
+  <!-- ...manter o resto -->
 </div>
 {% endblock %}
 
@@ -56,4 +66,111 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/graficos.js') }}"></script>
+
+<!-- Script para chamar as rotas da API -->
+<script>
+async function fetchJson(url, opts) {
+    try {
+        const resp = await fetch(url, opts);
+        return await resp.json();
+    } catch (err) {
+        return { ok: false, error: err.toString() };
+    }
+}
+
+function showMsg(text, timeout=4000) {
+    const el = document.getElementById('mensagem');
+    el.textContent = text;
+    if (timeout) setTimeout(()=> el.textContent = '', timeout);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const ip = document.getElementById('clpIp').textContent;
+
+    const btnConnect = document.getElementById('btnConnect');
+    const btnDisconnect = document.getElementById('btnDisconnect');
+    const btnBaixar = document.getElementById('btnBaixar');
+    const btnAddPort = document.getElementById('btnAddPort');
+
+    if (btnConnect) {
+        btnConnect.addEventListener('click', async () => {
+            showMsg('Iniciando conexão...');
+            const res = await fetchJson(`/clp/${ip}/connect`, { method: 'POST' });
+            if (res.ok) showMsg(res.message);
+            else showMsg('Erro: ' + (res.error || 'unknown'));
+            // opcional: após alguns segundos, atualizar informações
+            setTimeout(()=> atualizarInfo(ip), 2000);
+        });
+    }
+
+    if (btnDisconnect) {
+        btnDisconnect.addEventListener('click', async () => {
+            showMsg('Desconectando...');
+            const res = await fetchJson(`/clp/${ip}/disconnect`, { method: 'POST' });
+            if (res.ok) {
+                showMsg('Desconectado');
+                atualizarInfo(ip);
+            } else showMsg('Erro: ' + (res.error || 'unknown'));
+        });
+    }
+
+    if (btnBaixar) {
+        btnBaixar.addEventListener('click', async () => {
+            const admin = prompt("Usuário FTP (admin):");
+            if (!admin) return;
+            const senha = prompt("Senha FTP:");
+            if (senha === null) return;
+            showMsg('Iniciando envio do código...');
+            const res = await fetchJson(`/clp/${ip}/baixar_codigo`, {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({ admin, senha })
+            });
+            if (res.ok) showMsg(res.message);
+            else showMsg('Erro: ' + (res.error || 'unknown'));
+        });
+    }
+
+    if (btnAddPort) {
+        btnAddPort.addEventListener('click', async () => {
+            const porta = document.getElementById('inputPorta').value;
+            if (!porta) return showMsg('Informe a porta');
+            showMsg('Adicionando porta...');
+            const res = await fetchJson(`/clp/${ip}/add_port`, {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({ porta: Number(porta) })
+            });
+            if (res.ok) {
+                showMsg('Porta adicionada');
+                atualizarInfo(ip);
+                document.getElementById('inputPorta').value = '';
+            } else {
+                showMsg('Erro: ' + (res.error || 'unknown'));
+            }
+        });
+    }
+
+    // função para atualizar as informações visíveis da página
+    async function atualizarInfo(ip) {
+        const res = await fetchJson(`/clp/${ip}/info`);
+        if (!res.ok) return;
+        const clp = res.clp;
+        // atualiza status e portas na UI
+        const statusEl = document.getElementById('statusText');
+        statusEl.textContent = 'Status: ' + clp.status;
+        statusEl.className = clp.status === 'Online' ? 'status_online' : 'status_offline';
+
+        const listaPortas = document.getElementById('listaPortas');
+        if (listaPortas) {
+            if ((clp.portas || []).length === 0) {
+                listaPortas.innerHTML = '<span class="porta_fechada">Não há portas abertas</span>';
+            } else {
+                listaPortas.innerHTML = clp.portas.map(p => `<span class="porta_item">${p}</span>`).join(', ');
+            }
+        }
+    }
+
+});
+</script>
 {% endblock %}
