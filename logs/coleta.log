@@ -9587,3 +9587,1602 @@
 2025-08-22 17:00:27,105 - INFO - Escaneamento finalizado: 20.189.173.9
 2025-08-22 17:00:27,105 - INFO - Escaneamento finalizado: 20.189.173.9
 >>>>>>> 53c8f0f562c29df6c7422ec1d6fbd108ebc81641
+2025-08-25 14:33:38,812 - INFO - Encontrado: 23.212.154.191
+2025-08-25 14:33:38,813 - INFO - Iniciando escaneamento: 23.212.154.191
+2025-08-25 14:33:38,813 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:33:38,814 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:33:38,818 - INFO - Encontrado: 23.212.153.83
+2025-08-25 14:33:38,819 - ERROR - Erro ao escanear 23.212.154.191: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:38,819 - INFO - Iniciando escaneamento: 23.212.153.83
+2025-08-25 14:33:38,819 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:38,822 - ERROR - Erro ao escanear 23.212.153.83: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:38,841 - INFO - Encontrado: 23.202.185.127
+2025-08-25 14:33:38,841 - INFO - Iniciando escaneamento: 23.202.185.127
+2025-08-25 14:33:38,845 - ERROR - Erro ao escanear 23.202.185.127: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:38,859 - INFO - Encontrado: 52.178.17.234
+2025-08-25 14:33:38,860 - INFO - Iniciando escaneamento: 52.178.17.234
+2025-08-25 14:33:38,862 - ERROR - Erro ao escanear 52.178.17.234: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:39,178 - INFO - Encontrado: 54.68.97.123
+2025-08-25 14:33:39,178 - INFO - Iniciando escaneamento: 54.68.97.123
+2025-08-25 14:33:39,181 - ERROR - Erro ao escanear 54.68.97.123: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:39,187 - INFO - Encontrado: 20.42.73.31
+2025-08-25 14:33:39,187 - INFO - Iniciando escaneamento: 20.42.73.31
+2025-08-25 14:33:39,190 - ERROR - Erro ao escanear 20.42.73.31: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:39,684 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:33:39,684 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:33:39,687 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:39,879 - INFO - Encontrado: 54.68.97.123
+2025-08-25 14:33:39,881 - INFO - Iniciando escaneamento: 54.68.97.123
+2025-08-25 14:33:39,885 - ERROR - Erro ao escanear 54.68.97.123: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:40,033 - INFO - Encontrado: 52.178.17.234
+2025-08-25 14:33:40,033 - INFO - Iniciando escaneamento: 52.178.17.234
+2025-08-25 14:33:40,037 - ERROR - Erro ao escanear 52.178.17.234: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:40,341 - INFO - Encontrado: 10.103.149.23
+2025-08-25 14:33:40,341 - INFO - Encontrado: 10.103.149.23
+2025-08-25 14:33:40,341 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:33:40,341 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:33:40,344 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:40,344 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:42,705 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:33:42,705 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:33:42,706 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:33:42,706 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:33:42,710 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:42,710 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:42,722 - INFO - Encontrado: 23.212.154.191
+2025-08-25 14:33:42,723 - INFO - Iniciando escaneamento: 23.212.154.191
+2025-08-25 14:33:42,726 - ERROR - Erro ao escanear 23.212.154.191: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:44,023 - INFO - Encontrado: 140.82.114.22
+2025-08-25 14:33:44,023 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-25 14:33:44,023 - INFO - Encontrado: 140.82.114.22
+2025-08-25 14:33:44,023 - INFO - Iniciando escaneamento: 140.82.114.22
+2025-08-25 14:33:44,026 - ERROR - Erro ao escanear 140.82.114.22: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:44,026 - ERROR - Erro ao escanear 140.82.114.22: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:45,166 - INFO - Encontrado: 35.206.70.60
+2025-08-25 14:33:45,166 - INFO - Encontrado: 35.206.70.60
+2025-08-25 14:33:45,166 - INFO - Iniciando escaneamento: 35.206.70.60
+2025-08-25 14:33:45,166 - INFO - Iniciando escaneamento: 35.206.70.60
+2025-08-25 14:33:45,176 - ERROR - Erro ao escanear 35.206.70.60: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:45,176 - ERROR - Erro ao escanear 35.206.70.60: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:47,446 - INFO - Encontrado: 95.100.40.8
+2025-08-25 14:33:47,446 - INFO - Encontrado: 95.100.40.8
+2025-08-25 14:33:47,446 - INFO - Iniciando escaneamento: 95.100.40.8
+2025-08-25 14:33:47,446 - INFO - Iniciando escaneamento: 95.100.40.8
+2025-08-25 14:33:47,453 - ERROR - Erro ao escanear 95.100.40.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:47,455 - ERROR - Erro ao escanear 95.100.40.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:48,612 - INFO - Encontrado: 172.217.30.4
+2025-08-25 14:33:48,612 - INFO - Iniciando escaneamento: 172.217.30.4
+2025-08-25 14:33:48,612 - INFO - Iniciando escaneamento: 172.217.30.4
+2025-08-25 14:33:48,620 - ERROR - Erro ao escanear 172.217.30.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:48,621 - ERROR - Erro ao escanear 172.217.30.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:48,793 - INFO - Encontrado: 20.42.73.31
+2025-08-25 14:33:48,796 - INFO - Iniciando escaneamento: 20.42.73.31
+2025-08-25 14:33:48,815 - ERROR - Erro ao escanear 20.42.73.31: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:48,847 - INFO - Encontrado: 140.82.112.26
+2025-08-25 14:33:48,847 - INFO - Encontrado: 140.82.112.26
+2025-08-25 14:33:48,847 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 14:33:48,855 - ERROR - Erro ao escanear 140.82.112.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:48,856 - ERROR - Erro ao escanear 140.82.112.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,103 - INFO - Encontrado: 142.251.134.162
+2025-08-25 14:33:49,103 - INFO - Iniciando escaneamento: 142.251.134.162
+2025-08-25 14:33:49,104 - INFO - Encontrado: 142.251.134.162
+2025-08-25 14:33:49,104 - INFO - Iniciando escaneamento: 142.251.134.162
+2025-08-25 14:33:49,106 - ERROR - Erro ao escanear 142.251.134.162: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,108 - ERROR - Erro ao escanear 142.251.134.162: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,355 - INFO - Encontrado: 216.239.34.157
+2025-08-25 14:33:49,355 - INFO - Iniciando escaneamento: 216.239.34.157
+2025-08-25 14:33:49,355 - INFO - Encontrado: 216.239.34.157
+2025-08-25 14:33:49,355 - INFO - Iniciando escaneamento: 216.239.34.157
+2025-08-25 14:33:49,363 - ERROR - Erro ao escanear 216.239.34.157: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,365 - INFO - Encontrado: 142.250.78.106
+2025-08-25 14:33:49,365 - INFO - Iniciando escaneamento: 142.250.78.106
+2025-08-25 14:33:49,366 - INFO - Encontrado: 142.250.78.106
+2025-08-25 14:33:49,366 - INFO - Iniciando escaneamento: 142.250.78.106
+2025-08-25 14:33:49,367 - ERROR - Erro ao escanear 216.239.34.157: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,371 - ERROR - Erro ao escanear 142.250.78.106: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,373 - ERROR - Erro ao escanear 142.250.78.106: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,498 - INFO - Encontrado: 172.217.162.174
+2025-08-25 14:33:49,498 - INFO - Encontrado: 172.217.162.174
+2025-08-25 14:33:49,498 - INFO - Iniciando escaneamento: 172.217.162.174
+2025-08-25 14:33:49,498 - INFO - Iniciando escaneamento: 172.217.162.174
+2025-08-25 14:33:49,506 - ERROR - Erro ao escanear 172.217.162.174: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,506 - ERROR - Erro ao escanear 172.217.162.174: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,696 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:33:49,697 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:33:49,698 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:33:49,698 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:33:49,704 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,706 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,903 - INFO - Encontrado: 142.250.219.238
+2025-08-25 14:33:49,903 - INFO - Iniciando escaneamento: 142.250.219.238
+2025-08-25 14:33:49,911 - ERROR - Erro ao escanear 142.250.219.238: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,911 - INFO - Iniciando escaneamento: 142.250.219.238
+2025-08-25 14:33:49,920 - ERROR - Erro ao escanear 142.250.219.238: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,990 - INFO - Encontrado: 52.176.103.217
+2025-08-25 14:33:49,990 - INFO - Encontrado: 52.176.103.217
+2025-08-25 14:33:49,991 - INFO - Iniciando escaneamento: 52.176.103.217
+2025-08-25 14:33:49,991 - INFO - Iniciando escaneamento: 52.176.103.217
+2025-08-25 14:33:49,999 - ERROR - Erro ao escanear 52.176.103.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:49,999 - ERROR - Erro ao escanear 52.176.103.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,035 - INFO - Encontrado: 142.251.133.14
+2025-08-25 14:33:50,035 - INFO - Encontrado: 142.251.133.14
+2025-08-25 14:33:50,035 - INFO - Iniciando escaneamento: 142.251.133.14
+2025-08-25 14:33:50,035 - INFO - Iniciando escaneamento: 142.251.133.14
+2025-08-25 14:33:50,043 - ERROR - Erro ao escanear 142.251.133.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,043 - ERROR - Erro ao escanear 142.251.133.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,353 - INFO - Encontrado: 172.217.162.14
+2025-08-25 14:33:50,353 - INFO - Encontrado: 172.217.162.14
+2025-08-25 14:33:50,353 - INFO - Iniciando escaneamento: 172.217.162.14
+2025-08-25 14:33:50,353 - INFO - Iniciando escaneamento: 172.217.162.14
+2025-08-25 14:33:50,365 - ERROR - Erro ao escanear 172.217.162.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,485 - INFO - Encontrado: 172.217.30.34
+2025-08-25 14:33:50,485 - INFO - Encontrado: 172.217.30.34
+2025-08-25 14:33:50,485 - INFO - Iniciando escaneamento: 172.217.30.34
+2025-08-25 14:33:50,485 - INFO - Iniciando escaneamento: 172.217.30.34
+2025-08-25 14:33:50,489 - INFO - Encontrado: 172.217.28.134
+2025-08-25 14:33:50,489 - INFO - Encontrado: 172.217.28.134
+2025-08-25 14:33:50,489 - INFO - Iniciando escaneamento: 172.217.28.134
+2025-08-25 14:33:50,489 - INFO - Iniciando escaneamento: 172.217.28.134
+2025-08-25 14:33:50,497 - ERROR - Erro ao escanear 172.217.30.34: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,497 - ERROR - Erro ao escanear 172.217.30.34: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,498 - ERROR - Erro ao escanear 172.217.28.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,502 - ERROR - Erro ao escanear 172.217.28.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,587 - INFO - Encontrado: 172.217.29.74
+2025-08-25 14:33:50,587 - INFO - Encontrado: 172.217.29.74
+.217.29.74
+2025-08-25 14:33:50,587 - INFO - Iniciando escaneamento: 172.217.29.74
+2025-08-25 14:33:50,595 - ERROR - Erro ao escanear 172.217.29.74: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,596 - ERROR - Erro ao escanear 172.217.29.74: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,921 - INFO - Encontrado: 142.250.79.206
+2025-08-25 14:33:50,921 - INFO - Encontrado: 142.250.79.206
+2025-08-25 14:33:50,922 - INFO - Iniciando escaneamento: 142.250.79.206
+2025-08-25 14:33:50,922 - INFO - Iniciando escaneamento: 142.250.79.206
+2025-08-25 14:33:50,932 - ERROR - Erro ao escanear 142.250.79.206: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:50,934 - ERROR - Erro ao escanear 142.250.79.206: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:51,018 - INFO - Encontrado: 50.116.1.184
+2025-08-25 14:33:51,018 - INFO - Iniciando escaneamento: 50.116.1.184
+2025-08-25 14:33:51,020 - INFO - Encontrado: 50.116.1.184
+2025-08-25 14:33:51,021 - INFO - Iniciando escaneamento: 50.116.1.184
+2025-08-25 14:33:51,031 - ERROR - Erro ao escanear 50.116.1.184: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:51,032 - ERROR - Erro ao escanear 50.116.1.184: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:51,377 - INFO - Encontrado: 23.212.153.185
+2025-08-25 14:33:51,377 - INFO - Encontrado: 23.212.153.185
+2025-08-25 14:33:51,378 - INFO - Iniciando escaneamento: 23.212.153.185
+2025-08-25 14:33:51,378 - INFO - Iniciando escaneamento: 23.212.153.185
+2025-08-25 14:33:51,390 - ERROR - Erro ao escanear 23.212.153.185: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:51,393 - ERROR - Erro ao escanear 23.212.153.185: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:52,087 - INFO - Encontrado: 142.250.219.232
+2025-08-25 14:33:52,088 - INFO - Iniciando escaneamento: 142.250.219.232
+2025-08-25 14:33:52,088 - INFO - Encontrado: 142.250.219.232
+2025-08-25 14:33:52,088 - INFO - Iniciando escaneamento: 142.250.219.232
+2025-08-25 14:33:52,099 - ERROR - Erro ao escanear 142.250.219.232: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:52,100 - ERROR - Erro ao escanear 142.250.219.232: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:52,141 - INFO - Encontrado: 142.251.133.202
+2025-08-25 14:33:52,141 - INFO - Encontrado: 142.251.133.202
+2025-08-25 14:33:52,141 - INFO - Iniciando escaneamento: 142.251.133.202
+2025-08-25 14:33:52,141 - INFO - Iniciando escaneamento: 142.251.133.202
+2025-08-25 14:33:52,154 - ERROR - Erro ao escanear 142.251.133.202: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:52,154 - ERROR - Erro ao escanear 142.251.133.202: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:55,153 - INFO - Encontrado: 23.212.153.83
+2025-08-25 14:33:55,153 - INFO - Iniciando escaneamento: 23.212.153.83
+2025-08-25 14:33:55,164 - ERROR - Erro ao escanear 23.212.153.83: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:55,709 - INFO - Encontrado: 10.103.186.120
+2025-08-25 14:33:55,709 - INFO - Encontrado: 10.103.186.120
+2025-08-25 14:33:55,709 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:33:55,709 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:33:55,717 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:55,718 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:55,983 - INFO - Encontrado: 10.103.149.25
+2025-08-25 14:33:55,984 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 14:33:55,984 - INFO - Encontrado: 10.103.149.25
+2025-08-25 14:33:55,984 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 14:33:55,991 - ERROR - Erro ao escanear 10.103.149.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:55,992 - ERROR - Erro ao escanear 10.103.149.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:58,539 - INFO - Encontrado: 201.0.219.177
+2025-08-25 14:33:58,540 - INFO - Iniciando escaneamento: 201.0.219.177
+2025-08-25 14:33:58,542 - INFO - Iniciando escaneamento: 201.0.219.177
+2025-08-25 14:33:58,563 - ERROR - Erro ao escanear 201.0.219.177: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:33:58,564 - ERROR - Erro ao escanear 201.0.219.177: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:00,077 - INFO - Encontrado: 201.31.255.40
+2025-08-25 14:34:00,078 - INFO - Encontrado: 201.31.255.40
+2025-08-25 14:34:00,078 - INFO - Iniciando escaneamento: 201.31.255.40
+2025-08-25 14:34:00,078 - INFO - Iniciando escaneamento: 201.31.255.40
+2025-08-25 14:34:00,094 - ERROR - Erro ao escanear 201.31.255.40: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:00,094 - ERROR - Erro ao escanear 201.31.255.40: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:00,506 - INFO - Encontrado: 10.103.149.8
+2025-08-25 14:34:00,506 - INFO - Encontrado: 10.103.149.8
+2025-08-25 14:34:00,507 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:34:00,507 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:34:00,519 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:00,520 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:03,702 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:34:03,702 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:34:03,702 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:34:03,703 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:34:03,712 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:03,713 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:07,663 - INFO - Encontrado: 54.72.25.226
+2025-08-25 14:34:07,663 - INFO - Encontrado: 54.72.25.226
+2025-08-25 14:34:07,664 - INFO - Iniciando escaneamento: 54.72.25.226
+2025-08-25 14:34:07,664 - INFO - Iniciando escaneamento: 54.72.25.226
+2025-08-25 14:34:07,671 - ERROR - Erro ao escanear 54.72.25.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:07,673 - ERROR - Erro ao escanear 54.72.25.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:10,361 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:34:10,361 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:34:10,362 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:34:10,362 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:34:10,366 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:10,366 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:11,186 - INFO - Encontrado: 10.103.149.18
+2025-08-25 14:34:11,186 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:34:11,188 - INFO - Encontrado: 10.103.149.18
+2025-08-25 14:34:11,188 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:34:11,196 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:11,200 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:11,382 - INFO - Encontrado: 23.202.185.127
+2025-08-25 14:34:11,382 - INFO - Iniciando escaneamento: 23.202.185.127
+2025-08-25 14:34:11,389 - ERROR - Erro ao escanear 23.202.185.127: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:11,465 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:34:11,466 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:34:11,481 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:11,500 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:34:11,500 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:34:11,507 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:13,704 - INFO - Encontrado: 10.103.130.142
+2025-08-25 14:34:13,704 - INFO - Encontrado: 10.103.130.142
+2025-08-25 14:34:13,704 - INFO - Iniciando escaneamento: 10.103.130.142
+2025-08-25 14:34:13,705 - INFO - Iniciando escaneamento: 10.103.130.142
+2025-08-25 14:34:13,729 - ERROR - Erro ao escanear 10.103.130.142: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:13,731 - ERROR - Erro ao escanear 10.103.130.142: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:22,963 - INFO - Encontrado: 10.103.149.13
+2025-08-25 14:34:22,963 - INFO - Iniciando escaneamento: 10.103.149.13
+2025-08-25 14:34:22,963 - INFO - Encontrado: 10.103.149.13
+2025-08-25 14:34:22,963 - INFO - Iniciando escaneamento: 10.103.149.13
+2025-08-25 14:34:22,971 - ERROR - Erro ao escanear 10.103.149.13: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:22,971 - ERROR - Erro ao escanear 10.103.149.13: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:24,166 - INFO - Encontrado: 10.103.149.24
+2025-08-25 14:34:24,166 - INFO - Encontrado: 10.103.149.24
+2025-08-25 14:34:24,166 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:34:24,167 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:34:24,189 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:24,191 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:32,094 - INFO - Encontrado: 172.172.255.217
+2025-08-25 14:34:32,093 - INFO - Encontrado: 172.172.255.217
+2025-08-25 14:34:32,094 - INFO - Iniciando escaneamento: 172.172.255.217
+2025-08-25 14:34:32,120 - ERROR - Erro ao escanear 172.172.255.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:32,121 - ERROR - Erro ao escanear 172.172.255.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:51,334 - INFO - Encontrado: 40.79.141.154
+2025-08-25 14:34:51,334 - INFO - Encontrado: 40.79.141.154
+2025-08-25 14:34:51,334 - INFO - Iniciando escaneamento: 40.79.141.154
+2025-08-25 14:34:51,334 - INFO - Iniciando escaneamento: 40.79.141.154
+2025-08-25 14:34:51,336 - ERROR - Erro ao escanear 40.79.141.154: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:51,336 - ERROR - Erro ao escanear 40.79.141.154: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:51,988 - INFO - Encontrado: 104.208.16.92
+2025-08-25 14:34:51,989 - INFO - Iniciando escaneamento: 104.208.16.92
+2025-08-25 14:34:51,990 - INFO - Encontrado: 104.208.16.92
+2025-08-25 14:34:51,992 - INFO - Iniciando escaneamento: 104.208.16.92
+2025-08-25 14:34:51,998 - ERROR - Erro ao escanear 104.208.16.92: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:51,998 - ERROR - Erro ao escanear 104.208.16.92: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:58,829 - INFO - Encontrado: 44.225.240.147
+2025-08-25 14:34:58,829 - INFO - Encontrado: 44.225.240.147
+2025-08-25 14:34:58,829 - INFO - Iniciando escaneamento: 44.225.240.147
+2025-08-25 14:34:58,830 - INFO - Iniciando escaneamento: 44.225.240.147
+2025-08-25 14:34:58,836 - ERROR - Erro ao escanear 44.225.240.147: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:34:58,836 - ERROR - Erro ao escanear 44.225.240.147: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:17,836 - INFO - Encontrado: 51.105.71.137
+2025-08-25 14:45:17,836 - INFO - Iniciando escaneamento: 51.105.71.137
+2025-08-25 14:45:17,838 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:45:17,838 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:45:17,840 - ERROR - Erro ao escanear 51.105.71.137: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:17,841 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,010 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:45:19,010 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:45:19,013 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,190 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:45:19,190 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:45:19,190 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:45:19,191 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:45:19,194 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,194 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,204 - INFO - Encontrado: 51.105.71.137
+2025-08-25 14:45:19,205 - INFO - Iniciando escaneamento: 51.105.71.137
+2025-08-25 14:45:19,207 - ERROR - Erro ao escanear 51.105.71.137: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,361 - INFO - Encontrado: 10.103.177.17
+2025-08-25 14:45:19,361 - INFO - Encontrado: 10.103.177.17
+2025-08-25 14:45:19,361 - INFO - Iniciando escaneamento: 10.103.177.17
+2025-08-25 14:45:19,361 - INFO - Iniciando escaneamento: 10.103.177.17
+2025-08-25 14:45:19,364 - ERROR - Erro ao escanear 10.103.177.17: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,364 - ERROR - Erro ao escanear 10.103.177.17: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,470 - INFO - Encontrado: 150.171.27.11
+2025-08-25 14:45:19,470 - INFO - Encontrado: 150.171.27.11
+2025-08-25 14:45:19,470 - INFO - Iniciando escaneamento: 150.171.27.11
+2025-08-25 14:45:19,470 - INFO - Iniciando escaneamento: 150.171.27.11
+2025-08-25 14:45:19,473 - ERROR - Erro ao escanear 150.171.27.11: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,473 - ERROR - Erro ao escanear 150.171.27.11: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,485 - INFO - Encontrado: 23.201.218.191
+2025-08-25 14:45:19,485 - INFO - Encontrado: 23.201.218.191
+2025-08-25 14:45:19,485 - INFO - Iniciando escaneamento: 23.201.218.191
+2025-08-25 14:45:19,485 - INFO - Iniciando escaneamento: 23.201.218.191
+2025-08-25 14:45:19,489 - ERROR - Erro ao escanear 23.201.218.191: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,489 - ERROR - Erro ao escanear 23.201.218.191: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,801 - INFO - Encontrado: 10.103.130.160
+2025-08-25 14:45:19,801 - INFO - Iniciando escaneamento: 10.103.130.160
+2025-08-25 14:45:19,801 - INFO - Iniciando escaneamento: 10.103.130.160
+2025-08-25 14:45:19,804 - ERROR - Erro ao escanear 10.103.130.160: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:19,804 - ERROR - Erro ao escanear 10.103.130.160: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,015 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:45:20,015 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:45:20,015 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:45:20,015 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:45:20,018 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,018 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,076 - INFO - Encontrado: 13.107.246.33
+2025-08-25 14:45:20,076 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 14:45:20,076 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 14:45:20,080 - ERROR - Erro ao escanear 13.107.246.33: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,080 - ERROR - Erro ao escanear 13.107.246.33: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,648 - INFO - Encontrado: 201.31.255.40
+2025-08-25 14:45:20,648 - INFO - Encontrado: 201.31.255.40
+2025-08-25 14:45:20,648 - INFO - Iniciando escaneamento: 201.31.255.40
+2025-08-25 14:45:20,648 - INFO - Iniciando escaneamento: 201.31.255.40
+2025-08-25 14:45:20,651 - ERROR - Erro ao escanear 201.31.255.40: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,651 - ERROR - Erro ao escanear 201.31.255.40: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,838 - INFO - Encontrado: 10.103.149.18
+2025-08-25 14:45:20,838 - INFO - Encontrado: 10.103.149.18
+2025-08-25 14:45:20,838 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:45:20,838 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:45:20,842 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:20,842 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:21,836 - INFO - Encontrado: 201.0.219.177
+2025-08-25 14:45:21,836 - INFO - Iniciando escaneamento: 201.0.219.177
+2025-08-25 14:45:21,836 - INFO - Iniciando escaneamento: 201.0.219.177
+2025-08-25 14:45:21,839 - ERROR - Erro ao escanear 201.0.219.177: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:21,839 - ERROR - Erro ao escanear 201.0.219.177: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:21,931 - INFO - Encontrado: 201.31.255.42
+2025-08-25 14:45:21,931 - INFO - Iniciando escaneamento: 201.31.255.42
+2025-08-25 14:45:21,931 - INFO - Iniciando escaneamento: 201.31.255.42
+2025-08-25 14:45:21,935 - ERROR - Erro ao escanear 201.31.255.42: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:23,167 - INFO - Encontrado: 88.221.0.38
+2025-08-25 14:45:23,167 - INFO - Encontrado: 88.221.0.38
+2025-08-25 14:45:23,168 - INFO - Iniciando escaneamento: 88.221.0.38
+2025-08-25 14:45:23,178 - ERROR - Erro ao escanear 88.221.0.38: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:23,179 - ERROR - Erro ao escanear 88.221.0.38: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:24,173 - INFO - Encontrado: 10.103.149.19
+2025-08-25 14:45:24,173 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 14:45:24,173 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 14:45:24,182 - ERROR - Erro ao escanear 10.103.149.19: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:24,182 - ERROR - Erro ao escanear 10.103.149.19: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:25,580 - INFO - Encontrado: 10.103.130.97
+2025-08-25 14:45:25,581 - INFO - Iniciando escaneamento: 10.103.130.97
+2025-08-25 14:45:25,581 - INFO - Iniciando escaneamento: 10.103.130.97
+2025-08-25 14:45:25,588 - ERROR - Erro ao escanear 10.103.130.97: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:25,588 - ERROR - Erro ao escanear 10.103.130.97: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:26,018 - INFO - Encontrado: 10.103.149.6
+2025-08-25 14:45:26,018 - INFO - Encontrado: 10.103.149.6
+2025-08-25 14:45:26,019 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 14:45:26,019 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 14:45:26,030 - ERROR - Erro ao escanear 10.103.149.6: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:26,030 - ERROR - Erro ao escanear 10.103.149.6: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:27,184 - INFO - Encontrado: 185.199.108.133
+2025-08-25 14:45:27,184 - INFO - Encontrado: 185.199.108.133
+2025-08-25 14:45:27,185 - INFO - Iniciando escaneamento: 185.199.108.133
+2025-08-25 14:45:27,197 - ERROR - Erro ao escanear 185.199.108.133: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:27,197 - ERROR - Erro ao escanear 185.199.108.133: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:28,874 - INFO - Encontrado: 104.18.36.169
+2025-08-25 14:45:28,875 - INFO - Encontrado: 104.18.36.169
+2025-08-25 14:45:28,875 - INFO - Iniciando escaneamento: 104.18.36.169
+2025-08-25 14:45:28,875 - INFO - Iniciando escaneamento: 104.18.36.169
+2025-08-25 14:45:28,883 - ERROR - Erro ao escanear 104.18.36.169: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:28,883 - ERROR - Erro ao escanear 104.18.36.169: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:29,493 - INFO - Encontrado: 104.21.80.27
+2025-08-25 14:45:29,494 - INFO - Encontrado: 104.21.80.27
+2025-08-25 14:45:29,494 - INFO - Iniciando escaneamento: 104.21.80.27
+2025-08-25 14:45:29,494 - INFO - Iniciando escaneamento: 104.21.80.27
+2025-08-25 14:45:29,504 - ERROR - Erro ao escanear 104.21.80.27: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:29,504 - ERROR - Erro ao escanear 104.21.80.27: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:29,661 - INFO - Encontrado: 104.18.39.21
+2025-08-25 14:45:29,661 - INFO - Encontrado: 104.18.39.21
+2025-08-25 14:45:29,662 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 14:45:29,663 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 14:45:29,671 - ERROR - Erro ao escanear 104.18.39.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:29,671 - ERROR - Erro ao escanear 104.18.39.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:29,998 - INFO - Encontrado: 150.171.74.16
+2025-08-25 14:45:29,998 - INFO - Encontrado: 150.171.74.16
+2025-08-25 14:45:29,998 - INFO - Iniciando escaneamento: 150.171.74.16
+2025-08-25 14:45:29,999 - INFO - Iniciando escaneamento: 150.171.74.16
+2025-08-25 14:45:30,003 - ERROR - Erro ao escanear 150.171.74.16: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:30,003 - ERROR - Erro ao escanear 150.171.74.16: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:31,808 - INFO - Encontrado: 10.103.130.108
+2025-08-25 14:45:31,808 - INFO - Encontrado: 10.103.130.108
+2025-08-25 14:45:31,809 - INFO - Iniciando escaneamento: 10.103.130.108
+2025-08-25 14:45:31,809 - INFO - Iniciando escaneamento: 10.103.130.108
+2025-08-25 14:45:31,812 - ERROR - Erro ao escanear 10.103.130.108: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:31,812 - ERROR - Erro ao escanear 10.103.130.108: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:33,924 - INFO - Encontrado: 104.18.32.47
+2025-08-25 14:45:33,924 - INFO - Encontrado: 104.18.32.47
+2025-08-25 14:45:33,924 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 14:45:33,924 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 14:45:33,931 - ERROR - Erro ao escanear 104.18.32.47: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:33,932 - ERROR - Erro ao escanear 104.18.32.47: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:33,949 - INFO - Encontrado: 10.103.149.8
+2025-08-25 14:45:33,949 - INFO - Encontrado: 10.103.149.8
+2025-08-25 14:45:33,950 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:45:33,950 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:45:33,956 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:33,956 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:34,331 - INFO - Encontrado: 3.233.158.24
+2025-08-25 14:45:34,331 - INFO - Encontrado: 3.233.158.24
+2025-08-25 14:45:34,331 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 14:45:34,332 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 14:45:34,340 - ERROR - Erro ao escanear 3.233.158.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:34,340 - ERROR - Erro ao escanear 3.233.158.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:35,705 - INFO - Encontrado: 10.103.149.24
+2025-08-25 14:45:35,705 - INFO - Encontrado: 10.103.149.24
+2025-08-25 14:45:35,705 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:45:35,706 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:45:35,716 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:35,716 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:38,078 - INFO - Encontrado: 140.82.114.25
+2025-08-25 14:45:38,079 - INFO - Iniciando escaneamento: 140.82.114.25
+2025-08-25 14:45:38,079 - INFO - Encontrado: 140.82.114.25
+2025-08-25 14:45:38,080 - INFO - Iniciando escaneamento: 140.82.114.25
+2025-08-25 14:45:38,098 - ERROR - Erro ao escanear 140.82.114.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:38,100 - ERROR - Erro ao escanear 140.82.114.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,844 - INFO - Encontrado: 18.200.151.63
+2025-08-25 14:45:41,844 - INFO - Encontrado: 18.200.151.63
+2025-08-25 14:45:41,845 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 14:45:41,845 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 14:45:41,869 - ERROR - Erro ao escanear 18.200.151.63: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,869 - ERROR - Erro ao escanear 18.200.151.63: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,871 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:45:41,871 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:45:41,872 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:45:41,872 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:45:41,879 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,880 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,893 - INFO - Encontrado: 23.46.247.107
+2025-08-25 14:45:41,893 - INFO - Iniciando escaneamento: 23.46.247.107
+2025-08-25 14:45:41,893 - INFO - Iniciando escaneamento: 23.46.247.107
+2025-08-25 14:45:41,902 - ERROR - Erro ao escanear 23.46.247.107: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,903 - ERROR - Erro ao escanear 23.46.247.107: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,981 - INFO - Encontrado: 20.201.52.37
+2025-08-25 14:45:41,981 - INFO - Iniciando escaneamento: 20.201.52.37
+2025-08-25 14:45:41,982 - INFO - Iniciando escaneamento: 20.201.52.37
+2025-08-25 14:45:41,992 - ERROR - Erro ao escanear 20.201.52.37: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:41,993 - ERROR - Erro ao escanear 20.201.52.37: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:42,532 - INFO - Encontrado: 185.199.108.154
+2025-08-25 14:45:42,532 - INFO - Encontrado: 185.199.108.154
+2025-08-25 14:45:42,533 - INFO - Iniciando escaneamento: 185.199.108.154
+2025-08-25 14:45:42,533 - INFO - Iniciando escaneamento: 185.199.108.154
+2025-08-25 14:45:42,540 - ERROR - Erro ao escanear 185.199.108.154: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:42,541 - ERROR - Erro ao escanear 185.199.108.154: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:46,166 - INFO - Encontrado: 95.85.92.62
+2025-08-25 14:45:46,166 - INFO - Iniciando escaneamento: 95.85.92.62
+2025-08-25 14:45:46,168 - INFO - Encontrado: 95.85.92.62
+2025-08-25 14:45:46,170 - INFO - Iniciando escaneamento: 95.85.92.62
+2025-08-25 14:45:46,181 - ERROR - Erro ao escanear 95.85.92.62: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:46,184 - ERROR - Erro ao escanear 95.85.92.62: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:48,548 - INFO - Encontrado: 10.103.149.23
+2025-08-25 14:45:48,548 - INFO - Encontrado: 10.103.149.23
+2025-08-25 14:45:48,549 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:45:48,549 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:45:48,566 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:48,567 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:49,209 - INFO - Encontrado: 172.217.29.163
+2025-08-25 14:45:49,210 - INFO - Encontrado: 172.217.29.163
+2025-08-25 14:45:49,210 - INFO - Iniciando escaneamento: 172.217.29.163
+2025-08-25 14:45:49,211 - INFO - Iniciando escaneamento: 172.217.29.163
+2025-08-25 14:45:49,231 - ERROR - Erro ao escanear 172.217.29.163: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:49,232 - ERROR - Erro ao escanear 172.217.29.163: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:52,859 - INFO - Encontrado: 88.221.0.41
+2025-08-25 14:45:52,860 - INFO - Iniciando escaneamento: 88.221.0.41
+2025-08-25 14:45:52,860 - INFO - Encontrado: 88.221.0.41
+2025-08-25 14:45:52,860 - INFO - Iniciando escaneamento: 88.221.0.41
+2025-08-25 14:45:52,879 - ERROR - Erro ao escanear 88.221.0.41: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:52,882 - ERROR - Erro ao escanear 88.221.0.41: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:53,612 - INFO - Encontrado: 172.217.162.227
+2025-08-25 14:45:53,612 - INFO - Iniciando escaneamento: 172.217.162.227
+2025-08-25 14:45:53,612 - INFO - Iniciando escaneamento: 172.217.162.227
+2025-08-25 14:45:53,621 - ERROR - Erro ao escanear 172.217.162.227: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:53,623 - ERROR - Erro ao escanear 172.217.162.227: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:53,963 - INFO - Encontrado: 10.103.186.122
+2025-08-25 14:45:53,963 - INFO - Encontrado: 10.103.186.122
+2025-08-25 14:45:53,964 - INFO - Iniciando escaneamento: 10.103.186.122
+2025-08-25 14:45:53,964 - INFO - Iniciando escaneamento: 10.103.186.122
+2025-08-25 14:45:53,974 - ERROR - Erro ao escanear 10.103.186.122: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:53,976 - ERROR - Erro ao escanear 10.103.186.122: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:58,927 - INFO - Encontrado: 10.103.186.120
+2025-08-25 14:45:58,927 - INFO - Encontrado: 10.103.186.120
+2025-08-25 14:45:58,927 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:45:58,927 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:45:58,937 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:58,938 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:59,534 - INFO - Encontrado: 172.64.155.209
+2025-08-25 14:45:59,535 - INFO - Iniciando escaneamento: 172.64.155.209
+2025-08-25 14:45:59,534 - INFO - Encontrado: 172.64.155.209
+2025-08-25 14:45:59,535 - INFO - Iniciando escaneamento: 172.64.155.209
+2025-08-25 14:45:59,554 - ERROR - Erro ao escanear 172.64.155.209: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:45:59,554 - ERROR - Erro ao escanear 172.64.155.209: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:06,401 - INFO - Encontrado: 35.206.70.60
+2025-08-25 14:46:06,402 - INFO - Iniciando escaneamento: 35.206.70.60
+2025-08-25 14:46:06,403 - INFO - Encontrado: 35.206.70.60
+2025-08-25 14:46:06,404 - INFO - Iniciando escaneamento: 35.206.70.60
+2025-08-25 14:46:06,411 - ERROR - Erro ao escanear 35.206.70.60: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:06,413 - ERROR - Erro ao escanear 35.206.70.60: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:20,942 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:46:20,942 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:46:20,942 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:46:20,943 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:46:20,960 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:20,961 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:22,596 - INFO - Encontrado: 10.103.177.21
+2025-08-25 14:46:22,596 - INFO - Encontrado: 10.103.177.21
+2025-08-25 14:46:22,597 - INFO - Iniciando escaneamento: 10.103.177.21
+2025-08-25 14:46:22,597 - INFO - Iniciando escaneamento: 10.103.177.21
+2025-08-25 14:46:22,619 - ERROR - Erro ao escanear 10.103.177.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:22,620 - ERROR - Erro ao escanear 10.103.177.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:23,317 - INFO - Encontrado: 23.36.41.139
+2025-08-25 14:46:23,317 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 14:46:23,320 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 14:46:23,336 - ERROR - Erro ao escanear 23.36.41.139: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:23,338 - ERROR - Erro ao escanear 23.36.41.139: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:26,002 - INFO - Encontrado: 72.153.5.129
+2025-08-25 14:46:26,002 - INFO - Encontrado: 72.153.5.129
+2025-08-25 14:46:26,003 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 14:46:26,003 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 14:46:26,018 - ERROR - Erro ao escanear 72.153.5.129: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:26,018 - ERROR - Erro ao escanear 72.153.5.129: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:31,752 - INFO - Encontrado: 172.217.192.84
+2025-08-25 14:46:31,753 - INFO - Encontrado: 172.217.192.84
+2025-08-25 14:46:31,753 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 14:46:31,755 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 14:46:31,776 - ERROR - Erro ao escanear 172.217.192.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:46:31,776 - ERROR - Erro ao escanear 172.217.192.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:06,785 - INFO - Encontrado: 2.18.127.199
+2025-08-25 14:47:06,786 - INFO - Iniciando escaneamento: 2.18.127.199
+2025-08-25 14:47:06,786 - INFO - Iniciando escaneamento: 2.18.127.199
+2025-08-25 14:47:06,804 - ERROR - Erro ao escanear 2.18.127.199: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:06,805 - ERROR - Erro ao escanear 2.18.127.199: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:12,365 - INFO - Encontrado: 172.217.172.131
+2025-08-25 14:47:12,365 - INFO - Iniciando escaneamento: 172.217.172.131
+2025-08-25 14:47:12,365 - INFO - Iniciando escaneamento: 172.217.172.131
+2025-08-25 14:47:12,374 - ERROR - Erro ao escanear 172.217.172.131: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:12,374 - ERROR - Erro ao escanear 172.217.172.131: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:27,017 - INFO - Encontrado: 23.212.153.83
+2025-08-25 14:47:27,017 - INFO - Encontrado: 23.212.153.83
+2025-08-25 14:47:27,017 - INFO - Iniciando escaneamento: 23.212.153.83
+2025-08-25 14:47:27,019 - INFO - Iniciando escaneamento: 23.212.153.83
+2025-08-25 14:47:27,033 - ERROR - Erro ao escanear 23.212.153.83: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:27,037 - ERROR - Erro ao escanear 23.212.153.83: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:42,233 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:47:42,234 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:47:42,235 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:47:42,236 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:47:42,249 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:42,249 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:52,799 - INFO - Encontrado: 10.103.130.171
+2025-08-25 14:47:52,800 - INFO - Encontrado: 10.103.130.171
+2025-08-25 14:47:52,800 - INFO - Iniciando escaneamento: 10.103.130.171
+2025-08-25 14:47:52,824 - ERROR - Erro ao escanear 10.103.130.171: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:47:52,825 - ERROR - Erro ao escanear 10.103.130.171: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:00,930 - INFO - Encontrado: 95.101.125.124
+2025-08-25 14:48:00,931 - INFO - Encontrado: 95.101.125.124
+2025-08-25 14:48:00,932 - INFO - Iniciando escaneamento: 95.101.125.124
+2025-08-25 14:48:00,938 - INFO - Iniciando escaneamento: 95.101.125.124
+2025-08-25 14:48:00,955 - ERROR - Erro ao escanear 95.101.125.124: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:00,955 - ERROR - Erro ao escanear 95.101.125.124: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:06,454 - INFO - Encontrado: 172.172.255.216
+2025-08-25 14:48:06,454 - INFO - Encontrado: 172.172.255.216
+2025-08-25 14:48:06,454 - INFO - Iniciando escaneamento: 172.172.255.216
+2025-08-25 14:48:06,455 - INFO - Iniciando escaneamento: 172.172.255.216
+2025-08-25 14:48:06,472 - ERROR - Erro ao escanear 172.172.255.216: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:06,472 - ERROR - Erro ao escanear 172.172.255.216: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:12,126 - INFO - Encontrado: 95.101.125.94
+2025-08-25 14:48:12,127 - INFO - Encontrado: 95.101.125.94
+2025-08-25 14:48:12,127 - INFO - Iniciando escaneamento: 95.101.125.94
+2025-08-25 14:48:12,127 - INFO - Iniciando escaneamento: 95.101.125.94
+2025-08-25 14:48:12,134 - ERROR - Erro ao escanear 95.101.125.94: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:12,135 - ERROR - Erro ao escanear 95.101.125.94: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:16,676 - INFO - Encontrado: 34.128.128.0
+2025-08-25 14:48:16,677 - INFO - Iniciando escaneamento: 34.128.128.0
+2025-08-25 14:48:16,678 - INFO - Encontrado: 34.128.128.0
+2025-08-25 14:48:16,679 - INFO - Iniciando escaneamento: 34.128.128.0
+2025-08-25 14:48:16,690 - ERROR - Erro ao escanear 34.128.128.0: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:16,692 - ERROR - Erro ao escanear 34.128.128.0: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:17,353 - INFO - Encontrado: 104.46.162.226
+2025-08-25 14:48:17,354 - INFO - Iniciando escaneamento: 104.46.162.226
+2025-08-25 14:48:17,354 - INFO - Iniciando escaneamento: 104.46.162.226
+2025-08-25 14:48:17,357 - ERROR - Erro ao escanear 104.46.162.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:17,357 - ERROR - Erro ao escanear 104.46.162.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:29,954 - INFO - Encontrado: 72.153.5.140
+2025-08-25 14:48:29,954 - INFO - Iniciando escaneamento: 72.153.5.140
+2025-08-25 14:48:29,954 - INFO - Iniciando escaneamento: 72.153.5.140
+2025-08-25 14:48:29,959 - ERROR - Erro ao escanear 72.153.5.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:29,959 - ERROR - Erro ao escanear 72.153.5.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:34,136 - INFO - Encontrado: 142.250.0.84
+2025-08-25 14:48:34,136 - INFO - Encontrado: 142.250.0.84
+2025-08-25 14:48:34,137 - INFO - Iniciando escaneamento: 142.250.0.84
+2025-08-25 14:48:34,138 - INFO - Iniciando escaneamento: 142.250.0.84
+2025-08-25 14:48:34,151 - ERROR - Erro ao escanear 142.250.0.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:34,151 - ERROR - Erro ao escanear 142.250.0.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:36,073 - INFO - Encontrado: 35.190.80.1
+2025-08-25 14:48:36,074 - INFO - Iniciando escaneamento: 35.190.80.1
+2025-08-25 14:48:36,074 - INFO - Iniciando escaneamento: 35.190.80.1
+2025-08-25 14:48:36,079 - ERROR - Erro ao escanear 35.190.80.1: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:36,079 - ERROR - Erro ao escanear 35.190.80.1: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:44,497 - INFO - Encontrado: 95.100.41.134
+2025-08-25 14:48:44,497 - INFO - Encontrado: 95.100.41.134
+2025-08-25 14:48:44,497 - INFO - Iniciando escaneamento: 95.100.41.134
+2025-08-25 14:48:44,498 - INFO - Iniciando escaneamento: 95.100.41.134
+2025-08-25 14:48:44,509 - ERROR - Erro ao escanear 95.100.41.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:44,509 - ERROR - Erro ao escanear 95.100.41.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:57,640 - INFO - Encontrado: 54.72.25.226
+2025-08-25 14:48:57,640 - INFO - Encontrado: 54.72.25.226
+2025-08-25 14:48:57,642 - INFO - Iniciando escaneamento: 54.72.25.226
+2025-08-25 14:48:57,660 - ERROR - Erro ao escanear 54.72.25.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:48:57,662 - ERROR - Erro ao escanear 54.72.25.226: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,649 - INFO - Encontrado: 172.217.30.4
+2025-08-25 14:49:14,649 - INFO - Iniciando escaneamento: 172.217.30.4
+2025-08-25 14:49:14,649 - INFO - Encontrado: 172.217.30.4
+2025-08-25 14:49:14,650 - INFO - Iniciando escaneamento: 172.217.30.4
+2025-08-25 14:49:14,657 - ERROR - Erro ao escanear 172.217.30.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,658 - ERROR - Erro ao escanear 172.217.30.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,786 - INFO - Encontrado: 142.251.133.68
+2025-08-25 14:49:14,787 - INFO - Encontrado: 142.251.133.68
+2025-08-25 14:49:14,787 - INFO - Iniciando escaneamento: 142.251.133.68
+2025-08-25 14:49:14,787 - INFO - Iniciando escaneamento: 142.251.133.68
+2025-08-25 14:49:14,797 - INFO - Encontrado: 172.217.30.132
+2025-08-25 14:49:14,798 - INFO - Iniciando escaneamento: 172.217.30.132
+2025-08-25 14:49:14,798 - INFO - Encontrado: 172.217.30.132
+2025-08-25 14:49:14,798 - INFO - Iniciando escaneamento: 172.217.30.132
+2025-08-25 14:49:14,800 - INFO - Encontrado: 172.217.30.228
+2025-08-25 14:49:14,802 - INFO - Encontrado: 172.217.30.228
+2025-08-25 14:49:14,803 - INFO - Iniciando escaneamento: 172.217.30.228
+2025-08-25 14:49:14,805 - INFO - Iniciando escaneamento: 172.217.30.228
+2025-08-25 14:49:14,812 - ERROR - Erro ao escanear 142.251.133.68: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,814 - ERROR - Erro ao escanear 172.217.30.132: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,815 - ERROR - Erro ao escanear 142.251.133.68: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,816 - ERROR - Erro ao escanear 172.217.30.228: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,818 - ERROR - Erro ao escanear 172.217.30.132: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:14,818 - ERROR - Erro ao escanear 172.217.30.228: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:20,960 - INFO - Encontrado: 3.233.158.26
+2025-08-25 14:49:20,961 - INFO - Iniciando escaneamento: 3.233.158.26
+2025-08-25 14:49:20,961 - INFO - Encontrado: 3.233.158.26
+2025-08-25 14:49:20,961 - INFO - Iniciando escaneamento: 3.233.158.26
+2025-08-25 14:49:20,967 - ERROR - Erro ao escanear 3.233.158.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:49:20,968 - ERROR - Erro ao escanear 3.233.158.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:19,408 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:51:19,408 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:51:19,411 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:19,456 - INFO - Encontrado: 10.103.149.25
+2025-08-25 14:51:19,456 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 14:51:19,459 - ERROR - Erro ao escanear 10.103.149.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,216 - INFO - Encontrado: 10.103.149.25
+2025-08-25 14:51:20,219 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 14:51:20,224 - ERROR - Erro ao escanear 10.103.149.25: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,567 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:51:20,567 - INFO - Encontrado: 10.103.149.14
+2025-08-25 14:51:20,567 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:51:20,567 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 14:51:20,570 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,570 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,580 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:51:20,580 - INFO - Encontrado: 10.103.132.4
+2025-08-25 14:51:20,580 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:51:20,580 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 14:51:20,584 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,584 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,755 - INFO - Encontrado: 20.189.173.11
+2025-08-25 14:51:20,756 - INFO - Iniciando escaneamento: 20.189.173.11
+2025-08-25 14:51:20,756 - INFO - Iniciando escaneamento: 20.189.173.11
+2025-08-25 14:51:20,766 - ERROR - Erro ao escanear 20.189.173.11: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:20,767 - ERROR - Erro ao escanear 20.189.173.11: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:21,002 - INFO - Encontrado: 140.82.112.26
+2025-08-25 14:51:21,002 - INFO - Encontrado: 140.82.112.26
+2025-08-25 14:51:21,003 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 14:51:21,002 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 14:51:21,009 - ERROR - Erro ao escanear 140.82.112.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:21,010 - ERROR - Erro ao escanear 140.82.112.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:22,677 - INFO - Encontrado: 10.103.186.120
+2025-08-25 14:51:22,677 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:51:22,677 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 14:51:22,680 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:22,680 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:27,275 - INFO - Encontrado: 172.217.29.138
+2025-08-25 14:51:27,275 - INFO - Encontrado: 172.217.29.138
+2025-08-25 14:51:27,276 - INFO - Iniciando escaneamento: 172.217.29.138
+2025-08-25 14:51:27,276 - INFO - Iniciando escaneamento: 172.217.29.138
+2025-08-25 14:51:27,280 - ERROR - Erro ao escanear 172.217.29.138: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:27,281 - ERROR - Erro ao escanear 172.217.29.138: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:29,654 - INFO - Encontrado: 104.18.39.21
+2025-08-25 14:51:29,654 - INFO - Encontrado: 104.18.39.21
+2025-08-25 14:51:29,654 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 14:51:29,656 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 14:51:29,662 - ERROR - Erro ao escanear 104.18.39.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:29,662 - ERROR - Erro ao escanear 104.18.39.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:31,065 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:51:31,065 - INFO - Encontrado: 40.71.14.140
+2025-08-25 14:51:31,065 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:51:31,066 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 14:51:31,071 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:31,071 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:32,085 - INFO - Encontrado: 10.103.149.23
+2025-08-25 14:51:32,086 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:51:32,086 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 14:51:32,098 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:32,098 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:35,634 - INFO - Encontrado: 10.103.149.8
+2025-08-25 14:51:35,634 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:51:35,634 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 14:51:35,643 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:35,643 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:40,629 - INFO - Encontrado: 20.42.65.94
+2025-08-25 14:51:40,630 - INFO - Iniciando escaneamento: 20.42.65.94
+2025-08-25 14:51:40,630 - INFO - Iniciando escaneamento: 20.42.65.94
+2025-08-25 14:51:40,637 - ERROR - Erro ao escanear 20.42.65.94: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:40,637 - ERROR - Erro ao escanear 20.42.65.94: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:41,703 - INFO - Encontrado: 10.103.149.18
+2025-08-25 14:51:41,704 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:51:41,704 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 14:51:41,709 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:41,710 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:42,141 - INFO - Encontrado: 18.200.151.63
+2025-08-25 14:51:42,141 - INFO - Encontrado: 18.200.151.63
+2025-08-25 14:51:42,142 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 14:51:42,142 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 14:51:42,149 - ERROR - Erro ao escanear 18.200.151.63: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:42,149 - ERROR - Erro ao escanear 18.200.151.63: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:52,433 - INFO - Encontrado: 13.107.246.33
+2025-08-25 14:51:52,434 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 14:51:52,435 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 14:51:52,444 - ERROR - Erro ao escanear 13.107.246.33: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:51:52,444 - ERROR - Erro ao escanear 13.107.246.33: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:04,433 - INFO - Encontrado: 10.103.149.15
+2025-08-25 14:52:04,434 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 14:52:04,439 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:04,518 - INFO - Encontrado: 104.18.32.47
+2025-08-25 14:52:04,518 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 14:52:04,518 - INFO - Encontrado: 104.18.32.47
+2025-08-25 14:52:04,519 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 14:52:04,521 - ERROR - Erro ao escanear 104.18.32.47: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:04,522 - ERROR - Erro ao escanear 104.18.32.47: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:05,095 - INFO - Encontrado: 35.190.80.1
+2025-08-25 14:52:05,095 - INFO - Encontrado: 35.190.80.1
+2025-08-25 14:52:05,095 - INFO - Iniciando escaneamento: 35.190.80.1
+2025-08-25 14:52:05,095 - INFO - Iniciando escaneamento: 35.190.80.1
+2025-08-25 14:52:05,100 - ERROR - Erro ao escanear 35.190.80.1: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:05,101 - ERROR - Erro ao escanear 35.190.80.1: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:06,326 - INFO - Encontrado: 142.250.219.42
+2025-08-25 14:52:06,326 - INFO - Encontrado: 142.250.219.42
+2025-08-25 14:52:06,326 - INFO - Iniciando escaneamento: 142.250.219.42
+2025-08-25 14:52:06,327 - INFO - Iniciando escaneamento: 142.250.219.42
+2025-08-25 14:52:06,334 - ERROR - Erro ao escanear 142.250.219.42: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:06,336 - ERROR - Erro ao escanear 142.250.219.42: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:08,172 - INFO - Encontrado: 10.103.149.19
+2025-08-25 14:52:08,172 - INFO - Encontrado: 10.103.149.19
+103.149.19
+2025-08-25 14:52:08,175 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 14:52:08,190 - ERROR - Erro ao escanear 10.103.149.19: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:08,191 - ERROR - Erro ao escanear 10.103.149.19: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:08,586 - INFO - Encontrado: 172.64.155.209
+2025-08-25 14:52:08,586 - INFO - Encontrado: 172.64.155.209
+2025-08-25 14:52:08,586 - INFO - Iniciando escaneamento: 172.64.155.209
+2025-08-25 14:52:08,587 - INFO - Iniciando escaneamento: 172.64.155.209
+2025-08-25 14:52:08,596 - ERROR - Erro ao escanear 172.64.155.209: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:08,598 - ERROR - Erro ao escanear 172.64.155.209: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:18,436 - INFO - Encontrado: 10.103.149.24
+2025-08-25 14:52:18,437 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:52:18,437 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 14:52:18,452 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:18,453 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,038 - INFO - Encontrado: 72.153.5.129
+2025-08-25 14:52:21,039 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 14:52:21,039 - INFO - Encontrado: 72.153.5.129
+2025-08-25 14:52:21,039 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 14:52:21,049 - ERROR - Erro ao escanear 72.153.5.129: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,050 - ERROR - Erro ao escanear 72.153.5.129: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,977 - INFO - Encontrado: 95.100.41.134
+2025-08-25 14:52:21,977 - INFO - Encontrado: 95.100.41.134
+2025-08-25 14:52:21,977 - INFO - Iniciando escaneamento: 95.100.41.134
+2025-08-25 14:52:21,978 - INFO - Iniciando escaneamento: 95.100.41.134
+2025-08-25 14:52:21,980 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:52:21,980 - INFO - Encontrado: 10.103.132.5
+2025-08-25 14:52:21,980 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:52:21,980 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 14:52:21,988 - ERROR - Erro ao escanear 95.100.41.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,989 - ERROR - Erro ao escanear 95.100.41.134: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,991 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:21,992 - ERROR - Erro ao escanear 10.103.132.5: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:35,163 - INFO - Encontrado: 3.233.158.24
+2025-08-25 14:52:35,163 - INFO - Encontrado: 3.233.158.24
+2025-08-25 14:52:35,164 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 14:52:35,164 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 14:52:35,175 - ERROR - Erro ao escanear 3.233.158.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:35,175 - ERROR - Erro ao escanear 3.233.158.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:42,877 - INFO - Encontrado: 52.176.103.217
+2025-08-25 14:52:42,877 - INFO - Encontrado: 52.176.103.217
+2025-08-25 14:52:42,878 - INFO - Iniciando escaneamento: 52.176.103.217
+2025-08-25 14:52:42,887 - ERROR - Erro ao escanear 52.176.103.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:52:42,888 - ERROR - Erro ao escanear 52.176.103.217: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:53:43,330 - INFO - Encontrado: 10.103.149.13
+2025-08-25 14:53:43,331 - INFO - Iniciando escaneamento: 10.103.149.13
+2025-08-25 14:53:43,331 - INFO - Encontrado: 10.103.149.13
+2025-08-25 14:53:43,332 - INFO - Iniciando escaneamento: 10.103.149.13
+2025-08-25 14:53:43,342 - ERROR - Erro ao escanear 10.103.149.13: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:53:43,343 - ERROR - Erro ao escanear 10.103.149.13: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:54:17,389 - INFO - Encontrado: 64.233.186.84
+2025-08-25 14:54:17,389 - INFO - Iniciando escaneamento: 64.233.186.84
+2025-08-25 14:54:17,389 - INFO - Iniciando escaneamento: 64.233.186.84
+2025-08-25 14:54:17,405 - ERROR - Erro ao escanear 64.233.186.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:54:17,407 - ERROR - Erro ao escanear 64.233.186.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:54:22,474 - INFO - Encontrado: 172.172.255.218
+2025-08-25 14:54:22,474 - INFO - Encontrado: 172.172.255.218
+2025-08-25 14:54:22,475 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 14:54:22,475 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 14:54:22,489 - ERROR - Erro ao escanear 172.172.255.218: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:54:22,492 - ERROR - Erro ao escanear 172.172.255.218: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:56:11,975 - INFO - Encontrado: 10.103.186.98
+2025-08-25 14:56:11,975 - INFO - Encontrado: 10.103.186.98
+2025-08-25 14:56:11,976 - INFO - Iniciando escaneamento: 10.103.186.98
+2025-08-25 14:56:11,976 - INFO - Iniciando escaneamento: 10.103.186.98
+2025-08-25 14:56:11,984 - ERROR - Erro ao escanear 10.103.186.98: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:56:11,984 - ERROR - Erro ao escanear 10.103.186.98: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:56:31,794 - INFO - Encontrado: 52.168.117.168
+2025-08-25 14:56:31,794 - INFO - Encontrado: 52.168.117.168
+2025-08-25 14:56:31,794 - INFO - Iniciando escaneamento: 52.168.117.168
+2025-08-25 14:56:31,794 - INFO - Iniciando escaneamento: 52.168.117.168
+2025-08-25 14:56:31,801 - ERROR - Erro ao escanear 52.168.117.168: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:56:31,801 - ERROR - Erro ao escanear 52.168.117.168: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:56:32,953 - INFO - Encontrado: 10.103.130.160
+2025-08-25 14:56:32,953 - INFO - Encontrado: 10.103.130.160
+2025-08-25 14:56:32,954 - INFO - Iniciando escaneamento: 10.103.130.160
+2025-08-25 14:56:32,955 - INFO - Iniciando escaneamento: 10.103.130.160
+2025-08-25 14:56:32,961 - ERROR - Erro ao escanear 10.103.130.160: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:58:33,473 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:58:33,473 - INFO - Encontrado: 23.201.217.56
+2025-08-25 14:58:33,473 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:58:33,473 - INFO - Iniciando escaneamento: 23.201.217.56
+2025-08-25 14:58:33,482 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:58:33,483 - ERROR - Erro ao escanear 23.201.217.56: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:58:34,226 - INFO - Encontrado: 95.101.125.124
+2025-08-25 14:58:34,226 - INFO - Iniciando escaneamento: 95.101.125.124
+2025-08-25 14:58:34,227 - INFO - Encontrado: 95.101.125.124
+2025-08-25 14:58:34,229 - INFO - Iniciando escaneamento: 95.101.125.124
+2025-08-25 14:58:34,233 - ERROR - Erro ao escanear 95.101.125.124: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:58:34,233 - ERROR - Erro ao escanear 95.101.125.124: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 14:59:17,631 - INFO - Encontrado: 64.233.190.84
+2025-08-25 14:59:17,631 - INFO - Encontrado: 64.233.190.84
+2025-08-25 14:59:17,632 - INFO - Iniciando escaneamento: 64.233.190.84
+2025-08-25 14:59:17,640 - ERROR - Erro ao escanear 64.233.190.84: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:00:04,610 - INFO - Encontrado: 52.168.112.67
+2025-08-25 15:00:04,610 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:00:04,610 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:00:04,614 - ERROR - Erro ao escanear 52.168.112.67: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:00:04,615 - ERROR - Erro ao escanear 52.168.112.67: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:00:08,281 - INFO - Encontrado: 104.18.41.158
+2025-08-25 15:00:08,281 - INFO - Encontrado: 104.18.41.158
+2025-08-25 15:00:08,281 - INFO - Iniciando escaneamento: 104.18.41.158
+2025-08-25 15:00:08,281 - INFO - Iniciando escaneamento: 104.18.41.158
+2025-08-25 15:00:08,285 - ERROR - Erro ao escanear 104.18.41.158: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:00:24,789 - INFO - Encontrado: 13.107.5.93
+2025-08-25 15:00:24,789 - INFO - Encontrado: 13.107.5.93
+2025-08-25 15:00:24,790 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-25 15:00:24,790 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-25 15:00:24,793 - ERROR - Erro ao escanear 13.107.5.93: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:00:24,793 - ERROR - Erro ao escanear 13.107.5.93: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:06,342 - INFO - Encontrado: 34.226.95.55
+2025-08-25 15:01:06,342 - INFO - Iniciando escaneamento: 34.226.95.55
+2025-08-25 15:01:06,346 - ERROR - Erro ao escanear 34.226.95.55: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:06,482 - INFO - Encontrado: 34.226.95.55
+2025-08-25 15:01:06,482 - INFO - Iniciando escaneamento: 34.226.95.55
+2025-08-25 15:01:06,483 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:01:06,484 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:01:06,487 - ERROR - Erro ao escanear 34.226.95.55: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:06,487 - ERROR - Erro ao escanear 10.103.149.14: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:06,697 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:01:06,698 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:01:06,704 - ERROR - Erro ao escanear 10.103.149.15: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:06,715 - INFO - Encontrado: 10.103.186.120
+2025-08-25 15:01:06,715 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 15:01:06,720 - ERROR - Erro ao escanear 10.103.186.120: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:07,631 - INFO - Encontrado: 13.107.246.33
+2025-08-25 15:01:07,631 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 15:01:07,634 - ERROR - Erro ao escanear 13.107.246.33: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:07,682 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:01:07,682 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:01:07,686 - ERROR - Erro ao escanear 10.103.132.4: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:07,802 - INFO - Encontrado: 20.42.65.93
+2025-08-25 15:01:07,802 - INFO - Encontrado: 20.42.65.93
+2025-08-25 15:01:07,802 - INFO - Iniciando escaneamento: 20.42.65.93
+2025-08-25 15:01:07,802 - INFO - Iniciando escaneamento: 20.42.65.93
+2025-08-25 15:01:07,809 - ERROR - Erro ao escanear 20.42.65.93: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:07,809 - ERROR - Erro ao escanear 20.42.65.93: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:07,925 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:01:07,925 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:01:07,928 - ERROR - Erro ao escanear 104.18.32.47: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:08,366 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:01:08,366 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:01:08,371 - ERROR - Erro ao escanear 10.103.149.8: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:09,655 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:01:09,657 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:01:09,664 - ERROR - Erro ao escanear 104.18.39.21: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:11,465 - INFO - Encontrado: 3.233.158.24
+2025-08-25 15:01:11,465 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 15:01:11,468 - ERROR - Erro ao escanear 3.233.158.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:12,368 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:01:12,368 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:01:12,370 - ERROR - Erro ao escanear 18.200.151.63: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:15,416 - INFO - Encontrado: 10.103.149.24
+2025-08-25 15:01:15,417 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:01:15,420 - ERROR - Erro ao escanear 10.103.149.24: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:15,423 - INFO - Encontrado: 52.168.112.67
+2025-08-25 15:01:15,423 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:01:15,426 - ERROR - Erro ao escanear 52.168.112.67: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:21,002 - INFO - Encontrado: 140.82.112.26
+2025-08-25 15:01:21,002 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 15:01:21,006 - ERROR - Erro ao escanear 140.82.112.26: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:32,070 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:01:32,070 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 15:01:32,078 - ERROR - Erro ao escanear 40.71.14.140: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:32,628 - INFO - Encontrado: 10.103.149.18
+2025-08-25 15:01:32,628 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:01:32,632 - ERROR - Erro ao escanear 10.103.149.18: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:35,485 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:01:35,485 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:01:35,488 - ERROR - Erro ao escanear 10.103.149.23: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:38,540 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:01:38,541 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:01:38,546 - INFO - Escaneamento finalizado: 10.103.149.8
+2025-08-25 15:01:38,778 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:01:38,779 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:01:38,785 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:01:38,821 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:01:38,821 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:01:38,824 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:01:39,119 - INFO - Encontrado: 52.168.112.67
+2025-08-25 15:01:39,119 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:01:39,122 - INFO - Escaneamento finalizado: 52.168.112.67
+2025-08-25 15:01:39,306 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:01:39,307 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:01:39,309 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:01:39,460 - INFO - Encontrado: 52.182.143.211
+2025-08-25 15:01:39,460 - INFO - Encontrado: 52.182.143.211
+2025-08-25 15:01:39,460 - INFO - Iniciando escaneamento: 52.182.143.211
+2025-08-25 15:01:39,460 - INFO - Iniciando escaneamento: 52.182.143.211
+2025-08-25 15:01:39,470 - ERROR - Erro ao escanear 52.182.143.211: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-08-25 15:01:39,471 - INFO - Escaneamento finalizado: 52.182.143.211
+2025-08-25 15:01:42,650 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:01:42,650 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:01:42,653 - INFO - Escaneamento finalizado: 18.200.151.63
+2025-08-25 15:01:49,651 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:02:43,851 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:02:43,851 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:02:43,853 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:02:43,864 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:02:43,864 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:02:43,867 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:02:44,015 - INFO - Encontrado: 104.208.16.89
+2025-08-25 15:02:44,015 - INFO - Iniciando escaneamento: 104.208.16.89
+2025-08-25 15:02:44,019 - INFO - Escaneamento finalizado: 104.208.16.89
+2025-08-25 15:02:44,339 - INFO - Encontrado: 104.208.16.89
+2025-08-25 15:02:44,341 - INFO - Iniciando escaneamento: 104.208.16.89
+2025-08-25 15:02:44,342 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:02:44,344 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:02:44,350 - INFO - Escaneamento finalizado: 104.208.16.89
+2025-08-25 15:02:44,350 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:02:46,762 - INFO - Encontrado: 52.168.112.67
+2025-08-25 15:02:46,762 - INFO - Encontrado: 52.168.112.67
+2025-08-25 15:02:46,762 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:02:46,763 - INFO - Iniciando escaneamento: 52.168.112.67
+2025-08-25 15:02:46,769 - INFO - Escaneamento finalizado: 52.168.112.67
+2025-08-25 15:02:46,769 - INFO - Escaneamento finalizado: 52.168.112.67
+2025-08-25 15:02:47,198 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:02:47,198 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:02:47,198 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 15:02:47,205 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:02:47,205 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:02:49,648 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:02:49,649 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:02:49,649 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:02:49,649 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:02:49,659 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:02:49,659 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:02:49,813 - INFO - Encontrado: 2.18.20.177
+2025-08-25 15:02:49,813 - INFO - Iniciando escaneamento: 2.18.20.177
+2025-08-25 15:02:49,813 - INFO - Iniciando escaneamento: 2.18.20.177
+2025-08-25 15:02:49,822 - INFO - Escaneamento finalizado: 2.18.20.177
+2025-08-25 15:02:49,822 - INFO - Escaneamento finalizado: 2.18.20.177
+2025-08-25 15:02:49,855 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:02:49,856 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:02:49,865 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:02:49,868 - INFO - Encontrado: 150.171.28.11
+2025-08-25 15:02:49,869 - INFO - Iniciando escaneamento: 150.171.28.11
+2025-08-25 15:02:49,869 - INFO - Iniciando escaneamento: 150.171.28.11
+2025-08-25 15:02:49,874 - INFO - Escaneamento finalizado: 150.171.28.11
+2025-08-25 15:02:49,875 - INFO - Escaneamento finalizado: 150.171.28.11
+2025-08-25 15:02:49,912 - INFO - Encontrado: 201.31.255.48
+2025-08-25 15:02:49,913 - INFO - Encontrado: 201.31.255.48
+2025-08-25 15:02:49,913 - INFO - Iniciando escaneamento: 201.31.255.48
+2025-08-25 15:02:49,913 - INFO - Iniciando escaneamento: 201.31.255.48
+2025-08-25 15:02:49,922 - INFO - Escaneamento finalizado: 201.31.255.48
+2025-08-25 15:02:49,922 - INFO - Escaneamento finalizado: 201.31.255.48
+2025-08-25 15:02:49,931 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:02:49,932 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:02:49,932 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:02:49,932 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:02:49,937 - INFO - Escaneamento finalizado: 10.103.132.5
+2025-08-25 15:02:49,968 - INFO - Encontrado: 23.201.218.191
+2025-08-25 15:02:49,968 - INFO - Encontrado: 23.201.218.191
+2025-08-25 15:02:49,968 - INFO - Iniciando escaneamento: 23.201.218.191
+2025-08-25 15:02:49,968 - INFO - Iniciando escaneamento: 23.201.218.191
+2025-08-25 15:02:49,973 - INFO - Escaneamento finalizado: 23.201.218.191
+2025-08-25 15:02:49,974 - INFO - Escaneamento finalizado: 23.201.218.191
+2025-08-25 15:02:51,890 - INFO - Encontrado: 2.21.10.23
+2025-08-25 15:02:51,890 - INFO - Iniciando escaneamento: 2.21.10.23
+2025-08-25 15:02:51,890 - INFO - Encontrado: 2.21.10.23
+2025-08-25 15:02:51,890 - INFO - Iniciando escaneamento: 2.21.10.23
+2025-08-25 15:02:51,893 - INFO - Escaneamento finalizado: 2.21.10.23
+2025-08-25 15:02:51,893 - INFO - Escaneamento finalizado: 2.21.10.23
+2025-08-25 15:02:51,924 - INFO - Encontrado: 2.21.10.48
+2025-08-25 15:02:51,924 - INFO - Iniciando escaneamento: 2.21.10.48
+2025-08-25 15:02:51,924 - INFO - Iniciando escaneamento: 2.21.10.48
+2025-08-25 15:02:51,928 - INFO - Escaneamento finalizado: 2.21.10.48
+2025-08-25 15:02:51,928 - INFO - Escaneamento finalizado: 2.21.10.48
+2025-08-25 15:02:52,650 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:02:52,650 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:02:52,651 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:02:52,654 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:02:52,654 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:02:53,649 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:02:53,650 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:02:53,650 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:02:53,650 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:02:53,660 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:02:53,660 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:02:53,746 - INFO - Encontrado: 150.171.64.254
+2025-08-25 15:02:53,746 - INFO - Encontrado: 150.171.64.254
+2025-08-25 15:02:53,747 - INFO - Iniciando escaneamento: 150.171.64.254
+2025-08-25 15:02:53,747 - INFO - Iniciando escaneamento: 150.171.64.254
+2025-08-25 15:02:53,755 - INFO - Escaneamento finalizado: 150.171.64.254
+2025-08-25 15:02:53,755 - INFO - Escaneamento finalizado: 150.171.64.254
+2025-08-25 15:02:53,828 - INFO - Encontrado: 150.171.70.254
+2025-08-25 15:02:53,828 - INFO - Encontrado: 150.171.70.254
+2025-08-25 15:02:53,829 - INFO - Iniciando escaneamento: 150.171.70.254
+2025-08-25 15:02:53,830 - INFO - Iniciando escaneamento: 150.171.70.254
+2025-08-25 15:02:53,839 - INFO - Escaneamento finalizado: 150.171.70.254
+2025-08-25 15:02:53,839 - INFO - Escaneamento finalizado: 150.171.70.254
+2025-08-25 15:02:53,937 - INFO - Encontrado: 13.107.138.254
+2025-08-25 15:02:53,937 - INFO - Encontrado: 13.107.138.254
+2025-08-25 15:02:53,938 - INFO - Iniciando escaneamento: 13.107.138.254
+2025-08-25 15:02:53,938 - INFO - Iniciando escaneamento: 13.107.138.254
+2025-08-25 15:02:53,943 - INFO - Escaneamento finalizado: 13.107.138.254
+2025-08-25 15:02:53,943 - INFO - Escaneamento finalizado: 13.107.138.254
+2025-08-25 15:02:54,005 - INFO - Encontrado: 204.79.197.222
+2025-08-25 15:02:54,005 - INFO - Iniciando escaneamento: 204.79.197.222
+2025-08-25 15:02:54,005 - INFO - Iniciando escaneamento: 204.79.197.222
+2025-08-25 15:02:54,011 - INFO - Escaneamento finalizado: 204.79.197.222
+2025-08-25 15:02:54,011 - INFO - Escaneamento finalizado: 204.79.197.222
+2025-08-25 15:03:07,972 - INFO - Encontrado: 150.171.73.16
+2025-08-25 15:03:07,972 - INFO - Iniciando escaneamento: 150.171.73.16
+2025-08-25 15:03:07,973 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:03:07,974 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:03:07,999 - INFO - Encontrado: 44.225.240.147
+2025-08-25 15:03:08,000 - INFO - Iniciando escaneamento: 44.225.240.147
+2025-08-25 15:03:08,058 - INFO - Encontrado: 40.79.189.58
+2025-08-25 15:03:08,059 - INFO - Iniciando escaneamento: 40.79.189.58
+2025-08-25 15:03:08,111 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:03:08,111 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:03:08,628 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:03:08,629 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:03:08,696 - INFO - Encontrado: 150.171.73.16
+2025-08-25 15:03:08,696 - INFO - Iniciando escaneamento: 150.171.73.16
+2025-08-25 15:03:08,725 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:03:08,726 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:03:08,749 - INFO - Encontrado: 40.79.189.58
+2025-08-25 15:03:08,749 - INFO - Iniciando escaneamento: 40.79.189.58
+2025-08-25 15:03:08,781 - INFO - Encontrado: 44.225.240.147
+2025-08-25 15:03:08,781 - INFO - Iniciando escaneamento: 44.225.240.147
+2025-08-25 15:03:08,948 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:03:08,948 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:03:08,949 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:03:08,949 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:03:09,083 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:03:09,088 - INFO - CLP criado para 10.190.240.79 com portas [53, 443].
+2025-08-25 15:03:09,088 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:03:09,648 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:03:09,648 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:03:09,648 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:03:09,649 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:03:09,920 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:03:09,925 - INFO - CLP criado para 10.103.149.14 com portas [80, 135, 139, 445, 796].
+2025-08-25 15:03:09,925 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:03:10,001 - INFO - Encontrado: 20.189.173.16
+2025-08-25 15:03:10,001 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:03:10,002 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:03:10,007 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:03:10,008 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:03:10,008 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:03:10,543 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:03:10,547 - INFO - CLP criado para 10.103.149.14 com portas [80, 135, 139, 445, 796].
+2025-08-25 15:03:10,547 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:03:10,604 - INFO - Encontrado: 13.107.5.93
+2025-08-25 15:03:10,604 - INFO - Encontrado: 13.107.5.93
+2025-08-25 15:03:10,605 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-25 15:03:10,605 - INFO - Iniciando escaneamento: 13.107.5.93
+2025-08-25 15:03:10,764 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:03:10,770 - INFO - CLP criado para 10.190.240.79 com portas [53, 443].
+2025-08-25 15:03:10,770 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:03:10,798 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:03:10,800 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:03:10,807 - INFO - CLP criado para 10.103.132.4 com portas [53, 443].
+2025-08-25 15:03:10,807 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:03:10,808 - INFO - CLP criado para 10.103.132.4 com portas [53, 443].
+2025-08-25 15:03:10,808 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:03:12,471 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:03:12,471 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:03:12,471 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:03:12,471 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:03:12,951 - INFO - Encontrado: 172.217.192.84
+2025-08-25 15:03:12,951 - INFO - Encontrado: 172.217.192.84
+2025-08-25 15:03:12,951 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 15:03:12,951 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 15:03:13,025 - INFO - Encontrado: 172.217.28.170
+2025-08-25 15:03:13,026 - INFO - Iniciando escaneamento: 172.217.28.170
+2025-08-25 15:03:13,036 - INFO - Encontrado: 172.217.28.170
+2025-08-25 15:03:13,038 - INFO - Iniciando escaneamento: 172.217.28.170
+2025-08-25 15:03:14,128 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:03:14,128 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:03:14,320 - INFO - Portas abertas em 150.171.73.16: 80, 443
+2025-08-25 15:03:14,325 - INFO - CLP criado para 150.171.73.16 com portas [80, 443].
+2025-08-25 15:03:14,325 - INFO - Escaneamento finalizado: 150.171.73.16
+2025-08-25 15:03:14,325 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:03:14,557 - INFO - Portas abertas em 44.225.240.147: 443
+2025-08-25 15:03:14,564 - INFO - CLP criado para 44.225.240.147 com portas [443].
+2025-08-25 15:03:14,565 - INFO - Escaneamento finalizado: 44.225.240.147
+2025-08-25 15:03:14,565 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:03:15,281 - INFO - Portas abertas em 104.18.39.21: 80, 443
+2025-08-25 15:03:15,292 - INFO - CLP criado para 104.18.39.21 com portas [80, 443].
+2025-08-25 15:03:15,293 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:03:16,129 - INFO - Portas abertas em 13.107.5.93: 80, 443
+2025-08-25 15:03:16,158 - INFO - CLP criado para 13.107.5.93 com portas [80, 443].
+2025-08-25 15:03:16,159 - INFO - Escaneamento finalizado: 13.107.5.93
+2025-08-25 15:03:16,439 - INFO - Portas abertas em 13.107.5.93: 80, 443
+2025-08-25 15:03:16,448 - INFO - CLP criado para 13.107.5.93 com portas [80, 443].
+2025-08-25 15:03:16,449 - INFO - Escaneamento finalizado: 13.107.5.93
+2025-08-25 15:03:16,862 - INFO - Encontrado: 20.189.173.12
+2025-08-25 15:03:16,862 - INFO - Iniciando escaneamento: 20.189.173.12
+2025-08-25 15:03:16,863 - INFO - Encontrado: 20.189.173.12
+2025-08-25 15:03:16,863 - INFO - Iniciando escaneamento: 20.189.173.12
+2025-08-25 15:03:16,895 - INFO - Portas abertas em 40.79.189.58: 443
+2025-08-25 15:03:16,898 - INFO - Encontrado: 10.103.149.25
+2025-08-25 15:03:16,899 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 15:03:16,901 - INFO - CLP criado para 40.79.189.58 com portas [443].
+2025-08-25 15:03:16,902 - INFO - Escaneamento finalizado: 40.79.189.58
+2025-08-25 15:03:16,903 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 15:03:17,100 - INFO - Portas abertas em 40.79.189.58: 443
+2025-08-25 15:03:17,106 - INFO - CLP criado para 40.79.189.58 com portas [443].
+2025-08-25 15:03:17,112 - INFO - Escaneamento finalizado: 40.79.189.58
+2025-08-25 15:03:18,036 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:03:18,037 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:03:18,037 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:03:18,138 - INFO - Portas abertas em 172.217.28.170: 80, 443
+2025-08-25 15:03:18,146 - INFO - CLP criado para 172.217.28.170 com portas [80, 443].
+2025-08-25 15:03:18,146 - INFO - Escaneamento finalizado: 172.217.28.170
+2025-08-25 15:03:18,217 - INFO - Portas abertas em 172.217.28.170: 80, 443
+2025-08-25 15:03:18,224 - INFO - CLP criado para 172.217.28.170 com portas [80, 443].
+2025-08-25 15:03:18,225 - INFO - Escaneamento finalizado: 172.217.28.170
+2025-08-25 15:03:18,225 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:03:18,249 - INFO - Portas abertas em 172.217.192.84: 80, 443
+2025-08-25 15:03:18,255 - INFO - CLP criado para 172.217.192.84 com portas [80, 443].
+2025-08-25 15:03:18,255 - INFO - Escaneamento finalizado: 172.217.192.84
+2025-08-25 15:03:18,359 - INFO - Portas abertas em 172.217.192.84: 80, 443
+2025-08-25 15:03:18,365 - INFO - CLP criado para 172.217.192.84 com portas [80, 443].
+2025-08-25 15:03:18,365 - INFO - Escaneamento finalizado: 172.217.192.84
+2025-08-25 15:03:21,007 - INFO - Encontrado: 140.82.112.26
+2025-08-25 15:03:21,007 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 15:03:21,008 - INFO - Encontrado: 140.82.112.26
+2025-08-25 15:03:21,008 - INFO - Iniciando escaneamento: 140.82.112.26
+2025-08-25 15:03:21,040 - INFO - Portas abertas em 18.200.151.63: 443
+2025-08-25 15:03:21,055 - INFO - CLP criado para 18.200.151.63 com portas [443].
+2025-08-25 15:03:21,059 - INFO - Escaneamento finalizado: 18.200.151.63
+2025-08-25 15:03:21,332 - INFO - Encontrado: 3.233.158.24
+2025-08-25 15:03:21,333 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 15:03:21,577 - INFO - Portas abertas em 150.171.73.16: 80, 443
+2025-08-25 15:03:21,583 - INFO - CLP criado para 150.171.73.16 com portas [80, 443].
+2025-08-25 15:03:21,583 - INFO - Escaneamento finalizado: 150.171.73.16
+2025-08-25 15:03:21,819 - INFO - Portas abertas em 18.200.151.63: 443
+2025-08-25 15:03:21,828 - INFO - CLP criado para 18.200.151.63 com portas [443].
+2025-08-25 15:03:21,828 - INFO - Escaneamento finalizado: 18.200.151.63
+2025-08-25 15:03:21,828 - INFO - Iniciando escaneamento: 3.233.158.24
+2025-08-25 15:03:22,571 - INFO - Portas abertas em 104.18.39.21: 80, 443
+2025-08-25 15:03:22,578 - INFO - CLP criado para 104.18.39.21 com portas [80, 443].
+2025-08-25 15:03:22,579 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:03:23,182 - INFO - Portas abertas em 20.189.173.12: 443
+2025-08-25 15:03:23,190 - INFO - CLP criado para 20.189.173.12 com portas [443].
+2025-08-25 15:03:23,192 - INFO - Escaneamento finalizado: 20.189.173.12
+2025-08-25 15:03:23,826 - INFO - Portas abertas em 20.189.173.16: 443
+2025-08-25 15:03:23,831 - INFO - CLP criado para 20.189.173.16 com portas [443].
+2025-08-25 15:03:23,831 - INFO - Escaneamento finalizado: 20.189.173.16
+2025-08-25 15:03:23,843 - INFO - Portas abertas em 20.189.173.16: 443
+2025-08-25 15:03:23,848 - INFO - CLP criado para 20.189.173.16 com portas [443].
+2025-08-25 15:03:23,848 - INFO - Escaneamento finalizado: 20.189.173.16
+2025-08-25 15:03:24,111 - INFO - Portas abertas em 44.225.240.147: 443
+2025-08-25 15:03:24,116 - INFO - CLP criado para 44.225.240.147 com portas [443].
+2025-08-25 15:03:24,116 - INFO - Escaneamento finalizado: 44.225.240.147
+2025-08-25 15:03:26,854 - INFO - Encontrado: 2.21.10.48
+2025-08-25 15:03:26,854 - INFO - Iniciando escaneamento: 2.21.10.48
+2025-08-25 15:03:26,855 - INFO - Encontrado: 2.21.10.48
+2025-08-25 15:03:26,855 - INFO - Iniciando escaneamento: 2.21.10.48
+2025-08-25 15:03:29,421 - INFO - Portas abertas em 3.233.158.24: 80, 443
+2025-08-25 15:03:29,427 - INFO - CLP criado para 3.233.158.24 com portas [80, 443].
+2025-08-25 15:03:29,428 - INFO - Escaneamento finalizado: 3.233.158.24
+2025-08-25 15:03:29,706 - INFO - Encontrado: 10.103.149.24
+2025-08-25 15:03:29,706 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:03:29,706 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:03:30,609 - INFO - Portas abertas em 20.189.173.12: 443
+2025-08-25 15:03:30,614 - INFO - CLP criado para 20.189.173.12 com portas [443].
+2025-08-25 15:03:30,614 - INFO - Escaneamento finalizado: 20.189.173.12
+2025-08-25 15:03:31,006 - INFO - Portas abertas em 10.103.149.25: 796
+2025-08-25 15:03:31,013 - INFO - CLP criado para 10.103.149.25 com portas [796].
+2025-08-25 15:03:31,013 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:03:31,780 - INFO - Portas abertas em 2.21.10.48: 80, 443
+2025-08-25 15:03:31,785 - INFO - CLP criado para 2.21.10.48 com portas [80, 443].
+2025-08-25 15:03:31,785 - INFO - Escaneamento finalizado: 2.21.10.48
+2025-08-25 15:03:32,184 - INFO - Encontrado: 13.107.246.33
+2025-08-25 15:03:32,184 - INFO - Encontrado: 13.107.246.33
+2025-08-25 15:03:32,185 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 15:03:32,185 - INFO - Iniciando escaneamento: 13.107.246.33
+2025-08-25 15:03:32,218 - INFO - Portas abertas em 2.21.10.48: 80, 443
+2025-08-25 15:03:32,224 - INFO - CLP criado para 2.21.10.48 com portas [80, 443].
+2025-08-25 15:03:32,225 - INFO - Escaneamento finalizado: 2.21.10.48
+2025-08-25 15:03:32,629 - INFO - Nenhuma porta aberta encontrada em 10.103.149.8.
+2025-08-25 15:03:32,629 - INFO - Escaneamento finalizado: 10.103.149.8
+2025-08-25 15:03:32,629 - INFO - Escaneamento finalizado: 10.103.149.8
+2025-08-25 15:03:32,925 - INFO - Portas abertas em 10.103.149.19: 796
+2025-08-25 15:03:32,930 - INFO - CLP criado para 10.103.149.19 com portas [796].
+2025-08-25 15:03:32,931 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:03:32,970 - INFO - Portas abertas em 140.82.112.26: 443
+2025-08-25 15:03:32,975 - INFO - CLP criado para 140.82.112.26 com portas [443].
+2025-08-25 15:03:32,975 - INFO - Escaneamento finalizado: 140.82.112.26
+2025-08-25 15:03:33,816 - INFO - Portas abertas em 10.103.149.15: 796
+2025-08-25 15:03:33,822 - INFO - CLP criado para 10.103.149.15 com portas [796].
+2025-08-25 15:03:33,823 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:03:34,052 - INFO - Portas abertas em 10.103.149.15: 796
+2025-08-25 15:03:34,061 - INFO - CLP criado para 10.103.149.15 com portas [796].
+2025-08-25 15:03:34,061 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:03:34,112 - INFO - Portas abertas em 140.82.112.26: 443
+2025-08-25 15:03:34,118 - INFO - CLP criado para 140.82.112.26 com portas [443].
+2025-08-25 15:03:34,118 - INFO - Escaneamento finalizado: 140.82.112.26
+2025-08-25 15:03:34,489 - INFO - Portas abertas em 10.103.149.25: 796
+2025-08-25 15:03:34,498 - INFO - CLP criado para 10.103.149.25 com portas [796].
+2025-08-25 15:03:34,498 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:03:35,020 - INFO - Encontrado: 150.171.28.11
+2025-08-25 15:03:35,020 - INFO - Encontrado: 150.171.28.11
+2025-08-25 15:03:35,020 - INFO - Iniciando escaneamento: 150.171.28.11
+2025-08-25 15:03:35,020 - INFO - Iniciando escaneamento: 150.171.28.11
+2025-08-25 15:03:35,232 - INFO - Encontrado: 10.103.149.18
+2025-08-25 15:03:35,232 - INFO - Encontrado: 10.103.149.18
+2025-08-25 15:03:35,233 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:03:35,233 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:03:36,400 - INFO - Portas abertas em 3.233.158.24: 80, 443
+2025-08-25 15:03:36,407 - INFO - CLP criado para 3.233.158.24 com portas [80, 443].
+2025-08-25 15:03:36,408 - INFO - Escaneamento finalizado: 3.233.158.24
+2025-08-25 15:03:37,576 - INFO - Encontrado: 10.103.149.6
+2025-08-25 15:03:37,576 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:03:37,576 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:03:37,718 - INFO - Portas abertas em 13.107.246.33: 80, 443
+2025-08-25 15:03:37,728 - INFO - CLP criado para 13.107.246.33 com portas [80, 443].
+2025-08-25 15:03:37,728 - INFO - Escaneamento finalizado: 13.107.246.33
+2025-08-25 15:03:38,050 - INFO - Portas abertas em 13.107.246.33: 80, 443
+2025-08-25 15:03:38,055 - INFO - CLP criado para 13.107.246.33 com portas [80, 443].
+2025-08-25 15:03:38,055 - INFO - Escaneamento finalizado: 13.107.246.33
+2025-08-25 15:03:38,608 - INFO - Portas abertas em 10.103.149.19: 796
+2025-08-25 15:03:38,615 - INFO - CLP criado para 10.103.149.19 com portas [796].
+2025-08-25 15:03:38,615 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:03:38,661 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:03:38,662 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:03:38,662 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:03:38,821 - INFO - Encontrado: 150.171.64.254
+2025-08-25 15:03:38,821 - INFO - Iniciando escaneamento: 150.171.64.254
+2025-08-25 15:03:38,821 - INFO - Encontrado: 150.171.64.254
+2025-08-25 15:03:38,822 - INFO - Iniciando escaneamento: 150.171.64.254
+2025-08-25 15:03:38,936 - INFO - Encontrado: 150.171.70.254
+2025-08-25 15:03:38,936 - INFO - Iniciando escaneamento: 150.171.70.254
+2025-08-25 15:03:38,937 - INFO - Encontrado: 150.171.70.254
+2025-08-25 15:03:38,937 - INFO - Iniciando escaneamento: 150.171.70.254
+2025-08-25 15:03:38,992 - INFO - Encontrado: 13.107.138.254
+2025-08-25 15:03:38,992 - INFO - Iniciando escaneamento: 13.107.138.254
+2025-08-25 15:03:38,992 - INFO - Iniciando escaneamento: 13.107.138.254
+2025-08-25 15:03:39,043 - INFO - Encontrado: 204.79.197.222
+2025-08-25 15:03:39,043 - INFO - Iniciando escaneamento: 204.79.197.222
+2025-08-25 15:03:39,044 - INFO - Encontrado: 204.79.197.222
+2025-08-25 15:03:39,044 - INFO - Iniciando escaneamento: 204.79.197.222
+2025-08-25 15:03:40,719 - INFO - Portas abertas em 150.171.28.11: 80, 443
+2025-08-25 15:03:40,726 - INFO - CLP criado para 150.171.28.11 com portas [80, 443].
+2025-08-25 15:03:40,727 - INFO - Escaneamento finalizado: 150.171.28.11
+2025-08-25 15:03:40,940 - INFO - Portas abertas em 150.171.28.11: 80, 443
+2025-08-25 15:03:40,949 - INFO - CLP criado para 150.171.28.11 com portas [80, 443].
+2025-08-25 15:03:40,950 - INFO - Escaneamento finalizado: 150.171.28.11
+2025-08-25 15:03:41,099 - INFO - Portas abertas em 10.103.149.24: 796
+2025-08-25 15:03:41,106 - INFO - CLP criado para 10.103.149.24 com portas [796].
+2025-08-25 15:03:41,106 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:03:44,137 - INFO - Portas abertas em 104.18.32.47: 80, 443
+2025-08-25 15:03:44,144 - INFO - CLP criado para 104.18.32.47 com portas [80, 443].
+2025-08-25 15:03:44,145 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:03:44,377 - INFO - Encontrado: 20.42.72.131
+2025-08-25 15:03:44,377 - INFO - Encontrado: 20.42.72.131
+2025-08-25 15:03:44,377 - INFO - Iniciando escaneamento: 20.42.72.131
+2025-08-25 15:03:44,377 - INFO - Iniciando escaneamento: 20.42.72.131
+2025-08-25 15:03:44,486 - INFO - Portas abertas em 150.171.64.254: 80, 443
+2025-08-25 15:03:44,493 - INFO - CLP criado para 150.171.64.254 com portas [80, 443].
+2025-08-25 15:03:44,493 - INFO - Escaneamento finalizado: 150.171.64.254
+2025-08-25 15:03:44,501 - INFO - Portas abertas em 150.171.64.254: 80, 443
+2025-08-25 15:03:44,507 - INFO - CLP criado para 150.171.64.254 com portas [80, 443].
+2025-08-25 15:03:44,507 - INFO - Escaneamento finalizado: 150.171.64.254
+2025-08-25 15:03:44,564 - INFO - Portas abertas em 13.107.138.254: 80, 443
+2025-08-25 15:03:44,571 - INFO - CLP criado para 13.107.138.254 com portas [80, 443].
+2025-08-25 15:03:44,571 - INFO - Escaneamento finalizado: 13.107.138.254
+2025-08-25 15:03:44,613 - INFO - Portas abertas em 204.79.197.222: 80, 443
+2025-08-25 15:03:44,620 - INFO - CLP criado para 204.79.197.222 com portas [80, 443].
+2025-08-25 15:03:44,620 - INFO - Escaneamento finalizado: 204.79.197.222
+2025-08-25 15:03:44,620 - INFO - CLP criado para 204.79.197.222 com portas [80, 443].
+2025-08-25 15:03:44,620 - INFO - Escaneamento finalizado: 204.79.197.222
+2025-08-25 15:03:44,674 - INFO - Portas abertas em 13.107.138.254: 80, 443
+2025-08-25 15:03:44,681 - INFO - CLP criado para 13.107.138.254 com portas [80, 443].
+2025-08-25 15:03:44,682 - INFO - Escaneamento finalizado: 13.107.138.254
+2025-08-25 15:03:44,833 - INFO - Portas abertas em 150.171.70.254: 80, 443
+2025-08-25 15:03:44,841 - INFO - CLP criado para 150.171.70.254 com portas [80, 443].
+2025-08-25 15:03:44,841 - INFO - Escaneamento finalizado: 150.171.70.254
+2025-08-25 15:03:46,967 - INFO - Encontrado: 10.103.130.142
+2025-08-25 15:03:46,967 - INFO - Iniciando escaneamento: 10.103.130.142
+2025-08-25 15:03:46,967 - INFO - Encontrado: 10.103.130.142
+2025-08-25 15:03:46,967 - INFO - Iniciando escaneamento: 10.103.130.142
+2025-08-25 15:03:47,448 - INFO - Portas abertas em 10.103.149.6: 796
+2025-08-25 15:03:47,455 - INFO - CLP criado para 10.103.149.6 com portas [796].
+2025-08-25 15:03:47,455 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:03:48,554 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:03:48,554 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:03:48,554 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:03:48,554 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:03:49,555 - INFO - Portas abertas em 10.103.149.18: 796
+2025-08-25 15:03:49,560 - INFO - CLP criado para 10.103.149.18 com portas [796].
+2025-08-25 15:03:49,560 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:03:49,633 - INFO - Portas abertas em 104.18.32.47: 80, 443
+2025-08-25 15:03:49,640 - INFO - CLP criado para 104.18.32.47 com portas [80, 443].
+2025-08-25 15:03:49,641 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:03:50,151 - INFO - Nenhuma porta aberta encontrada em 10.103.130.142.
+2025-08-25 15:03:50,151 - INFO - Nenhuma porta aberta encontrada em 10.103.130.142.
+2025-08-25 15:03:50,152 - INFO - Escaneamento finalizado: 10.103.130.142
+2025-08-25 15:03:50,152 - INFO - Escaneamento finalizado: 10.103.130.142
+2025-08-25 15:03:50,983 - INFO - Portas abertas em 10.103.149.24: 796
+2025-08-25 15:03:50,989 - INFO - CLP criado para 10.103.149.24 com portas [796].
+2025-08-25 15:03:50,989 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:03:52,653 - INFO - Portas abertas em 150.171.70.254: 80, 443
+2025-08-25 15:03:52,657 - INFO - CLP criado para 150.171.70.254 com portas [80, 443].
+2025-08-25 15:03:52,657 - INFO - Escaneamento finalizado: 150.171.70.254
+2025-08-25 15:03:54,206 - INFO - Portas abertas em 10.103.149.23: 796
+2025-08-25 15:03:54,212 - INFO - CLP criado para 10.103.149.23 com portas [796].
+2025-08-25 15:03:54,212 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:03:54,256 - INFO - Portas abertas em 10.103.149.18: 796
+2025-08-25 15:03:54,262 - INFO - CLP criado para 10.103.149.18 com portas [796].
+2025-08-25 15:03:54,262 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:03:57,186 - INFO - Portas abertas em 20.42.72.131: 443
+2025-08-25 15:03:57,191 - INFO - CLP criado para 20.42.72.131 com portas [443].
+2025-08-25 15:03:57,191 - INFO - Escaneamento finalizado: 20.42.72.131
+2025-08-25 15:03:57,330 - INFO - Portas abertas em 20.42.72.131: 443
+2025-08-25 15:03:57,335 - INFO - CLP criado para 20.42.72.131 com portas [443].
+2025-08-25 15:03:57,335 - INFO - Escaneamento finalizado: 20.42.72.131
+2025-08-25 15:04:01,279 - INFO - Nenhuma porta aberta encontrada em 10.103.149.6.
+2025-08-25 15:04:01,280 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:04:02,317 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:04:02,317 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:04:02,317 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 15:04:02,318 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 15:04:04,087 - INFO - Portas abertas em 10.103.149.23: 796
+2025-08-25 15:04:04,093 - INFO - CLP criado para 10.103.149.23 com portas [796].
+2025-08-25 15:04:04,093 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:04:07,542 - INFO - Portas abertas em 40.71.14.140: 443
+2025-08-25 15:04:07,547 - INFO - CLP criado para 40.71.14.140 com portas [443].
+2025-08-25 15:04:07,547 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:04:10,147 - INFO - Encontrado: 150.171.74.16
+2025-08-25 15:04:10,147 - INFO - Iniciando escaneamento: 150.171.74.16
+2025-08-25 15:04:10,147 - INFO - Encontrado: 150.171.74.16
+2025-08-25 15:04:10,148 - INFO - Iniciando escaneamento: 150.171.74.16
+2025-08-25 15:04:10,343 - INFO - Encontrado: 54.68.97.123
+2025-08-25 15:04:10,343 - INFO - Iniciando escaneamento: 54.68.97.123
+2025-08-25 15:04:10,343 - INFO - Iniciando escaneamento: 54.68.97.123
+2025-08-25 15:04:11,171 - INFO - Encontrado: 20.42.73.28
+2025-08-25 15:04:11,171 - INFO - Iniciando escaneamento: 20.42.73.28
+2025-08-25 15:04:11,172 - INFO - Iniciando escaneamento: 20.42.73.28
+2025-08-25 15:04:16,010 - INFO - Portas abertas em 150.171.74.16: 80, 443
+2025-08-25 15:04:16,016 - INFO - CLP criado para 150.171.74.16 com portas [80, 443].
+2025-08-25 15:04:16,016 - INFO - Escaneamento finalizado: 150.171.74.16
+2025-08-25 15:04:16,437 - INFO - Portas abertas em 20.42.73.28: 443
+2025-08-25 15:04:16,442 - INFO - CLP criado para 20.42.73.28 com portas [443].
+2025-08-25 15:04:16,442 - INFO - Escaneamento finalizado: 20.42.73.28
+2025-08-25 15:04:16,880 - INFO - Portas abertas em 54.68.97.123: 443
+2025-08-25 15:04:16,886 - INFO - CLP criado para 54.68.97.123 com portas [443].
+2025-08-25 15:04:16,886 - INFO - Escaneamento finalizado: 54.68.97.123
+2025-08-25 15:04:16,929 - INFO - Portas abertas em 20.42.73.28: 443
+2025-08-25 15:04:16,934 - INFO - CLP criado para 20.42.73.28 com portas [443].
+2025-08-25 15:04:16,934 - INFO - Escaneamento finalizado: 20.42.73.28
+2025-08-25 15:04:17,409 - INFO - Portas abertas em 40.71.14.140: 443
+2025-08-25 15:04:17,416 - INFO - CLP criado para 40.71.14.140 com portas [443].
+2025-08-25 15:04:17,416 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:04:23,810 - INFO - Portas abertas em 150.171.74.16: 80, 443
+2025-08-25 15:04:23,816 - INFO - CLP criado para 150.171.74.16 com portas [80, 443].
+2025-08-25 15:04:23,816 - INFO - Escaneamento finalizado: 150.171.74.16
+2025-08-25 15:04:24,591 - INFO - Portas abertas em 54.68.97.123: 443
+2025-08-25 15:04:24,597 - INFO - CLP criado para 54.68.97.123 com portas [443].
+2025-08-25 15:04:24,597 - INFO - Escaneamento finalizado: 54.68.97.123
+2025-08-25 15:04:56,502 - INFO - Encontrado: 52.176.103.217
+2025-08-25 15:04:56,502 - INFO - Encontrado: 52.176.103.217
+2025-08-25 15:04:56,503 - INFO - Iniciando escaneamento: 52.176.103.217
+2025-08-25 15:04:56,503 - INFO - Iniciando escaneamento: 52.176.103.217
+2025-08-25 15:05:09,445 - INFO - Portas abertas em 52.176.103.217: 443
+2025-08-25 15:05:09,460 - INFO - CLP criado para 52.176.103.217 com portas [443].
+2025-08-25 15:05:09,460 - INFO - Escaneamento finalizado: 52.176.103.217
+2025-08-25 15:05:09,488 - INFO - Portas abertas em 52.176.103.217: 443
+2025-08-25 15:05:09,503 - INFO - CLP criado para 52.176.103.217 com portas [443].
+2025-08-25 15:05:09,505 - INFO - Escaneamento finalizado: 52.176.103.217
+2025-08-25 15:05:19,009 - INFO - Encontrado: 104.16.175.226
+2025-08-25 15:05:19,009 - INFO - Iniciando escaneamento: 104.16.175.226
+2025-08-25 15:05:19,009 - INFO - Encontrado: 104.16.175.226
+2025-08-25 15:05:19,009 - INFO - Iniciando escaneamento: 104.16.175.226
+2025-08-25 15:05:24,522 - INFO - Portas abertas em 104.16.175.226: 80, 443
+2025-08-25 15:05:24,531 - INFO - CLP criado para 104.16.175.226 com portas [80, 443].
+2025-08-25 15:05:24,532 - INFO - Escaneamento finalizado: 104.16.175.226
+2025-08-25 15:05:25,176 - INFO - Encontrado: 169.254.251.60
+2025-08-25 15:05:25,177 - INFO - Iniciando escaneamento: 169.254.251.60
+2025-08-25 15:05:25,178 - INFO - Encontrado: 169.254.251.60
+2025-08-25 15:05:25,178 - INFO - Iniciando escaneamento: 169.254.251.60
+2025-08-25 15:05:30,059 - INFO - Nenhuma porta aberta encontrada em 169.254.251.60.
+2025-08-25 15:05:30,059 - INFO - Escaneamento finalizado: 169.254.251.60
+2025-08-25 15:05:30,301 - INFO - Nenhuma porta aberta encontrada em 169.254.251.60.
+2025-08-25 15:05:30,301 - INFO - Escaneamento finalizado: 169.254.251.60
+2025-08-25 15:05:32,330 - INFO - Portas abertas em 104.16.175.226: 80, 443
+2025-08-25 15:05:32,339 - INFO - CLP criado para 104.16.175.226 com portas [80, 443].
+2025-08-25 15:05:32,339 - INFO - Escaneamento finalizado: 104.16.175.226
+2025-08-25 15:05:39,431 - INFO - Encontrado: 72.153.5.61
+2025-08-25 15:05:39,431 - INFO - Iniciando escaneamento: 72.153.5.61
+2025-08-25 15:05:39,431 - INFO - Encontrado: 72.153.5.61
+2025-08-25 15:05:39,431 - INFO - Iniciando escaneamento: 72.153.5.61
+2025-08-25 15:05:39,804 - INFO - Encontrado: 10.103.149.11
+2025-08-25 15:05:39,804 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:05:39,804 - INFO - Encontrado: 10.103.149.11
+2025-08-25 15:05:39,805 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:05:39,854 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:05:39,855 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:05:39,855 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:05:39,855 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:05:39,858 - INFO - Encontrado: 23.36.41.139
+2025-08-25 15:05:39,858 - INFO - Encontrado: 23.36.41.139
+2025-08-25 15:05:39,859 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 15:05:39,859 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 15:05:40,672 - INFO - Portas abertas em 10.103.132.5: 53, 443
+2025-08-25 15:05:40,675 - INFO - Portas abertas em 10.103.132.5: 53, 443
+2025-08-25 15:05:40,686 - INFO - CLP criado para 10.103.132.5 com portas [53, 443].
+2025-08-25 15:05:40,686 - INFO - CLP criado para 10.103.132.5 com portas [53, 443].
+2025-08-25 15:05:40,686 - INFO - Escaneamento finalizado: 10.103.132.5
+2025-08-25 15:05:40,688 - INFO - Escaneamento finalizado: 10.103.132.5
+2025-08-25 15:05:44,713 - INFO - Portas abertas em 72.153.5.61: 443
+2025-08-25 15:05:44,719 - INFO - CLP criado para 72.153.5.61 com portas [443].
+2025-08-25 15:05:44,719 - INFO - Escaneamento finalizado: 72.153.5.61
+2025-08-25 15:05:44,802 - INFO - Portas abertas em 23.36.41.139: 80, 443
+2025-08-25 15:05:44,807 - INFO - CLP criado para 23.36.41.139 com portas [80, 443].
+2025-08-25 15:05:44,807 - INFO - Escaneamento finalizado: 23.36.41.139
+2025-08-25 15:05:44,868 - INFO - Portas abertas em 72.153.5.61: 443
+2025-08-25 15:05:44,877 - INFO - CLP criado para 72.153.5.61 com portas [443].
+2025-08-25 15:05:44,877 - INFO - Escaneamento finalizado: 72.153.5.61
+2025-08-25 15:05:53,064 - INFO - Portas abertas em 23.36.41.139: 80, 443
+2025-08-25 15:05:53,069 - INFO - CLP criado para 23.36.41.139 com portas [80, 443].
+2025-08-25 15:05:53,069 - INFO - Escaneamento finalizado: 23.36.41.139
+2025-08-25 15:06:03,473 - INFO - Nenhuma porta aberta encontrada em 10.103.149.11.
+2025-08-25 15:06:03,473 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:06:03,483 - INFO - Nenhuma porta aberta encontrada em 10.103.149.11.
+2025-08-25 15:06:03,484 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:06:11,780 - INFO - Encontrado: 10.103.130.171
+2025-08-25 15:06:11,780 - INFO - Iniciando escaneamento: 10.103.130.171
+2025-08-25 15:06:11,780 - INFO - Iniciando escaneamento: 10.103.130.171
+2025-08-25 15:06:14,932 - INFO - Nenhuma porta aberta encontrada em 10.103.130.171.
+2025-08-25 15:06:14,932 - INFO - Escaneamento finalizado: 10.103.130.171
+2025-08-25 15:06:37,858 - INFO - Encontrado: 172.172.255.218
+2025-08-25 15:06:37,858 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 15:06:37,858 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 15:06:43,715 - INFO - Portas abertas em 172.172.255.218: 443
+2025-08-25 15:06:43,720 - INFO - CLP criado para 172.172.255.218 com portas [443].
+2025-08-25 15:06:43,721 - INFO - Escaneamento finalizado: 172.172.255.218
+2025-08-25 15:06:43,970 - INFO - Escaneamento finalizado: 172.172.255.218
+2025-08-25 15:06:51,383 - INFO - Encontrado: 20.189.173.16
+2025-08-25 15:06:51,384 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:06:51,435 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:06:51,435 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:06:51,506 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:06:51,506 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:06:52,111 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:06:52,111 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:06:52,115 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:06:52,115 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:06:52,435 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:06:52,458 - INFO - CLP 10.190.240.79 atualizado com portas [53, 443].
+2025-08-25 15:06:52,458 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:06:52,601 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:06:52,601 - INFO - Encontrado: 10.103.132.4
+.103.132.4
+2025-08-25 15:06:52,602 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:06:52,719 - INFO - Encontrado: 52.168.117.171
+2025-08-25 15:06:52,719 - INFO - Encontrado: 52.168.117.171
+2025-08-25 15:06:52,720 - INFO - Iniciando escaneamento: 52.168.117.171
+2025-08-25 15:06:52,741 - INFO - Encontrado: 20.189.173.16
+2025-08-25 15:06:52,741 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:06:53,082 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:06:53,093 - INFO - CLP 10.190.240.79 atualizado com portas [53, 443].
+2025-08-25 15:06:53,093 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:06:53,355 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:06:53,369 - INFO - CLP 10.103.149.14 atualizado com portas [80, 135, 139, 445, 796].
+2025-08-25 15:06:53,369 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:06:53,386 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:06:53,387 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:06:53,401 - INFO - CLP 10.103.132.4 atualizado com portas [53, 443].
+2025-08-25 15:06:53,401 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:06:53,402 - INFO - CLP 10.103.132.4 atualizado com portas [53, 443].
+2025-08-25 15:06:53,402 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:06:54,015 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:06:54,026 - INFO - CLP 10.103.149.14 atualizado com portas [80, 135, 139, 445, 796].
+2025-08-25 15:06:54,026 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:06:54,208 - INFO - Encontrado: 10.103.149.11
+2025-08-25 15:06:54,208 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:06:54,208 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:06:55,639 - INFO - Encontrado: 10.103.186.120
+2025-08-25 15:06:55,639 - INFO - Encontrado: 10.103.186.120
+2025-08-25 15:06:55,640 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 15:06:58,145 - INFO - Portas abertas em 52.168.117.171: 443
+2025-08-25 15:06:58,154 - INFO - CLP criado para 52.168.117.171 com portas [443].
+2025-08-25 15:06:58,154 - INFO - Escaneamento finalizado: 52.168.117.171
+2025-08-25 15:06:58,821 - INFO - Nenhuma porta aberta encontrada em 10.103.186.120.
+2025-08-25 15:06:58,821 - INFO - Escaneamento finalizado: 10.103.186.120
+2025-08-25 15:06:58,821 - INFO - Nenhuma porta aberta encontrada em 10.103.186.120.
+2025-08-25 15:06:58,821 - INFO - Escaneamento finalizado: 10.103.186.120
+2025-08-25 15:06:59,090 - INFO - Encontrado: 10.103.149.6
+2025-08-25 15:06:59,090 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:06:59,090 - INFO - Encontrado: 10.103.149.6
+2025-08-25 15:06:59,090 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:06:59,200 - INFO - Encontrado: 10.103.149.18
+2025-08-25 15:06:59,200 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:06:59,201 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:06:59,237 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:06:59,238 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:06:59,238 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:06:59,295 - INFO - Encontrado: 10.103.149.25
+2025-08-25 15:06:59,295 - INFO - Encontrado: 10.103.149.25
+2025-08-25 15:06:59,295 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 15:06:59,325 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:06:59,325 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:06:59,326 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:06:59,326 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:06:59,365 - INFO - Encontrado: 10.103.149.24
+2025-08-25 15:06:59,365 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:06:59,399 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:06:59,399 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:06:59,400 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:06:59,401 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:06:59,510 - INFO - Portas abertas em 20.189.173.16: 443
+2025-08-25 15:06:59,528 - INFO - CLP 20.189.173.16 atualizado com portas [443].
+2025-08-25 15:06:59,530 - INFO - Escaneamento finalizado: 20.189.173.16
+2025-08-25 15:07:00,213 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:07:00,215 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:07:00,216 - INFO - Escaneamento finalizado: 52.168.117.171
+2025-08-25 15:07:00,217 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:07:00,217 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:07:00,218 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:07:00,219 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:07:00,220 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:07:00,221 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:07:00,221 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:07:00,221 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:07:00,221 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:07:00,222 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:07:00,222 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:07:00,222 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:07:00,223 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:07:00,224 - INFO - Escaneamento finalizado: 10.103.149.24

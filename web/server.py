@@ -2,92 +2,85 @@ import os
 import json
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from threading import Thread
-from utils import log 
-
+from utils import log
+from utils.CLP import CLP, CLPGen, clps
 
 app = Flask(__name__)
 
 status_coleta = "desativado"
+clps_por_pagina = 21
 
-
+# BASE_DIR usado apenas se você precisar formar caminhos relativos aos templates/logs
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def carregar_clps(rota : str = "logs\\dados.json") -> list:
-    """
-    Coleta IPs e Portas abertas do Json\n
-    rota (str) : rota dos dados.json
-    """
-    caminho = os.path.join(BASE_DIR, rota)
-    with open(caminho, "r", encoding = "utf-8") as f:
-        dados = json.load(f)
 
-    #alterar json colocando "ip" e "portas"
-    clps = []
-    for ip, portas in dados.items():
-        clps.append({"ip": ip, "portas": portas})
-    return clps
+# --- Ao iniciar o módulo, carrega os CLPs do JSON (popula 'clps') ---
+CLP.carregar_todos()
 
-clps_por_pagina = 21
+
+def obter_clps_lista() -> list:
+    """
+    Retorna uma lista de dicionários com as informações dos CLPs
+    (usado para paginação e exibição).
+    """
+    return [c.get_info() for c in CLP.listar_clps()]
+
 
 @app.route('/')
 def index():
-    clps = carregar_clps()
+    clps_lista = obter_clps_lista()
 
-    #Numeração de páginas
+    # paginação
     page = request.args.get('page', 1, type=int)
-
     inicio = (page - 1) * clps_por_pagina
     fim = inicio + clps_por_pagina
-    clps_pagina = clps[inicio:fim]
+    clps_pagina = clps_lista[inicio:fim]
+    total_paginas = (len(clps_lista) + clps_por_pagina - 1) // clps_por_pagina
 
-    total_paginas = (len(clps) + clps_por_pagina - 1) // clps_por_pagina
+    return render_template(
+        'index.html',
+        clps=clps_pagina,
+        page=page,
+        total_paginas=total_paginas,
+        valor=clps_por_pagina
+    )
 
-    
-    return render_template('index.html', clps=clps_pagina, page=page, total_paginas=total_paginas, valor=clps_por_pagina)
 
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
-
-    #Identificação de portas abertas
-    clps = carregar_clps()
-    clp = next((c for c in clps if c["ip"] == ip), None)
-    status = "deconectado"
-    if clp is None:
+    # busca o objeto CLP pelo IP
+    obj = CLP.buscar_por_ip(ip)
+    if obj is None:
         return "CLP não encontrado", 404
 
-    
-    portas_abertas = [porta for porta in clp["portas"]]
-    
-    return render_template("detalhes.html", ip=clp["ip"], portas_abertas=portas_abertas, Status=status)
+    info = obj.get_info()
+    portas_abertas = info.get("portas", [])
+    status = info.get("status", "Offline")
+
+    return render_template("detalhes.html", ip=info["ip"], portas_abertas=portas_abertas, Status=status, clp=info)
 
 
 @app.route("/alterar", methods=["POST"])
 def alterar_clps_pagina():
-
-    #Alterar quantidade de CLPs p/ página
+    # Alterar quantidade de CLPs por página
     global clps_por_pagina
-    novo_valor  = request.form.get("novo_valor", type=int)
+    novo_valor = request.form.get("novo_valor", type=int)
     if novo_valor and novo_valor > 0:
         clps_por_pagina = novo_valor
     return redirect(url_for('index'))
 
+
 @app.route("/alterarColeta")
 def alterar_coleta_ips():
     global status_coleta
-    if status_coleta == "ativado":
-        status_coleta = "desativado"
-    else:
-        status_coleta = "ativado"
+    status_coleta = "desativado" if status_coleta == "ativado" else "ativado"
     return redirect(url_for("coleta_de_ips"))
+
 
 @app.route("/coletaIps")
 def coleta_de_ips():
     global status_coleta
-
     return render_template("coleta.html", status=status_coleta)
-
-
-
 
 
 @app.route("/logs")
@@ -96,11 +89,17 @@ def logs_geral():
     return render_template("logs.html", logs=logs)
 
 
+# ------ Exemplo: endpoint para retornar JSON com todos os CLPs ------
+@app.route("/api/clps")
+def api_clps():
+    """Retorna JSON com todos os CLPs (útil para front-end dinâmico)."""
+    return jsonify(obter_clps_lista())
+
+
 def iniciar_web() -> None:
     """Inicia o servidor web"""
-    app.run(host='127.0.0.1', port=5000, debug=True, use_reloader = True)
-
-
+    # obs: em produção remova debug=True e use servidor WSGI apropriado
+    app.run(host='127.0.0.1', port=5000, debug=True, use_reloader=True)
 
 
 if __name__ == '__main__':
