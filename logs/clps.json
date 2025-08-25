@@ -12,7 +12,8 @@
         "unidade": 1,
         "status": "Offline",
         "logs": [
-            "2025-08-25 15:06:54 - Portas atualizadas para: [80, 135, 139, 445, 796]"
+            "2025-08-25 15:06:54 - Portas atualizadas para: [80, 135, 139, 445, 796]",
+            "2025-08-25 15:09:38 - Portas atualizadas para: [80, 135, 139, 445, 796]"
         ],
         "data_registro": "2025-08-25 15:03:10",
         "descricao": ""
@@ -27,7 +28,8 @@
         "unidade": 1,
         "status": "Offline",
         "logs": [
-            "2025-08-25 15:06:53 - Portas atualizadas para: [53, 443]"
+            "2025-08-25 15:06:53 - Portas atualizadas para: [53, 443]",
+            "2025-08-25 15:09:38 - Portas atualizadas para: [53, 443]"
         ],
         "data_registro": "2025-08-25 15:03:10",
         "descricao": ""
@@ -42,7 +44,8 @@
         "unidade": 1,
         "status": "Offline",
         "logs": [
-            "2025-08-25 15:06:53 - Portas atualizadas para: [53, 443]"
+            "2025-08-25 15:06:53 - Portas atualizadas para: [53, 443]",
+            "2025-08-25 15:09:38 - Portas atualizadas para: [53, 443]"
         ],
         "data_registro": "2025-08-25 15:03:10",
         "descricao": ""
@@ -107,7 +110,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:56 - Portas atualizadas para: [80, 443]"
+        ],
         "data_registro": "2025-08-25 15:03:18",
         "descricao": ""
     },
@@ -119,7 +124,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:59 - Portas atualizadas para: [443]"
+        ],
         "data_registro": "2025-08-25 15:03:21",
         "descricao": ""
     },
@@ -132,7 +139,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:59 - Portas atualizadas para: [80, 443]"
+        ],
         "data_registro": "2025-08-25 15:03:22",
         "descricao": ""
     },
@@ -145,7 +154,8 @@
         "unidade": 1,
         "status": "Offline",
         "logs": [
-            "2025-08-25 15:06:59 - Portas atualizadas para: [443]"
+            "2025-08-25 15:06:59 - Portas atualizadas para: [443]",
+            "2025-08-25 15:10:07 - Portas atualizadas para: [443]"
         ],
         "data_registro": "2025-08-25 15:03:23",
         "descricao": ""
@@ -195,7 +205,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:54 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:31",
         "descricao": ""
     },
@@ -220,7 +232,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:48 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:34",
         "descricao": ""
     },
@@ -257,7 +271,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:10:00 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:38",
         "descricao": ""
     },
@@ -282,7 +298,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:50 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:41",
         "descricao": ""
     },
@@ -295,7 +313,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:49 - Portas atualizadas para: [80, 443]"
+        ],
         "data_registro": "2025-08-25 15:03:44",
         "descricao": ""
     },
@@ -346,7 +366,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:55 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:49",
         "descricao": ""
     },
@@ -371,7 +393,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:48 - Portas atualizadas para: [796]"
+        ],
         "data_registro": "2025-08-25 15:03:54",
         "descricao": ""
     },
@@ -395,7 +419,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:10:34 - Portas atualizadas para: [443]"
+        ],
         "data_registro": "2025-08-25 15:04:07",
         "descricao": ""
     },
@@ -457,7 +483,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:09:58 - Portas atualizadas para: [80, 443]"
+        ],
         "data_registro": "2025-08-25 15:05:24",
         "descricao": ""
     },
@@ -470,7 +498,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:10:44 - Portas atualizadas para: [53, 443]"
+        ],
         "data_registro": "2025-08-25 15:05:40",
         "descricao": ""
     },
@@ -495,7 +525,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:11:29 - Portas atualizadas para: [80, 443]"
+        ],
         "data_registro": "2025-08-25 15:05:53",
         "descricao": ""
     },
@@ -507,7 +539,9 @@
         ],
         "unidade": 1,
         "status": "Offline",
-        "logs": [],
+        "logs": [
+            "2025-08-25 15:10:29 - Portas atualizadas para: [443]"
+        ],
         "data_registro": "2025-08-25 15:06:43",
         "descricao": ""
     },
@@ -521,6 +555,105 @@
         "status": "Offline",
         "logs": [],
         "data_registro": "2025-08-25 15:06:58",
+        "descricao": ""
+    },
+    "10.103.149.5": {
+        "nome": "CLP_10.103.149.5",
+        "ip": "10.103.149.5",
+        "portas": [
+            135,
+            445
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:09:46",
+        "descricao": ""
+    },
+    "10.103.149.6": {
+        "nome": "CLP_10.103.149.6",
+        "ip": "10.103.149.6",
+        "portas": [
+            796
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:09:50",
+        "descricao": ""
+    },
+    "20.50.73.13": {
+        "nome": "CLP_20.50.73.13",
+        "ip": "20.50.73.13",
+        "portas": [
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:09:53",
+        "descricao": ""
+    },
+    "72.153.5.129": {
+        "nome": "CLP_72.153.5.129",
+        "ip": "72.153.5.129",
+        "portas": [
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:09:53",
+        "descricao": ""
+    },
+    "2.17.213.221": {
+        "nome": "CLP_2.17.213.221",
+        "ip": "2.17.213.221",
+        "portas": [
+            80,
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:09:53",
+        "descricao": ""
+    },
+    "140.82.113.25": {
+        "nome": "CLP_140.82.113.25",
+        "ip": "140.82.113.25",
+        "portas": [
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:10:13",
+        "descricao": ""
+    },
+    "95.101.125.94": {
+        "nome": "CLP_95.101.125.94",
+        "ip": "95.101.125.94",
+        "portas": [
+            80,
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:10:49",
+        "descricao": ""
+    },
+    "18.233.54.170": {
+        "nome": "CLP_18.233.54.170",
+        "ip": "18.233.54.170",
+        "portas": [
+            443
+        ],
+        "unidade": 1,
+        "status": "Offline",
+        "logs": [],
+        "data_registro": "2025-08-25 15:11:14",
         "descricao": ""
     }
 }

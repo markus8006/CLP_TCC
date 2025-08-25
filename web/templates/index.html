@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
     <title>Status da Máquina</title>
 </head>
 
@@ -46,7 +46,7 @@
             {% for clp in clps %}
                 <div class="divs_clp">
                     <a href="/clp/{{ clp.ip }}" title="portas: {{ clp.portas }}">
-                    <img src="{{ url_for('static', filename='clp_imagem.png') }}" alt="Erro">
+                    <img src="{{ url_for('static', filename='imgs/clp_imagem.png') }}" alt="Erro">
                     <p>{{ clp.ip }}</p>
                     </a>
                 </div>
@@ -72,7 +72,7 @@
 
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 {% endblock %}
 
 </body>

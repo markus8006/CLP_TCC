@@ -11186,3 +11186,298 @@
 2025-08-25 15:07:00,222 - INFO - Escaneamento finalizado: 10.103.149.15
 2025-08-25 15:07:00,223 - INFO - Escaneamento finalizado: 10.103.149.18
 2025-08-25 15:07:00,224 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:09:36,980 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:09:36,981 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:09:36,981 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:09:36,981 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:09:37,105 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:09:37,105 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:09:37,617 - INFO - Encontrado: 10.103.149.14
+2025-08-25 15:09:37,618 - INFO - Iniciando escaneamento: 10.103.149.14
+2025-08-25 15:09:37,624 - INFO - Encontrado: 104.18.32.47
+2025-08-25 15:09:37,625 - INFO - Iniciando escaneamento: 104.18.32.47
+2025-08-25 15:09:37,713 - INFO - Encontrado: 10.190.240.79
+2025-08-25 15:09:37,713 - INFO - Iniciando escaneamento: 10.190.240.79
+2025-08-25 15:09:37,790 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:09:37,791 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:09:37,792 - INFO - Encontrado: 10.103.132.4
+2025-08-25 15:09:37,793 - INFO - Iniciando escaneamento: 10.103.132.4
+2025-08-25 15:09:38,017 - INFO - Encontrado: 20.50.73.13
+2025-08-25 15:09:38,017 - INFO - Iniciando escaneamento: 20.50.73.13
+2025-08-25 15:09:38,018 - INFO - Iniciando escaneamento: 20.50.73.13
+2025-08-25 15:09:38,101 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:09:38,115 - INFO - CLP 10.190.240.79 atualizado com portas [53, 443].
+2025-08-25 15:09:38,115 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:09:38,574 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:09:38,575 - INFO - Portas abertas em 10.103.132.4: 53, 443
+2025-08-25 15:09:38,591 - INFO - CLP 10.103.132.4 atualizado com portas [53, 443].
+2025-08-25 15:09:38,592 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:09:38,595 - INFO - CLP 10.103.132.4 atualizado com portas [53, 443].
+2025-08-25 15:09:38,596 - INFO - Escaneamento finalizado: 10.103.132.4
+2025-08-25 15:09:38,699 - INFO - Portas abertas em 10.190.240.79: 53, 443
+2025-08-25 15:09:38,716 - INFO - CLP 10.190.240.79 atualizado com portas [53, 443].
+2025-08-25 15:09:38,716 - INFO - Escaneamento finalizado: 10.190.240.79
+2025-08-25 15:09:38,937 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:09:38,954 - INFO - CLP 10.103.149.14 atualizado com portas [80, 135, 139, 445, 796].
+2025-08-25 15:09:38,955 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:09:39,534 - INFO - Portas abertas em 10.103.149.14: 80, 135, 139, 445, 796
+2025-08-25 15:09:39,549 - INFO - CLP 10.103.149.14 atualizado com portas [80, 135, 139, 445, 796].
+2025-08-25 15:09:39,550 - INFO - Escaneamento finalizado: 10.103.149.14
+2025-08-25 15:09:40,441 - INFO - Encontrado: 10.103.149.6
+2025-08-25 15:09:40,442 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:09:40,442 - INFO - Encontrado: 10.103.149.6
+2025-08-25 15:09:40,442 - INFO - Iniciando escaneamento: 10.103.149.6
+2025-08-25 15:09:40,579 - INFO - Encontrado: 10.103.149.18
+2025-08-25 15:09:40,579 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:09:40,579 - INFO - Iniciando escaneamento: 10.103.149.18
+2025-08-25 15:09:40,620 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:09:40,620 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:09:40,620 - INFO - Encontrado: 10.103.149.15
+2025-08-25 15:09:40,620 - INFO - Iniciando escaneamento: 10.103.149.15
+2025-08-25 15:09:40,655 - INFO - Encontrado: 10.103.149.5
+2025-08-25 15:09:40,655 - INFO - Encontrado: 10.103.149.5
+2025-08-25 15:09:40,655 - INFO - Iniciando escaneamento: 10.103.149.5
+2025-08-25 15:09:40,655 - INFO - Iniciando escaneamento: 10.103.149.5
+2025-08-25 15:09:40,683 - INFO - Encontrado: 10.103.149.25
+2025-08-25 15:09:40,684 - INFO - Encontrado: 10.103.149.25
+2025-08-25 15:09:40,684 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 15:09:40,684 - INFO - Iniciando escaneamento: 10.103.149.25
+2025-08-25 15:09:40,758 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:09:40,759 - INFO - Encontrado: 10.103.149.19
+2025-08-25 15:09:40,759 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:09:40,759 - INFO - Iniciando escaneamento: 10.103.149.19
+2025-08-25 15:09:40,771 - INFO - Encontrado: 10.103.149.24
+2025-08-25 15:09:40,772 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:09:40,772 - INFO - Iniciando escaneamento: 10.103.149.24
+2025-08-25 15:09:40,846 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:09:40,846 - INFO - Encontrado: 10.103.149.23
+2025-08-25 15:09:40,847 - INFO - Iniciando escaneamento: 10.103.149.23
+2025-08-25 15:09:40,879 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:09:40,879 - INFO - Encontrado: 10.103.149.8
+2025-08-25 15:09:41,209 - INFO - Encontrado: 72.153.5.129
+2025-08-25 15:09:41,209 - INFO - Encontrado: 72.153.5.129
+2025-08-25 15:09:41,591 - INFO - Encontrado: 2.17.213.221
+2025-08-25 15:09:41,593 - INFO - Encontrado: 2.17.213.221
+2025-08-25 15:09:43,068 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:09:43,069 - INFO - Encontrado: 18.200.151.63
+2025-08-25 15:09:43,144 - INFO - Portas abertas em 104.18.32.47: 80, 443
+2025-08-25 15:09:43,162 - INFO - CLP 104.18.32.47 atualizado com portas [80, 443].
+2025-08-25 15:09:43,165 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:09:43,167 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:09:44,358 - INFO - Encontrado: 10.103.149.11
+2025-08-25 15:09:44,359 - INFO - Encontrado: 10.103.149.11
+2025-08-25 15:09:46,017 - INFO - Portas abertas em 10.103.149.5: 135, 445
+2025-08-25 15:09:46,030 - INFO - CLP criado para 10.103.149.5 com portas [135, 445].
+2025-08-25 15:09:46,030 - INFO - Escaneamento finalizado: 10.103.149.5
+2025-08-25 15:09:46,030 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 15:09:46,081 - INFO - Portas abertas em 10.103.149.5: 135, 445
+2025-08-25 15:09:46,092 - INFO - CLP criado para 10.103.149.5 com portas [135, 445].
+2025-08-25 15:09:46,093 - INFO - Escaneamento finalizado: 10.103.149.5
+2025-08-25 15:09:46,093 - INFO - Iniciando escaneamento: 10.103.149.8
+2025-08-25 15:09:48,502 - INFO - Portas abertas em 10.103.149.15: 796
+2025-08-25 15:09:48,502 - INFO - Portas abertas em 10.103.149.23: 796
+2025-08-25 15:09:48,524 - INFO - CLP 10.103.149.15 atualizado com portas [796].
+2025-08-25 15:09:48,524 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:09:48,524 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:09:48,525 - INFO - Iniciando escaneamento: 2.17.213.221
+2025-08-25 15:09:48,525 - INFO - Iniciando escaneamento: 72.153.5.129
+2025-08-25 15:09:48,672 - INFO - Encontrado: 172.217.192.84
+2025-08-25 15:09:48,674 - INFO - Encontrado: 172.217.192.84
+2025-08-25 15:09:48,936 - INFO - Portas abertas em 10.103.149.23: 796
+2025-08-25 15:09:48,957 - INFO - CLP 10.103.149.23 atualizado com portas [796].
+2025-08-25 15:09:48,958 - INFO - Escaneamento finalizado: 10.103.149.23
+2025-08-25 15:09:48,958 - INFO - Iniciando escaneamento: 2.17.213.221
+2025-08-25 15:09:49,189 - INFO - Encontrado: 104.16.175.226
+2025-08-25 15:09:49,196 - INFO - Encontrado: 104.16.175.226
+2025-08-25 15:09:49,220 - INFO - Portas abertas em 10.103.149.19: 796
+2025-08-25 15:09:49,242 - INFO - CLP 10.103.149.19 atualizado com portas [796].
+2025-08-25 15:09:49,242 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:09:49,243 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:09:49,668 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:09:49,670 - INFO - Encontrado: 104.18.39.21
+2025-08-25 15:09:49,821 - INFO - Portas abertas em 104.18.32.47: 80, 443
+2025-08-25 15:09:49,840 - INFO - CLP 104.18.32.47 atualizado com portas [80, 443].
+2025-08-25 15:09:49,840 - INFO - Escaneamento finalizado: 104.18.32.47
+2025-08-25 15:09:49,840 - INFO - Iniciando escaneamento: 18.200.151.63
+2025-08-25 15:09:50,631 - INFO - Portas abertas em 10.103.149.24: 796
+2025-08-25 15:09:50,654 - INFO - CLP 10.103.149.24 atualizado com portas [796].
+2025-08-25 15:09:50,654 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:09:50,655 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:09:50,743 - INFO - Portas abertas em 10.103.149.6: 796
+2025-08-25 15:09:50,754 - INFO - CLP criado para 10.103.149.6 com portas [796].
+2025-08-25 15:09:50,754 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:09:50,755 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 15:09:51,007 - INFO - Encontrado: 20.189.173.16
+2025-08-25 15:09:51,008 - INFO - Encontrado: 20.189.173.16
+2025-08-25 15:09:51,811 - INFO - Portas abertas em 72.153.5.129: 443
+2025-08-25 15:09:51,820 - INFO - CLP criado para 72.153.5.129 com portas [443].
+2025-08-25 15:09:51,820 - INFO - Escaneamento finalizado: 72.153.5.129
+2025-08-25 15:09:51,821 - INFO - Iniciando escaneamento: 10.103.149.11
+2025-08-25 15:09:52,366 - INFO - Portas abertas em 20.50.73.13: 443
+2025-08-25 15:09:52,379 - INFO - CLP criado para 20.50.73.13 com portas [443].
+2025-08-25 15:09:52,379 - INFO - Escaneamento finalizado: 20.50.73.13
+2025-08-25 15:09:52,379 - INFO - Iniciando escaneamento: 172.217.192.84
+2025-08-25 15:09:53,452 - INFO - Portas abertas em 2.17.213.221: 80, 443
+2025-08-25 15:09:53,464 - INFO - CLP criado para 2.17.213.221 com portas [80, 443].
+2025-08-25 15:09:53,465 - INFO - Escaneamento finalizado: 2.17.213.221
+2025-08-25 15:09:53,467 - INFO - Iniciando escaneamento: 104.16.175.226
+2025-08-25 15:09:53,670 - INFO - Portas abertas em 20.50.73.13: 443
+2025-08-25 15:09:53,675 - INFO - CLP criado para 20.50.73.13 com portas [443].
+2025-08-25 15:09:53,675 - INFO - Escaneamento finalizado: 20.50.73.13
+2025-08-25 15:09:53,675 - INFO - Iniciando escaneamento: 104.16.175.226
+2025-08-25 15:09:53,685 - INFO - Portas abertas em 72.153.5.129: 443
+2025-08-25 15:09:53,694 - INFO - CLP criado para 72.153.5.129 com portas [443].
+2025-08-25 15:09:53,694 - INFO - Escaneamento finalizado: 72.153.5.129
+2025-08-25 15:09:53,694 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:09:53,969 - INFO - Portas abertas em 2.17.213.221: 80, 443
+2025-08-25 15:09:53,975 - INFO - CLP criado para 2.17.213.221 com portas [80, 443].
+2025-08-25 15:09:53,975 - INFO - Escaneamento finalizado: 2.17.213.221
+2025-08-25 15:09:53,975 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:09:54,928 - INFO - Portas abertas em 10.103.149.25: 796
+2025-08-25 15:09:54,938 - INFO - CLP 10.103.149.25 atualizado com portas [796].
+2025-08-25 15:09:54,938 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:09:55,698 - INFO - Portas abertas em 10.103.149.18: 796
+2025-08-25 15:09:55,709 - INFO - CLP 10.103.149.18 atualizado com portas [796].
+2025-08-25 15:09:55,709 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:09:56,180 - INFO - Portas abertas em 172.217.192.84: 80, 443
+2025-08-25 15:09:56,193 - INFO - CLP 172.217.192.84 atualizado com portas [80, 443].
+2025-08-25 15:09:56,193 - INFO - Escaneamento finalizado: 172.217.192.84
+2025-08-25 15:09:56,797 - INFO - Portas abertas em 10.103.149.18: 796
+2025-08-25 15:09:56,809 - INFO - CLP 10.103.149.18 atualizado com portas [796].
+2025-08-25 15:09:56,809 - INFO - Escaneamento finalizado: 10.103.149.18
+2025-08-25 15:09:56,809 - INFO - Iniciando escaneamento: 104.18.39.21
+2025-08-25 15:09:57,788 - INFO - Portas abertas em 172.217.192.84: 80, 443
+2025-08-25 15:09:57,798 - INFO - CLP 172.217.192.84 atualizado com portas [80, 443].
+2025-08-25 15:09:57,798 - INFO - Escaneamento finalizado: 172.217.192.84
+2025-08-25 15:09:57,798 - INFO - Iniciando escaneamento: 20.189.173.16
+2025-08-25 15:09:58,993 - INFO - Portas abertas em 104.16.175.226: 80, 443
+2025-08-25 15:09:59,004 - INFO - CLP 104.16.175.226 atualizado com portas [80, 443].
+2025-08-25 15:09:59,004 - INFO - Escaneamento finalizado: 104.16.175.226
+2025-08-25 15:09:59,119 - INFO - Portas abertas em 104.18.39.21: 80, 443
+2025-08-25 15:09:59,129 - INFO - CLP 104.18.39.21 atualizado com portas [80, 443].
+2025-08-25 15:09:59,129 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:09:59,369 - INFO - Portas abertas em 18.200.151.63: 443
+2025-08-25 15:09:59,380 - INFO - CLP 18.200.151.63 atualizado com portas [443].
+2025-08-25 15:09:59,380 - INFO - Escaneamento finalizado: 18.200.151.63
+2025-08-25 15:09:59,860 - INFO - Portas abertas em 10.103.149.24: 796
+2025-08-25 15:09:59,873 - INFO - CLP 10.103.149.24 atualizado com portas [796].
+2025-08-25 15:09:59,874 - INFO - Escaneamento finalizado: 10.103.149.24
+2025-08-25 15:10:00,490 - INFO - Portas abertas em 10.103.149.19: 796
+2025-08-25 15:10:00,504 - INFO - CLP 10.103.149.19 atualizado com portas [796].
+2025-08-25 15:10:00,504 - INFO - Escaneamento finalizado: 10.103.149.19
+2025-08-25 15:10:01,699 - INFO - Portas abertas em 10.103.149.6: 796
+2025-08-25 15:10:01,705 - INFO - CLP criado para 10.103.149.6 com portas [796].
+2025-08-25 15:10:01,705 - INFO - Escaneamento finalizado: 10.103.149.6
+2025-08-25 15:10:02,098 - INFO - Portas abertas em 104.18.39.21: 80, 443
+2025-08-25 15:10:02,115 - INFO - CLP 104.18.39.21 atualizado com portas [80, 443].
+2025-08-25 15:10:02,115 - INFO - Escaneamento finalizado: 104.18.39.21
+2025-08-25 15:10:02,761 - INFO - Portas abertas em 10.103.149.15: 796
+2025-08-25 15:10:02,772 - INFO - CLP 10.103.149.15 atualizado com portas [796].
+2025-08-25 15:10:02,772 - INFO - Escaneamento finalizado: 10.103.149.15
+2025-08-25 15:10:03,286 - INFO - Portas abertas em 10.103.149.25: 796
+2025-08-25 15:10:03,299 - INFO - CLP 10.103.149.25 atualizado com portas [796].
+2025-08-25 15:10:03,299 - INFO - Escaneamento finalizado: 10.103.149.25
+2025-08-25 15:10:05,461 - INFO - Portas abertas em 18.200.151.63: 443
+2025-08-25 15:10:05,473 - INFO - CLP 18.200.151.63 atualizado com portas [443].
+2025-08-25 15:10:05,473 - INFO - Escaneamento finalizado: 18.200.151.63
+2025-08-25 15:10:06,818 - INFO - Nenhuma porta aberta encontrada em 10.103.149.8.
+2025-08-25 15:10:06,818 - INFO - Escaneamento finalizado: 10.103.149.8
+2025-08-25 15:10:07,851 - INFO - Portas abertas em 20.189.173.16: 443
+2025-08-25 15:10:07,864 - INFO - CLP 20.189.173.16 atualizado com portas [443].
+2025-08-25 15:10:07,864 - INFO - Escaneamento finalizado: 20.189.173.16
+2025-08-25 15:10:08,860 - INFO - Encontrado: 140.82.113.25
+2025-08-25 15:10:08,861 - INFO - Encontrado: 140.82.113.25
+2025-08-25 15:10:08,861 - INFO - Iniciando escaneamento: 140.82.113.25
+2025-08-25 15:10:08,861 - INFO - Iniciando escaneamento: 140.82.113.25
+2025-08-25 15:10:09,752 - INFO - Nenhuma porta aberta encontrada em 10.103.149.8.
+2025-08-25 15:10:09,752 - INFO - Escaneamento finalizado: 10.103.149.8
+2025-08-25 15:10:10,972 - INFO - Portas abertas em 104.16.175.226: 80, 443
+2025-08-25 15:10:11,003 - INFO - CLP 104.16.175.226 atualizado com portas [80, 443].
+2025-08-25 15:10:11,003 - INFO - Escaneamento finalizado: 104.16.175.226
+2025-08-25 15:10:11,652 - INFO - Portas abertas em 20.189.173.16: 443
+2025-08-25 15:10:11,666 - INFO - CLP 20.189.173.16 atualizado com portas [443].
+2025-08-25 15:10:11,666 - INFO - Escaneamento finalizado: 20.189.173.16
+2025-08-25 15:10:13,897 - INFO - Portas abertas em 140.82.113.25: 443
+2025-08-25 15:10:13,905 - INFO - CLP criado para 140.82.113.25 com portas [443].
+2025-08-25 15:10:13,906 - INFO - Escaneamento finalizado: 140.82.113.25
+2025-08-25 15:10:14,344 - INFO - Nenhuma porta aberta encontrada em 10.103.149.11.
+2025-08-25 15:10:14,346 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:10:15,466 - INFO - Nenhuma porta aberta encontrada em 10.103.149.11.
+2025-08-25 15:10:15,466 - INFO - Escaneamento finalizado: 10.103.149.11
+2025-08-25 15:10:17,978 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:10:17,979 - INFO - Encontrado: 40.71.14.140
+2025-08-25 15:10:17,979 - INFO - Iniciando escaneamento: 40.71.14.140
+2025-08-25 15:10:21,455 - INFO - Portas abertas em 140.82.113.25: 443
+2025-08-25 15:10:21,474 - INFO - CLP criado para 140.82.113.25 com portas [443].
+2025-08-25 15:10:21,477 - INFO - Escaneamento finalizado: 140.82.113.25
+2025-08-25 15:10:23,529 - INFO - Portas abertas em 40.71.14.140: 443
+2025-08-25 15:10:23,544 - INFO - CLP 40.71.14.140 atualizado com portas [443].
+2025-08-25 15:10:23,546 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:10:24,218 - INFO - Encontrado: 172.172.255.218
+2025-08-25 15:10:24,218 - INFO - Encontrado: 172.172.255.218
+2025-08-25 15:10:24,218 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 15:10:24,218 - INFO - Iniciando escaneamento: 172.172.255.218
+2025-08-25 15:10:29,714 - INFO - Portas abertas em 172.172.255.218: 443
+2025-08-25 15:10:29,724 - INFO - CLP 172.172.255.218 atualizado com portas [443].
+2025-08-25 15:10:29,724 - INFO - Escaneamento finalizado: 172.172.255.218
+2025-08-25 15:10:34,568 - INFO - Portas abertas em 40.71.14.140: 443
+2025-08-25 15:10:34,581 - INFO - CLP 40.71.14.140 atualizado com portas [443].
+2025-08-25 15:10:34,581 - INFO - Escaneamento finalizado: 40.71.14.140
+2025-08-25 15:10:40,345 - INFO - Portas abertas em 172.172.255.218: 443
+2025-08-25 15:10:40,356 - INFO - CLP 172.172.255.218 atualizado com portas [443].
+2025-08-25 15:10:40,357 - INFO - Escaneamento finalizado: 172.172.255.218
+2025-08-25 15:10:44,011 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:10:44,011 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:10:44,014 - INFO - Encontrado: 10.103.132.5
+2025-08-25 15:10:44,014 - INFO - Iniciando escaneamento: 10.103.132.5
+2025-08-25 15:10:44,025 - INFO - Encontrado: 95.101.125.94
+2025-08-25 15:10:44,026 - INFO - Iniciando escaneamento: 95.101.125.94
+2025-08-25 15:10:44,026 - INFO - Encontrado: 95.101.125.94
+2025-08-25 15:10:44,026 - INFO - Iniciando escaneamento: 95.101.125.94
+2025-08-25 15:10:44,816 - INFO - Portas abertas em 10.103.132.5: 53, 443
+2025-08-25 15:10:44,820 - INFO - Portas abertas em 10.103.132.5: 53, 443
+2025-08-25 15:10:44,839 - INFO - CLP 10.103.132.5 atualizado com portas [53, 443].
+2025-08-25 15:10:44,840 - INFO - Escaneamento finalizado: 10.103.132.5
+2025-08-25 15:10:44,854 - INFO - CLP 10.103.132.5 atualizado com portas [53, 443].
+2025-08-25 15:10:44,855 - INFO - Escaneamento finalizado: 10.103.132.5
+2025-08-25 15:10:49,172 - INFO - Portas abertas em 95.101.125.94: 80, 443
+2025-08-25 15:10:49,176 - INFO - Portas abertas em 95.101.125.94: 80, 443
+2025-08-25 15:10:49,184 - INFO - CLP criado para 95.101.125.94 com portas [80, 443].
+2025-08-25 15:10:49,184 - INFO - Escaneamento finalizado: 95.101.125.94
+2025-08-25 15:10:49,188 - INFO - CLP criado para 95.101.125.94 com portas [80, 443].
+2025-08-25 15:10:49,189 - INFO - Escaneamento finalizado: 95.101.125.94
+2025-08-25 15:11:08,937 - INFO - Encontrado: 18.233.54.170
+2025-08-25 15:11:08,938 - INFO - Iniciando escaneamento: 18.233.54.170
+2025-08-25 15:11:08,938 - INFO - Encontrado: 18.233.54.170
+2025-08-25 15:11:08,939 - INFO - Iniciando escaneamento: 18.233.54.170
+2025-08-25 15:11:14,328 - INFO - Portas abertas em 18.233.54.170: 443
+2025-08-25 15:11:14,348 - INFO - CLP criado para 18.233.54.170 com portas [443].
+2025-08-25 15:11:14,348 - INFO - Escaneamento finalizado: 18.233.54.170
+2025-08-25 15:11:14,534 - INFO - Portas abertas em 18.233.54.170: 443
+2025-08-25 15:11:14,539 - INFO - CLP criado para 18.233.54.170 com portas [443].
+2025-08-25 15:11:14,540 - INFO - Escaneamento finalizado: 18.233.54.170
+2025-08-25 15:11:19,498 - INFO - Encontrado: 23.36.41.139
+2025-08-25 15:11:19,499 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 15:11:19,499 - INFO - Iniciando escaneamento: 23.36.41.139
+2025-08-25 15:11:24,666 - INFO - Portas abertas em 23.36.41.139: 80, 443
+2025-08-25 15:11:24,703 - INFO - CLP 23.36.41.139 atualizado com portas [80, 443].
+2025-08-25 15:11:24,703 - INFO - Escaneamento finalizado: 23.36.41.139
+2025-08-25 15:11:29,908 - INFO - Portas abertas em 23.36.41.139: 80, 443
+2025-08-25 15:11:29,927 - INFO - CLP 23.36.41.139 atualizado com portas [80, 443].
+2025-08-25 15:11:29,928 - INFO - Escaneamento finalizado: 23.36.41.139
+2025-08-25 15:11:33,691 - INFO - Encontrado: 10.103.186.120
+2025-08-25 15:11:33,692 - INFO - Encontrado: 10.103.186.120
+2025-08-25 15:11:33,692 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 15:11:33,692 - INFO - Iniciando escaneamento: 10.103.186.120
+2025-08-25 15:11:36,898 - INFO - Nenhuma porta aberta encontrada em 10.103.186.120.
+2025-08-25 15:11:36,898 - INFO - Escaneamento finalizado: 10.103.186.120
+2025-08-25 15:11:36,898 - INFO - Nenhuma porta aberta encontrada em 10.103.186.120.
+2025-08-25 15:11:36,898 - INFO - Escaneamento finalizado: 10.103.186.120
+2025-08-25 15:12:18,973 - INFO - Encontrado: 10.11.0.51
+2025-08-25 15:12:18,973 - INFO - Encontrado: 10.11.0.51
+2025-08-25 15:12:18,973 - INFO - Iniciando escaneamento: 10.11.0.51
+2025-08-25 15:12:18,973 - INFO - Iniciando escaneamento: 10.11.0.51
+2025-08-25 15:12:24,087 - INFO - Nenhuma porta aberta encontrada em 10.11.0.51.
+2025-08-25 15:12:24,088 - INFO - Escaneamento finalizado: 10.11.0.51
+2025-08-25 15:12:24,641 - INFO - Nenhuma porta aberta encontrada em 10.11.0.51.
+2025-08-25 15:12:24,641 - INFO - Escaneamento finalizado: 10.11.0.51
