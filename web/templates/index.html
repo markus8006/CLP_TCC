@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+{% block style %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
-    <title>Status da Máquina</title>
-</head>
+{% endblock %}
 
-
-
-
-
-
-<body>
-
-
+{% block side_bar %}
 <!-- Botão que abre/fecha o menu -->
 <button id="menuBtn" onclick="moveSideBar()">&#9776;</button>
-
 
 <!-- Sidebar -->
 <div id="mySidenav" class="sidenav">
@@ -24,14 +12,11 @@
         <a href="/coletaIps">Coleta IPs</a>
         <a href="#">Contact</a>
         <a href="/logs">Logs</a>
-
 </div>
+{% endblock %}
 
 
-
-
-
-
+{% block clps_detectados %}
     <div id="main" class="main">        
         
         <h1>CLPs Detectados</h1>
@@ -47,7 +32,7 @@
                 <div class="divs_clp">
                     <a href="/clp/{{ clp.ip }}" title="portas: {{ clp.portas }}">
                     <img src="{{ url_for('static', filename='imgs/clp_imagem.png') }}" alt="Erro">
-                    <p>{{ clp.ip }}</p>
+                    <p class = "clp_ip">{{ clp.ip }}</p>
                     </a>
                 </div>
             {% endfor %}
@@ -57,8 +42,6 @@
         {% if page > 1 %}
             <a href="/?page={{ page-1 }}">Anterior</a>
         {% endif %}
-
-
     
         <span> ---- Página {{ page }} de {{ total_paginas }} ---- </span>
 
@@ -66,15 +49,9 @@
             <a class="paginas_clps"href="/?page={{ page+1 }}">Próxima</a>
         {% endif %}
     </div>
-
+{% endblock %}
 </div>
-
-
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 {% endblock %}
-
-</body>
-
-</html>

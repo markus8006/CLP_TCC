@@ -2,26 +2,29 @@
 
 /* --- Container CLPs --- */
 .container_clps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    position: relative;
+    left: -30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
     gap: 24px;
-    justify-items: center;
     margin-top: 30px;
     padding-bottom: 30px;
+    height: auto;
 }
 
 /* --- Card CLP --- */
 .divs_clp {
-    background-color: #16002b;
+    background-color: #8400ff;
     border-radius: 18px;
     box-shadow: 0 6px 24px rgba(68, 0, 107, 0.9);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 360px;
-    max-width: 320px;
-    padding: 18px;
+    width: 98%;
+    height: 50%;
+    padding: 4px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .divs_clp:hover {
@@ -32,9 +35,23 @@
     max-width: 100%;
     border-radius: 12px;
     transition: transform 0.5s ease, box-shadow 0.3s;
+    transform: scale(1.125);
+    position: relative;
+    top: 20px;
+    display: block;
+    margin-left: 0;
+    width: 10%;
 }
 .divs_clp img:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
+}
+
+.clp_ip {
+    position: relative;
+    top: -130px;
+    left: -630px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 /* --- Paginação --- */
