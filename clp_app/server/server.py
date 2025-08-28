@@ -3,7 +3,7 @@ import os
 import json
 import logging
 from threading import Thread
-from web.users.utils import clp_bp
+from clp_app.api.routes import clp_bp
 from flask import Flask, render_template, jsonify, request, redirect, url_for, blueprints
 
 from utils import log

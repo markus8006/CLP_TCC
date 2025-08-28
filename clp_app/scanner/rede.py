@@ -3,7 +3,7 @@ from threading import Thread, Lock, Event
 from queue import Queue, Full, Empty
 from scapy.all import AsyncSniffer, IP
 from utils import log
-from rede import portas
+from clp_app.scanner import portas
 from concurrent.futures import ThreadPoolExecutor
 import time
 import socket

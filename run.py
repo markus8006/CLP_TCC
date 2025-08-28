@@ -1,6 +1,6 @@
 from threading import Thread
-from rede import coletor
-from web import server
+from clp_app.scanner import rede
+from clp_app.server import server
 import time
 from configs import settings
 
@@ -12,12 +12,12 @@ def monitor_threads(threads):
             # reinicia coletor se morreu
             if not threads["coletor"].is_alive():
                 #print("[INFO] Reiniciando coletor...")
-                threads["coletor"] = Thread(target=coletor.coletor, daemon=True)
+                threads["coletor"] = Thread(target=rede.coletor, daemon=True)
                 threads["coletor"].start()
 
             if not threads["consumidor"].is_alive():
                 #print("[INFO] Reiniciando consumidor...")
-                threads["consumidor"] = Thread(target=coletor.consumidor, daemon=True)
+                threads["consumidor"] = Thread(target=rede.consumidor, daemon=True)
                 threads["consumidor"].start()
 
         time.sleep(0.5)
@@ -26,8 +26,8 @@ def monitor_threads(threads):
 if __name__ == "__main__":
     # inicia coletor e consumidor antes de subir o servidor (server precisa rodar na main thread)
     threads = {
-        "coletor": Thread(target=coletor.coletor, daemon=True),
-        "consumidor": Thread(target=coletor.consumidor, daemon=True)
+        "coletor": Thread(target=rede.coletor, daemon=True),
+        "consumidor": Thread(target=rede.consumidor, daemon=True)
     }
     threads["coletor"].start()
     threads["consumidor"].start()
