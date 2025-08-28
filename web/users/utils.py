@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request, redirect
-from utils.CLP import CLP
+from utils.CLP import CLP, CLPGen
 from threading import Thread
 
 def _run_in_thread(target, *args, **kwargs):
@@ -9,9 +9,9 @@ def _run_in_thread(target, *args, **kwargs):
     return t
 
 
-users_bp = Blueprint("utils", __name__, url_prefix="/clp")
+clp_bp = Blueprint("utils", __name__, url_prefix="/clp")
 
-users_bp.route("/clp/<ip>/connect", methods=["POST"])
+@clp_bp.route("/<ip>/connect", methods=["POST"])
 def clp_connect(ip):
     obj = CLP.buscar_por_ip(ip)
     if not obj:
@@ -24,12 +24,13 @@ def clp_connect(ip):
             obj.adicionar_log(f"Estado após tentar conectar: {obj.conectado}")
         except Exception as e:
             obj.adicionar_log(f"Erro durante conectar: {e}")
+            return jsonify({"ok": False, "message": "Falha na conexão"})
 
     _run_in_thread(job)
     return jsonify({"ok": True, "message": "Conexão iniciada em background"})
 
 
-users_bp.route("/clp/<ip>/disconnect", methods=["POST"])
+@clp_bp.route("/<ip>/disconnect", methods=["POST"])
 def clp_disconnect(ip):
     obj = CLP.buscar_por_ip(ip)
     if not obj:
@@ -42,7 +43,7 @@ def clp_disconnect(ip):
         return jsonify({"ok": False, "error": str(e)}), 500
 
 
-users_bp.route("/clp/<ip>/baixar_codigo", methods=["POST"])
+@clp_bp.route("/<ip>/baixar_codigo", methods=["POST"])
 def clp_baixar_codigo(ip):
     obj = CLP.buscar_por_ip(ip)
     if not obj:
@@ -68,7 +69,7 @@ def clp_baixar_codigo(ip):
     return jsonify({"ok": True, "message": "Envio iniciado em background"})
 
 
-users_bp.route("/clp/<ip>/add_port", methods=["POST"])
+@clp_bp.route("/<ip>/add_port", methods=["POST"])
 def clp_add_port(ip):
     obj = CLP.buscar_por_ip(ip)
     if not obj:
@@ -86,7 +87,7 @@ def clp_add_port(ip):
         return jsonify({"ok": False, "error": str(e)}), 500
 
 
-users_bp.route("/clp/<ip>/info", methods=["GET"])
+@clp_bp.route("/<ip>/info", methods=["GET"])
 def clp_info(ip):
     obj = CLP.buscar_por_ip(ip)
     if not obj:
