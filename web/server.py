@@ -3,12 +3,14 @@ import os
 import json
 import logging
 from threading import Thread
-from flask import Flask, render_template, jsonify, request, redirect, url_for
+from web.users.utils import users_bp
+from flask import Flask, render_template, jsonify, request, redirect, url_for, blueprints
 
 from utils import log
 from utils.CLP import CLP, CLPGen, clps
 
 app = Flask(__name__)
+app.register_blueprint(users_bp)
 
 status_coleta = "desativado"
 clps_por_pagina = 21
@@ -26,13 +28,6 @@ CLP.carregar_todos()
 def obter_clps_lista() -> list:
     """Retorna uma lista de dicionários com as informações dos CLPs (usado para paginação e exibição)."""
     return [c.get_info() for c in CLP.listar_clps()]
-
-
-def _run_in_thread(target, *args, **kwargs):
-    """Executa target(...) em uma Thread daemon e retorna o objeto Thread."""
-    t = Thread(target=target, args=args, kwargs=kwargs, daemon=True)
-    t.start()
-    return t
 
 
 # -----------------------
@@ -100,92 +95,6 @@ def logs_geral():
 def api_clps():
     """Retorna JSON com todos os CLPs (útil para front-end dinâmico)."""
     return jsonify(obter_clps_lista())
-
-
-# -----------------------
-# Endpoints para executar métodos do CLP
-# -----------------------
-@app.route("/clp/<ip>/connect", methods=["POST"])
-def clp_connect(ip):
-    obj = CLP.buscar_por_ip(ip)
-    if not obj:
-        return jsonify({"ok": False, "error": "CLP não encontrado"}), 404
-
-    def job():
-        obj.adicionar_log("Iniciando tentativa de conexão...")
-        try:
-            sucesso = obj.conectar()
-            obj.adicionar_log(f"Estado após tentar conectar: {obj.conectado}")
-        except Exception as e:
-            obj.adicionar_log(f"Erro durante conectar: {e}")
-
-    _run_in_thread(job)
-    return jsonify({"ok": True, "message": "Conexão iniciada em background"})
-
-
-@app.route("/clp/<ip>/disconnect", methods=["POST"])
-def clp_disconnect(ip):
-    obj = CLP.buscar_por_ip(ip)
-    if not obj:
-        return jsonify({"ok": False, "error": "CLP não encontrado"}), 404
-
-    try:
-        obj.desconectar()
-        return jsonify({"ok": True, "message": "Desconectado", "status": obj.get_info()["status"]})
-    except Exception as e:
-        return jsonify({"ok": False, "error": str(e)}), 500
-
-
-@app.route("/clp/<ip>/baixar_codigo", methods=["POST"])
-def clp_baixar_codigo(ip):
-    obj = CLP.buscar_por_ip(ip)
-    if not obj:
-        return jsonify({"ok": False, "error": "CLP não encontrado"}), 404
-
-    data = request.json or {}
-    admin = data.get("admin")
-    senha = data.get("senha")
-    caminho_local = data.get("caminho_local", "programa.hex")
-
-    if not admin or not senha:
-        return jsonify({"ok": False, "error": "admin e senha são obrigatórios"}), 400
-
-    def job():
-        obj.adicionar_log("Iniciando envio do código via FTP...")
-        try:
-            sucesso = obj.baixar_codigo(admin=admin, senha=senha, caminho_local=caminho_local)
-            obj.adicionar_log(f"Envio finalizado: {'sucesso' if sucesso else 'falha'}")
-        except Exception as e:
-            obj.adicionar_log(f"Erro ao enviar código: {e}")
-
-    _run_in_thread(job)
-    return jsonify({"ok": True, "message": "Envio iniciado em background"})
-
-
-@app.route("/clp/<ip>/add_port", methods=["POST"])
-def clp_add_port(ip):
-    obj = CLP.buscar_por_ip(ip)
-    if not obj:
-        return jsonify({"ok": False, "error": "CLP não encontrado"}), 404
-
-    data = request.json or {}
-    porta = data.get("porta")
-    if porta is None:
-        return jsonify({"ok": False, "error": "porta obrigatória"}), 400
-
-    try:
-        obj.adicionar_porta(int(porta))
-        return jsonify({"ok": True, "message": "Porta adicionada", "portas": obj.PORTAS})
-    except Exception as e:
-        return jsonify({"ok": False, "error": str(e)}), 500
-
-
-@app.route("/clp/<ip>/info", methods=["GET"])
-def clp_info(ip):
-    obj = CLP.buscar_por_ip(ip)
-    if not obj:
-        return jsonify({"ok": False, "error": "CLP não encontrado"}), 404
-    return jsonify({"ok": True, "clp": obj.get_info()})
 
 
 # -----------------------
