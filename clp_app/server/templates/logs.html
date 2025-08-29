@@ -1,38 +1,86 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Logs do CLP</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/logs.css') }}">
-</head>
-<body>
-   <div id="mySidenav" class="sidenav">
+{% extends "base.html" %}
+
+{% block title %}Detalhes do CLP{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/logs.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div id="mySidenav" class="sidenav">
         <a href="#">Home</a>
         <a href="/coletaIps">Coleta IPs</a>
         <a href="#">Contact</a>
         <a href="/logs">Logs</a>
-
     </div>
 
-    <div class="content_logs">
-    <h1>Logs do CLP</h1>
-    <table>
-        <tr>
-            <th>Hora</th>
-            <th>Nível</th>
-            <th>Mensagem</th>
-        </tr>
-        {% for log in logs %}
-        <tr>
-            <td>{{ log.hora }}</td>
-            <td>{{ log.nivel }}</td>
-            <td>{{ log.mensagem }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-</div>
+    <div>
+        <h1>Logs do CLP</h1> <button onclick="limparLogs()">Limpar Logs</button>
+    </div>
 
+    <div class="log-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Nível</th>
+                    <th>Mensagem</th>
+                </tr>
+            </thead>
+            <tbody id="log-table-body">
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.hora }}</td>
+                    <td>{{ log.nivel }}</td>
+                    <td>{{ log.mensagem }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
 
+{% block scripts %}
+{{ super() if super }}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
-</body>
-</html>
+<script src="{{ url_for('static', filename='scripts/graficos.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/detalhes.js') }}"></script>
+
+<script>
+    /**
+     * Função que adiciona uma nova linha de log na tabela.
+     */
+    function adicionarNovoLog(log) {
+        const corpoTabela = document.getElementById('log-table-body');
+        const novaLinha = document.createElement('tr');
+        novaLinha.innerHTML = `
+            <td>${log.hora}</td>
+            <td>${log.nivel}</td>
+            <td>${log.mensagem}</td>
+        `;
+        corpoTabela.appendChild(novaLinha);
+    }
+
+    /**
+     * CORREÇÃO 2: Função para limpar os logs da tabela.
+     */
+    function limparLogs() {
+        // Encontra o corpo da tabela pelo ID
+        const corpoTabela = document.getElementById('log-table-body');
+        
+        // Define o HTML interno como vazio, removendo todas as linhas
+        corpoTabela.innerHTML = '';
+        
+        console.log("Logs limpos da tela."); // Mensagem de confirmação no console
+    }
+
+    // --- SIMULAÇÃO (sem alterações) ---
+    setInterval(() => {
+        const dataAtual = new Date();
+        const horaFormatada = dataAtual.toTimeString().split(' ')[0];
+        adicionarNovoLog(novoLogSimulado);
+    }, 3000);
+</script>
+{% endblock %}

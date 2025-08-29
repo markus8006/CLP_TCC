@@ -90,3 +90,8 @@ def carregar_logs(caminho=caminho_app):
             else:
                 logs.append({"hora": "", "nivel": "", "mensagem": linha})
     return logs
+
+
+
+if __name__ == "__main__":
+    print(carregar_logs())

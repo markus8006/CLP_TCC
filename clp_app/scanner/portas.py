@@ -23,7 +23,7 @@ def _parse_nmap_output(output: str):
 def _scapy_syn_check(ip: str, ports, timeout=1):
     """Fallback com Scapy: envia SYN e espera SYN-ACK. Retorna lista de portas abertas."""
     if not SCAPY_AVAILABLE:
-        log.log_and_print("Scapy não disponível para fallback.", level=logging.ERROR)
+        log.log_coleta("Scapy não disponível para fallback.", level=logging.ERROR)
         return []
 
     conf.verb = 0
@@ -42,7 +42,7 @@ def _scapy_syn_check(ip: str, ports, timeout=1):
                     abertas.append(int(p))
                 # RST -> fechada, ignorar
         except Exception as e:
-            log.log_and_print(f"Erro scapy-syn check {ip}:{p} -> {e}", level=logging.WARNING)
+            log.log_coleta(f"Erro scapy-syn check {ip}:{p} -> {e}", level=logging.WARNING)
     return sorted(set(abertas))
 
 
@@ -54,7 +54,7 @@ def escanear_portas(ip: str, intervalo: int = 1000, timeout: int = 60, portas_al
     - timeout: tempo máximo em segundos para o comando nmap
     - portas_alvo: lista de portas específicas para verificar (ex: [502]) — se fornecido, varre apenas essas portas.
     """
-    log.log(f"Escaneando {ip}...")
+    log.log_coleta(f"Escaneando {ip}...")
 
     # Normaliza lista de portas a verificar
     if portas_alvo:
@@ -77,13 +77,13 @@ def escanear_portas(ip: str, intervalo: int = 1000, timeout: int = 60, portas_al
                 portas = _parse_nmap_output(proc.stdout)
             else:
                 # nmap retornou erro (p.ex. host inacessível); ainda tentaremos fallback
-                log.log_and_print(f"Nmap retornou código {proc.returncode}. stdout:\n{proc.stdout}\nstderr:\n{proc.stderr}", level=logging.WARNING)
+                log.log_coleta(f"Nmap retornou código {proc.returncode}. stdout:\n{proc.stdout}\nstderr:\n{proc.stderr}", level=logging.WARNING)
                 portas = []
         except subprocess.TimeoutExpired as e:
-            log.log_and_print(f"Nmap expirou (timeout) ao escanear {ip}: {e}", level=logging.ERROR)
+            log.log_coleta(f"Nmap expirou (timeout) ao escanear {ip}: {e}", level=logging.ERROR)
             portas = []
         except Exception as e:
-            log.log_and_print(f"Erro ao executar nmap para {ip}: {e}", level=logging.ERROR)
+            log.log_coleta(f"Erro ao executar nmap para {ip}: {e}", level=logging.ERROR)
             portas = []
     else:
         log.log_coleta("Nmap não encontrado; tentando fallback com Scapy (se disponível).")
