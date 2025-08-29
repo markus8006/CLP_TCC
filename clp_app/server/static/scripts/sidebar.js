@@ -1,16 +1,12 @@
-// Alterna a largura do sidenav
-function moveSideBar() {
-    const sidenav = document.getElementById("mySidenav");
-    const main = document.getElementById("main");
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menuBtn');
+    const sidenav = document.getElementById('mySidenav');
+    const mainContent = document.getElementById('main-content');
 
-    if (sidenav.style.width === "160px") {
-        sidenav.style.width = "0px";
-        main.style.marginLeft = "60px"; 
-    } else {
-        sidenav.style.width = "160px";
-        main.style.marginLeft = "160px";
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            sidenav.classList.toggle('sidenav-open');
+            mainContent.classList.toggle('main-content-shifted');
+        });
     }
-}
-
-
-
+});

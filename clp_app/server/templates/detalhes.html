@@ -35,6 +35,20 @@
 <div class="informacao_clp">
     <h2>Informações do CLP</h2>
     <ul>
+        <li class="info-item-editavel">
+            <strong>Nome:</strong>
+    
+            <div id="viewMode">
+                <span id="clpName">{{ clp.nome }}</span>
+                <button id="editNameBtn" class="btn-edit" title="Editar Nome">✏️</button>
+            </div>
+
+            <div id="editMode" style="display: none;">
+                <input type="text" id="inputClpName" class="form-input" value="{{ clp.nome }}">
+                <button id="saveNameBtn" class="btn">Salvar</button>
+                <button id="cancelNameBtn" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </li>
         <li><strong>Modelo:</strong> {{ clp.get('modelo', 'Desconhecido') }}</li>
         <li><strong>Fabricante:</strong> {{ clp.get('fabricante', 'Desconhecido') }}</li>
         <li><strong>IP:</strong> <span id="clpIp">{{ clp.ip }}</span></li>

@@ -126,3 +126,82 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarInfo(ip);
 });
 
+// --- Lógica para Edição do Nome do CLP ---
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona os elementos do DOM
+    const viewMode = document.getElementById('viewMode');
+    const editMode = document.getElementById('editMode');
+    const editNameBtn = document.getElementById('editNameBtn');
+    const saveNameBtn = document.getElementById('saveNameBtn');
+    const cancelNameBtn = document.getElementById('cancelNameBtn');
+    const clpNameSpan = document.getElementById('clpName');
+    const inputClpName = document.getElementById('inputClpName');
+    const clpIpSpan = document.getElementById('clpIp'); // Pega o IP do CLP
+
+    // Função para entrar no modo de edição
+    const enterEditMode = () => {
+        viewMode.style.display = 'none';
+        editMode.style.display = 'flex'; // Usar flex para alinhar os botões
+        inputClpName.value = clpNameSpan.textContent; // Garante que o input tem o valor mais recente
+        inputClpName.focus(); // Coloca o cursor no campo de texto
+    };
+
+    // Função para sair do modo de edição
+    const exitEditMode = () => {
+        viewMode.style.display = 'flex'; // Usar flex para alinhar o nome e o botão
+        editMode.style.display = 'none';
+    };
+
+    // Função para salvar o novo nome
+    const saveNewName = () => {
+        const novoNome = inputClpName.value.trim();
+        const clpIp = clpIpSpan.textContent;
+
+        // Validação simples: não salvar se o nome estiver vazio ou for o mesmo
+        if (!novoNome || novoNome === clpNameSpan.textContent) {
+            exitEditMode();
+            return;
+        }
+
+        // Envia os dados para o servidor usando Fetch API
+        fetch('/clp/rename', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                ip: clpIp,
+                novo_nome: novoNome
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Se o servidor confirmou, atualiza o nome na tela
+                clpNameSpan.textContent = novoNome;
+                alert('Nome atualizado com sucesso!'); // Ou uma notificação mais elegante
+            } else {
+                alert('Erro ao atualizar o nome: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Erro na requisição:', error);
+            alert('Ocorreu um erro de comunicação com o servidor.');
+        })
+        .finally(() => {
+            // Sempre sai do modo de edição, seja com sucesso ou erro
+            exitEditMode();
+        });
+    };
+
+    // Adiciona os eventos aos botões
+    if (editNameBtn) {
+        editNameBtn.addEventListener('click', enterEditMode);
+    }
+    if (saveNameBtn) {
+        saveNameBtn.addEventListener('click', saveNewName);
+    }
+    if (cancelNameBtn) {
+        cancelNameBtn.addEventListener('click', exitEditMode);
+    }
+});

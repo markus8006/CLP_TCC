@@ -1,44 +1,45 @@
 # web.py
 import os
-import json
 import logging
-from threading import Thread
-from clp_app.api.routes import clp_bp
-from flask import Flask, render_template, jsonify, request, redirect, url_for, blueprints
+from utils.CLP import CLPManager, CLP
+from utils import log  # Assumindo que você tem o módulo de log
+from clp_app.scanner import portas as scanner_portas # Importando o módulo de scan
+from flask import Flask, render_template, jsonify, request, redirect, url_for
 
-# Importe o módulo log para acessar os caminhos dos arquivos
-from utils import log
-from utils.CLP import CLP, CLPGen, clps
+# -----------------------
+# Configuração Inicial do App e do Manager
+# -----------------------
 
 app = Flask(__name__)
-app.register_blueprint(clp_bp)
+# Se você tiver blueprints, registre-os aqui
+# app.register_blueprint(clp_bp)
 
+# 1. Instância ÚNICA do manager. Ele já carrega os CLPs do JSON no __init__.
+clp_manager = CLPManager()
+
+# Variáveis globais de estado da aplicação web
 status_coleta = "desativado"
 clps_por_pagina = 21
 
-# BASE_DIR usado apenas se você precisar formar caminhos relativos aos templates/logs
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# --- Ao iniciar o módulo, carrega os CLPs do JSON (popula 'clps') ---
-CLP.carregar_todos()
-
 
 # -----------------------
-# Helpers
+# Helpers (Agora usam o manager)
 # -----------------------
 def obter_clps_lista() -> list:
-    """Retorna uma lista de dicionários com as informações dos CLPs (usado para paginação e exibição)."""
-    return [c.get_info() for c in CLP.listar_clps()]
+    """Retorna uma lista de dicionários com as informações dos CLPs."""
+    # Usa o manager para listar os CLPs
+    return [c.get_info() for c in clp_manager.listar_clps()]
 
 
 # -----------------------
-# Rotas de frontend
+# Rotas de Frontend (Páginas Principais)
 # -----------------------
 @app.route('/')
 def index():
+    """Página principal que lista os CLPs detectados."""
     clps_lista = obter_clps_lista()
 
-    # paginação
+    # Lógica de paginação
     page = request.args.get('page', 1, type=int)
     inicio = (page - 1) * clps_por_pagina
     fim = inicio + clps_por_pagina
@@ -56,15 +57,63 @@ def index():
 
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
-    obj = CLP.buscar_por_ip(ip)
+    """Página de detalhes para um CLP específico."""
+    obj = clp_manager.buscar_por_ip(ip)
+    
     if obj is None:
         return "CLP não encontrado", 404
+        
     info = obj.get_info()
     return render_template("detalhes.html", clp=info)
 
 
+# ROTA RESTAURADA
+@app.route("/coletaIps")
+def coleta_de_ips():
+    """Página para controlar e visualizar o status da coleta de IPs."""
+    global status_coleta
+    # Carrega os logs específicos da coleta
+    logs_coleta = log.carregar_logs(caminho=log.caminho_coleta)
+    return render_template("coleta.html", status=status_coleta, logs=logs_coleta)
+
+
+# ROTA RESTAURADA
+@app.route("/logs")
+def logs_geral():
+    """Página que exibe os logs gerais da aplicação."""
+    logs = log.carregar_logs()
+    return render_template("logs.html", logs=logs)
+
+
+# -----------------------
+# Rotas de Ação (POSTs e Redirecionamentos)
+# -----------------------
+@app.route('/clp/rename', methods=['POST'])
+def rename_clp():
+    """Endpoint da API para renomear um CLP."""
+    data = request.get_json()
+    if not data or not data.get('ip') or not data.get('novo_nome'):
+        return jsonify({'success': False, 'message': 'IP e novo nome são obrigatórios.'}), 400
+
+    ip = data['ip']
+    novo_nome = data['novo_nome'].strip()
+
+    try:
+        clp_alvo = clp_manager.buscar_por_ip(ip)
+        if clp_alvo:
+            clp_alvo.nome = novo_nome
+            clp_manager.salvar_clps()
+            return jsonify({'success': True, 'message': 'Nome atualizado com sucesso!'})
+        else:
+            return jsonify({'success': False, 'message': 'CLP não encontrado.'}), 404
+    except Exception as e:
+        logging.exception("Erro ao renomear CLP")
+        return jsonify({'success': False, 'message': 'Erro interno no servidor.'}), 500
+
+
 @app.route("/alterar", methods=["POST"])
 def alterar_clps_pagina():
+    """Altera o número de CLPs exibidos por página."""
     global clps_por_pagina
     novo_valor = request.form.get("novo_valor", type=int)
     if novo_valor and novo_valor > 0:
@@ -72,43 +121,60 @@ def alterar_clps_pagina():
     return redirect(url_for('index'))
 
 
+# ROTA RESTAURADA
 @app.route("/alterarColeta")
 def alterar_coleta_ips():
+    """Ativa ou desativa o status da coleta de IPs."""
     global status_coleta
     status_coleta = "desativado" if status_coleta == "ativado" else "ativado"
     return redirect(url_for("coleta_de_ips"))
 
 
-@app.route("/coletaIps")
-def coleta_de_ips():
-    global status_coleta
-    # ALTERAÇÃO AQUI: Carrega os logs específicos da coleta
-    logs_coleta = log.carregar_logs(caminho=log.caminho_coleta)
-    return render_template("coleta.html", status=status_coleta, logs=logs_coleta)
-
-
-@app.route("/logs")
-def logs_geral():
-    # Esta rota já está correta, carregando os logs gerais do app.log
-    logs = log.carregar_logs()
-    return render_template("logs.html", logs=logs)
-
-
-# ------ Exemplo: endpoint para retornar JSON com todos os CLPs ------
+# -----------------------
+# Rotas de API e Administrativas
+# -----------------------
 @app.route("/api/clps")
 def api_clps():
-    """Retorna JSON com todos os CLPs (útil para front-end dinâmico)."""
+    """Retorna um JSON com a lista de todos os CLPs."""
     return jsonify(obter_clps_lista())
 
 
-# -----------------------
-# Rota utilitária: recarregar CLPs do JSON em runtime
-# -----------------------
+@app.route('/api/scan/<ip>', methods=['POST'])
+def api_scan_ip(ip):
+    """Endpoint para iniciar um scan em um IP e criar/atualizar o CLP."""
+    try:
+        portas_abertas = scanner_portas.escanear_portas(ip, portas_alvo=[502, 80, 443])
+
+        if not portas_abertas:
+            return jsonify({"success": False, "message": f"Nenhuma porta relevante encontrada para {ip}."}), 404
+
+        clp_existente = clp_manager.buscar_por_ip(ip)
+
+        if clp_existente:
+            novas_portas_encontradas = any(p not in clp_existente.PORTAS for p in portas_abertas)
+            if novas_portas_encontradas:
+                for porta in portas_abertas:
+                    clp_existente.adicionar_porta(porta)
+                clp_manager.salvar_clps()
+                return jsonify({"success": True, "action": "updated", "clp": clp_existente.get_info()})
+            else:
+                return jsonify({"success": True, "action": "unchanged", "clp": clp_existente.get_info()})
+        else:
+            novo_clp = CLP(IP=ip, PORTAS=portas_abertas)
+            clp_manager.adicionar_clp(novo_clp)
+            clp_manager.salvar_clps()
+            return jsonify({"success": True, "action": "created", "clp": novo_clp.get_info()}), 201
+    except Exception as e:
+        logging.exception(f"Erro no processo de scan para {ip}")
+        return jsonify({"success": False, "message": str(e)}), 500
+
+
 @app.route("/admin/reload_clps", methods=["POST"])
 def admin_reload_clps():
+    """Recarrega a lista de CLPs a partir do arquivo JSON."""
     try:
-        CLP.carregar_todos()
-        return jsonify({"ok": True, "message": "CLPs recarregados a partir do JSON"})
+        clp_manager.carregar_clps()
+        return jsonify({"ok": True, "message": "CLPs recarregados com sucesso."})
     except Exception as e:
         logging.exception("Erro ao recarregar CLPs")
         return jsonify({"ok": False, "error": str(e)}), 500
@@ -118,11 +184,9 @@ def admin_reload_clps():
 # Iniciar servidor
 # -----------------------
 def iniciar_web() -> None:
-    """Inicia o servidor web (note sobre use_reloader abaixo)."""
-    # Atenção: use_reloader=True pode executar o módulo duas vezes (duplicando efeitos colaterais / threads).
-    # Em dev você pode querer debug=True mas use_reloader=False para evitar duplicatas.
+    """Inicia o servidor web Flask."""
+    # use_reloader=False é útil para evitar que scripts de inicialização rodem duas vezes
     app.run(host='127.0.0.1', port=5000, debug=True, use_reloader=False)
-
 
 if __name__ == '__main__':
     iniciar_web()

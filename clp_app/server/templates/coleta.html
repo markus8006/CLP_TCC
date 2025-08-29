@@ -22,6 +22,7 @@
 <div class="container_clps">
     <h2>Histórico</h2>
     <button onclick="limparLogs()">Limpar logs</button>
+    <button>Limpar Registros</button>
     
     <div id="logs-container" class="logs-container">
         <table>
@@ -48,7 +49,6 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 
 <script>
     /**

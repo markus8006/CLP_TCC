@@ -1,48 +1,59 @@
-/* --- Layout Geral --- */
-body {
-    margin: 0;
-    min-height: 100vh;
-    height: 100%;
-    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-    color: whitesmoke;
-    background: radial-gradient(circle at top left, #0a0018 0%, #090016 90%, #1b0030 100%);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* --- Layout Geral e Reset Básico --- */
+:root {
+    --primary-color: #8400ff;
+    --secondary-color: #cc00ff;
+    --dark-bg: #0a0018;
+    --text-color: whitesmoke;
 }
 
-th, td, p, a, span {
-    color: whitesmoke;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: var(--text-color);
+    background: radial-gradient(circle at top left, var(--dark-bg) 0%, #090016 90%, #1b0030 100%);
+    min-height: 100vh;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--text-color);
 }
 
 h1, h2 {
-    color: #cc00ff;
+    color: var(--secondary-color);
     text-shadow: 0 2px 8px rgba(8, 0, 20, 0.2);
     letter-spacing: 1px;
 }
 
-strong {
-    color: rgb(145, 0, 202);
+.main-content {
+    padding: 20px;
+    margin-left: 60px; /* Espaço para o menu fechado */
+    transition: margin-left 0.3s;
 }
 
 /* --- Navegação / Sidebar --- */
 #menuBtn {
-    font-size: 28px;
+    font-size: 24px;
     cursor: pointer;
     position: fixed;
-    top: 13px;
-    left: 13px;
+    top: 15px;
+    left: 15px;
     color: #6e0096;
-    z-index: 10;
+    z-index: 1001; /* Maior que o sidenav */
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: all 0.2s;
 }
 
 #menuBtn:hover {
@@ -53,66 +64,27 @@ strong {
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0; /* Começa fechado */
     position: fixed;
-    z-index: 9;
+    z-index: 1000;
     top: 0;
     left: 0;
     background: linear-gradient(160deg, #111 40%, #6e0096 100%);
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
+    padding-top: 80px; /* Espaço para o botão não sobrepor */
 }
 
-.sidenav a {
+.sidenav nav a {
     padding: 10px 24px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #cc00ff;
+    font-size: 20px;
     display: block;
-    transition: 0.3s;
-    border-radius: 8px;
-    margin-bottom: 8px;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+/* Classe para ser controlada via JS */
+.sidenav-open {
+    width: 250px;
 }
-
-.main {
-    transition: 0.3s;
-    display: block;
-    height: 100%;
-    margin-left: 60px;
-    padding: 0px 18px;
-}
-
-/* Inputs e botões */
-.input_p_pagina {
-    background-color: rgb(71, 0, 202);
-    color: white;
-    padding: 3px 15px;
-    border-radius: 5px;
-    border-color: rgb(138, 138, 138);
-    transition: 0.3s;
-}
-.input_p_pagina::placeholder {
-    color: rgb(175, 175, 175);
-}
-.input_p_pagina:hover {
-    transform: scale(1.03);
-}
-
-.botao_alterar {
-    background-color: rgb(13, 0, 129);
-    color: white;
-    padding: 3px 10px;
-    border-radius: 5px;
-    border-color: rgb(138, 138, 138);
-    transition: 0.3s;
-}
-.botao_alterar:hover {
-    transform: scale(1.06);
+.main-content-shifted {
+    margin-left: 250px;
 }
