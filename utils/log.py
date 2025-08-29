@@ -22,10 +22,13 @@ logger_coleta = logging.getLogger("coleta")
 logger_coleta.setLevel(logging.DEBUG)
 
 # Adiciona um handler separado para o arquivo coleta.log
-# (FileHandler cria o arquivo automaticamente, desde que o diretório exista)
 handler_coleta = logging.FileHandler(caminho_coleta, encoding="utf-8")
 handler_coleta.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
 logger_coleta.addHandler(handler_coleta)
+
+# --- ALTERAÇÃO PRINCIPAL AQUI ---
+# Impede que os logs da coleta "subam" para o logger principal (app.log)
+logger_coleta.propagate = False
 
 
 def log(mensagem: str, level=logging.INFO) -> None:

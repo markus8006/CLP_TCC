@@ -6,6 +6,7 @@ from threading import Thread
 from clp_app.api.routes import clp_bp
 from flask import Flask, render_template, jsonify, request, redirect, url_for, blueprints
 
+# Importe o módulo log para acessar os caminhos dos arquivos
 from utils import log
 from utils.CLP import CLP, CLPGen, clps
 
@@ -81,11 +82,14 @@ def alterar_coleta_ips():
 @app.route("/coletaIps")
 def coleta_de_ips():
     global status_coleta
-    return render_template("coleta.html", status=status_coleta)
+    # ALTERAÇÃO AQUI: Carrega os logs específicos da coleta
+    logs_coleta = log.carregar_logs(caminho=log.caminho_coleta)
+    return render_template("coleta.html", status=status_coleta, logs=logs_coleta)
 
 
 @app.route("/logs")
 def logs_geral():
+    # Esta rota já está correta, carregando os logs gerais do app.log
     logs = log.carregar_logs()
     return render_template("logs.html", logs=logs)
 
