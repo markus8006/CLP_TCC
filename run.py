@@ -1,42 +1,16 @@
-from threading import Thread
-from clp_app.scanner import rede
+# run.py (Versão Simplificada)
 from clp_app.server import server
-import time
-from configs import settings
-
-def monitor_threads(threads):
-    """Monitora e reinicia threads de coletor/consumidor quando necessário."""
-    while True:
-        #print("[STATUS] coleta:", settings.status_coleta)
-        if settings.status_coleta == "ativado":
-            # reinicia coletor se morreu
-            if not threads["coletor"].is_alive():
-                #print("[INFO] Reiniciando coletor...")
-                threads["coletor"] = Thread(target=rede.coletor, daemon=True)
-                threads["coletor"].start()
-
-            if not threads["consumidor"].is_alive():
-                #print("[INFO] Reiniciando consumidor...")
-                threads["consumidor"] = Thread(target=rede.consumidor, daemon=True)
-                threads["consumidor"].start()
-
-        time.sleep(0.5)
-
+# A importação do scanner_service pode ser necessária para garantir que a instância seja criada
+from clp_app.scanner.service import scanner_service 
 
 if __name__ == "__main__":
-    # inicia coletor e consumidor antes de subir o servidor (server precisa rodar na main thread)
-    threads = {
-        "coletor": Thread(target=rede.coletor, daemon=True),
-        "consumidor": Thread(target=rede.consumidor, daemon=True)
-    }
-    threads["coletor"].start()
-    threads["consumidor"].start()
-
-    # thread de monitor para reiniciar caso alguma morra
-    Thread(target=monitor_threads, args=(threads,), daemon=True).start()
-
-    # server.iniciar_web() roda bloqueante no main thread (ex.: Flask.run())
+    # O scanner agora é iniciado e parado pela interface do usuário.
+    # Não iniciamos mais as threads aqui.
+    
     try:
+        # Inicia apenas o servidor web.
         server.iniciar_web()
     except KeyboardInterrupt:
         print("Programa encerrado")
+        # É uma boa prática garantir que o scanner pare ao encerrar o programa
+        scanner_service.stop()

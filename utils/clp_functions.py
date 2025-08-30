@@ -75,13 +75,17 @@ def get_info(clp: dict) -> dict:
     """Retorna um dicionário serializável com as informações do CLP."""
     # Garante que o status está atualizado
     clp["status"] = "Online" if clp.get("conectado") else "Offline"
+    
+    # --- CORREÇÃO APLICADA AQUI ---
+    # Padroniza as chaves para corresponderem às da função 'criar_clp'
     return {
-        "nome": clp.get("nome"),
-        "ip": clp.get("IP"), # Corrigido de "ip" para "IP" para corresponder à criação
-        "portas": clp.get("PORTAS", []),
-        "unidade": clp.get("UNIDADE"),
-        "status": clp.get("status"),
-        "logs": clp.get("logs", []),
+        "IP": clp.get("IP"),  # Chave corrigida de "ip" para "IP"
+        "UNIDADE": clp.get("UNIDADE"),
+        "PORTAS": clp.get("PORTAS", []), # Chave corrigida de "portas" para "PORTAS"
+        "conectado": clp.get("conectado", False),
         "data_registro": clp.get("data_registro"),
-        "descricao": clp.get("descricao")
+        "nome": clp.get("nome"),
+        "descricao": clp.get("descricao"),
+        "logs": clp.get("logs", []),
+        "status": clp.get("status"), # Adicionamos o status aqui também
     }

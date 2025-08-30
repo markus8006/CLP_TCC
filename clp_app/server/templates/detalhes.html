@@ -8,25 +8,25 @@
 
 {% block content %}
 <div class="status_clp">
-    <span id="statusText" class="{{ 'status_online' if clp.status == 'Online' else 'status_offline' }}">
-        Status: {{ clp.status }}
+    <span id="statusText" class="{{ 'status_online' if clp.STATUS == 'Online' else 'status_offline' }}">
+        Status: {{ clp.STATUS }}
     </span>
 
-    {% if clp.status == "Online" %}
-        <button id="btnDisconnect" data-ip="{{ clp.ip }}" class="btn-acao">Desconectar</button>
+    {% if clp.STATUS == "Online" %}
+        <button id="btnDisconnect" data-ip="{{ clp.IP }}" class="btn-acao">Desconectar</button>
     {% else %}
       <div class="form-acao">
             <label for="portSelect">Porta:</label>
             <select id="portSelect" class="input-form">
-                {% if clp.portas %}
-                    {% for porta in clp.portas %}
+                {% if clp.PORTAS %}
+                    {% for porta in clp.PORTAS %}
                         <option value="{{ porta }}">{{ porta }}</option>
                     {% endfor %}
                 {% else %}
                     <option value="502">502 (Padrão)</option>
                 {% endif %}
             </select>
-            <button id="btnConnect" data-ip="{{ clp.ip }}" class="btn-acao">Conectar</button>
+            <button id="btnConnect" data-ip="{{ clp.IP }}" class="btn-acao">Conectar</button>
         </div>
     {% endif %}
     <div id="mensagemCLP" role="status" style="margin-top:12px;color:var(--accent)"></div>
@@ -37,12 +37,10 @@
     <ul>
         <li class="info-item-editavel">
             <strong>Nome:</strong>
-    
             <div id="viewMode">
                 <span id="clpName">{{ clp.nome }}</span>
                 <button id="editNameBtn" class="btn-edit" title="Editar Nome">✏️</button>
             </div>
-
             <div id="editMode" style="display: none;">
                 <input type="text" id="inputClpName" class="form-input" value="{{ clp.nome }}">
                 <button id="saveNameBtn" class="btn">Salvar</button>
@@ -51,11 +49,11 @@
         </li>
         <li><strong>Modelo:</strong> {{ clp.get('modelo', 'Desconhecido') }}</li>
         <li><strong>Fabricante:</strong> {{ clp.get('fabricante', 'Desconhecido') }}</li>
-        <li><strong>IP:</strong> <span id="clpIp">{{ clp.ip }}</span></li>
-        {% if clp.portas %}
+        <li><strong>IP:</strong> <span id="clpIp">{{ clp.IP }}</span></li>
+        {% if clp.PORTAS %}
             <li><strong>Portas abertas:</strong>
                 <span id="listaPortas">
-                {% for porta in clp.portas %}
+                {% for porta in clp.PORTAS %}
                     <span class="porta_item">{{ porta }}{% if not loop.last %}, {% endif %}</span>
                 {% endfor %}
                 </span>
@@ -64,7 +62,7 @@
             <li><span class="porta_fechada">Não há portas abertas</span></li>
         {% endif %}
         <li><strong>Versão Firmware:</strong> {{ clp.get('firmware', 'N/A') }}</li>
-        <li><strong>Última comunicação:</strong> {{ clp.get('data_registro', 'N/A') }}</li>
+        <li><strong>Última comunicação:</strong> {{ clp.data_registro }}</li>
     </ul>
 </div>
 
@@ -77,8 +75,6 @@
     <div id="readResult" class="resultado-acao" style="margin-top: 10px;"></div>
 </div>
 
-
-
 <div id="mensagem" role="status" style="margin-top:12px;color:var(--accent)"></div>
 
 <div class="graficos">
@@ -88,7 +84,6 @@
             <h3>Uso de CPU</h3>
             <canvas id="graficoCpu"></canvas>
         </div>
-
         <div class="grafico-container">
             <h3>Uso de Memória</h3>
             <canvas id="graficoMemoria"></canvas>
@@ -99,7 +94,6 @@
             <h3>Tráfego de Rede</h3>
             <canvas id="graficoRede"></canvas>
         </div>
-
         <div class="grafico-container">
             <h3>Uso de Disco</h3>
             <canvas id="graficoDisco"></canvas>
