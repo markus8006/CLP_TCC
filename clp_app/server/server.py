@@ -1,21 +1,20 @@
-# web.py
+# clp_app/server/server.py
 import os
 import logging
-from utils.CLP import CLPManager, CLP
-from utils import log  # Assumindo que você tem o módulo de log
-from clp_app.scanner import portas as scanner_portas # Importando o módulo de scan
+# Importamos os módulos diretamente, não mais as classes
+from utils import CLP as clp_manager, clp_functions
+from utils import log
+from clp_app.scanner import portas as scanner_portas
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 
 # -----------------------
-# Configuração Inicial do App e do Manager
+# Configuração Inicial do App
 # -----------------------
 
 app = Flask(__name__)
-# Se você tiver blueprints, registre-os aqui
-# app.register_blueprint(clp_bp)
 
-# 1. Instância ÚNICA do manager. Ele já carrega os CLPs do JSON no __init__.
-clp_manager = CLPManager()
+# O manager já carrega os CLPs na inicialização do módulo.
+# clp_manager.carregar_clps()
 
 # Variáveis globais de estado da aplicação web
 status_coleta = "desativado"
@@ -23,12 +22,12 @@ clps_por_pagina = 21
 
 
 # -----------------------
-# Helpers (Agora usam o manager)
+# Helpers (Agora usam o manager e as funções)
 # -----------------------
 def obter_clps_lista() -> list:
     """Retorna uma lista de dicionários com as informações dos CLPs."""
-    # Usa o manager para listar os CLPs
-    return [c.get_info() for c in clp_manager.listar_clps()]
+    # A função get_info garante que os dados estão no formato correto para o template
+    return [clp_functions.get_info(c) for c in clp_manager.listar_clps()]
 
 
 # -----------------------
@@ -58,26 +57,23 @@ def index():
 @app.route('/clp/<ip>')
 def detalhes_clps(ip):
     """Página de detalhes para um CLP específico."""
-    obj = clp_manager.buscar_por_ip(ip)
-    
-    if obj is None:
+    clp_dict = clp_manager.buscar_por_ip(ip)
+
+    if clp_dict is None:
         return "CLP não encontrado", 404
-        
-    info = obj.get_info()
+
+    info = clp_functions.get_info(clp_dict)
     return render_template("detalhes.html", clp=info)
 
 
-# ROTA RESTAURADA
 @app.route("/coletaIps")
 def coleta_de_ips():
     """Página para controlar e visualizar o status da coleta de IPs."""
     global status_coleta
-    # Carrega os logs específicos da coleta
     logs_coleta = log.carregar_logs(caminho=log.caminho_coleta)
     return render_template("coleta.html", status=status_coleta, logs=logs_coleta)
 
 
-# ROTA RESTAURADA
 @app.route("/logs")
 def logs_geral():
     """Página que exibe os logs gerais da aplicação."""
@@ -101,7 +97,8 @@ def rename_clp():
     try:
         clp_alvo = clp_manager.buscar_por_ip(ip)
         if clp_alvo:
-            clp_alvo.nome = novo_nome
+            # Modifica o dicionário diretamente
+            clp_alvo['nome'] = novo_nome
             clp_manager.salvar_clps()
             return jsonify({'success': True, 'message': 'Nome atualizado com sucesso!'})
         else:
@@ -121,7 +118,6 @@ def alterar_clps_pagina():
     return redirect(url_for('index'))
 
 
-# ROTA RESTAURADA
 @app.route("/alterarColeta")
 def alterar_coleta_ips():
     """Ativa ou desativa o status da coleta de IPs."""
@@ -151,19 +147,17 @@ def api_scan_ip(ip):
         clp_existente = clp_manager.buscar_por_ip(ip)
 
         if clp_existente:
-            novas_portas_encontradas = any(p not in clp_existente.PORTAS for p in portas_abertas)
-            if novas_portas_encontradas:
-                for porta in portas_abertas:
-                    clp_existente.adicionar_porta(porta)
-                clp_manager.salvar_clps()
-                return jsonify({"success": True, "action": "updated", "clp": clp_existente.get_info()})
-            else:
-                return jsonify({"success": True, "action": "unchanged", "clp": clp_existente.get_info()})
+            for porta in portas_abertas:
+                # Usa a função para adicionar a porta ao dicionário
+                clp_functions.adicionar_porta(clp_existente, porta)
+            clp_manager.salvar_clps()
+            return jsonify({"success": True, "action": "updated", "clp": clp_functions.get_info(clp_existente)})
         else:
-            novo_clp = CLP(IP=ip, PORTAS=portas_abertas)
+            # Usa a função para criar um novo dicionário de CLP
+            novo_clp = clp_functions.criar_clp(IP=ip, PORTAS=portas_abertas)
             clp_manager.adicionar_clp(novo_clp)
             clp_manager.salvar_clps()
-            return jsonify({"success": True, "action": "created", "clp": novo_clp.get_info()}), 201
+            return jsonify({"success": True, "action": "created", "clp": clp_functions.get_info(novo_clp)}), 201
     except Exception as e:
         logging.exception(f"Erro no processo de scan para {ip}")
         return jsonify({"success": False, "message": str(e)}), 500
@@ -185,7 +179,6 @@ def admin_reload_clps():
 # -----------------------
 def iniciar_web() -> None:
     """Inicia o servidor web Flask."""
-    # use_reloader=False é útil para evitar que scripts de inicialização rodem duas vezes
     app.run(host='127.0.0.1', port=5000, debug=True, use_reloader=False)
 
 if __name__ == '__main__':

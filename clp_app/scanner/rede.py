@@ -1,30 +1,32 @@
-# coletor_consumidor.py
+# clp_app/scanner/rede.py
 from threading import Thread, Lock, Event
 from queue import Queue, Full, Empty
 from scapy.all import AsyncSniffer, IP
-from utils import log
-from clp_app.scanner import portas
 from concurrent.futures import ThreadPoolExecutor
 import time
 import socket
+import logging
+
+# --- Imports Corrigidos ---
+from utils import log
+from clp_app.scanner import portas
+# Adiciona os imports para o gerenciador de CLPs
+from utils import CLP as clp_manager
+from utils import clp_functions
 
 # Configurações
 QUEUE_MAXSIZE = 2000
 WORKER_THREADS = 10
-IP_TTL_SECONDS = 300        # tempo para "esquecer" um IP e permitir novo processamento
-INTERFACE = None            # ex: "eth0" ou None (scapy escolhe)
-BPF_FILTER = None  # captura ARP e SYNs (reduz ruído)
-IGNORE_LOCAL = None         # ignora IPs da máquina local
+IP_TTL_SECONDS = 300
+INTERFACE = None
+BPF_FILTER = "arp or (tcp and (tcp[tcpflags] & (tcp-syn) != 0))" # Filtro mais específico
+IGNORE_LOCAL = True
 LOG_PREFIX = "[Coletor]"
 
-# fila com limite
+# (O resto das configurações globais permanece o mesmo)
 fila = Queue(maxsize=QUEUE_MAXSIZE)
-
-# estrutura para evitar duplicatas com TTL
-_ips_last_seen = {}   # { ip_str: timestamp_last_seen }
+_ips_last_seen = {}
 _ips_lock = Lock()
-
-# evento de parada
 _shutdown_evt = Event()
 
 def _get_local_ips():
@@ -32,13 +34,11 @@ def _get_local_ips():
     local_ips = set()
     try:
         hostname = socket.gethostname()
-        # pode retornar vários endereços
         addrs = socket.getaddrinfo(hostname, None, family=socket.AF_INET)
         for a in addrs:
             local_ips.add(a[4][0])
     except Exception:
         pass
-    # também pegar 127.0.0.1
     local_ips.add("127.0.0.1")
     return local_ips
 
@@ -52,7 +52,6 @@ def _should_process_ip(ip: str) -> bool:
         if last is None or (now - last) >= IP_TTL_SECONDS:
             _ips_last_seen[ip] = now
             return True
-        # já visto recentemente -> pular
         return False
 
 def coletor():
@@ -62,7 +61,6 @@ def coletor():
             return
         ip_src = pkt[IP].src
 
-        # ignora locais
         if IGNORE_LOCAL and ip_src in _LOCAL_IPS:
             return
 
@@ -75,7 +73,6 @@ def coletor():
         except Full:
             log.log_coleta(f"{LOG_PREFIX} Fila cheia — drop {ip_src}", level=logging.WARNING)
 
-    # AsyncSniffer roda em background; store=False evita acumulo em memória
     sniffer = AsyncSniffer(iface=INTERFACE, prn=analisar_pacote,
                            store=False, filter=BPF_FILTER)
     sniffer.start()
@@ -83,43 +80,65 @@ def coletor():
     return sniffer
 
 def consumidor():
-    """Consumidor principal que delega escaneamentos a um ThreadPoolExecutor."""
-    def escanear_job(ip):
+    """
+    Consumidor principal que delega escaneamentos e **SALVA** os CLPs encontrados.
+    """
+    def escanear_e_salvar_job(ip):
         try:
             log.log_coleta(f"{LOG_PREFIX} Iniciando escaneamento: {ip}")
-            portas.escanear_portas(ip)
-            log.log_coleta(f"{LOG_PREFIX} Escaneamento finalizado: {ip}")
+            # Escaneia portas de interesse para CLPs
+            portas_abertas = portas.escanear_portas(ip, portas_alvo=[502, 80, 443, 21])
+
+            # --- LÓGICA DE PERSISTÊNCIA ADICIONADA AQUI ---
+            if portas_abertas:
+                log.log_coleta(f"{LOG_PREFIX} Portas abertas em {ip}: {portas_abertas}. Adicionando/Atualizando CLP.")
+
+                clp_existente = clp_manager.buscar_por_ip(ip)
+
+                if clp_existente:
+                    # Se já existe, apenas adiciona as portas que podem ser novas
+                    for porta in portas_abertas:
+                        clp_functions.adicionar_porta(clp_existente, porta)
+                else:
+                    # Se é um CLP novo, cria o dicionário
+                    novo_clp = clp_functions.criar_clp(IP=ip, PORTAS=portas_abertas)
+                    clp_manager.adicionar_clp(novo_clp)
+
+                # SALVA O ESTADO ATUALIZADO NO ARQUIVO JSON
+                clp_manager.salvar_clps()
+                log.log_coleta(f"{LOG_PREFIX} Escaneamento e salvamento finalizados para: {ip}")
+            else:
+                log.log_coleta(f"{LOG_PREFIX} Nenhuma porta de interesse encontrada para {ip}.")
+
         except Exception as e:
-            log.log_coleta(f"{LOG_PREFIX} Erro ao escanear {ip}: {e}", level=logging.ERROR)
+            log.log_coleta(f"{LOG_PREFIX} Erro no job de escaneamento para {ip}: {e}", level=logging.ERROR)
 
     with ThreadPoolExecutor(max_workers=WORKER_THREADS) as executor:
         log.log_coleta(f"{LOG_PREFIX} Consumidor iniciado (workers={WORKER_THREADS})")
         while not _shutdown_evt.is_set():
             try:
                 ip = fila.get(timeout=1)
+                executor.submit(escanear_e_salvar_job, ip)
+                fila.task_done()
             except Empty:
                 continue
-            # envia a task ao executor
-            executor.submit(escanear_job, ip)
-            fila.task_done()
 
-        # quando shutdown solicitado, aguardar fila esvaziar e finalizar tarefas pendentes
         log.log_coleta(f"{LOG_PREFIX} Shutdown solicitado — aguardando fila esvaziar...")
-        while True:
+        while not fila.empty():
             try:
                 ip = fila.get_nowait()
+                executor.submit(escanear_e_salvar_job, ip)
+                fila.task_done()
             except Empty:
                 break
-            executor.submit(escanear_job, ip)
-            fila.task_done()
         log.log_coleta(f"{LOG_PREFIX} Consumidor finalizado.")
 
-# API de controle
+
+# (API de controle e Entrypoint para testes permanecem os mesmos)
 _sniffer_obj = None
 _consumer_thread = None
 
 def start_system():
-    """Inicia sniffer + consumidor. Retorna (sniffer, consumer_thread)."""
     global _sniffer_obj, _consumer_thread
     _shutdown_evt.clear()
     _sniffer_obj = coletor()
@@ -128,16 +147,13 @@ def start_system():
     return _sniffer_obj, _consumer_thread
 
 def stop_system(timeout=10):
-    """Pede shutdown e espera finalizar."""
     _shutdown_evt.set()
-    # parar sniffer
     if _sniffer_obj is not None:
         try:
             _sniffer_obj.stop()
             log.log_coleta(f"{LOG_PREFIX} Sniffer parado.")
         except Exception as e:
             log.log_coleta(f"{LOG_PREFIX} Erro ao parar sniffer: {e}", level=logging.ERROR)
-    # esperar consumidor encerrar
     if _consumer_thread is not None:
         _consumer_thread.join(timeout)
         if _consumer_thread.is_alive():
@@ -145,9 +161,7 @@ def stop_system(timeout=10):
         else:
             log.log_coleta(f"{LOG_PREFIX} Consumidor finalizado com sucesso.")
 
-# Entrypoint para testes locais
 if __name__ == "__main__":
-    import logging, signal
     logging.basicConfig(level=logging.INFO)
     try:
         start_system()

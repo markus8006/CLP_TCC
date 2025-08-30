@@ -64,16 +64,17 @@
 }
 
 .clp-card__ip {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     word-break: break-all; /* Garante que IPs longos não quebrem o layout */
+    margin-top: 0;
 }
 
 .clp-card__nome {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
     word-break: break-all;
-     margin-top: 0;
+     
 }
 /* --- Paginação --- */
 .pagination {
