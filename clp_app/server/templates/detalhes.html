@@ -8,27 +8,31 @@
 
 {% block content %}
 <div class="status_clp">
-    <span id="statusText" class="{{ 'status_online' if clp.STATUS == 'Online' else 'status_offline' }}">
-        Status: {{ clp.STATUS }}
+    {# Usa 'clp.status' em minúsculo para corresponder à API #}
+    <span id="statusText" class="{{ 'status_online' if clp.status == 'Online' else 'status_offline' }}">
+        Status: {{ clp.status }}
     </span>
 
-    {% if clp.STATUS == "Online" %}
+    {# Container para o formulário de Conexão #}
+    <div id="connect-container" style="display: {{ 'none' if clp.status == 'Online' else 'inline-block' }};" class="form-acao">
+        <label for="portSelect">Porta:</label>
+        <select id="portSelect" class="input-form">
+            {% if clp.PORTAS %}
+                {% for porta in clp.PORTAS %}
+                    <option value="{{ porta }}">{{ porta }}</option>
+                {% endfor %}
+            {% else %}
+                <option value="502">502 (Padrão)</option>
+            {% endif %}
+        </select>
+        <button id="btnConnect" data-ip="{{ clp.IP }}" class="btn-acao">Conectar</button>
+    </div>
+
+    {# Container para o botão de Desconectar #}
+    <div id="disconnect-container" style="display: {{ 'inline-block' if clp.status == 'Online' else 'none' }};">
         <button id="btnDisconnect" data-ip="{{ clp.IP }}" class="btn-acao">Desconectar</button>
-    {% else %}
-      <div class="form-acao">
-            <label for="portSelect">Porta:</label>
-            <select id="portSelect" class="input-form">
-                {% if clp.PORTAS %}
-                    {% for porta in clp.PORTAS %}
-                        <option value="{{ porta }}">{{ porta }}</option>
-                    {% endfor %}
-                {% else %}
-                    <option value="502">502 (Padrão)</option>
-                {% endif %}
-            </select>
-            <button id="btnConnect" data-ip="{{ clp.IP }}" class="btn-acao">Conectar</button>
-        </div>
-    {% endif %}
+    </div>
+
     <div id="mensagemCLP" role="status" style="margin-top:12px;color:var(--accent)"></div>
 </div>
 
@@ -111,7 +115,6 @@
 
 {% block scripts %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/graficos.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/detalhes.js') }}"></script>
 {% endblock %}

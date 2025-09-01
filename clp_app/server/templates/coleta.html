@@ -22,7 +22,9 @@
 <div class="container_clps">
     <h2>Histórico</h2>
     <button onclick="limparLogs()">Limpar logs</button>
-    <button>Limpar Registros</button>
+    <form action="{{ url_for('utils.limpar_coleta_ip') }}" method="POST">
+        <button type="submit">Limpar Registros</button>
+    </form>
     
     <div id="logs-container" class="logs-container">
         <table>
@@ -52,36 +54,57 @@
 
 <script>
     /**
-     * Função que adiciona uma nova linha de log na tabela e rola para o final.
+     * Função para buscar os logs da API e atualizar a tabela.
      */
-    function adicionarNovoLog(log) {
-        const corpoTabela = document.getElementById('log-table-body');
-        const novaLinha = document.createElement('tr');
+    async function atualizarLogs() {
+        try {
+            const response = await fetch('/api/logs/coleta');
+            if (!response.ok) {
+                console.error('Erro ao buscar logs:', response.statusText);
+                return;
+            }
+            const logs = await response.json();
 
-        // Preenche a nova linha com os dados do log
-        novaLinha.innerHTML = `
-            <td>${log.hora}</td>
-            <td>${log.nivel}</td>
-            <td>${log.mensagem}</td>
-        `;
-        
-        // Adiciona a nova linha ao final da tabela
-        corpoTabela.appendChild(novaLinha);
+            const corpoTabela = document.getElementById('log-table-body');
+            // Salva a posição da barra de rolagem
+            const container = document.getElementById('logs-container');
+            const deveRolar = container.scrollTop + container.clientHeight >= container.scrollHeight - 20;
 
-        // --- MELHORIA: Auto-scroll para o final ---
-        const container = document.getElementById('logs-container');
-        container.scrollTop = container.scrollHeight;
+            // Limpa a tabela atual
+            corpoTabela.innerHTML = '';
+
+            // Preenche a tabela com os novos logs
+            logs.forEach(log => {
+                const novaLinha = document.createElement('tr');
+                novaLinha.innerHTML = `
+                    <td>${log.hora}</td>
+                    <td>${log.nivel}</td>
+                    <td>${log.mensagem}</td>
+                `;
+                corpoTabela.appendChild(novaLinha);
+            });
+
+            // Se o utilizador estava no final, rola para o novo final
+            if (deveRolar) {
+                container.scrollTop = container.scrollHeight;
+            }
+
+        } catch (error) {
+            console.error('Falha na requisição para atualizar logs:', error);
+        }
     }
 
     /**
-     * Função para limpar os logs da tabela.
+     * Função para limpar os logs apenas da visualização na tela.
      */
     function limparLogs() {
         const corpoTabela = document.getElementById('log-table-body');
-        corpoTabela.innerHTML = ''; // Remove todas as linhas
+        corpoTabela.innerHTML = ''; 
         console.log("Logs limpos da tela.");
     }
 
+    // Inicia a atualização automática a cada 5 segundos (5000 milissegundos)
+    setInterval(atualizarLogs, 2000);
 
 </script>
 {% endblock %}

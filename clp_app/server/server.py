@@ -28,21 +28,38 @@ def obter_clps_lista() -> list:
 # -----------------------
 # Rotas de Frontend (Páginas Principais)
 # -----------------------
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    """Página principal que lista os CLPs detectados."""
+    """Página principal que lista os CLPs, com filtro de pesquisa."""
     clps_lista = obter_clps_lista()
+    search_term = ""
+
+    # Se a página foi carregada através do formulário de pesquisa (método POST)
+    if request.method == 'POST':
+        # Obtém o termo de pesquisa do formulário, convertendo para minúsculas
+        search_term = request.form.get("buscar_clp", "").lower()
+        if search_term:
+            # Filtra a lista de CLPs, mantendo apenas aqueles cujo nome contém o termo de pesquisa
+            clps_lista = [
+                clp for clp in clps_lista
+                if search_term in clp.get('nome', '').lower()
+            ]
+
+    # A paginação é aplicada à lista completa ou à lista já filtrada
     page = request.args.get('page', 1, type=int)
     inicio = (page - 1) * clps_por_pagina
     fim = inicio + clps_por_pagina
     clps_pagina = clps_lista[inicio:fim]
     total_paginas = (len(clps_lista) + clps_por_pagina - 1) // clps_por_pagina
+    
     return render_template(
         'index.html',
         clps=clps_pagina,
         page=page,
         total_paginas=total_paginas,
-        valor=clps_por_pagina
+        valor=clps_por_pagina,
+        # Envia o termo de pesquisa de volta para a página, para que ele permaneça na barra
+        search_term=search_term
     )
 
 
@@ -104,6 +121,12 @@ def alterar_coleta_ips():
 def api_clps():
     """Retorna um JSON com a lista de todos os CLPs."""
     return jsonify(obter_clps_lista())
+
+@app.route("/api/logs/coleta")
+def api_logs_coleta():
+    """Retorna os logs de coleta mais recentes em formato JSON."""
+    logs_coleta = log.carregar_logs(caminho=log.caminho_coleta)
+    return jsonify(logs_coleta)
 
 
 @app.route('/api/scan/<ip>', methods=['POST'])

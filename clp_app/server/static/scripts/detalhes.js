@@ -1,18 +1,17 @@
-// Função para mostrar mensagens GERAIS (leitura de registrador, etc.)
-function showActionMsg(text, timeout=4000) {
+// Funções auxiliares globais
+function showActionMsg(text, timeout = 4000) {
     const el = document.getElementById('mensagem');
     if (el) {
         el.textContent = text;
-        if (timeout) setTimeout(()=> el.textContent = '', timeout);
+        if (timeout) setTimeout(() => el.textContent = '', timeout);
     }
 }
 
-// Função para mostrar mensagens de CONEXÃO do CLP
-function showClpMsg(text, timeout=4000) {
+function showClpMsg(text, timeout = 4000) {
     const el = document.getElementById('mensagemCLP');
     if (el) {
         el.textContent = text;
-        if (timeout) setTimeout(()=> el.textContent = '', timeout);
+        if (timeout) setTimeout(() => el.textContent = '', timeout);
     }
 }
 
@@ -28,49 +27,82 @@ async function fetchJson(url, opts) {
     }
 }
 
+
+// --- CORREÇÃO: Bloco Único de Execução ---
 document.addEventListener('DOMContentLoaded', () => {
-    const ip = document.getElementById('clpIp').textContent;
+
+    // --- Parte 1: Lógica de Conexão e Atualização ---
+    const ip = document.getElementById('clpIp')?.textContent;
+    if (!ip) {
+        console.error("Não foi possível encontrar o IP do CLP na página.");
+        return;
+    }
+    
     const btnConnect = document.getElementById('btnConnect');
     const btnDisconnect = document.getElementById('btnDisconnect');
     const btnReadRegister = document.getElementById('btnReadRegister');
     const logContainer = document.getElementById('logContainer');
 
-    // Botão Conectar usa showClpMsg
+    // Função para atualizar informações da página
+    async function atualizarInfo(ip) {
+        const res = await fetchJson(`/clp/${ip}/info`);
+        if (!res.ok) return;
+
+        const clp = res.clp;
+        const statusEl = document.getElementById('statusText');
+        const connectContainer = document.getElementById('connect-container');
+        const disconnectContainer = document.getElementById('disconnect-container');
+
+        // Verificação para garantir que os elementos existem antes de usá-los
+        if (!statusEl || !connectContainer || !disconnectContainer) {
+            console.error("Elementos de status ou botões não encontrados no HTML.");
+            return;
+        }
+        
+        statusEl.textContent = 'Status: ' + clp.status;
+        statusEl.className = clp.status === 'Online' ? 'status_online' : 'status_offline';
+
+        if (clp.status === 'Online') {
+            connectContainer.style.display = 'none';
+            disconnectContainer.style.display = 'inline-block';
+        } else {
+            connectContainer.style.display = 'inline-block';
+            disconnectContainer.style.display = 'none';
+        }
+
+        if (logContainer && clp.logs) {
+            logContainer.innerHTML = '';
+            clp.logs.slice().reverse().forEach(logLine => {
+                const logEntry = document.createElement('div');
+                logEntry.textContent = logLine;
+                logContainer.appendChild(logEntry);
+            });
+        }
+    }
+    
+    // Listeners dos botões de conexão/desconexão
     if (btnConnect) {
         btnConnect.addEventListener('click', async () => {
             const selectedPort = document.getElementById('portSelect').value;
             showClpMsg(`Iniciando conexão na porta ${selectedPort}...`);
-            
-            const res = await fetchJson(`/clp/${ip}/connect`, {
+            await fetchJson(`/clp/${ip}/connect`, {
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
                 body: JSON.stringify({ port: Number(selectedPort) })
             });
-
-            if (res.ok) {
-                showClpMsg(res.message);
-                setTimeout(() => atualizarInfo(ip), 3000); 
-            } else {
-                showClpMsg('Erro: ' + (res.error || 'unknown'));
-            }
+            // A atualização automática vai pegar o novo status
         });
     }
-    
-    // Botão Desconectar também usa showClpMsg
+
     if (btnDisconnect) {
         btnDisconnect.addEventListener('click', async () => {
             showClpMsg('Desconectando...');
-            const res = await fetchJson(`/clp/${ip}/disconnect`, { method: 'POST' });
-            if (res.ok) {
-                showClpMsg('Desconectado');
-                window.location.reload();
-            } else {
-                showClpMsg('Erro: ' + (res.error || 'unknown'));
-            }
+            await fetchJson(`/clp/${ip}/disconnect`, { method: 'POST' });
+            atualizarInfo(ip); // Força uma atualização imediata
         });
     }
 
-    // Botão Ler Registrador usa showActionMsg
+    // Listener do botão de ler registrador
     if (btnReadRegister) {
         btnReadRegister.addEventListener('click', async () => {
             const address = document.getElementById('inputAddress').value;
@@ -79,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultDiv.innerHTML = `<span style="color: red;">Por favor, insira um endereço.</span>`;
                 return;
             }
-            showActionMsg(`Lendo endereço ${address}...`); // <--- Usa a função de mensagem geral
+            showActionMsg(`Lendo endereço ${address}...`);
             const res = await fetchJson(`/clp/${ip}/read_register`, {
                 method: 'POST',
                 headers: {'Content-Type':'application/json'},
@@ -95,40 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Função para atualizar informações da página
-    async function atualizarInfo(ip) {
-        const statusAnterior = document.getElementById('statusText').textContent.includes('Online') ? 'Online' : 'Offline';
-        const res = await fetchJson(`/clp/${ip}/info`);
-        if (!res.ok) return;
-
-        const clp = res.clp;
-        const statusEl = document.getElementById('statusText');
-        statusEl.textContent = 'Status: ' + clp.status;
-        statusEl.className = clp.status === 'Online' ? 'status_online' : 'status_offline';
-
-        if (logContainer && clp.logs) {
-            logContainer.innerHTML = '';
-            clp.logs.forEach(logLine => {
-                const logEntry = document.createElement('div');
-                logEntry.textContent = logLine;
-                logContainer.appendChild(logEntry);
-            });
-            logContainer.scrollTop = logContainer.scrollHeight;
-        }
-
-        if (clp.status === 'Online' && statusAnterior === 'Offline') {
-            window.location.reload();
-        }
-    }
-
-    // Inicia a atualização periódica
+    // Inicia a atualização periódica e chama uma vez no início
     setInterval(() => atualizarInfo(ip), 5000);
     atualizarInfo(ip);
-});
 
-// --- Lógica para Edição do Nome do CLP ---
-document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona os elementos do DOM
+
+    // --- Parte 2: Lógica para Edição do Nome do CLP ---
     const viewMode = document.getElementById('viewMode');
     const editMode = document.getElementById('editMode');
     const editNameBtn = document.getElementById('editNameBtn');
@@ -136,50 +140,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const cancelNameBtn = document.getElementById('cancelNameBtn');
     const clpNameSpan = document.getElementById('clpName');
     const inputClpName = document.getElementById('inputClpName');
-    const clpIpSpan = document.getElementById('clpIp'); // Pega o IP do CLP
+    const clpIpSpan = document.getElementById('clpIp');
 
-    // Função para entrar no modo de edição
     const enterEditMode = () => {
-        viewMode.style.display = 'none';
-        editMode.style.display = 'flex'; // Usar flex para alinhar os botões
-        inputClpName.value = clpNameSpan.textContent; // Garante que o input tem o valor mais recente
-        inputClpName.focus(); // Coloca o cursor no campo de texto
+        if(viewMode && editMode && inputClpName && clpNameSpan) {
+            viewMode.style.display = 'none';
+            editMode.style.display = 'flex';
+            inputClpName.value = clpNameSpan.textContent;
+            inputClpName.focus();
+        }
     };
 
-    // Função para sair do modo de edição
     const exitEditMode = () => {
-        viewMode.style.display = 'flex'; // Usar flex para alinhar o nome e o botão
-        editMode.style.display = 'none';
+        if(viewMode && editMode) {
+            viewMode.style.display = 'flex';
+            editMode.style.display = 'none';
+        }
     };
 
-    // Função para salvar o novo nome
     const saveNewName = () => {
         const novoNome = inputClpName.value.trim();
         const clpIp = clpIpSpan.textContent;
 
-        // Validação simples: não salvar se o nome estiver vazio ou for o mesmo
         if (!novoNome || novoNome === clpNameSpan.textContent) {
             exitEditMode();
             return;
         }
 
-        // Envia os dados para o servidor usando Fetch API
         fetch('/clp/rename', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                ip: clpIp,
-                novo_nome: novoNome
-            }),
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ip: clpIp, novo_nome: novoNome }),
         })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Se o servidor confirmou, atualiza o nome na tela
                 clpNameSpan.textContent = novoNome;
-                alert('Nome atualizado com sucesso!'); // Ou uma notificação mais elegante
             } else {
                 alert('Erro ao atualizar o nome: ' + data.message);
             }
@@ -189,19 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Ocorreu um erro de comunicação com o servidor.');
         })
         .finally(() => {
-            // Sempre sai do modo de edição, seja com sucesso ou erro
             exitEditMode();
         });
     };
 
-    // Adiciona os eventos aos botões
-    if (editNameBtn) {
-        editNameBtn.addEventListener('click', enterEditMode);
-    }
-    if (saveNameBtn) {
-        saveNameBtn.addEventListener('click', saveNewName);
-    }
-    if (cancelNameBtn) {
-        cancelNameBtn.addEventListener('click', exitEditMode);
-    }
+    if (editNameBtn) editNameBtn.addEventListener('click', enterEditMode);
+    if (saveNameBtn) saveNameBtn.addEventListener('click', saveNewName);
+    if (cancelNameBtn) cancelNameBtn.addEventListener('click', exitEditMode);
 });

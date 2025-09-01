@@ -8,7 +8,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAMINHO_JSON = os.path.join(BASE_DIR, "logs", "clps.json")
 
 # Dicionário em memória para armazenar os CLPs (IP -> dicionário do CLP)
+
 _clps = {}
+try:
+    with open(CAMINHO_JSON, "r", encoding="UTF-8") as f:
+        _clps = json.load(f)
+except FileNotFoundError:
+    print(f"Error: The file at {CAMINHO_JSON} was not found.")
+except json.JSONDecodeError:
+    print(f"Error: The file at {CAMINHO_JSON} is not a valid JSON file.")
+
 
 def carregar_clps(caminho_arquivo=CAMINHO_JSON):
     """Carrega os CLPs do arquivo JSON para a memória."""

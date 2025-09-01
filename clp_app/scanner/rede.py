@@ -1,16 +1,15 @@
 # clp_app/scanner/rede.py
 from threading import Thread, Lock, Event
 from queue import Queue, Full, Empty
-from scapy.all import AsyncSniffer, IP
+# CORREÇÃO: Usaremos a função 'sniff' padrão, que é mais robusta
+from scapy.all import sniff, IP, get_working_ifaces
 from concurrent.futures import ThreadPoolExecutor
 import time
 import socket
 import logging
 
-# --- Imports Corrigidos ---
 from utils import log
 from clp_app.scanner import portas
-# Adiciona os imports para o gerenciador de CLPs
 from utils import CLP as clp_manager
 from utils import clp_functions
 
@@ -19,18 +18,20 @@ QUEUE_MAXSIZE = 2000
 WORKER_THREADS = 10
 IP_TTL_SECONDS = 300
 INTERFACE = None
-BPF_FILTER = "arp or (tcp and (tcp[tcpflags] & (tcp-syn) != 0))" # Filtro mais específico
+BPF_FILTER = "arp or (tcp and (tcp[tcpflags] & (tcp-syn) != 0))"
 IGNORE_LOCAL = True
 LOG_PREFIX = "[Coletor]"
 
-# (O resto das configurações globais permanece o mesmo)
 fila = Queue(maxsize=QUEUE_MAXSIZE)
 _ips_last_seen = {}
 _ips_lock = Lock()
 _shutdown_evt = Event()
 
+# --- Threads Globais para Controle ---
+_sniffer_thread = None
+_consumer_thread = None
+
 def _get_local_ips():
-    """Tenta detectar IPs locais para ignorar (IPv4)."""
     local_ips = set()
     try:
         hostname = socket.gethostname()
@@ -45,7 +46,6 @@ def _get_local_ips():
 _LOCAL_IPS = _get_local_ips() if IGNORE_LOCAL else set()
 
 def _should_process_ip(ip: str) -> bool:
-    """Verifica se o IP deve ser enfileirado (dedupe + TTL)."""
     now = time.time()
     with _ips_lock:
         last = _ips_last_seen.get(ip)
@@ -54,67 +54,94 @@ def _should_process_ip(ip: str) -> bool:
             return True
         return False
 
-def coletor():
-    """Inicia o AsyncSniffer e retorna o objeto sniffer para controle externo."""
-    def analisar_pacote(pkt):
-        if IP not in pkt:
-            return
-        ip_src = pkt[IP].src
+# --- LÓGICA DE COLETA REFEITA PARA MAIOR ROBUSTEZ ---
 
-        if IGNORE_LOCAL and ip_src in _LOCAL_IPS:
-            return
+def analisar_pacote(pkt):
+    """Função chamada para cada pacote capturado."""
+    if IP not in pkt: return
+    ip_src = pkt[IP].src
+    if IGNORE_LOCAL and ip_src in _LOCAL_IPS: return
+    if not _should_process_ip(ip_src): return
+    try:
+        fila.put_nowait(ip_src)
+    except Full:
+        pass
 
-        if not _should_process_ip(ip_src):
-            return
+def sniff_loop():
+    """Função que executa o 'sniff' e bloqueia até ser parada."""
+    global _shutdown_evt
+    log.log_coleta(f"{LOG_PREFIX} Iniciando a escuta de pacotes...")
+    try:
+        # O 'stop_filter' verifica o nosso evento de parada a cada pacote
+        sniff(prn=analisar_pacote, 
+              filter=BPF_FILTER, 
+              store=False, 
+              iface=INTERFACE,
+              stop_filter=lambda p: _shutdown_evt.is_set())
+        log.log_coleta(f"{LOG_PREFIX} Escuta de pacotes terminada normalmente.")
+    except Exception as e:
+        log.log_coleta(f"{LOG_PREFIX} ERRO DURANTE A EXECUÇÃO DO SNIFFER: {e}", level=logging.ERROR)
 
-        try:
-            fila.put_nowait(ip_src)
-            log.log_coleta(f"{LOG_PREFIX} Encontrado: {ip_src}")
-        except Full:
-            log.log_coleta(f"{LOG_PREFIX} Fila cheia — drop {ip_src}", level=logging.WARNING)
+def start_system():
+    """Inicia os processos de coleta (sniffer e consumidor)."""
+    global _sniffer_thread, _consumer_thread
+    
+    # Verifica se há interfaces de rede antes de tudo
+    if not get_working_ifaces():
+        log.log_coleta(f"{LOG_PREFIX} ERRO CRÍTICO: Nenhuma interface de rede funcional encontrada. Verifique a instalação do Npcap.", level=logging.CRITICAL)
+        return None, None
 
-    sniffer = AsyncSniffer(iface=INTERFACE, prn=analisar_pacote,
-                           store=False, filter=BPF_FILTER)
-    sniffer.start()
-    log.log_coleta(f"{LOG_PREFIX} Sniffer iniciado (iface={INTERFACE}, filter={BPF_FILTER})")
-    return sniffer
+    _shutdown_evt.clear()
+
+    # Inicia o consumidor
+    _consumer_thread = Thread(target=consumidor, daemon=True)
+    _consumer_thread.start()
+
+    # Inicia o sniffer na sua própria thread
+    _sniffer_thread = Thread(target=sniff_loop, daemon=True)
+    _sniffer_thread.start()
+
+    return _sniffer_thread, _consumer_thread
+
+def stop_system(timeout=10):
+    """Para os processos de coleta."""
+    global _sniffer_thread, _consumer_thread
+    
+    # Sinaliza para as threads pararem
+    _shutdown_evt.set()
+    log.log_coleta(f"{LOG_PREFIX} Sinal de parada enviado.")
+
+    # Aguarda a thread do sniffer terminar (o sniff_loop vai parar)
+    if _sniffer_thread is not None:
+        _sniffer_thread.join(timeout=2.0)
+        if _sniffer_thread.is_alive():
+            log.log_coleta(f"{LOG_PREFIX} Sniffer não parou a tempo.", level=logging.WARNING)
+        else:
+            log.log_coleta(f"{LOG_PREFIX} Sniffer parado com sucesso.")
+
+    # Aguarda a thread do consumidor terminar
+    if _consumer_thread is not None:
+        _consumer_thread.join(timeout)
+
 
 def consumidor():
-    """
-    Consumidor principal que delega escaneamentos e **SALVA** os CLPs encontrados.
-    """
+    """Consumidor que processa os IPs da fila."""
     def escanear_e_salvar_job(ip):
         try:
-            log.log_coleta(f"{LOG_PREFIX} Iniciando escaneamento: {ip}")
-            # Escaneia portas de interesse para CLPs
             portas_abertas = portas.escanear_portas(ip, portas_alvo=[502, 80, 443, 21])
-
-            # --- LÓGICA DE PERSISTÊNCIA ADICIONADA AQUI ---
             if portas_abertas:
-                log.log_coleta(f"{LOG_PREFIX} Portas abertas em {ip}: {portas_abertas}. Adicionando/Atualizando CLP.")
-
                 clp_existente = clp_manager.buscar_por_ip(ip)
-
                 if clp_existente:
-                    # Se já existe, apenas adiciona as portas que podem ser novas
                     for porta in portas_abertas:
                         clp_functions.adicionar_porta(clp_existente, porta)
                 else:
-                    # Se é um CLP novo, cria o dicionário
                     novo_clp = clp_functions.criar_clp(IP=ip, PORTAS=portas_abertas)
                     clp_manager.adicionar_clp(novo_clp)
-
-                # SALVA O ESTADO ATUALIZADO NO ARQUIVO JSON
                 clp_manager.salvar_clps()
-                log.log_coleta(f"{LOG_PREFIX} Escaneamento e salvamento finalizados para: {ip}")
-            else:
-                log.log_coleta(f"{LOG_PREFIX} Nenhuma porta de interesse encontrada para {ip}.")
-
-        except Exception as e:
-            log.log_coleta(f"{LOG_PREFIX} Erro no job de escaneamento para {ip}: {e}", level=logging.ERROR)
+        except Exception:
+            pass 
 
     with ThreadPoolExecutor(max_workers=WORKER_THREADS) as executor:
-        log.log_coleta(f"{LOG_PREFIX} Consumidor iniciado (workers={WORKER_THREADS})")
         while not _shutdown_evt.is_set():
             try:
                 ip = fila.get(timeout=1)
@@ -122,53 +149,3 @@ def consumidor():
                 fila.task_done()
             except Empty:
                 continue
-
-        log.log_coleta(f"{LOG_PREFIX} Shutdown solicitado — aguardando fila esvaziar...")
-        while not fila.empty():
-            try:
-                ip = fila.get_nowait()
-                executor.submit(escanear_e_salvar_job, ip)
-                fila.task_done()
-            except Empty:
-                break
-        log.log_coleta(f"{LOG_PREFIX} Consumidor finalizado.")
-
-
-# (API de controle e Entrypoint para testes permanecem os mesmos)
-_sniffer_obj = None
-_consumer_thread = None
-
-def start_system():
-    global _sniffer_obj, _consumer_thread
-    _shutdown_evt.clear()
-    _sniffer_obj = coletor()
-    _consumer_thread = Thread(target=consumidor, daemon=True)
-    _consumer_thread.start()
-    return _sniffer_obj, _consumer_thread
-
-def stop_system(timeout=10):
-    _shutdown_evt.set()
-    if _sniffer_obj is not None:
-        try:
-            _sniffer_obj.stop()
-            log.log_coleta(f"{LOG_PREFIX} Sniffer parado.")
-        except Exception as e:
-            log.log_coleta(f"{LOG_PREFIX} Erro ao parar sniffer: {e}", level=logging.ERROR)
-    if _consumer_thread is not None:
-        _consumer_thread.join(timeout)
-        if _consumer_thread.is_alive():
-            log.log_coleta(f"{LOG_PREFIX} Consumidor ainda vivo após timeout.", level=logging.WARNING)
-        else:
-            log.log_coleta(f"{LOG_PREFIX} Consumidor finalizado com sucesso.")
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    try:
-        start_system()
-        print("Coletor/Consumidor rodando. Ctrl+C para parar.")
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        print("Parando...")
-        stop_system()
-        print("Finalizado.")

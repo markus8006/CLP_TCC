@@ -15,8 +15,12 @@
     </div>
 
     <div>
-        <h1>Logs do CLP</h1> <button onclick="limparLogs()">Limpar Logs</button>
-    </div>
+        <h1>Logs do CLP</h1> 
+        <button onclick="limparLogs()">Limpar Logs</button>
+        <form method="POST" action="{{ url_for('utils.limpar_logs') }}">
+            <button type="submit">Limpar Registros</button>
+        </form>
+
 
     <div class="log-container">
         <table>
@@ -80,6 +84,6 @@
         const dataAtual = new Date();
         const horaFormatada = dataAtual.toTimeString().split(' ')[0];
         adicionarNovoLog(novoLogSimulado);
-    }, 3000);
+    }, 2000);
 </script>
 {% endblock %}

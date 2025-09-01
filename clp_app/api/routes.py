@@ -1,11 +1,12 @@
 # clp_app/api/routes.py
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, redirect, url_for
 import logging
 
 # NOVO: Imports atualizados para a abordagem funcional
 from utils import CLP as clp_manager, clp_functions
 from threading import Thread
 from clp_app.scanner.service import scanner_service
+from utils.log import caminho_coleta, caminho_app
 
 def _run_in_thread(target, *args, **kwargs):
     """Executa target(...) em uma Thread daemon e retorna o objeto Thread."""
@@ -113,6 +114,25 @@ def clp_read_register(ip):
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
         
+
+@clp_bp.route("/limpar_coleta_ip", methods=['POST'])
+def limpar_coleta_ip():
+    with open(caminho_coleta, "w", encoding="UTF-8"):
+        pass
+
+    
+    return redirect(url_for("coleta_de_ips"))
+
+
+@clp_bp.route("/limpar_logs", methods=['POST'])
+def limpar_logs():
+    with open(caminho_app, "w", encoding="UTF-8"):
+        pass
+
+    
+    return redirect(url_for("logs_geral"))
+
+
 @clp_bp.route('/rename', methods=['POST'])
 def rename_clp():
     """Endpoint da API para renomear um CLP."""
