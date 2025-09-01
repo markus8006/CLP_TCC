@@ -42,6 +42,29 @@ def clp_connect(ip):
     _run_in_thread(job)
     return jsonify({"ok": True, "messageCLP": "Conexão iniciada em background"})
 
+@clp_bp.route("/<ip>/tags", methods=['POST'])
+def add_tag(ip):
+    clp_dict = clp_manager.buscar_por_ip(ip)
+    if not clp_dict:
+        return jsonify({"success": False, "message": "CLP não encontrado"}), 404
+
+    data = request.get_json()
+    new_tag = data.get('tag', '').strip()
+
+    if not new_tag:
+        return jsonify({"success": False, "message": "A tag não pode estar vazia"}), 400
+
+    # Garante que a lista de tags existe
+    if 'tags' not in clp_dict:
+        clp_dict['tags'] = []
+
+    # Adiciona a tag apenas se ela ainda não existir
+    if new_tag not in clp_dict['tags']:
+        clp_dict['tags'].append(new_tag)
+        clp_manager.salvar_clps()
+        return jsonify({"success": True, "message": "Tag adicionada com sucesso", "tags": clp_dict['tags']})
+    else:
+        return jsonify({"success": False, "message": "Esta tag já existe", "tags": clp_dict['tags']})
 
 @clp_bp.route("/<ip>/disconnect", methods=["POST"])
 def clp_disconnect(ip):

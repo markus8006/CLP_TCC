@@ -4,16 +4,18 @@
 
 {% block css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/detalhes.css') }}">
+<style>
+    .tag-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-item { background-color: #5a009d; color: white; padding: 4px 10px; border-radius: 15px; font-size: 0.9em; }
+</style>
 {% endblock %}
 
 {% block content %}
 <div class="status_clp">
-    {# Usa 'clp.status' em minúsculo para corresponder à API #}
     <span id="statusText" class="{{ 'status_online' if clp.status == 'Online' else 'status_offline' }}">
         Status: {{ clp.status }}
     </span>
 
-    {# Container para o formulário de Conexão #}
     <div id="connect-container" style="display: {{ 'none' if clp.status == 'Online' else 'inline-block' }};" class="form-acao">
         <label for="portSelect">Porta:</label>
         <select id="portSelect" class="input-form">
@@ -28,7 +30,6 @@
         <button id="btnConnect" data-ip="{{ clp.IP }}" class="btn-acao">Conectar</button>
     </div>
 
-    {# Container para o botão de Desconectar #}
     <div id="disconnect-container" style="display: {{ 'inline-block' if clp.status == 'Online' else 'none' }};">
         <button id="btnDisconnect" data-ip="{{ clp.IP }}" class="btn-acao">Desconectar</button>
     </div>
@@ -54,6 +55,17 @@
         <li><strong>Modelo:</strong> {{ clp.get('modelo', 'Desconhecido') }}</li>
         <li><strong>Fabricante:</strong> {{ clp.get('fabricante', 'Desconhecido') }}</li>
         <li><strong>IP:</strong> <span id="clpIp">{{ clp.IP }}</span></li>
+        
+        <li><strong>Tags:</strong>
+            <ul class="tag-list" id="tag-list-container">
+                {% for tag in clp.tags %}
+                    <li class="tag-item">{{ tag }}</li>
+                {% else %}
+                    <li>Nenhuma tag definida.</li>
+                {% endfor %}
+            </ul>
+        </li>
+
         {% if clp.PORTAS %}
             <li><strong>Portas abertas:</strong>
                 <span id="listaPortas">
@@ -67,7 +79,15 @@
         {% endif %}
         <li><strong>Versão Firmware:</strong> {{ clp.get('firmware', 'N/A') }}</li>
         <li><strong>Última comunicação:</strong> {{ clp.data_registro }}</li>
-    </ul>
+    </ul> </div>
+
+<div class="informacao_clp">
+    <h2>Adicionar Tag</h2>
+    <form id="formAddTag" onsubmit="return false;" class="form-acao">
+        <input type="text" id="inputTag" placeholder="Nova tag" required class="input-form">
+        <button id="btnAddTag" class="btn-acao">Adicionar</button>
+    </form>
+    <div id="tagMessage" style="margin-top: 10px;"></div>
 </div>
 
 <div class="informacao_clp">
@@ -115,6 +135,46 @@
 
 {% block scripts %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ url_for('static', filename='scripts/sidebar.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/graficos.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/detalhes.js') }}"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const btnAddTag = document.getElementById('btnAddTag');
+    if (btnAddTag) {
+        btnAddTag.addEventListener('click', async () => {
+            const ip = document.getElementById('clpIp').textContent;
+            const inputTag = document.getElementById('inputTag');
+            const newTag = inputTag.value.trim();
+            const tagMessage = document.getElementById('tagMessage');
+
+            if (!newTag) {
+                tagMessage.textContent = 'Por favor, insira uma tag.';
+                return;
+            }
+
+            const response = await fetch(`/clp/${ip}/tags`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ tag: newTag })
+            });
+
+            const data = await response.json();
+            tagMessage.textContent = data.message;
+
+            if (data.success) {
+                const tagListContainer = document.getElementById('tag-list-container');
+                tagListContainer.innerHTML = ''; 
+                data.tags.forEach(tag => {
+                    const li = document.createElement('li');
+                    li.className = 'tag-item';
+                    li.textContent = tag;
+                    tagListContainer.appendChild(li);
+                });
+                inputTag.value = '';
+            }
+        });
+    }
+});
+</script>
 {% endblock %}

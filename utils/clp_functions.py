@@ -88,4 +88,5 @@ def get_info(clp: dict) -> dict:
         "descricao": clp.get("descricao"),
         "logs": clp.get("logs", []),
         "status": clp.get("status"), # Adicionamos o status aqui também
+        "tags": clp.get("tags", []),
     }

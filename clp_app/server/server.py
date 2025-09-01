@@ -30,22 +30,29 @@ def obter_clps_lista() -> list:
 # -----------------------
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    """Página principal que lista os CLPs, com filtro de pesquisa."""
+    """Página principal que lista os CLPs, com filtro de pesquisa por nome e tag."""
     clps_lista = obter_clps_lista()
     search_term = ""
+    tag_term = "" # <-- NOVO
 
-    # Se a página foi carregada através do formulário de pesquisa (método POST)
     if request.method == 'POST':
-        # Obtém o termo de pesquisa do formulário, convertendo para minúsculas
         search_term = request.form.get("buscar_clp", "").lower()
+        tag_term = request.form.get("buscar_tag", "").lower() # <-- NOVO
+
         if search_term:
-            # Filtra a lista de CLPs, mantendo apenas aqueles cujo nome contém o termo de pesquisa
             clps_lista = [
                 clp for clp in clps_lista
                 if search_term in clp.get('nome', '').lower()
             ]
+        
+        # <-- NOVO: Filtra por tag se um termo de tag for fornecido
+        if tag_term:
+            clps_lista = [
+                clp for clp in clps_lista
+                if any(tag_term in tag.lower() for tag in clp.get('tags', []))
+            ]
 
-    # A paginação é aplicada à lista completa ou à lista já filtrada
+    # ... (lógica de paginação continua a mesma)
     page = request.args.get('page', 1, type=int)
     inicio = (page - 1) * clps_por_pagina
     fim = inicio + clps_por_pagina
@@ -58,9 +65,11 @@ def index():
         page=page,
         total_paginas=total_paginas,
         valor=clps_por_pagina,
-        # Envia o termo de pesquisa de volta para a página, para que ele permaneça na barra
-        search_term=search_term
+        search_term=search_term,
+        tag_term=tag_term # <-- NOVO
     )
+    
+  
 
 
 @app.route('/clp/<ip>')

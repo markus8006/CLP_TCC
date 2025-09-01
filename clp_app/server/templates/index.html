@@ -12,21 +12,23 @@
     <div class="filter-controls">
         <form class="search-form" method="POST" action="{{ url_for('index') }}">
             <input 
-                id="procurar_p_nome" 
                 class="form__input" 
                 type="text" 
                 name="buscar_clp" 
                 placeholder="Procurar por nome..." 
                 value="{{ search_term or '' }}">
+            
+            <input 
+                class="form__input" 
+                type="text" 
+                name="buscar_tag" 
+                placeholder="Procurar por tag..." 
+                value="{{ tag_term or '' }}">
+
             <button class="form__button" type="submit">Buscar</button>
         </form>
 
-        <form class="filter-form" method="POST" action="/alterar">
-            <label for="clps-per-page-input">CLPs por página:</label>
-            <input id="clps-per-page-input" class="form__input" type="number" name="novo_valor" value="{{ valor }}" min="1">
-            <button class="form__button" type="submit">Alterar</button>
-        </form>
-    </div>
+        </div>
 
     {% if search_term %}
         <p>Exibindo resultados para: <strong>"{{ search_term }}"</strong></p>
