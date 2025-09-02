@@ -54,11 +54,15 @@ Este projeto é uma aplicação web desenvolvida para detetar, gerir e interagir
 Com o ambiente virtual ativado, inicie a aplicação a partir da raiz do projeto:
 ```bash
 python run.py
+```
+
 
 A aplicação estará acessível no seu navegador no endereço http://127.0.0.1:5000
 .
 
-Estrutura do Projeto
+### Estrutura do Projeto
+
+```bash
 /clp_app/
     /api/
         routes.py       # Rotas da API para interagir com os CLPs (conectar, ler registos, etc.)
@@ -85,8 +89,10 @@ Estrutura do Projeto
 requirements.txt        # Dependências do Python para o projeto
 run.py                  # Ponto de entrada para iniciar a aplicação
 
-Tecnologias Utilizadas
-Backend:
+```
+
+### Tecnologias Utilizadas
+## Backend:
 
 Flask: Micro-framework web para a construção do servidor e da API.
 
@@ -94,7 +100,7 @@ Scapy: Biblioteca para manipulação e sniffing de pacotes de rede.
 
 Pymodbus: Biblioteca para comunicação através do protocolo Modbus.
 
-Frontend:
+## Frontend:
 
 HTML5 / CSS3: Estrutura e estilo das páginas web.
 
@@ -102,7 +108,7 @@ JavaScript (Vanilla): Para interatividade do lado do cliente e atualizações di
 
 Chart.js: Para a visualização de gráficos de métricas.
 
-Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Se encontrar um bug ou tiver uma sugestão, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
