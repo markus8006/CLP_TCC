@@ -105,6 +105,11 @@
     transition: 0.3s;
 }
 
+.btn-acao:hover {
+    background-color: #1b00a3;
+    transform: translateY(-2px);
+}
+
 .input-form {
     background-color: rgba(71, 0, 202, 0.5);
     color: white;

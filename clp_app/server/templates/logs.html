@@ -16,13 +16,13 @@
 
     <div>
         <h1 class="logs_do_clp">Logs do CLP</h1> 
-        <button onclick="limparLogs()">Limpar Logs</button>
-        <form method="POST" action="{{ url_for('utils.limpar_logs') }}">
-            <button type="submit">Limpar Registros</button>
+        <button class="limpar_logs_clps" onclick="limparLogs()">Limpar Logs</button>
+        <form style="display: inline-block;" method="POST" action="{{ url_for('utils.limpar_logs') }}">
+            <button class="limpar_registros_clps" type="submit">Limpar Registros</button>
         </form>
 
 
-    <div class="log-container">
+    <div id="logs-container" class="logs-container">
         <table>
             <thead>
                 <tr>

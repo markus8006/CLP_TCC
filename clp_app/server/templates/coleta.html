@@ -21,9 +21,9 @@
 
 <div class="container_clps">
     <h2>Histórico</h2>
-    <button onclick="limparLogs()">Limpar logs</button>
-    <form action="{{ url_for('utils.limpar_coleta_ip') }}" method="POST">
-        <button type="submit">Limpar Registros</button>
+    <button class="limpar_logs_ips" onclick="limparLogs()">Limpar logs</button>
+    <form style="display: inline-block;" action="{{ url_for('utils.limpar_coleta_ip') }}" method="POST">
+        <button class="limpar_registros_ips" type="submit">Limpar Registros</button>
     </form>
     
     <div id="logs-container" class="logs-container">

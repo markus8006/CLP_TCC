@@ -1,70 +1,69 @@
 /* Importa estilos de um arquivo base, se existir. */
 @import url('base.css');
 
-/* --- CORREÇÃO APLICADA AQUI --- */
-.log-container {
-    max-height: 80vh;
+
+/* Container com scroll para os logs */
+.logs-container {
+    max-height: 70vh;
     width: 100%;
-    
-    /* A LINHA MAIS IMPORTANTE - O FUNDO ESCURO */
-    background-color: #1e1e1e; /* Um fundo padrão de "dark mode" */
-    
-    padding: 10px;
-    overflow-y: auto;
-    border-radius: 5px; /* Adicionei para combinar com as células */
-    /* A borda externa cinza foi removida para um visual mais limpo */
+    overflow-y: auto; /* Cria a barra de rolagem */
+    border: 1px solid #6e0096;
+    border-radius: 5px;
 }
 
-.log-container table {
+.logs-container table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.log-container th, .log-container td {
+.logs-container th, .logs-container td {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #4d026a;
 }
 
 /* Cabeçalho da tabela fixo no topo */
-.log-container th {
+.logs-container th {
     position: sticky;
     top: 0;
     background-color: #1e1e1e; 
 }
 
-
-/* Tabela com bordas separadas */
-.content_logs table {
-    width: 100%;
-    font-family: monospace;
-    border-collapse: separate;
-    border-spacing: 3px;
+/* Cores alternadas nas linhas para melhor legibilidade */
+.logs-container tbody tr:nth-child(even) {
+    background-color: #2c2c2c;
 }
 
-/* Células e cabeçalhos */
-.content_logs th, .content_logs td {
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Deixei a borda um pouco mais sutil */
-    padding: 10px;
-    text-align: center;
-    color: #E0E0E0;
-    border-radius: 4px;
-}
-
-/* Cabeçalho fixo */
-.log-container table thead th {
-   position: sticky;
-   top: -11px; /* Ajuste para compensar o padding */
-   background-color: #333333; /* Cor sólida para melhor leitura */
-   color: #ffffff;
-   font-weight: bold;
-   /* A borda do cabeçalho pode ser um pouco mais forte */
-   border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-/* Efeito de hover */
-.content_logs tbody td:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Destaque com branco transparente */
+.limpar_logs_clps {
+    position: relative;
+    top: -5px;
+    background-color: #0d0081;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #6e0096;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.limpar_logs_clps:hover {
+    background-color: #1b00a3;
+    transform: translateY(-2px);
+}
+
+.limpar_registros_clps {
+    position: relative;
+    top: -5px;
+    background-color: #0d0081;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #6e0096;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.limpar_registros_clps:hover {
+    background-color: #1b00a3;
+    transform: translateY(-2px);
+}
