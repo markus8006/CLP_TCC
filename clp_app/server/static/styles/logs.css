@@ -15,6 +15,25 @@
     /* A borda externa cinza foi removida para um visual mais limpo */
 }
 
+.log-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.log-container th, .log-container td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #4d026a;
+}
+
+/* Cabeçalho da tabela fixo no topo */
+.log-container th {
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e; 
+}
+
+
 /* Tabela com bordas separadas */
 .content_logs table {
     width: 100%;
@@ -48,3 +67,4 @@
     background-color: rgba(255, 255, 255, 0.1); /* Destaque com branco transparente */
     cursor: pointer;
 }
+
